@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="app" location="E:/Project/Personal/StereoVision/Project_FPGA/StereoDisplay/system/app" platform="E:/Project/Personal/StereoVision/Project_FPGA/StereoDisplay/system/system_ps/export/system_ps/system_ps.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="app_system" sysConfig="system_ps" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="5808b03d0d062b0a421b0ff72f64d4f7">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.2125707021" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1695829405" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
