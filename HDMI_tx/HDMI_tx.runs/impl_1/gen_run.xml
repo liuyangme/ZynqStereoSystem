@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-2" LaunchTime="1584527699">
+  <File Type="BITSTR-BMM" Name="HDMI_FPGA_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="HDMI_FPGA_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="HDMI_FPGA_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="HDMI_FPGA_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="HDMI_FPGA.tcl"/>
+  <File Type="OPT-TIMING" Name="HDMI_FPGA_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="HDMI_FPGA_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="HDMI_FPGA_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="HDMI_FPGA_reports.tcl"/>
+  <File Type="OPT-DRC" Name="HDMI_FPGA_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="HDMI_FPGA.hwdef"/>
+  <File Type="PWROPT-DCP" Name="HDMI_FPGA_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="HDMI_FPGA_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="HDMI_FPGA_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="HDMI_FPGA_placed.dcp"/>
+  <File Type="PLACE-IO" Name="HDMI_FPGA_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="HDMI_FPGA_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="HDMI_FPGA_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="HDMI_FPGA_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="HDMI_FPGA_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="HDMI_FPGA_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="HDMI_FPGA_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="HDMI_FPGA_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="HDMI_FPGA_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="HDMI_FPGA.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="HDMI_FPGA_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="HDMI_FPGA_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="HDMI_FPGA_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="HDMI_FPGA.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="HDMI_FPGA_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="HDMI_FPGA_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="HDMI_FPGA_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="HDMI_FPGA_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="HDMI_FPGA_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="HDMI_FPGA_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="HDMI_FPGA_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="HDMI_FPGA.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="HDMI_FPGA_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="HDMI_FPGA_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="HDMI_FPGA_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="HDMI_FPGA_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="HDMI_FPGA_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="HDMI_FPGA_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="HDMI_FPGA_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="HDMI_FPGA_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="HDMI_FPGA_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="HDMI_FPGA_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="HDMI_FPGA_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="HDMI_FPGA_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="HDMI_FPGA_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="HDMI_FPGA_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="HDMI_FPGA_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="HDMI_FPGA_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="HDMI_FPGA_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="HDMI_FPGA_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="HDMI_FPGA_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="HDMI_FPGA_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="HDMI_FPGA_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="HDMI_FPGA.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="HDMI_FPGA_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="HDMI_FPGA.rbt"/>
+  <File Type="BITSTR-NKY" Name="HDMI_FPGA.nky"/>
+  <File Type="PDI-FILE" Name="HDMI_FPGA.pdi"/>
+  <File Type="RCFI_FILE" Name="HDMI_FPGA.rcfi"/>
+  <File Type="CFI_FILE" Name="HDMI_FPGA.cfi"/>
+  <File Type="RNPI_FILE" Name="HDMI_FPGA.rnpi"/>
+  <File Type="NPI_FILE" Name="HDMI_FPGA.npi"/>
+  <File Type="RBD_FILE" Name="HDMI_FPGA.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="HDMI_FPGA.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="HDMI_FPGA.sysdef"/>
+  <File Type="BG-BGN" Name="HDMI_FPGA.bgn"/>
+  <File Type="BG-DRC" Name="HDMI_FPGA.drc"/>
+  <File Type="RDI-RDI" Name="HDMI_FPGA.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/DVITransmitter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/LiuYang/Desktop/HDMI_FPGA_ML/src/DVITransmitter.vhd"/>
+        <Attr Name="ImportTime" Val="1482719829"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/SerializerN_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/LiuYang/Desktop/HDMI_FPGA_ML/src/SerializerN_1.vhd"/>
+        <Attr Name="ImportTime" Val="1482719829"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/TMDSEncoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/LiuYang/Desktop/HDMI_FPGA_ML/src/TMDSEncoder.vhd"/>
+        <Attr Name="ImportTime" Val="1482719829"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/hdmi_tx.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/LiuYang/Desktop/HDMI_FPGA_ML/src/hdmi_tx.vhd"/>
+        <Attr Name="ImportTime" Val="1482719829"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="HDMI_FPGA"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
