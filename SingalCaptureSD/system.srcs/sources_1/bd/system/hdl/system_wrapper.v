@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Fri Mar 20 12:21:40 2020
+//Date        : Mon Apr  6 16:06:07 2020
 //Host        : LiuYangLaptop running 64-bit major release  (build 9200)
 //Command     : generate_target system_wrapper.bd
 //Design      : system_wrapper
@@ -42,18 +42,11 @@ module system_wrapper
     HDMI_D2_P_0,
     IIC_0_0_scl_io,
     IIC_0_0_sda_io,
-    IIC_1_0_scl_io,
-    IIC_1_0_sda_io,
     cmos_data_i_0,
-    cmos_data_i_1,
     cmos_href_i_0,
-    cmos_href_i_1,
     cmos_pclk_i_0,
-    cmos_pclk_i_1,
     cmos_vsync_i_0,
-    cmos_vsync_i_1,
-    cmos_xclk_o_0,
-    cmos_xclk_o_1);
+    cmos_xclk_o_0);
   inout [14:0]DDR_0_addr;
   inout [2:0]DDR_0_ba;
   inout DDR_0_cas_n;
@@ -86,18 +79,11 @@ module system_wrapper
   output HDMI_D2_P_0;
   inout IIC_0_0_scl_io;
   inout IIC_0_0_sda_io;
-  inout IIC_1_0_scl_io;
-  inout IIC_1_0_sda_io;
   input [7:0]cmos_data_i_0;
-  input [7:0]cmos_data_i_1;
   input cmos_href_i_0;
-  input cmos_href_i_1;
   input cmos_pclk_i_0;
-  input cmos_pclk_i_1;
   input cmos_vsync_i_0;
-  input cmos_vsync_i_1;
   output cmos_xclk_o_0;
-  output cmos_xclk_o_1;
 
   wire [14:0]DDR_0_addr;
   wire [2:0]DDR_0_ba;
@@ -144,24 +130,11 @@ module system_wrapper
   wire IIC_0_0_sda_io;
   wire IIC_0_0_sda_o;
   wire IIC_0_0_sda_t;
-  wire IIC_1_0_scl_i;
-  wire IIC_1_0_scl_io;
-  wire IIC_1_0_scl_o;
-  wire IIC_1_0_scl_t;
-  wire IIC_1_0_sda_i;
-  wire IIC_1_0_sda_io;
-  wire IIC_1_0_sda_o;
-  wire IIC_1_0_sda_t;
   wire [7:0]cmos_data_i_0;
-  wire [7:0]cmos_data_i_1;
   wire cmos_href_i_0;
-  wire cmos_href_i_1;
   wire cmos_pclk_i_0;
-  wire cmos_pclk_i_1;
   wire cmos_vsync_i_0;
-  wire cmos_vsync_i_1;
   wire cmos_xclk_o_0;
-  wire cmos_xclk_o_1;
 
   IOBUF GPIO_0_0_tri_iobuf_0
        (.I(GPIO_0_0_tri_o_0),
@@ -183,16 +156,6 @@ module system_wrapper
         .IO(IIC_0_0_sda_io),
         .O(IIC_0_0_sda_i),
         .T(IIC_0_0_sda_t));
-  IOBUF IIC_1_0_scl_iobuf
-       (.I(IIC_1_0_scl_o),
-        .IO(IIC_1_0_scl_io),
-        .O(IIC_1_0_scl_i),
-        .T(IIC_1_0_scl_t));
-  IOBUF IIC_1_0_sda_iobuf
-       (.I(IIC_1_0_sda_o),
-        .IO(IIC_1_0_sda_io),
-        .O(IIC_1_0_sda_i),
-        .T(IIC_1_0_sda_t));
   system system_i
        (.DDR_0_addr(DDR_0_addr),
         .DDR_0_ba(DDR_0_ba),
@@ -232,20 +195,9 @@ module system_wrapper
         .IIC_0_0_sda_i(IIC_0_0_sda_i),
         .IIC_0_0_sda_o(IIC_0_0_sda_o),
         .IIC_0_0_sda_t(IIC_0_0_sda_t),
-        .IIC_1_0_scl_i(IIC_1_0_scl_i),
-        .IIC_1_0_scl_o(IIC_1_0_scl_o),
-        .IIC_1_0_scl_t(IIC_1_0_scl_t),
-        .IIC_1_0_sda_i(IIC_1_0_sda_i),
-        .IIC_1_0_sda_o(IIC_1_0_sda_o),
-        .IIC_1_0_sda_t(IIC_1_0_sda_t),
         .cmos_data_i_0(cmos_data_i_0),
-        .cmos_data_i_1(cmos_data_i_1),
         .cmos_href_i_0(cmos_href_i_0),
-        .cmos_href_i_1(cmos_href_i_1),
         .cmos_pclk_i_0(cmos_pclk_i_0),
-        .cmos_pclk_i_1(cmos_pclk_i_1),
         .cmos_vsync_i_0(cmos_vsync_i_0),
-        .cmos_vsync_i_1(cmos_vsync_i_1),
-        .cmos_xclk_o_0(cmos_xclk_o_0),
-        .cmos_xclk_o_1(cmos_xclk_o_1));
+        .cmos_xclk_o_0(cmos_xclk_o_0));
 endmodule

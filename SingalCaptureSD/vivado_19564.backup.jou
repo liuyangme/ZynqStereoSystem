@@ -1,0 +1,277 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Apr  6 14:23:57 2020
+# Process ID: 19564
+# Current directory: E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24824 E:\Project\Personal\StereoVision\Project_FPGA\Stereo-Display-ZYNQ\SingalDisplay\system\system.xpr
+# Log file: E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/vivado.log
+# Journal file: E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.xpr
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  E:/Repository/MyIPcoreLib [current_project]
+update_ip_catalog
+reset_target all [get_files  E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects  [get_files  E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.srcs/sources_1/bd/system/system.bd] -sync -no_script -force -quiet
+open_bd_design {E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.srcs/sources_1/bd/system/system.bd}
+delete_bd_objs [get_bd_nets cmos_vsync_i_1_1] [get_bd_nets cmos_data_i_1_1] [get_bd_nets OVSensor_1_vs_o] [get_bd_nets OVSensor_1_cmos_xclk_o] [get_bd_nets OVSensor_1_rgb_o] [get_bd_nets cmos_href_i_1_1] [get_bd_nets OVSensor_1_vid_clk_ce] [get_bd_cells OVSensor_1]
+delete_bd_objs [get_bd_nets cmos_pclk_i_1_1] [get_bd_nets OVSensor_1_hs_o] [get_bd_intf_nets v_vid_in_axi4s_1_video_out] [get_bd_cells v_vid_in_axi4s_1]
+delete_bd_objs [get_bd_nets xlconstant_1_dout] [get_bd_nets axi_vdma_1_mm2s_introut] [get_bd_intf_nets axi_interconnect_2_M01_AXI] [get_bd_intf_nets axi_vdma_1_M_AXI_MM2S] [get_bd_intf_nets axi_vdma_1_M_AXI_S2MM] [get_bd_intf_nets axi_vdma_1_M_AXIS_MM2S] [get_bd_cells axi_vdma_1]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {2}] [get_bd_cells axi_interconnect_2]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_2_M02_AXI]
+endgroup
+undo
+delete_bd_objs [get_bd_nets v_mix_0_interrupt] [get_bd_intf_nets axi_interconnect_2_M02_AXI] [get_bd_intf_nets axi_vdma_0_M_AXIS_MM2S] [get_bd_intf_nets v_mix_0_m_axis_video] [get_bd_cells v_mix_0]
+delete_bd_objs [get_bd_cells xlconstant_1]
+set_property location {3 1984 -467} [get_bd_cells xlconstant_0]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_1_M00_AXI] [get_bd_cells axi_interconnect_1]
+set_property location {4 2551 282} [get_bd_cells v_tc_0]
+set_property location {2 1559 320} [get_bd_cells util_vector_logic_0]
+set_property location {4 2519 233} [get_bd_cells v_tc_0]
+set_property location {5 3041 357} [get_bd_cells v_axi4s_vid_out_0]
+set_property location {6 3462 379} [get_bd_cells HDMI_tx_0]
+set_property location {6 3434 347} [get_bd_cells HDMI_tx_0]
+set_property location {731 -272} [get_bd_ports cmos_vsync_i_0]
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP1 {0} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+set_property location {6 3443 231} [get_bd_cells HDMI_tx_0]
+set_property location {6 3426 287} [get_bd_cells HDMI_tx_0]
+set_property location {5 2995 315} [get_bd_cells v_axi4s_vid_out_0]
+set_property location {3 1967 -420} [get_bd_cells xlconstant_0]
+delete_bd_objs [get_bd_nets axi_vdma_0_mm2s_introut] [get_bd_nets xlconcat_0_dout] [get_bd_cells xlconcat_0]
+undo
+delete_bd_objs [get_bd_nets axi_vdma_0_mm2s_introut] [get_bd_nets xlconcat_0_dout] [get_bd_cells xlconcat_0]
+connect_bd_net [get_bd_pins axi_vdma_0/mm2s_introut] [get_bd_pins processing_system7_0/IRQ_F2P]
+set_property location {4 2477 186} [get_bd_cells v_tc_0]
+set_property location {4 2496 -545} [get_bd_cells util_vector_logic_1]
+set_property location {2 1554 173} [get_bd_cells util_vector_logic_0]
+set_property location {3 1969 179} [get_bd_cells v_tc_0]
+set_property location {4 2399 235} [get_bd_cells v_axi4s_vid_out_0]
+set_property location {5 3058 255} [get_bd_cells HDMI_tx_0]
+set_property location {2 1537 -162} [get_bd_cells v_vid_in_axi4s_0]
+set_property location {2 1542 -135} [get_bd_cells v_vid_in_axi4s_0]
+set_property location {2 1540 -160} [get_bd_cells v_vid_in_axi4s_0]
+set_property location {1 1144 -204} [get_bd_cells OVSensor_0]
+set_property location {1 1155 -222} [get_bd_cells OVSensor_0]
+set_property location {1 1152 -217} [get_bd_cells OVSensor_0]
+set_property location {2 1545 94} [get_bd_cells util_vector_logic_0]
+connect_bd_intf_net [get_bd_intf_pins axi_vdma_0/M_AXIS_MM2S] [get_bd_intf_pins v_axi4s_vid_out_0/video_in]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {1}] [get_bd_cells axi_interconnect_2]
+endgroup
+set_property location {1 1156 -207} [get_bd_cells OVSensor_0]
+set_property location {3 1974 86} [get_bd_cells v_tc_0]
+set_property location {2 1541 -505} [get_bd_cells axi_interconnect_2]
+validate_bd_design
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {OVSensor_0_rgb_o }]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {v_vid_in_axi4s_0_video_out}]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axi_vdma_0_M_AXIS_MM2S}]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {v_axi4s_vid_out_0_vid_data }]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {Net1 }]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {clk_wiz_0_locked }]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {v_tc_0_vtiming_out}]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {clk_wiz_0_clk_out2 }]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {processing_system7_0_FCLK_CLK0 }]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {util_vector_logic_1_Res }]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets axi_vdma_0_M_AXIS_MM2S] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                          [get_bd_nets clk_wiz_0_clk_out2] {PROBE_TYPE "Data and Trigger" CLK_SRC "None (Connect manually)" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets clk_wiz_0_locked] {PROBE_TYPE "Data and Trigger" CLK_SRC "None (Connect manually)" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets Net1] {PROBE_TYPE "Data and Trigger" CLK_SRC "None (Connect manually)" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets OVSensor_0_rgb_o] {PROBE_TYPE "Data and Trigger" CLK_SRC "None (Connect manually)" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets processing_system7_0_FCLK_CLK0] {PROBE_TYPE "Data and Trigger" CLK_SRC "None (Connect manually)" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets util_vector_logic_1_Res] {PROBE_TYPE "Data and Trigger" CLK_SRC "None (Connect manually)" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets v_axi4s_vid_out_0_vid_data] {PROBE_TYPE "Data and Trigger" CLK_SRC "None (Connect manually)" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_intf_nets v_tc_0_vtiming_out] {NON_AXI_SIGNALS "Data and Trigger" CLK_SRC "/clk_wiz_0/clk_out1" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_intf_nets v_vid_in_axi4s_0_video_out] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins system_ila_2/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins system_ila_3/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins system_ila_4/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins system_ila_5/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins system_ila_6/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins system_ila_7/clk]
+endgroup
+delete_bd_objs [get_bd_ports cmos_vsync_i_1]
+delete_bd_objs [get_bd_ports cmos_href_i_1]
+delete_bd_objs [get_bd_ports cmos_pclk_i_1]
+delete_bd_objs [get_bd_ports cmos_data_i_1]
+delete_bd_objs [get_bd_ports cmos_xclk_o_1]
+save_bd_design
+validate_bd_design
+validate_bd_design
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { processing_system7_0_FCLK_CLK0 } ]
+disconnect_bd_net [get_bd_net processing_system7_0_FCLK_CLK0] [get_bd_pins system_ila_5/probe0]
+apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila_5]
+endgroup
+validate_bd_design
+save_bd_design
+make_wrapper -files [get_files E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.srcs/sources_1/bd/system/system.bd] -top
+set_property location {6 2395 -760} [get_bd_cells system_ila_0]
+set_property location {6 2369 -255} [get_bd_cells system_ila_2]
+set_property location {6 2387 -153} [get_bd_cells system_ila_3]
+set_property location {6 2366 -599} [get_bd_cells system_ila_1]
+set_property location {6 2389 -473} [get_bd_cells system_ila_2]
+set_property location {6 2363 -347} [get_bd_cells system_ila_3]
+set_property location {6 2272 -229} [get_bd_cells system_ila_4]
+set_property location {6.5 2697 -721} [get_bd_cells system_ila_0]
+set_property location {6 2402 -730} [get_bd_cells system_ila_0]
+undo
+undo
+undo
+undo
+undo
+undo
+set_property location {6 2414 -464} [get_bd_cells system_ila_0]
+set_property location {6 2425 -762} [get_bd_cells system_ila_0]
+set_property location {6 2455 -461} [get_bd_cells system_ila_2]
+set_property location {6 2457 -606} [get_bd_cells system_ila_1]
+set_property location {6 2434 -482} [get_bd_cells system_ila_2]
+set_property location {6 2419 -302} [get_bd_cells system_ila_3]
+set_property location {6 2430 -363} [get_bd_cells system_ila_3]
+set_property location {6 2392 -221} [get_bd_cells system_ila_4]
+set_property location {6 2436 -241} [get_bd_cells system_ila_4]
+set_property location {6 2435 -125} [get_bd_cells system_ila_6]
+set_property location {6 2425 -818} [get_bd_cells system_ila_0]
+set_property location {6 2433 -664} [get_bd_cells system_ila_1]
+set_property location {6 2428 -523} [get_bd_cells system_ila_2]
+set_property location {6.5 2672 -807} [get_bd_cells system_ila_3]
+set_property location {6 2447 -410} [get_bd_cells system_ila_3]
+set_property location {6 2436 -284} [get_bd_cells system_ila_4]
+set_property location {6 2440 -165} [get_bd_cells system_ila_6]
+set_property location {6 2443 -36} [get_bd_cells system_ila_7]
+set_property location {6 2488 183} [get_bd_cells processing_system7_0]
+set_property location {6.5 2766 -121} [get_bd_cells processing_system7_0]
+set_property location {5 1898 2} [get_bd_cells processing_system7_0]
+set_property location {6 2424 141} [get_bd_cells system_ila_7]
+set_property location {6 2431 27} [get_bd_cells system_ila_6]
+set_property location {5 1909 -70} [get_bd_cells processing_system7_0]
+set_property location {5 1911 -67} [get_bd_cells processing_system7_0]
+set_property location {5 1914 -71} [get_bd_cells processing_system7_0]
+set_property location {5 1918 -43} [get_bd_cells processing_system7_0]
+set_property location {5 1915 -38} [get_bd_cells processing_system7_0]
+set_property location {5 1918 -22} [get_bd_cells processing_system7_0]
+set_property location {5 1911 -58} [get_bd_cells processing_system7_0]
+set_property location {6.5 2620 -537} [get_bd_cells system_ila_6]
+set_property location {7 2583 -355} [get_bd_cells system_ila_7]
+set_property location {7 2646 -521} [get_bd_cells system_ila_6]
+set_property location {5 1890 -64} [get_bd_cells processing_system7_0]
+set_property location {5 1891 -59} [get_bd_cells processing_system7_0]
+set_property location {5 1903 -17} [get_bd_cells processing_system7_0]
+set_property location {5 1914 -62} [get_bd_cells processing_system7_0]
+set_property location {5 1922 -52} [get_bd_cells processing_system7_0]
+set_property location {5 1918 -26} [get_bd_cells processing_system7_0]
+set_property location {5 1867 248} [get_bd_cells HDMI_tx_0]
+set_property location {3 913 -249} [get_bd_cells axi_vdma_0]
+set_property location {3 916 -243} [get_bd_cells axi_vdma_0]
+set_property location {3 913 -233} [get_bd_cells axi_vdma_0]
+set_property location {3 914 -241} [get_bd_cells axi_vdma_0]
+set_property location {3 912 -224} [get_bd_cells axi_vdma_0]
+set_property location {3 914 -226} [get_bd_cells axi_vdma_0]
+set_property location {3 910 -201} [get_bd_cells axi_vdma_0]
+set_property location {3 906 -236} [get_bd_cells axi_vdma_0]
+set_property location {4 1378 -439} [get_bd_cells util_vector_logic_1]
+set_property location {4 1384 -513} [get_bd_cells util_vector_logic_1]
+set_property location {4 1379 -538} [get_bd_cells util_vector_logic_1]
+set_property location {2 496 -225} [get_bd_cells v_vid_in_axi4s_0]
+set_property location {2 504 -290} [get_bd_cells v_vid_in_axi4s_0]
+set_property location {3 929 -650} [get_bd_cells axi_interconnect_2]
+set_property location {1 118 -246} [get_bd_cells OVSensor_0]
+set_property location {1 108 -228} [get_bd_cells OVSensor_0]
+set_property location {-82 -131} [get_bd_ports cmos_xclk_o_0]
+set_property location {-84 -192} [get_bd_ports cmos_data_i_0]
+set_property location {-84 -212} [get_bd_ports cmos_pclk_i_0]
+set_property location {-84 -228} [get_bd_ports cmos_href_i_0]
+set_property location {-83 -252} [get_bd_ports cmos_vsync_i_0]
+startgroup
+set_property -dict [list CONFIG.C_PROBE0_MU_CNT {2} CONFIG.ALL_PROBE_SAME_MU_CNT {2}] [get_bd_cells system_ila_3]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_PROBE0_MU_CNT {1} CONFIG.ALL_PROBE_SAME_MU_CNT {1}] [get_bd_cells system_ila_3]
+endgroup
+set_property location {6 2289 -956} [get_bd_cells system_ila_6]
+set_property location {6 2376 -1089} [get_bd_cells system_ila_7]
+set_property location {5 1960 -682} [get_bd_cells system_ila_7]
+set_property location {5 1934 -814} [get_bd_cells system_ila_6]
+set_property location {6 2399 -382} [get_bd_cells system_ila_3]
+set_property location {6 2404 -256} [get_bd_cells system_ila_4]
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_I2C1_PERIPHERAL_ENABLE {0}] [get_bd_cells processing_system7_0]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_IIC_1]
+endgroup
+delete_bd_objs [get_bd_intf_ports IIC_1_0]
+set_property location {3133 -48} [get_bd_intf_ports IIC_0_0]
+set_property location {3133 -64} [get_bd_intf_ports FIXED_IO_0]
+set_property location {3137 -71} [get_bd_intf_ports FIXED_IO_0]
+set_property location {3135 -46} [get_bd_intf_ports IIC_0_0]
+set_property location {3135 -85} [get_bd_intf_ports DDR_0]
+set_property location {3130 -79} [get_bd_intf_ports DDR_0]
+set_property location {3134 -76} [get_bd_intf_ports FIXED_IO_0]
+set_property location {3133 -68} [get_bd_intf_ports FIXED_IO_0]
+set_property location {3135 -98} [get_bd_intf_ports DDR_0]
+set_property location {3136 -91} [get_bd_intf_ports DDR_0]
+set_property location {3136 -109} [get_bd_intf_ports GPIO_0_0]
+set_property location {6 2392 -239} [get_bd_cells system_ila_4]
+set_property location {4 1439 -558} [get_bd_cells util_vector_logic_1]
+save_bd_design
+validate_bd_design
+reset_target all [get_files  E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects  [get_files  E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.srcs/sources_1/bd/system/system.bd] -sync -no_script -force -quiet
+make_wrapper -files [get_files E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.srcs/sources_1/bd/system/system.bd] -top
+generate_target all [get_files  E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.srcs/sources_1/bd/system/system.bd] -directory E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.ip_user_files/sim_scripts -ip_user_files_dir E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.ip_user_files -ipstatic_source_dir E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.cache/compile_simlib/modelsim} {questa=E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.cache/compile_simlib/questa} {riviera=E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.cache/compile_simlib/riviera} {activehdl=E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+validate_bd_design -force
+set_property location {6 2399 -510} [get_bd_cells system_ila_2]
+delete_bd_objs [get_bd_cells system_ila_6]
+delete_bd_objs [get_bd_cells system_ila_7]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_nets util_vector_logic_1_Res] {PROBE_TYPE "Data and Trigger" CLK_SRC "None (Connect manually)" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets v_axi4s_vid_out_0_vid_data] {PROBE_TYPE "Data and Trigger" CLK_SRC "None (Connect manually)" SYSTEM_ILA "Auto" } \
+                                                         ]
+endgroup
+set_property location {5 1929 -799} [get_bd_cells system_ila_5]
+set_property location {5 1984 -836} [get_bd_cells system_ila_5]
+set_property location {5 1984 -820} [get_bd_cells system_ila_5]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins system_ila_5/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins system_ila_6/clk]
+endgroup
+set_property location {5 1884 -672} [get_bd_cells system_ila_6]
+set_property location {5 1925 269} [get_bd_cells HDMI_tx_0]
+set_property location {5 1920 236} [get_bd_cells HDMI_tx_0]
+set_property location {5 1917 253} [get_bd_cells HDMI_tx_0]
+reset_target all [get_files  E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects  [get_files  E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.srcs/sources_1/bd/system/system.bd] -sync -no_script -force -quiet
+make_wrapper -files [get_files E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.srcs/sources_1/bd/system/system.bd] -top
+generate_target all [get_files  E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.srcs/sources_1/bd/system/system.bd] -directory E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.ip_user_files/sim_scripts -ip_user_files_dir E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.ip_user_files -ipstatic_source_dir E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.cache/compile_simlib/modelsim} {questa=E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.cache/compile_simlib/questa} {riviera=E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.cache/compile_simlib/riviera} {activehdl=E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+write_hw_platform -fixed -force  -include_bit -file E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system_wrapper.xsa
+write_hw_platform -fixed -force  -include_bit -file E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system_wrapper.xsa
+write_hw_platform -fixed -force  -include_bit -file E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system_wrapper.xsa

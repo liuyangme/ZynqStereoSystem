@@ -142,12 +142,6 @@ class processing_system7_v5_5_tlm : public sc_core::sc_module   {
     sc_core::sc_in<bool> I2C0_SCL_I;
     sc_core::sc_out<bool> I2C0_SCL_O;
     sc_core::sc_out<bool> I2C0_SCL_T;
-    sc_core::sc_in<bool> I2C1_SDA_I;
-    sc_core::sc_out<bool> I2C1_SDA_O;
-    sc_core::sc_out<bool> I2C1_SDA_T;
-    sc_core::sc_in<bool> I2C1_SCL_I;
-    sc_core::sc_out<bool> I2C1_SCL_O;
-    sc_core::sc_out<bool> I2C1_SCL_T;
     sc_core::sc_out<sc_dt::sc_bv<2> >  USB0_PORT_INDCTL;
     sc_core::sc_out<bool> USB0_VBUS_PWRSELECT;
     sc_core::sc_in<bool> USB0_VBUS_PWRFAULT;
@@ -159,14 +153,7 @@ class processing_system7_v5_5_tlm : public sc_core::sc_module   {
     sc_core::sc_in<bool> S_AXI_HP0_ACLK;
     sc_core::sc_in<bool> S_AXI_HP0_RDISSUECAP1_EN;
     sc_core::sc_in<bool> S_AXI_HP0_WRISSUECAP1_EN;
-    sc_core::sc_out<sc_dt::sc_bv<8> >  S_AXI_HP1_RCOUNT;
-    sc_core::sc_out<sc_dt::sc_bv<8> >  S_AXI_HP1_WCOUNT;
-    sc_core::sc_out<sc_dt::sc_bv<3> >  S_AXI_HP1_RACOUNT;
-    sc_core::sc_out<sc_dt::sc_bv<6> >  S_AXI_HP1_WACOUNT;
-    sc_core::sc_in<bool> S_AXI_HP1_ACLK;
-    sc_core::sc_in<bool> S_AXI_HP1_RDISSUECAP1_EN;
-    sc_core::sc_in<bool> S_AXI_HP1_WRISSUECAP1_EN;
-    sc_core::sc_in<sc_dt::sc_bv<3> >  IRQ_F2P;
+    sc_core::sc_in<sc_dt::sc_bv<1> >  IRQ_F2P;
     sc_core::sc_out<bool> FCLK_CLK0;
     sc_core::sc_out<bool> FCLK_CLK1;
     sc_core::sc_out<bool> FCLK_RESET0_N;
@@ -196,8 +183,6 @@ class processing_system7_v5_5_tlm : public sc_core::sc_module   {
     xtlm::xtlm_aximm_initiator_socket*      M_AXI_GP0_rd_socket;
     xtlm::xtlm_aximm_target_socket*         S_AXI_HP0_wr_socket;
     xtlm::xtlm_aximm_target_socket*         S_AXI_HP0_rd_socket;
-    xtlm::xtlm_aximm_target_socket*         S_AXI_HP1_wr_socket;
-    xtlm::xtlm_aximm_target_socket*         S_AXI_HP1_rd_socket;
 
     //constructor having three paramters
     // 1. module name in sc_module_name objec, 
@@ -224,7 +209,6 @@ processing_system7_v5_5_tlm(sc_core::sc_module_name name,
     // xtlm initiator sockets of processing_system7_tlm and tlm simple initiator 
     // socket with xilinx_zynq's target socket
     xtlm::xaximm_xtlm2tlm_t<64,32> S_AXI_HP0_xtlm_brdg;
-    xtlm::xaximm_xtlm2tlm_t<64,32> S_AXI_HP1_xtlm_brdg;
 
     // This Bridges converts b_transport to nb_transports and also
     // Converts tlm transactions to xtlm transactions.

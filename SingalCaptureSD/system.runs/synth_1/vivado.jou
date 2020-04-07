@@ -2,11 +2,11 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Fri Mar 20 14:01:12 2020
-# Process ID: 22324
-# Current directory: E:/Project/Personal/StereoVision/Project_FPGA/StereoDisplay/system/system.runs/synth_1
+# Start of session at: Mon Apr  6 16:51:53 2020
+# Process ID: 25208
+# Current directory: E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.runs/synth_1
 # Command line: vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
-# Log file: E:/Project/Personal/StereoVision/Project_FPGA/StereoDisplay/system/system.runs/synth_1/system_wrapper.vds
-# Journal file: E:/Project/Personal/StereoVision/Project_FPGA/StereoDisplay/system/system.runs/synth_1\vivado.jou
+# Log file: E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.runs/synth_1/system_wrapper.vds
+# Journal file: E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/SingalDisplay/system/system.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source system_wrapper.tcl -notrace
