@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Mon Apr  6 17:25:08 2020
+| Date             : Fri Apr 10 22:04:50 2020
 | Host             : LiuYangLaptop running 64-bit major release  (build 9200)
 | Command          : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
 | Design           : system_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.023        |
+| Total On-Chip Power (W)  | 2.032        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.866        |
+| Dynamic (W)              | 1.874        |
 | Device Static (W)        | 0.157        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 61.7         |
-| Junction Temperature (C) | 48.3         |
+| Max Ambient (C)          | 61.6         |
+| Junction Temperature (C) | 48.4         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -66,9 +66,9 @@ Table of Contents
 | Block RAM                |     0.007 |       13 |       140 |            9.29 |
 | MMCM                     |     0.105 |        1 |         4 |           25.00 |
 | I/O                      |     0.139 |       24 |       125 |           19.20 |
-| PS7                      |     1.535 |        1 |       --- |             --- |
+| PS7                      |     1.544 |        1 |       --- |             --- |
 | Static Power             |     0.157 |          |           |                 |
-| Total                    |     2.023 |          |           |                 |
+| Total                    |     2.032 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -91,12 +91,12 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.757 |       0.723 |      0.034 |
-| Vccpaux   |       1.800 |     0.062 |       0.051 |      0.010 |
-| Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
+| Vccpint   |       1.000 |     0.765 |       0.731 |      0.034 |
+| Vccpaux   |       1.800 |     0.061 |       0.051 |      0.010 |
+| Vccpll    |       1.800 |     0.019 |       0.016 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.459 |       0.457 |      0.002 |
 | Vcco_mio0 |       3.300 |     0.003 |       0.002 |      0.001 |
-| Vcco_mio1 |       1.800 |     0.003 |       0.002 |      0.001 |
+| Vcco_mio1 |       1.800 |     0.002 |       0.001 |      0.001 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
 +-----------+-------------+-----------+-------------+------------+
 
@@ -160,11 +160,11 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| system_wrapper           |     1.866 |
+| system_wrapper           |     1.874 |
 |   dbg_hub                |     0.003 |
 |     inst                 |     0.003 |
 |       BSCANID.u_xsdbm_id |     0.003 |
-|   system_i               |     1.855 |
+|   system_i               |     1.863 |
 |     HDMI_tx_0            |     0.136 |
 |       U0                 |     0.136 |
 |     axi_interconnect_0   |     0.002 |
@@ -176,8 +176,8 @@ Table of Contents
 |       U0                 |     0.022 |
 |     clk_wiz_0            |     0.105 |
 |       inst               |     0.105 |
-|     processing_system7_0 |     1.536 |
-|       inst               |     1.536 |
+|     processing_system7_0 |     1.545 |
+|       inst               |     1.545 |
 |     system_ila_0         |     0.009 |
 |       inst               |     0.009 |
 |     system_ila_1         |     0.007 |

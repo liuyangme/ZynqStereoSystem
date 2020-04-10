@@ -225,7 +225,7 @@
             "value": "10.096154"
           },
           "PCW_ACT_ENET0_PERIPHERAL_FREQMHZ": {
-            "value": "125.000000"
+            "value": "10.000000"
           },
           "PCW_ACT_ENET1_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -302,29 +302,17 @@
           "PCW_DDR_RAM_HIGHADDR": {
             "value": "0x3FFFFFFF"
           },
-          "PCW_ENET0_ENET0_IO": {
-            "value": "MIO 16 .. 27"
-          },
-          "PCW_ENET0_GRP_MDIO_ENABLE": {
-            "value": "0"
-          },
           "PCW_ENET0_PERIPHERAL_CLKSRC": {
             "value": "IO PLL"
           },
           "PCW_ENET0_PERIPHERAL_ENABLE": {
-            "value": "1"
-          },
-          "PCW_ENET0_PERIPHERAL_FREQMHZ": {
-            "value": "1000 Mbps"
+            "value": "0"
           },
           "PCW_ENET0_RESET_ENABLE": {
             "value": "0"
           },
           "PCW_ENET_RESET_ENABLE": {
             "value": "1"
-          },
-          "PCW_ENET_RESET_SELECT": {
-            "value": "Share reset pin"
           },
           "PCW_EN_CLK1_PORT": {
             "value": "1"
@@ -345,7 +333,7 @@
             "value": "0"
           },
           "PCW_EN_ENET0": {
-            "value": "1"
+            "value": "0"
           },
           "PCW_EN_GPIO": {
             "value": "1"
@@ -1601,16 +1589,16 @@
               }
             },
             "interface_nets": {
-              "auto_pc_to_s00_couplers": {
-                "interface_ports": [
-                  "M_AXI",
-                  "auto_pc/M_AXI"
-                ]
-              },
               "s00_couplers_to_auto_pc": {
                 "interface_ports": [
                   "S_AXI",
                   "auto_pc/S_AXI"
+                ]
+              },
+              "auto_pc_to_s00_couplers": {
+                "interface_ports": [
+                  "M_AXI",
+                  "auto_pc/M_AXI"
                 ]
               }
             },
@@ -1891,40 +1879,25 @@
       }
     },
     "interface_nets": {
-      "processing_system7_0_GPIO_0": {
+      "axi_vdma_0_M_AXIS_MM2S": {
         "interface_ports": [
-          "GPIO_0_0",
-          "processing_system7_0/GPIO_0"
-        ]
+          "axi_vdma_0/M_AXIS_MM2S",
+          "v_axi4s_vid_out_0/video_in",
+          "system_ila_0/SLOT_0_AXIS"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
-      "processing_system7_0_DDR": {
+      "axi_vdma_0_M_AXI_MM2S": {
         "interface_ports": [
-          "DDR_0",
-          "processing_system7_0/DDR"
-        ]
-      },
-      "axi_vdma_0_M_AXI_S2MM": {
-        "interface_ports": [
-          "axi_vdma_0/M_AXI_S2MM",
-          "axi_interconnect_0/S01_AXI"
-        ]
-      },
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO_0",
-          "processing_system7_0/FIXED_IO"
-        ]
-      },
-      "processing_system7_0_IIC_0": {
-        "interface_ports": [
-          "IIC_0_0",
-          "processing_system7_0/IIC_0"
-        ]
-      },
-      "axi_interconnect_2_M00_AXI": {
-        "interface_ports": [
-          "axi_interconnect_2/M00_AXI",
-          "axi_vdma_0/S_AXI_LITE"
+          "axi_vdma_0/M_AXI_MM2S",
+          "axi_interconnect_0/S00_AXI"
         ]
       },
       "v_tc_0_vtiming_out": {
@@ -1942,18 +1915,6 @@
           }
         }
       },
-      "axi_vdma_0_M_AXI_MM2S": {
-        "interface_ports": [
-          "axi_vdma_0/M_AXI_MM2S",
-          "axi_interconnect_0/S00_AXI"
-        ]
-      },
-      "processing_system7_0_M_AXI_GP0": {
-        "interface_ports": [
-          "processing_system7_0/M_AXI_GP0",
-          "axi_interconnect_2/S00_AXI"
-        ]
-      },
       "v_vid_in_axi4s_0_video_out": {
         "interface_ports": [
           "v_vid_in_axi4s_0/video_out",
@@ -1969,26 +1930,53 @@
           }
         }
       },
+      "axi_interconnect_2_M00_AXI": {
+        "interface_ports": [
+          "axi_interconnect_2/M00_AXI",
+          "axi_vdma_0/S_AXI_LITE"
+        ]
+      },
+      "processing_system7_0_M_AXI_GP0": {
+        "interface_ports": [
+          "processing_system7_0/M_AXI_GP0",
+          "axi_interconnect_2/S00_AXI"
+        ]
+      },
       "axi_interconnect_0_M00_AXI": {
         "interface_ports": [
           "axi_interconnect_0/M00_AXI",
           "processing_system7_0/S_AXI_HP0"
         ]
       },
-      "axi_vdma_0_M_AXIS_MM2S": {
+      "processing_system7_0_IIC_0": {
         "interface_ports": [
-          "axi_vdma_0/M_AXIS_MM2S",
-          "v_axi4s_vid_out_0/video_in",
-          "system_ila_0/SLOT_0_AXIS"
-        ],
-        "hdl_attributes": {
-          "DEBUG": {
-            "value": "true"
-          },
-          "MARK_DEBUG": {
-            "value": "true"
-          }
-        }
+          "IIC_0_0",
+          "processing_system7_0/IIC_0"
+        ]
+      },
+      "processing_system7_0_DDR": {
+        "interface_ports": [
+          "DDR_0",
+          "processing_system7_0/DDR"
+        ]
+      },
+      "processing_system7_0_GPIO_0": {
+        "interface_ports": [
+          "GPIO_0_0",
+          "processing_system7_0/GPIO_0"
+        ]
+      },
+      "processing_system7_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO_0",
+          "processing_system7_0/FIXED_IO"
+        ]
+      },
+      "axi_vdma_0_M_AXI_S2MM": {
+        "interface_ports": [
+          "axi_vdma_0/M_AXI_S2MM",
+          "axi_interconnect_0/S01_AXI"
+        ]
       }
     },
     "nets": {
