@@ -26,7 +26,7 @@ module OVSensor_tp(
 	input cmos_vsync_i,	//cmos vsync
 	input cmos_href_i,	//cmos hsync refrence
 	input cmos_pclk_i,	//cmos pxiel clock
-	input[7:0]	cmos_data_i, //cmos data
+	input [7:0] cmos_data_i, //cmos data
 
 	output hs_o, //hs signal.
     output vs_o, //vs signal.

@@ -117,6 +117,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_1499 || ORIG
 # IP: bd/system/ip/system_system_ila_6_1/bd_0/ip/ip_0/bd_1499_ila_lib_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_1499_ila_lib_0 || ORIG_REF_NAME==bd_1499_ila_lib_0} -quiet] -quiet
 
+# IP: bd/system/ip/system_BlinkLED_0_0/system_BlinkLED_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_BlinkLED_0_0 || ORIG_REF_NAME==system_BlinkLED_0_0} -quiet] -quiet
+
 # IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0} -quiet] -quiet
 

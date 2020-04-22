@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Tue Apr 21 19:03:21 2020
+| Date         : Thu Apr 23 00:40:30 2020
 | Host         : LiuYangLaptop running 64-bit major release  (build 9200)
 | Command      : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
 | Design       : system_wrapper
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 10270 |     0 |     53200 | 19.30 |
-|   LUT as Logic             |  9245 |     0 |     53200 | 17.38 |
+| Slice LUTs*                | 10272 |     0 |     53200 | 19.31 |
+|   LUT as Logic             |  9247 |     0 |     53200 | 17.38 |
 |   LUT as Memory            |  1025 |     0 |     17400 |  5.89 |
 |     LUT as Distributed RAM |    18 |     0 |           |       |
 |     LUT as Shift Register  |  1007 |     0 |           |       |
-| Slice Registers            | 15815 |     0 |    106400 | 14.86 |
-|   Register as Flip Flop    | 15815 |     0 |    106400 | 14.86 |
+| Slice Registers            | 15816 |     0 |    106400 | 14.86 |
+|   Register as Flip Flop    | 15816 |     0 |    106400 | 14.86 |
 |   Register as Latch        |     0 |     0 |    106400 |  0.00 |
 | F7 Muxes                   |    23 |     0 |     26600 |  0.09 |
 | F8 Muxes                   |     0 |     0 |     13300 |  0.00 |
@@ -59,7 +59,7 @@ Table of Contents
 | 34    |          Yes |           - |          Set |
 | 69    |          Yes |           - |        Reset |
 | 309   |          Yes |         Set |            - |
-| 15403 |          Yes |       Reset |            - |
+| 15404 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -94,7 +94,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+--------+
 |          Site Type          | Used | Fixed | Available |  Util% |
 +-----------------------------+------+-------+-----------+--------+
-| Bonded IOB                  |   22 |     0 |       125 |  17.60 |
+| Bonded IOB                  |   26 |     0 |       125 |  20.80 |
 | Bonded IPADs                |    0 |     0 |         2 |   0.00 |
 | Bonded IOPADs               |  130 |     0 |       130 | 100.00 |
 | PHY_CONTROL                 |    0 |     0 |         4 |   0.00 |
@@ -151,14 +151,14 @@ Table of Contents
 +------------+-------+----------------------+
 |  Ref Name  |  Used |  Functional Category |
 +------------+-------+----------------------+
-| FDRE       | 15403 |         Flop & Latch |
+| FDRE       | 15404 |         Flop & Latch |
 | LUT6       |  3949 |                  LUT |
 | LUT3       |  1781 |                  LUT |
 | LUT5       |  1507 |                  LUT |
 | LUT4       |  1496 |                  LUT |
-| LUT2       |  1334 |                  LUT |
+| LUT2       |  1335 |                  LUT |
 | SRL16E     |   774 |   Distributed Memory |
-| LUT1       |   726 |                  LUT |
+| LUT1       |   727 |                  LUT |
 | SRLC32E    |   539 |   Distributed Memory |
 | CARRY4     |   395 |           CarryLogic |
 | FDSE       |   309 |         Flop & Latch |
@@ -167,18 +167,18 @@ Table of Contents
 | FDPE       |    34 |         Flop & Latch |
 | RAMD32     |    26 |   Distributed Memory |
 | MUXF7      |    23 |                MuxFx |
+| IBUF       |    16 |                   IO |
 | SRLC16E    |    14 |   Distributed Memory |
-| IBUF       |    13 |                   IO |
 | RAMB36E1   |    10 |         Block Memory |
 | RAMS32     |     8 |   Distributed Memory |
 | OSERDESE2  |     8 |                   IO |
 | OBUFDS     |     8 |                   IO |
 | RAMB18E1   |     6 |         Block Memory |
 | BUFG       |     6 |                Clock |
+| OBUFT      |     5 |                   IO |
 | INV        |     4 |                  LUT |
-| OBUFT      |     2 |                   IO |
+| OBUF       |     2 |                   IO |
 | PS7        |     1 | Specialized Resource |
-| OBUF       |     1 |                   IO |
 | MMCME2_ADV |     1 |                Clock |
 +------------+-------+----------------------+
 

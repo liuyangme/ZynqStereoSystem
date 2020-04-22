@@ -133,9 +133,9 @@ class processing_system7_v5_5_tlm : public sc_core::sc_module   {
     
     public:
     // Non-AXI ports are declared here
-    sc_core::sc_in<sc_dt::sc_bv<2> >  GPIO_I;
-    sc_core::sc_out<sc_dt::sc_bv<2> >  GPIO_O;
-    sc_core::sc_out<sc_dt::sc_bv<2> >  GPIO_T;
+    sc_core::sc_in<sc_dt::sc_bv<3> >  GPIO_I;
+    sc_core::sc_out<sc_dt::sc_bv<3> >  GPIO_O;
+    sc_core::sc_out<sc_dt::sc_bv<3> >  GPIO_T;
     sc_core::sc_in<bool> I2C0_SDA_I;
     sc_core::sc_out<bool> I2C0_SDA_O;
     sc_core::sc_out<bool> I2C0_SDA_T;
