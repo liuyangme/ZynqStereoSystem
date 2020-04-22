@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/ControlBoardTest/system.sim/sim_1/synth/func/xsim/xsim.dir/control_test_tb_func_synth/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Wed Apr 22 15:35:36 2020" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Wed Apr 22 23:23:36 2020" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2019.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2708876" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "aa562907-ebbf-43b7-b61f-c258b85c8d7c" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "f595b0b9696146a8adf86dacbe26e759" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "12" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "16" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-4200H CPU @ 2.80GHz" -context "user_environment"
@@ -25,9 +25,9 @@ webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key runall -value "true" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "140745645 ns" -context "xsim\\usage"
+webtalk_add_data -client xsim -key runtime -value "134484475 ns" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "2" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "522.08_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "15700_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 1208192683 -regid "" -xml E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/ControlBoardTest/system.sim/sim_1/synth/func/xsim/xsim.dir/control_test_tb_func_synth/webtalk/usage_statistics_ext_xsim.xml -html E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/ControlBoardTest/system.sim/sim_1/synth/func/xsim/xsim.dir/control_test_tb_func_synth/webtalk/usage_statistics_ext_xsim.html -wdm E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/ControlBoardTest/system.sim/sim_1/synth/func/xsim/xsim.dir/control_test_tb_func_synth/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "723.23_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "15824_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 1433102036 -regid "" -xml E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/ControlBoardTest/system.sim/sim_1/synth/func/xsim/xsim.dir/control_test_tb_func_synth/webtalk/usage_statistics_ext_xsim.xml -html E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/ControlBoardTest/system.sim/sim_1/synth/func/xsim/xsim.dir/control_test_tb_func_synth/webtalk/usage_statistics_ext_xsim.html -wdm E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/ControlBoardTest/system.sim/sim_1/synth/func/xsim/xsim.dir/control_test_tb_func_synth/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

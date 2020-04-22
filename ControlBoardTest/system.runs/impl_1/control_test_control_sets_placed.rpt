@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Apr 22 15:10:34 2020
+| Date         : Wed Apr 22 23:01:44 2020
 | Host         : LiuYangLaptop running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file control_test_control_sets_placed.rpt
 | Design       : control_test
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |     7 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    19 |
+| Unused register locations in slices containing registers |    18 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -40,8 +40,8 @@ Table of Contents
 |       Fanout       | Count |
 +--------------------+-------+
 | Total control sets |     7 |
-| >= 0 to < 4        |     1 |
-| >= 4 to < 6        |     0 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
 | >= 6 to < 8        |     2 |
 | >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     1 |
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              36 |           20 |
+| No           | No                    | No                     |               4 |            3 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              11 |            6 |
-| Yes          | No                    | No                     |              15 |            6 |
+| Yes          | No                    | No                     |              14 |            5 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              55 |           14 |
+| Yes          | Yes                   | No                     |              81 |           28 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -73,13 +73,13 @@ Table of Contents
 +------------------+----------------------------+----------------------------+------------------+----------------+
 |   Clock Signal   |        Enable Signal       |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
 +------------------+----------------------------+----------------------------+------------------+----------------+
-|  clk_i_IBUF_BUFG | timer_vessel_2[31]_i_2_n_0 |                            |                1 |              1 |
-|  clk_i_IBUF_BUFG | key_i_n_r                  |                            |                2 |              7 |
-|  clk_i_IBUF_BUFG | rst_n_IBUF                 |                            |                3 |              7 |
-|  clk_i_IBUF_BUFG |                            | p_0_in                     |                6 |             11 |
+|  clk_i_IBUF_BUFG |                            |                            |                3 |              4 |
+|  clk_i_IBUF_BUFG | key_i_n_r                  |                            |                3 |              7 |
+|  clk_i_IBUF_BUFG | rst_n_IBUF                 |                            |                2 |              7 |
+|  clk_i_IBUF_BUFG |                            | switchkey_i_n_r[3]_i_1_n_0 |                6 |             11 |
 |  clk_i_IBUF_BUFG | timer_vessel_3             | timer_vessel_3[24]_i_1_n_0 |                6 |             24 |
-|  clk_i_IBUF_BUFG | timer_vessel_2[31]_i_2_n_0 | timer_vessel_2[31]_i_1_n_0 |                8 |             31 |
-|  clk_i_IBUF_BUFG |                            |                            |               20 |             36 |
+|  clk_i_IBUF_BUFG | timer_vessel_1             | timer_vessel_1[24]_i_1_n_0 |                7 |             25 |
+|  clk_i_IBUF_BUFG | timer_vessel_2[31]_i_1_n_0 | switchkey_i_n_r[3]_i_1_n_0 |               15 |             32 |
 +------------------+----------------------------+----------------------------+------------------+----------------+
 
 

@@ -40,17 +40,17 @@ module control_test(
     begin
         if(!rst_n)
         begin
-            timer_vessel_1 = 32'd0;
-            led_o_r[0] = 1'b0;
+            timer_vessel_1 <= 32'd0;
+            led_o_r[0] <= 1'b1;
         end
         if(timer_vessel_1 == 32'd30_000_000) //300ms  仿真用3ms
         begin
-            timer_vessel_1 = 32'd0;
+            timer_vessel_1 <= 32'd0;
             led_o_r[0] <= ~led_o_r[0];
         end
         else if (timer_vessel_1 < 32'd30_000_000)
         begin
-            timer_vessel_1 = timer_vessel_1 + 32'd1;
+            timer_vessel_1 <= timer_vessel_1 + 32'd1;
         end
         else
         begin
@@ -83,80 +83,87 @@ module control_test(
 
     always @(posedge clk_i)
     begin
-        case(switchkey_i_n_r)
-            4'b0001:
-            begin
-                if(timer_vessel_2 == 32'd50_000_000) //500ms
+        if(!rst_n)
+        begin
+            timer_vessel_2 <= 32'd0;
+        end
+        else 
+        begin
+            case(switchkey_i_n_r)
+                4'b0001:
                 begin
-                    timer_vessel_2 = 32'd0;
-                    beep_o_r <= ~beep_o_r;
+                    if(timer_vessel_2 == 32'd50_000_000) //500ms
+                    begin
+                        timer_vessel_2 <= 32'd0;
+                        beep_o_r <= ~beep_o_r;
+                    end
+                    else if (timer_vessel_2 < 32'd50_000_000)
+                    begin
+                        timer_vessel_2 <= timer_vessel_2 + 32'd1;
+                    end
+                    else 
+                    begin
+                        timer_vessel_2 <= timer_vessel_2;
+                        beep_o_r <= beep_o_r;
+                    end
                 end
-                else if (timer_vessel_2 < 32'd50_000_000)
+                4'b0010:
                 begin
-                    timer_vessel_2 = timer_vessel_2 + 32'd1;
+                    if(timer_vessel_2 == 32'd80_000_000) //800ms
+                    begin
+                        timer_vessel_2 <= 32'd0;
+                        beep_o_r <= ~beep_o_r;
+                    end
+                    else if (timer_vessel_2 < 32'd80_000_000)
+                    begin
+                        timer_vessel_2 <= timer_vessel_2 + 32'd1;
+                    end
+                    else 
+                    begin
+                        timer_vessel_2 <= timer_vessel_2;
+                        beep_o_r <= beep_o_r;
+                    end
                 end
-                else 
+                4'b0100:
                 begin
-                    timer_vessel_2 <= timer_vessel_2;
-                    beep_o_r <= beep_o_r;
+                    if(timer_vessel_2 == 32'd120_000_000) //1200ms
+                    begin
+                        timer_vessel_2 <= 32'd0;
+                        beep_o_r <= ~beep_o_r;
+                    end
+                    else if (timer_vessel_2 < 32'd120_000_000)
+                    begin
+                        timer_vessel_2 <= timer_vessel_2 + 32'd1;
+                    end
+                    else 
+                    begin
+                        timer_vessel_2 <= timer_vessel_2;
+                        beep_o_r <= beep_o_r;
+                    end
                 end
-            end
-            4'b0010:
-            begin
-                if(timer_vessel_2 == 32'd80_000_000) //800ms
+                4'b1000:
                 begin
-                    timer_vessel_2 = 32'd0;
-                    beep_o_r <= ~beep_o_r;
-                end
-                else if (timer_vessel_2 < 32'd80_000_000)
+                    if(timer_vessel_2 == 32'd150_000_000) //1500ms
+                    begin
+                        timer_vessel_2 <= 32'd0;
+                        beep_o_r <= ~beep_o_r;
+                    end
+                    else if (timer_vessel_2 < 32'd150_000_000)
+                    begin
+                        timer_vessel_2 <= timer_vessel_2 + 32'd1;
+                    end
+                    else 
+                    begin
+                        timer_vessel_2 <= timer_vessel_2;
+                        beep_o_r <= beep_o_r;
+                    end
+                end 
+                default:
                 begin
-                    timer_vessel_2 = timer_vessel_2 + 32'd1;
+                    beep_o_r <= 1'b1;
                 end
-                else 
-                begin
-                    timer_vessel_2 <= timer_vessel_2;
-                    beep_o_r <= beep_o_r;
-                end
-            end
-            4'b0100:
-            begin
-                if(timer_vessel_2 == 32'd120_000_000) //1200ms
-                begin
-                    timer_vessel_2 = 32'd0;
-                    beep_o_r <= ~beep_o_r;
-                end
-                else if (timer_vessel_2 < 32'd120_000_000)
-                begin
-                    timer_vessel_2 = timer_vessel_2 + 32'd1;
-                end
-                else 
-                begin
-                    timer_vessel_2 <= timer_vessel_2;
-                    beep_o_r <= beep_o_r;
-                end
-            end
-            4'b1000:
-            begin
-                if(timer_vessel_2 == 32'd150_000_000) //1500ms
-                begin
-                    timer_vessel_2 = 32'd0;
-                    beep_o_r <= ~beep_o_r;
-                end
-                else if (timer_vessel_2 < 32'd150_000_000)
-                begin
-                    timer_vessel_2 = timer_vessel_2 + 32'd1;
-                end
-                else 
-                begin
-                    timer_vessel_2 <= timer_vessel_2;
-                    beep_o_r <= beep_o_r;
-                end
-            end 
-            default:
-            begin
-                beep_o_r = 1'b1;
-            end
-        endcase
+            endcase
+        end
     end
 
     assign beep_o = beep_o_r;
@@ -174,12 +181,12 @@ module control_test(
     begin
         if(timer_vessel_3 == 32'd20_000_000) //20ms 
         begin
-            timer_vessel_3 = 32'd0;
+            timer_vessel_3 <= 32'd0;
             key_i_n_r <= key_i_n;
         end
         else if (timer_vessel_3 < 32'd20_000_000)
         begin
-            timer_vessel_3 = timer_vessel_3 + 32'd1;
+            timer_vessel_3 <= timer_vessel_3 + 32'd1;
         end
         else 
         begin
