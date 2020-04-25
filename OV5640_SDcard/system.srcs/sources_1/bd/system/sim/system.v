@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Thu Apr 23 00:15:10 2020
+//Date        : Sat Apr 25 19:13:00 2020
 //Host        : LiuYangLaptop running 64-bit major release  (build 9200)
 //Command     : generate_target system.bd
 //Design      : system
@@ -1000,9 +1000,9 @@ module system
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO_0 PS_CLK" *) inout FIXED_IO_0_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO_0 PS_PORB" *) inout FIXED_IO_0_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO_0 PS_SRSTB" *) inout FIXED_IO_0_ps_srstb;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_I" *) input [2:0]GPIO_0_0_tri_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_O" *) output [2:0]GPIO_0_0_tri_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_T" *) output [2:0]GPIO_0_0_tri_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_I" *) input [3:0]GPIO_0_0_tri_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_O" *) output [3:0]GPIO_0_0_tri_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_T" *) output [3:0]GPIO_0_0_tri_t;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.HDMI_CLK_N_0 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.HDMI_CLK_N_0, CLK_DOMAIN system_HDMI_tx_0_0_HDMI_CLK_N, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) output HDMI_CLK_N_0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.HDMI_CLK_P_0 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.HDMI_CLK_P_0, CLK_DOMAIN system_HDMI_tx_0_0_HDMI_CLK_P, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) output HDMI_CLK_P_0;
   output HDMI_D0_N_0;
@@ -1161,9 +1161,9 @@ module system
   wire processing_system7_0_FIXED_IO_PS_CLK;
   wire processing_system7_0_FIXED_IO_PS_PORB;
   wire processing_system7_0_FIXED_IO_PS_SRSTB;
-  wire [2:0]processing_system7_0_GPIO_0_TRI_I;
-  wire [2:0]processing_system7_0_GPIO_0_TRI_O;
-  wire [2:0]processing_system7_0_GPIO_0_TRI_T;
+  wire [3:0]processing_system7_0_GPIO_0_TRI_I;
+  wire [3:0]processing_system7_0_GPIO_0_TRI_O;
+  wire [3:0]processing_system7_0_GPIO_0_TRI_T;
   wire processing_system7_0_IIC_0_SCL_I;
   wire processing_system7_0_IIC_0_SCL_O;
   wire processing_system7_0_IIC_0_SCL_T;
@@ -1227,8 +1227,8 @@ module system
   (* CONN_BUS_INFO = "v_vid_in_axi4s_0_video_out xilinx.com:interface:axis:1.0 None TVALID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire v_vid_in_axi4s_0_video_out_TVALID;
   wire [2:0]xlconstant_0_dout;
 
-  assign GPIO_0_0_tri_o[2:0] = processing_system7_0_GPIO_0_TRI_O;
-  assign GPIO_0_0_tri_t[2:0] = processing_system7_0_GPIO_0_TRI_T;
+  assign GPIO_0_0_tri_o[3:0] = processing_system7_0_GPIO_0_TRI_O;
+  assign GPIO_0_0_tri_t[3:0] = processing_system7_0_GPIO_0_TRI_T;
   assign HDMI_CLK_N_0 = HDMI_tx_0_HDMI_CLK_N;
   assign HDMI_CLK_P_0 = HDMI_tx_0_HDMI_CLK_P;
   assign HDMI_D0_N_0 = HDMI_tx_0_HDMI_D0_N;
@@ -1247,7 +1247,7 @@ module system
   assign cmos_pclk_i_0_1 = cmos_pclk_i_0;
   assign cmos_vsync_i_0_1 = cmos_vsync_i_0;
   assign cmos_xclk_o_0 = OVSensor_0_cmos_xclk_o;
-  assign processing_system7_0_GPIO_0_TRI_I = GPIO_0_0_tri_i[2:0];
+  assign processing_system7_0_GPIO_0_TRI_I = GPIO_0_0_tri_i[3:0];
   assign processing_system7_0_IIC_0_SCL_I = IIC_0_0_scl_i;
   assign processing_system7_0_IIC_0_SDA_I = IIC_0_0_sda_i;
   system_BlinkLED_0_0 BlinkLED_0

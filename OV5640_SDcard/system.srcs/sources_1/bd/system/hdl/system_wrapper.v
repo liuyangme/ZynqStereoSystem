@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Thu Apr 23 00:15:10 2020
+//Date        : Sat Apr 25 19:13:00 2020
 //Host        : LiuYangLaptop running 64-bit major release  (build 9200)
 //Command     : generate_target system_wrapper.bd
 //Design      : system_wrapper
@@ -69,7 +69,7 @@ module system_wrapper
   inout FIXED_IO_0_ps_clk;
   inout FIXED_IO_0_ps_porb;
   inout FIXED_IO_0_ps_srstb;
-  inout [2:0]GPIO_0_0_tri_io;
+  inout [3:0]GPIO_0_0_tri_io;
   output HDMI_CLK_N_0;
   output HDMI_CLK_P_0;
   output HDMI_D0_N_0;
@@ -111,15 +111,19 @@ module system_wrapper
   wire [0:0]GPIO_0_0_tri_i_0;
   wire [1:1]GPIO_0_0_tri_i_1;
   wire [2:2]GPIO_0_0_tri_i_2;
+  wire [3:3]GPIO_0_0_tri_i_3;
   wire [0:0]GPIO_0_0_tri_io_0;
   wire [1:1]GPIO_0_0_tri_io_1;
   wire [2:2]GPIO_0_0_tri_io_2;
+  wire [3:3]GPIO_0_0_tri_io_3;
   wire [0:0]GPIO_0_0_tri_o_0;
   wire [1:1]GPIO_0_0_tri_o_1;
   wire [2:2]GPIO_0_0_tri_o_2;
+  wire [3:3]GPIO_0_0_tri_o_3;
   wire [0:0]GPIO_0_0_tri_t_0;
   wire [1:1]GPIO_0_0_tri_t_1;
   wire [2:2]GPIO_0_0_tri_t_2;
+  wire [3:3]GPIO_0_0_tri_t_3;
   wire HDMI_CLK_N_0;
   wire HDMI_CLK_P_0;
   wire HDMI_D0_N_0;
@@ -158,6 +162,11 @@ module system_wrapper
         .IO(GPIO_0_0_tri_io[2]),
         .O(GPIO_0_0_tri_i_2),
         .T(GPIO_0_0_tri_t_2));
+  IOBUF GPIO_0_0_tri_iobuf_3
+       (.I(GPIO_0_0_tri_o_3),
+        .IO(GPIO_0_0_tri_io[3]),
+        .O(GPIO_0_0_tri_i_3),
+        .T(GPIO_0_0_tri_t_3));
   IOBUF IIC_0_0_scl_iobuf
        (.I(IIC_0_0_scl_o),
         .IO(IIC_0_0_scl_io),
@@ -190,9 +199,9 @@ module system_wrapper
         .FIXED_IO_0_ps_clk(FIXED_IO_0_ps_clk),
         .FIXED_IO_0_ps_porb(FIXED_IO_0_ps_porb),
         .FIXED_IO_0_ps_srstb(FIXED_IO_0_ps_srstb),
-        .GPIO_0_0_tri_i({GPIO_0_0_tri_i_2,GPIO_0_0_tri_i_1,GPIO_0_0_tri_i_0}),
-        .GPIO_0_0_tri_o({GPIO_0_0_tri_o_2,GPIO_0_0_tri_o_1,GPIO_0_0_tri_o_0}),
-        .GPIO_0_0_tri_t({GPIO_0_0_tri_t_2,GPIO_0_0_tri_t_1,GPIO_0_0_tri_t_0}),
+        .GPIO_0_0_tri_i({GPIO_0_0_tri_i_3,GPIO_0_0_tri_i_2,GPIO_0_0_tri_i_1,GPIO_0_0_tri_i_0}),
+        .GPIO_0_0_tri_o({GPIO_0_0_tri_o_3,GPIO_0_0_tri_o_2,GPIO_0_0_tri_o_1,GPIO_0_0_tri_o_0}),
+        .GPIO_0_0_tri_t({GPIO_0_0_tri_t_3,GPIO_0_0_tri_t_2,GPIO_0_0_tri_t_1,GPIO_0_0_tri_t_0}),
         .HDMI_CLK_N_0(HDMI_CLK_N_0),
         .HDMI_CLK_P_0(HDMI_CLK_P_0),
         .HDMI_D0_N_0(HDMI_D0_N_0),

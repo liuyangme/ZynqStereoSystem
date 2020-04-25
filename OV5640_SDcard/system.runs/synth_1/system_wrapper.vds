@@ -2,31 +2,30 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Thu Apr 23 00:25:23 2020
-# Process ID: 8528
+# Start of session at: Sat Apr 25 19:16:06 2020
+# Process ID: 21512
 # Current directory: E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/OV5640_SDcard/system.runs/synth_1
 # Command line: vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
 # Log file: E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/OV5640_SDcard/system.runs/synth_1/system_wrapper.vds
 # Journal file: E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/OV5640_SDcard/system.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source system_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 439.578 ; gain = 157.113
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Repository/MyIPcoreLib/FPGA-IPcore-Library'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
 WARNING: [IP_Flow 19-1663] Duplicate IP found for 'Arm.com:user:DAPLink_to_Arty_shield:1.0'. The one found in IP location 'e:/Repository/MyIPcoreLib/FPGA-IPcore-Library/CortexM1/AT472-BU-98000-r0p1-00rel0/AT472-BU-98000-r0p1-00rel0/vivado/Arm_ipi_repository/DAPLink_to_Arty_shield' will take precedence over the same IP in location e:/Repository/MyIPcoreLib/FPGA-IPcore-Library/CortexM3/AT426-BU-98000-r0p1-00rel0/AT426-BU-98000-r0p1-00rel0/vivado/Arm_ipi_repository/DAPLink_to_Arty_shield
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is e:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/OV5640_SDcard/system.cache/ip 
-add_files: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 586.008 ; gain = 121.602
+add_files: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 585.516 ; gain = 121.652
 Command: synth_design -top system_wrapper -part xc7z020clg400-2
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15744 
+INFO: Helper process launched with PID 19328 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1163.375 ; gain = 274.477
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1162.480 ; gain = 275.031
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'system_wrapper' [E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/OV5640_SDcard/system.srcs/sources_1/bd/system/hdl/system_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196]
@@ -5046,7 +5045,7 @@ WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'system_proc_sys_r
 	Parameter C_FCLK_CLK1_BUF bound to: TRUE - type: string 
 	Parameter C_FCLK_CLK2_BUF bound to: FALSE - type: string 
 	Parameter C_FCLK_CLK3_BUF bound to: FALSE - type: string 
-	Parameter C_EMIO_GPIO_WIDTH bound to: 3 - type: integer 
+	Parameter C_EMIO_GPIO_WIDTH bound to: 4 - type: integer 
 	Parameter C_INCLUDE_TRACE_BUFFER bound to: 0 - type: integer 
 	Parameter C_TRACE_BUFFER_FIFO_SIZE bound to: 128 - type: integer 
 	Parameter C_TRACE_BUFFER_CLOCK_DELAY bound to: 12 - type: integer 
@@ -7079,7 +7078,7 @@ WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1active_st
 WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1active_start[10]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:05:48 ; elapsed = 00:06:24 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished RTL Elaboration : Time (s): cpu = 00:04:37 ; elapsed = 00:04:47 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -7092,13 +7091,13 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:05:52 ; elapsed = 00:06:29 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:41 ; elapsed = 00:04:51 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:05:52 ; elapsed = 00:06:29 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:41 ; elapsed = 00:04:51 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2041.184 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 789 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2040.281 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 790 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -7218,26 +7217,26 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2041.184 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 2040.281 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 650 instances were transformed.
+  A total of 651 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 320 instances
   CFGLUT5 => SRLC32E: 50 instances
   FDR => FDRE: 270 instances
-  IOBUF => IOBUF (IBUF, OBUFT): 5 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 6 instances
   OBUFDS => OBUFDS: 4 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2041.184 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2040.281 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:06:53 ; elapsed = 00:07:33 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished Constraint Validation : Time (s): cpu = 00:05:59 ; elapsed = 00:06:32 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:06:53 ; elapsed = 00:07:33 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished Loading Part and Timing Information : Time (s): cpu = 00:05:59 ; elapsed = 00:06:32 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -7324,7 +7323,7 @@ Applied set_property DONT_TOUCH = true for system_i/axi_vdma_0/U0/I_PRMRY_DATAMO
 Applied set_property DONT_TOUCH = true for system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /I_DATA_FIFO/\BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /I_XD_FIFO/\NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:06:56 ; elapsed = 00:07:37 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:06:02 ; elapsed = 00:06:35 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/OV5640_SDcard/system.srcs/sources_1/bd/system/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:823]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/OV5640_SDcard/system.srcs/sources_1/bd/system/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:763]
@@ -7793,7 +7792,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized4'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:07:24 ; elapsed = 00:08:09 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:06:30 ; elapsed = 00:07:07 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -7805,7 +7804,7 @@ Report RTL Partitions:
 |1     |SerializerN_1__GC0              |           1|         3|
 |2     |DVITransmitter__GC0             |           1|      1821|
 |3     |system_clk_wiz_0_0_clk_wiz__GC0 |           1|         4|
-|4     |system__GCB0                    |           1|     31254|
+|4     |system__GCB0                    |           1|     31255|
 |5     |system__GCB1                    |           1|     11881|
 |6     |system__GCB2                    |           1|     20534|
 |7     |system__GCB3                    |           1|      7813|
@@ -15082,7 +15081,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (system_i/
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (system_i/i_1/system_ila_0/inst/ila_lib/inst/\ila_core_inst/u_ila_regs/shift_reg0_reg[1019] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:11:17 ; elapsed = 00:12:15 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:09:42 ; elapsed = 00:10:25 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -15126,7 +15125,7 @@ Report RTL Partitions:
 |1     |SerializerN_1__GC0              |           3|         3|
 |2     |DVITransmitter__GC0             |           1|       831|
 |3     |system_clk_wiz_0_0_clk_wiz__GC0 |           1|         4|
-|4     |system__GCB0                    |           1|     20228|
+|4     |system__GCB0                    |           1|     20229|
 |5     |system__GCB1                    |           1|      6264|
 |6     |system__GCB2                    |           1|     10417|
 |7     |system__GCB3                    |           1|      3704|
@@ -15139,7 +15138,7 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/clk_wiz_0/inst/clk_in1' to pin 'processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:12:10 ; elapsed = 00:13:08 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:10:50 ; elapsed = 00:11:39 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -15147,7 +15146,7 @@ Start Timing Optimization
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:12:14 ; elapsed = 00:13:12 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished Timing Optimization : Time (s): cpu = 00:10:55 ; elapsed = 00:11:46 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -15187,7 +15186,7 @@ Report RTL Partitions:
 |1     |SerializerN_1__GC0              |           3|         3|
 |2     |DVITransmitter__GC0             |           1|       831|
 |3     |system_clk_wiz_0_0_clk_wiz__GC0 |           1|         4|
-|4     |system__GCB0                    |           1|     20228|
+|4     |system__GCB0                    |           1|     20229|
 |5     |system__GCB1                    |           1|      6264|
 |6     |system__GCB2                    |           1|     10417|
 |7     |system__GCB3                    |           1|      3704|
@@ -15198,7 +15197,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:12:33 ; elapsed = 00:13:32 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished Technology Mapping : Time (s): cpu = 00:11:18 ; elapsed = 00:12:11 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -15428,13 +15427,13 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1755]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:12:41 ; elapsed = 00:13:40 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished IO Insertion : Time (s): cpu = 00:11:26 ; elapsed = 00:12:20 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:12:41 ; elapsed = 00:13:40 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished Renaming Generated Instances : Time (s): cpu = 00:11:26 ; elapsed = 00:12:20 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -15453,25 +15452,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:12:45 ; elapsed = 00:13:44 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:11:31 ; elapsed = 00:12:24 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:12:46 ; elapsed = 00:13:45 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished Renaming Generated Ports : Time (s): cpu = 00:11:31 ; elapsed = 00:12:24 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:12:47 ; elapsed = 00:13:46 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished Handling Custom Attributes : Time (s): cpu = 00:11:32 ; elapsed = 00:12:25 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:12:47 ; elapsed = 00:13:46 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished Renaming Generated Nets : Time (s): cpu = 00:11:32 ; elapsed = 00:12:25 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -15536,7 +15535,7 @@ Report Cell Usage:
 |2     |BUFG        |     6|
 |3     |CARRY4      |   395|
 |4     |CFGLUT5     |   370|
-|5     |LUT1        |   727|
+|5     |LUT1        |   728|
 |6     |LUT2        |  1335|
 |7     |LUT3        |  1781|
 |8     |LUT4        |  1496|
@@ -15565,7 +15564,7 @@ Report Cell Usage:
 |31    |FDRE        | 15208|
 |32    |FDSE        |   309|
 |33    |IBUF        |    12|
-|34    |IOBUF       |     5|
+|34    |IOBUF       |     6|
 |35    |OBUF        |     2|
 |36    |OBUFDS      |     4|
 +------+------------+------+
@@ -15574,8 +15573,8 @@ Report Instance Areas:
 +------+--------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------+
 |      |Instance                                                                                                |Module                                                                           |Cells |
 +------+--------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------+
-|1     |top                                                                                                     |                                                                                 | 28226|
-|2     |  system_i                                                                                              |system                                                                           | 28207|
+|1     |top                                                                                                     |                                                                                 | 28228|
+|2     |  system_i                                                                                              |system                                                                           | 28208|
 |3     |    HDMI_tx_0                                                                                           |system_HDMI_tx_0_0                                                               |   346|
 |4     |      U0                                                                                                |HDMI_FPGA                                                                        |   346|
 |5     |        Inst_DVITransmitter                                                                             |DVITransmitter                                                                   |   346|
@@ -15931,8 +15930,8 @@ Report Instance Areas:
 |355   |          \ACTIVE_LOW_EXT.ACT_LO_EXT                                                                    |cdc_sync__parameterized3_680                                                     |     6|
 |356   |        SEQ                                                                                             |sequence_psr                                                                     |    38|
 |357   |          SEQ_COUNTER                                                                                   |upcnt_n                                                                          |    13|
-|358   |    processing_system7_0                                                                                |system_processing_system7_0_0                                                    |   184|
-|359   |      inst                                                                                              |processing_system7_v5_5_processing_system7                                       |   184|
+|358   |    processing_system7_0                                                                                |system_processing_system7_0_0                                                    |   185|
+|359   |      inst                                                                                              |processing_system7_v5_5_processing_system7                                       |   185|
 |360   |    xlconstant_0                                                                                        |system_xlconstant_0_0                                                            |     0|
 |361   |    v_vid_in_axi4s_0                                                                                    |system_v_vid_in_axi4s_0_0                                                        |   799|
 |362   |      inst                                                                                              |v_vid_in_axi4s_v4_0_9                                                            |   799|
@@ -16839,14 +16838,14 @@ Report Instance Areas:
 |1263  |              xsdb_memory_read_inst                                                                     |ltlib_v1_0_0_generic_memrd__parameterized1                                       |    55|
 +------+--------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:12:47 ; elapsed = 00:13:46 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Finished Writing Synthesis Report : Time (s): cpu = 00:11:32 ; elapsed = 00:12:26 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 819 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:06:02 ; elapsed = 00:12:52 . Memory (MB): peak = 2041.184 ; gain = 1152.285
-Synthesis Optimization Complete : Time (s): cpu = 00:12:47 ; elapsed = 00:13:46 . Memory (MB): peak = 2041.184 ; gain = 1152.285
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:44 ; elapsed = 00:11:04 . Memory (MB): peak = 2040.281 ; gain = 1152.832
+Synthesis Optimization Complete : Time (s): cpu = 00:11:32 ; elapsed = 00:12:26 . Memory (MB): peak = 2040.281 ; gain = 1152.832
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2041.184 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1016 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2040.281 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1017 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. system_i/clk_wiz_0/inst/clkin1_ibufg 
@@ -16859,13 +16858,13 @@ INFO: [Chipscope 16-324] Core: system_i/system_ila_4/inst/ila_lib UUID: b8c751a1
 INFO: [Chipscope 16-324] Core: system_i/system_ila_5/inst/ila_lib UUID: eff8f3ab-4e0e-5cd2-b63c-9fd42fe8867b 
 INFO: [Chipscope 16-324] Core: system_i/system_ila_6/inst/ila_lib UUID: fc9612b7-12c9-55b0-874a-45a20940143e 
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2041.184 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2040.281 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 581 instances were transformed.
+  A total of 582 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 320 instances
   CFGLUT5 => SRLC32E: 50 instances
   FDR => FDRE: 196 instances
-  IOBUF => IOBUF (IBUF, OBUFT): 5 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 6 instances
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
   RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
@@ -16874,11 +16873,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 1296 Infos, 542 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:13:15 ; elapsed = 00:14:16 . Memory (MB): peak = 2041.184 ; gain = 1455.176
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2041.184 ; gain = 0.000
+synth_design: Time (s): cpu = 00:12:01 ; elapsed = 00:12:55 . Memory (MB): peak = 2040.281 ; gain = 1454.766
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2040.281 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/OV5640_SDcard/system.runs/synth_1/system_wrapper.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2041.184 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2040.281 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 23 00:40:30 2020...
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 25 19:29:37 2020...
