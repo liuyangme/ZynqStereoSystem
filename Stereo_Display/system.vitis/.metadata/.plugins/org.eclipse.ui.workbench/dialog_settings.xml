@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="445" key="DIALOG_X_ORIGIN"/>
+		<item value="449" key="DIALOG_X_ORIGIN"/>
 		<item value="159" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
@@ -20,7 +20,7 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
-			<item value="C:\Users\LiuYang\Desktop"/>
+			<item value="E:\Project\Personal\StereoVision\Project_FPGA\Stereo-Display-ZYNQ\OV5640_Display\system.vitis\ov5640_display\src"/>
 		</list>
 	</section>
 </section>

@@ -98,7 +98,7 @@ extern unsigned long  * ps7_peripherals_init_data;
 #define USB0_FREQ  60000000
 #define USB1_FREQ  60000000
 #define SDIO_FREQ  10000000
-#define UART_FREQ  10000000
+#define UART_FREQ  100000000
 #define SPI_FREQ  10000000
 #define I2C_FREQ  112500000
 #define WDT_FREQ  112500000

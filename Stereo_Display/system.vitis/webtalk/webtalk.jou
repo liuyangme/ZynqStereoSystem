@@ -2,11 +2,11 @@
 # Webtalk v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # 
-# Start of session at: Wed Apr 22 21:06:56 2020
-# Process ID: 4088
-# Current directory: E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/OV5640_Display/system.vitis/webtalk
+# Start of session at: Sun Apr 26 20:40:42 2020
+# Process ID: 21384
+# Current directory: E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/Stereo_Display/system.vitis/webtalk
 # Command line: wbtcv.exe -mode batch -source vitis_webtalk.tcl
-# Log file: E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/OV5640_Display/system.vitis/webtalk/webtalk.log
-# Journal file: E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/OV5640_Display/system.vitis/webtalk\webtalk.jou
+# Log file: E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/Stereo_Display/system.vitis/webtalk/webtalk.log
+# Journal file: E:/Project/Personal/StereoVision/Project_FPGA/Stereo-Display-ZYNQ/Stereo_Display/system.vitis/webtalk\webtalk.jou
 #-----------------------------------------------------------
 source vitis_webtalk.tcl
