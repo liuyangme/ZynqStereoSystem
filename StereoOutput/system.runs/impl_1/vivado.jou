@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Sep  1 15:38:25 2020
+# Process ID: 8196
+# Current directory: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/StereoOutput/system.runs/impl_1
+# Command line: vivado.exe -log system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
+# Log file: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/StereoOutput/system.runs/impl_1/system_wrapper.vdi
+# Journal file: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/StereoOutput/system.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace
