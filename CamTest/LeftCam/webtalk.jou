@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Dec 23 15:09:34 2016
+# Process ID: 61852
+# Current directory: D:/MIZ_SOC/SEASON_03/CH06_AXI_VDMA_OV7725/Miz_sys
+# Command line: wbtcv.exe -mode batch -source d:/miz_soc/season_03/ch06_axi_vdma_ov7725/rgb2dvi_v1_2_project/rgb2dvi_v1_2_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: D:/MIZ_SOC/SEASON_03/CH06_AXI_VDMA_OV7725/Miz_sys/webtalk.log
+# Journal file: D:/MIZ_SOC/SEASON_03/CH06_AXI_VDMA_OV7725/Miz_sys\webtalk.jou
+#-----------------------------------------------------------
+source d:/miz_soc/season_03/ch06_axi_vdma_ov7725/rgb2dvi_v1_2_project/rgb2dvi_v1_2_project.hw/webtalk/labtool_webtalk.tcl -notrace

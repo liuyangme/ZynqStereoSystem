@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# 
+# Start of session at: Tue Dec 27 19:17:09 2016
+# Process ID: 27854
+# Current directory: /mnt/workspace/MIZ702N_1/Miz_sys/Miz_sys.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /mnt/workspace/MIZ702N_1/Miz_sys/Miz_sys.sdk/webtalk/webtalk.log
+# Journal file: /mnt/workspace/MIZ702N_1/Miz_sys/Miz_sys.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
