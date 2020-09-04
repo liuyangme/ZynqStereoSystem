@@ -12,3 +12,4 @@ targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG
 ps7_init
 ps7_post_config
 configparams force-mem-access 0
+bpadd -addr &main

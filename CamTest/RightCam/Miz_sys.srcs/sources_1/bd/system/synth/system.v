@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Thu Sep  3 18:50:39 2020
+//Date        : Fri Sep  4 16:47:49 2020
 //Host        : DESKTOP-AT0HPRF running 64-bit major release  (build 9200)
 //Command     : generate_target system.bd
 //Design      : system
@@ -933,7 +933,7 @@ module s01_couplers_imp_VQ497S
   assign s01_couplers_to_s01_couplers_WVALID = S_AXI_wvalid;
 endmodule
 
-(* CORE_GENERATION_INFO = "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=20,numReposBlks=14,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=12,da_board_cnt=2,da_ps7_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "system.hwdef" *) 
+(* CORE_GENERATION_INFO = "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=24,numReposBlks=18,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=12,da_board_cnt=2,da_clkrst_cnt=3,da_ps7_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "system.hwdef" *) 
 module system
    (DDR_addr,
     DDR_ba,
@@ -1019,10 +1019,10 @@ module system
   wire HDMI_tx_0_HDMI_D2_N;
   wire HDMI_tx_0_HDMI_D2_P;
   wire OVSensor_0_cmos_xclk_o;
-  wire [23:0]OVSensor_0_rgb_o;
-  wire OVSensor_0_vid_clk_ce;
-  wire OVSensor_0_vs_o;
-  wire OV_Sensor_ML_0_hs_o;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [23:0]OVSensor_0_rgb_o;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire OVSensor_0_vid_clk_ce;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire OVSensor_0_vs_o;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire OV_Sensor_ML_0_hs_o;
   wire [31:0]axi_mem_intercon_M00_AXI_ARADDR;
   wire [1:0]axi_mem_intercon_M00_AXI_ARBURST;
   wire [3:0]axi_mem_intercon_M00_AXI_ARCACHE;
@@ -1061,11 +1061,12 @@ module system
   wire axi_mem_intercon_M00_AXI_WREADY;
   wire [7:0]axi_mem_intercon_M00_AXI_WSTRB;
   wire axi_mem_intercon_M00_AXI_WVALID;
-  wire [23:0]axi_vdma_0_M_AXIS_MM2S_TDATA;
-  wire axi_vdma_0_M_AXIS_MM2S_TLAST;
-  wire axi_vdma_0_M_AXIS_MM2S_TREADY;
-  wire [0:0]axi_vdma_0_M_AXIS_MM2S_TUSER;
-  wire axi_vdma_0_M_AXIS_MM2S_TVALID;
+  (* CONN_BUS_INFO = "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TDATA" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [23:0]axi_vdma_0_M_AXIS_MM2S_TDATA;
+  (* CONN_BUS_INFO = "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TKEEP" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [2:0]axi_vdma_0_M_AXIS_MM2S_TKEEP;
+  (* CONN_BUS_INFO = "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TLAST" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_vdma_0_M_AXIS_MM2S_TLAST;
+  (* CONN_BUS_INFO = "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TREADY" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_vdma_0_M_AXIS_MM2S_TREADY;
+  (* CONN_BUS_INFO = "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TUSER" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [0:0]axi_vdma_0_M_AXIS_MM2S_TUSER;
+  (* CONN_BUS_INFO = "axi_vdma_0_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TVALID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_vdma_0_M_AXIS_MM2S_TVALID;
   wire [31:0]axi_vdma_0_M_AXI_MM2S_ARADDR;
   wire [1:0]axi_vdma_0_M_AXI_MM2S_ARBURST;
   wire [3:0]axi_vdma_0_M_AXI_MM2S_ARCACHE;
@@ -1099,7 +1100,7 @@ module system
   wire clk_wiz_0_clk_out2;
   wire clk_wiz_0_clk_out3;
   wire clk_wiz_0_locked;
-  wire [7:0]cmos_data_i_1;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [7:0]cmos_data_i_1;
   wire cmos_href_i_1;
   wire cmos_pclk_i_1;
   wire cmos_vsync_i_1;
@@ -1188,7 +1189,7 @@ module system
   wire [0:0]rst_processing_system7_0_50M_peripheral_aresetn;
   (* DEBUG_IN_BD = "true" *) (* MARK_DEBUG *) wire [0:0]util_vector_logic_0_Res;
   wire v_axi4s_vid_out_0_vid_active_video;
-  wire [23:0]v_axi4s_vid_out_0_vid_data;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [23:0]v_axi4s_vid_out_0_vid_data;
   wire v_axi4s_vid_out_0_vid_hsync;
   wire v_axi4s_vid_out_0_vid_vsync;
   wire v_axi4s_vid_out_0_vtg_ce;
@@ -1359,6 +1360,7 @@ module system
         .m_axi_s2mm_wvalid(axi_vdma_0_M_AXI_S2MM_WVALID),
         .m_axis_mm2s_aclk(processing_system7_0_FCLK_CLK0),
         .m_axis_mm2s_tdata(axi_vdma_0_M_AXIS_MM2S_TDATA),
+        .m_axis_mm2s_tkeep(axi_vdma_0_M_AXIS_MM2S_TKEEP),
         .m_axis_mm2s_tlast(axi_vdma_0_M_AXIS_MM2S_TLAST),
         .m_axis_mm2s_tready(axi_vdma_0_M_AXIS_MM2S_TREADY),
         .m_axis_mm2s_tuser(axi_vdma_0_M_AXIS_MM2S_TUSER),
@@ -1573,6 +1575,27 @@ module system
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_processing_system7_0_50M_peripheral_aresetn),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
+  system_system_ila_0_0 system_ila_0
+       (.SLOT_0_AXIS_tdata(axi_vdma_0_M_AXIS_MM2S_TDATA),
+        .SLOT_0_AXIS_tkeep(axi_vdma_0_M_AXIS_MM2S_TKEEP),
+        .SLOT_0_AXIS_tlast(axi_vdma_0_M_AXIS_MM2S_TLAST),
+        .SLOT_0_AXIS_tready(axi_vdma_0_M_AXIS_MM2S_TREADY),
+        .SLOT_0_AXIS_tuser(axi_vdma_0_M_AXIS_MM2S_TUSER),
+        .SLOT_0_AXIS_tvalid(axi_vdma_0_M_AXIS_MM2S_TVALID),
+        .clk(processing_system7_0_FCLK_CLK0),
+        .resetn(rst_processing_system7_0_50M_peripheral_aresetn));
+  system_system_ila_1_0 system_ila_1
+       (.clk(processing_system7_0_FCLK_CLK0),
+        .probe0(v_axi4s_vid_out_0_vid_data));
+  system_system_ila_2_0 system_ila_2
+       (.clk(processing_system7_0_FCLK_CLK0),
+        .probe0(OV_Sensor_ML_0_hs_o),
+        .probe1(OVSensor_0_vs_o),
+        .probe2(OVSensor_0_rgb_o),
+        .probe3(OVSensor_0_vid_clk_ce));
+  system_system_ila_3_0 system_ila_3
+       (.clk(processing_system7_0_FCLK_CLK0),
+        .probe0(cmos_data_i_1));
   system_util_vector_logic_0_0 util_vector_logic_0
        (.Op1(clk_wiz_0_locked),
         .Res(util_vector_logic_0_Res));

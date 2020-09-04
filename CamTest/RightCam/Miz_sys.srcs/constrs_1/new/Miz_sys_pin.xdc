@@ -69,3 +69,42 @@ set_property PACKAGE_PIN R19 [get_ports HDMI_HPD]
 #set_property SEVERITY {Warning} [get_drc_checks UCIO-1]
 
 
+
+create_debug_core u_ila_0 ila
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list system_i/processing_system7_0/inst/FCLK_CLK0]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+set_property port_width 24 [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {system_i/v_vid_in_axi4s_0_video_out_TDATA[0]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[1]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[2]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[3]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[4]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[5]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[6]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[7]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[8]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[9]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[10]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[11]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[12]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[13]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[14]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[15]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[16]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[17]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[18]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[19]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[20]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[21]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[22]} {system_i/v_vid_in_axi4s_0_video_out_TDATA[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list system_i/util_vector_logic_0_Res]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+set_property port_width 1 [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list system_i/v_vid_in_axi4s_0_video_out_TLAST]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list system_i/v_vid_in_axi4s_0_video_out_TREADY]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list system_i/v_vid_in_axi4s_0_video_out_TUSER]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list system_i/v_vid_in_axi4s_0_video_out_TVALID]]
+set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
+set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
+set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
+connect_debug_port dbg_hub/clk [get_nets clk]

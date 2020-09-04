@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="system" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1599130279"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1599130279"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1599130279"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1599130279"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1599209330"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1599209330"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1599209330"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1599209330"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\system_processing_system7_0_0\system_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -103,6 +103,22 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
+      <File Name="ip\system_OVSensor_0_0\system_OVSensor_0_0.xci" Type="IP">
+        <Instance HierarchyPath="OVSensor_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\system_HDMI_tx_0_0\system_HDMI_tx_0_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_tx_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
       <File Name="ip\system_auto_pc_0\system_auto_pc_0.xci" Type="IP">
         <Instance HierarchyPath="axi_mem_intercon/m00_couplers/auto_pc"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
@@ -119,16 +135,32 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\system_OVSensor_0_0\system_OVSensor_0_0.xci" Type="IP">
-        <Instance HierarchyPath="OVSensor_0"/>
+      <File Name="ip\system_system_ila_0_0\system_system_ila_0_0.xci" Type="IP">
+        <Instance HierarchyPath="system_ila_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\system_HDMI_tx_0_0\system_HDMI_tx_0_0.xci" Type="IP">
-        <Instance HierarchyPath="HDMI_tx_0"/>
+      <File Name="ip\system_system_ila_1_0\system_system_ila_1_0.xci" Type="IP">
+        <Instance HierarchyPath="system_ila_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\system_system_ila_2_0\system_system_ila_2_0.xci" Type="IP">
+        <Instance HierarchyPath="system_ila_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\system_system_ila_3_0\system_system_ila_3_0.xci" Type="IP">
+        <Instance HierarchyPath="system_ila_3"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

@@ -32,7 +32,11 @@
       "v_vid_in_axi4s_0": "",
       "xlconstant_1": "",
       "OVSensor_0": "",
-      "HDMI_tx_0": ""
+      "HDMI_tx_0": "",
+      "system_ila_0": "",
+      "system_ila_1": "",
+      "system_ila_2": "",
+      "system_ila_3": ""
     },
     "interface_ports": {
       "DDR": {
@@ -491,6 +495,24 @@
           }
         },
         "interface_nets": {
+          "axi_mem_intercon_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
+            ]
+          },
+          "s00_couplers_to_xbar": {
+            "interface_ports": [
+              "s00_couplers/M_AXI",
+              "xbar/S00_AXI"
+            ]
+          },
+          "xbar_to_m00_couplers": {
+            "interface_ports": [
+              "xbar/M00_AXI",
+              "m00_couplers/S_AXI"
+            ]
+          },
           "axi_mem_intercon_to_s01_couplers": {
             "interface_ports": [
               "S01_AXI",
@@ -507,24 +529,6 @@
             "interface_ports": [
               "M00_AXI",
               "m00_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m00_couplers": {
-            "interface_ports": [
-              "xbar/M00_AXI",
-              "m00_couplers/S_AXI"
-            ]
-          },
-          "axi_mem_intercon_to_s00_couplers": {
-            "interface_ports": [
-              "S00_AXI",
-              "s00_couplers/S_AXI"
-            ]
-          },
-          "s00_couplers_to_xbar": {
-            "interface_ports": [
-              "s00_couplers/M_AXI",
-              "xbar/S00_AXI"
             ]
           }
         },
@@ -2526,16 +2530,16 @@
           }
         },
         "interface_nets": {
-          "processing_system7_0_axi_periph_to_s00_couplers": {
-            "interface_ports": [
-              "S00_AXI",
-              "s00_couplers/S_AXI"
-            ]
-          },
           "s00_couplers_to_processing_system7_0_axi_periph": {
             "interface_ports": [
               "M00_AXI",
               "s00_couplers/M_AXI"
+            ]
+          },
+          "processing_system7_0_axi_periph_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
             ]
           }
         },
@@ -2637,6 +2641,81 @@
       "HDMI_tx_0": {
         "vlnv": "xilinx.com:user:HDMI_tx:1.0",
         "xci_name": "system_HDMI_tx_0_0"
+      },
+      "system_ila_0": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "xci_name": "system_system_ila_0_0",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "INTERFACE"
+          },
+          "C_NUM_MONITOR_SLOTS": {
+            "value": "1"
+          },
+          "C_SLOT_0_APC_EN": {
+            "value": "0"
+          },
+          "C_SLOT_0_AXI_DATA_SEL": {
+            "value": "1"
+          },
+          "C_SLOT_0_AXI_TRIG_SEL": {
+            "value": "1"
+          },
+          "C_SLOT_0_INTF_TYPE": {
+            "value": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "interface_ports": {
+          "SLOT_0_AXIS": {
+            "mode": "Monitor",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        }
+      },
+      "system_ila_1": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "xci_name": "system_system_ila_1_0",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "1"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          }
+        }
+      },
+      "system_ila_2": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "xci_name": "system_system_ila_2_0",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "4"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          }
+        }
+      },
+      "system_ila_3": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "xci_name": "system_system_ila_3_0",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "1"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -2646,22 +2725,10 @@
           "processing_system7_0/S_AXI_HP0"
         ]
       },
-      "axi_vdma_0_M_AXI_MM2S": {
-        "interface_ports": [
-          "axi_vdma_0/M_AXI_MM2S",
-          "axi_mem_intercon/S00_AXI"
-        ]
-      },
       "v_tc_0_vtiming_out": {
         "interface_ports": [
           "v_tc_0/vtiming_out",
           "v_axi4s_vid_out_0/vtiming_in"
-        ]
-      },
-      "processing_system7_0_M_AXI_GP0": {
-        "interface_ports": [
-          "processing_system7_0/M_AXI_GP0",
-          "processing_system7_0_axi_periph/S00_AXI"
         ]
       },
       "processing_system7_0_axi_periph_M00_AXI": {
@@ -2673,13 +2740,34 @@
       "axi_vdma_0_M_AXIS_MM2S": {
         "interface_ports": [
           "axi_vdma_0/M_AXIS_MM2S",
-          "v_axi4s_vid_out_0/video_in"
-        ]
+          "v_axi4s_vid_out_0/video_in",
+          "system_ila_0/SLOT_0_AXIS"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "axi_vdma_0_M_AXI_S2MM": {
         "interface_ports": [
           "axi_vdma_0/M_AXI_S2MM",
           "axi_mem_intercon/S01_AXI"
+        ]
+      },
+      "axi_vdma_0_M_AXI_MM2S": {
+        "interface_ports": [
+          "axi_vdma_0/M_AXI_MM2S",
+          "axi_mem_intercon/S00_AXI"
+        ]
+      },
+      "processing_system7_0_M_AXI_GP0": {
+        "interface_ports": [
+          "processing_system7_0/M_AXI_GP0",
+          "processing_system7_0_axi_periph/S00_AXI"
         ]
       },
       "v_vid_in_axi4s_0_video_out": {
@@ -2696,12 +2784,6 @@
           }
         }
       },
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
-        ]
-      },
       "processing_system7_0_GPIO_0": {
         "interface_ports": [
           "GPIO_0",
@@ -2712,6 +2794,12 @@
         "interface_ports": [
           "DDR",
           "processing_system7_0/DDR"
+        ]
+      },
+      "processing_system7_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
         ]
       }
     },
@@ -2736,7 +2824,11 @@
           "processing_system7_0_axi_periph/M00_ACLK",
           "rst_processing_system7_0_50M/slowest_sync_clk",
           "v_axi4s_vid_out_0/aclk",
-          "v_vid_in_axi4s_0/aclk"
+          "v_vid_in_axi4s_0/aclk",
+          "system_ila_0/clk",
+          "system_ila_1/clk",
+          "system_ila_2/clk",
+          "system_ila_3/clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2754,7 +2846,8 @@
           "axi_vdma_0/axi_resetn",
           "clk_wiz_0/resetn",
           "processing_system7_0_axi_periph/S00_ARESETN",
-          "processing_system7_0_axi_periph/M00_ARESETN"
+          "processing_system7_0_axi_periph/M00_ARESETN",
+          "system_ila_0/resetn"
         ]
       },
       "clk_wiz_0_clk_out2": {
@@ -2790,8 +2883,17 @@
       "v_axi4s_vid_out_0_vid_data": {
         "ports": [
           "v_axi4s_vid_out_0/vid_data",
-          "HDMI_tx_0/VGA_RGB"
-        ]
+          "HDMI_tx_0/VGA_RGB",
+          "system_ila_1/probe0"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "rst_processing_system7_0_50M_interconnect_aresetn": {
         "ports": [
@@ -2846,8 +2948,17 @@
         "ports": [
           "OVSensor_0/hs_o",
           "v_vid_in_axi4s_0/vid_active_video",
-          "v_vid_in_axi4s_0/vid_hsync"
-        ]
+          "v_vid_in_axi4s_0/vid_hsync",
+          "system_ila_2/probe0"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "cmos_vsync_i_1": {
         "ports": [
@@ -2871,8 +2982,17 @@
       "cmos_data_i_1": {
         "ports": [
           "cmos_data_i",
-          "OVSensor_0/cmos_data_i"
-        ]
+          "OVSensor_0/cmos_data_i",
+          "system_ila_3/probe0"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "util_vector_logic_0_Res": {
         "ports": [
@@ -2898,20 +3018,47 @@
       "OVSensor_0_vs_o": {
         "ports": [
           "OVSensor_0/vs_o",
-          "v_vid_in_axi4s_0/vid_vsync"
-        ]
+          "v_vid_in_axi4s_0/vid_vsync",
+          "system_ila_2/probe1"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "OVSensor_0_rgb_o": {
         "ports": [
           "OVSensor_0/rgb_o",
-          "v_vid_in_axi4s_0/vid_data"
-        ]
+          "v_vid_in_axi4s_0/vid_data",
+          "system_ila_2/probe2"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "OVSensor_0_vid_clk_ce": {
         "ports": [
           "OVSensor_0/vid_clk_ce",
-          "v_vid_in_axi4s_0/vid_io_in_ce"
-        ]
+          "v_vid_in_axi4s_0/vid_io_in_ce",
+          "system_ila_2/probe3"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "HDMI_tx_0_HDMI_CLK_P": {
         "ports": [

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Thu Sep  3 19:04:17 2020
+| Date             : Fri Sep  4 17:27:56 2020
 | Host             : DESKTOP-AT0HPRF running 64-bit major release  (build 9200)
 | Command          : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
 | Design           : system_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.975        |
+| Total On-Chip Power (W)  | 2.008        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.820        |
-| Device Static (W)        | 0.155        |
+| Dynamic (W)              | 1.852        |
+| Device Static (W)        | 0.156        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 62.2         |
-| Junction Temperature (C) | 47.8         |
+| Max Ambient (C)          | 61.8         |
+| Junction Temperature (C) | 48.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,23 +52,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.026 |        8 |       --- |             --- |
-| Slice Logic              |     0.005 |    11961 |       --- |             --- |
-|   LUT as Logic           |     0.004 |     3906 |     53200 |            7.34 |
-|   CARRY4                 |    <0.001 |      166 |     13300 |            1.25 |
-|   Register               |    <0.001 |     6073 |    106400 |            5.71 |
+| Clocks                   |     0.050 |        9 |       --- |             --- |
+| Slice Logic              |     0.007 |    24736 |       --- |             --- |
+|   LUT as Logic           |     0.006 |     7544 |     53200 |           14.18 |
+|   Register               |    <0.001 |    13017 |    106400 |           12.23 |
+|   CARRY4                 |    <0.001 |      277 |     13300 |            2.08 |
+|   LUT as Shift Register  |    <0.001 |      687 |     17400 |            3.95 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
-|   LUT as Shift Register  |    <0.001 |      227 |     17400 |            1.30 |
-|   F7/F8 Muxes            |    <0.001 |        7 |     53200 |            0.01 |
-|   Others                 |     0.000 |      636 |       --- |             --- |
-|   LUT as Distributed RAM |     0.000 |       18 |     17400 |            0.10 |
-| Signals                  |     0.007 |     8797 |       --- |             --- |
-| Block RAM                |     0.004 |        7 |       140 |            5.00 |
+|   LUT as Distributed RAM |    <0.001 |       42 |     17400 |            0.24 |
+|   F7/F8 Muxes            |    <0.001 |       21 |     53200 |            0.04 |
+|   Others                 |     0.000 |     1410 |       --- |             --- |
+| Signals                  |     0.010 |    18439 |       --- |             --- |
+| Block RAM                |     0.006 |     11.5 |       140 |            8.21 |
 | MMCM                     |     0.105 |        1 |         4 |           25.00 |
 | I/O                      |     0.137 |       22 |       125 |           17.60 |
 | PS7                      |     1.536 |        1 |       --- |             --- |
-| Static Power             |     0.155 |          |           |                 |
-| Total                    |     1.975 |          |           |                 |
+| Static Power             |     0.156 |          |           |                 |
+| Total                    |     2.008 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,7 +78,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.062 |       0.045 |      0.017 |
+| Vccint    |       1.000 |     0.094 |       0.076 |      0.018 |
 | Vccaux    |       1.800 |     0.074 |       0.058 |      0.016 |
 | Vcco33    |       3.300 |     0.041 |       0.040 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -138,16 +138,17 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+-----------------------------+-----------------------------------------------------------+-----------------+
-| Clock                       | Domain                                                    | Constraint (ns) |
-+-----------------------------+-----------------------------------------------------------+-----------------+
-| clk_fpga_0                  | system_i/processing_system7_0/inst/FCLK_CLK0              |            10.0 |
-| clk_fpga_0                  | system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0] |            10.0 |
-| clk_fpga_1                  | system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1] |            40.0 |
-| clk_out1_system_clk_wiz_0_0 | system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0       |            13.5 |
-| clk_out2_system_clk_wiz_0_0 | system_i/clk_wiz_0/inst/clk_out2_system_clk_wiz_0_0       |             2.7 |
-| clkfbout_system_clk_wiz_0_0 | system_i/clk_wiz_0/inst/clkfbout_system_clk_wiz_0_0       |            50.0 |
-+-----------------------------+-----------------------------------------------------------+-----------------+
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-----------------+
+| Clock                                                                                      | Domain                                                               | Constraint (ns) |
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-----------------+
+| clk_fpga_0                                                                                 | system_i/processing_system7_0/inst/FCLK_CLK0                         |            10.0 |
+| clk_fpga_0                                                                                 | system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]            |            10.0 |
+| clk_fpga_1                                                                                 | system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]            |            40.0 |
+| clk_out1_system_clk_wiz_0_0                                                                | system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0                  |            13.5 |
+| clk_out2_system_clk_wiz_0_0                                                                | system_i/clk_wiz_0/inst/clk_out2_system_clk_wiz_0_0                  |             2.7 |
+| clkfbout_system_clk_wiz_0_0                                                                | system_i/clk_wiz_0/inst/clkfbout_system_clk_wiz_0_0                  |            50.0 |
+| dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/tck_bs |            33.0 |
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -159,10 +160,13 @@ Table of Contents
 +-------------------------------------+-----------+
 | Name                                | Power (W) |
 +-------------------------------------+-----------+
-| system_wrapper                      |     1.820 |
-|   system_i                          |     1.814 |
-|     HDMI_tx_0                       |     0.135 |
-|       U0                            |     0.135 |
+| system_wrapper                      |     1.852 |
+|   dbg_hub                           |     0.003 |
+|     inst                            |     0.003 |
+|       BSCANID.u_xsdbm_id            |     0.003 |
+|   system_i                          |     1.837 |
+|     HDMI_tx_0                       |     0.136 |
+|       U0                            |     0.136 |
 |     axi_mem_intercon                |     0.002 |
 |       m00_couplers                  |     0.001 |
 |       xbar                          |     0.001 |
@@ -174,10 +178,21 @@ Table of Contents
 |       inst                          |     1.537 |
 |     processing_system7_0_axi_periph |     0.003 |
 |       s00_couplers                  |     0.003 |
-|     v_axi4s_vid_out_0               |     0.004 |
-|       inst                          |     0.004 |
+|     system_ila_0                    |     0.007 |
+|       inst                          |     0.007 |
+|     system_ila_1                    |     0.006 |
+|       inst                          |     0.006 |
+|     system_ila_2                    |     0.006 |
+|       inst                          |     0.006 |
+|     system_ila_3                    |     0.005 |
+|       inst                          |     0.005 |
+|     v_axi4s_vid_out_0               |     0.005 |
+|       inst                          |     0.005 |
 |     v_vid_in_axi4s_0                |     0.002 |
 |       inst                          |     0.002 |
+|   u_ila_0                           |     0.007 |
+|     inst                            |     0.007 |
+|       ila_core_inst                 |     0.007 |
 +-------------------------------------+-----------+
 
 

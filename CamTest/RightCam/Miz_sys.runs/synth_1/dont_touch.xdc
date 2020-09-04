@@ -42,17 +42,56 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xlconsta
 # IP: bd/system/ip/system_xbar_0/system_xbar_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_0 || ORIG_REF_NAME==system_xbar_0} -quiet] -quiet
 
+# IP: bd/system/ip/system_OVSensor_0_0/system_OVSensor_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_OVSensor_0_0 || ORIG_REF_NAME==system_OVSensor_0_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_HDMI_tx_0_0/system_HDMI_tx_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_HDMI_tx_0_0 || ORIG_REF_NAME==system_HDMI_tx_0_0} -quiet] -quiet
+
 # IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0} -quiet] -quiet
 
 # IP: bd/system/ip/system_auto_pc_1/system_auto_pc_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_1 || ORIG_REF_NAME==system_auto_pc_1} -quiet] -quiet
 
-# IP: bd/system/ip/system_OVSensor_0_0/system_OVSensor_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_OVSensor_0_0 || ORIG_REF_NAME==system_OVSensor_0_0} -quiet] -quiet
+# IP: bd/system/ip/system_system_ila_0_0/system_system_ila_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_system_ila_0_0 || ORIG_REF_NAME==system_system_ila_0_0} -quiet] -quiet
 
-# IP: bd/system/ip/system_HDMI_tx_0_0/system_HDMI_tx_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_HDMI_tx_0_0 || ORIG_REF_NAME==system_HDMI_tx_0_0} -quiet] -quiet
+# Block Designs: bd/system/ip/system_system_ila_0_0/bd_0/bd_d5b8.bd
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_d5b8 || ORIG_REF_NAME==bd_d5b8} -quiet] -quiet
+
+# IP: bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_0/bd_d5b8_ila_lib_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_d5b8_ila_lib_0 || ORIG_REF_NAME==bd_d5b8_ila_lib_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_1/bd_d5b8_g_inst_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_d5b8_g_inst_0 || ORIG_REF_NAME==bd_d5b8_g_inst_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_system_ila_1_0/system_system_ila_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_system_ila_1_0 || ORIG_REF_NAME==system_system_ila_1_0} -quiet] -quiet
+
+# Block Designs: bd/system/ip/system_system_ila_1_0/bd_0/bd_15e9.bd
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_15e9 || ORIG_REF_NAME==bd_15e9} -quiet] -quiet
+
+# IP: bd/system/ip/system_system_ila_1_0/bd_0/ip/ip_0/bd_15e9_ila_lib_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_15e9_ila_lib_0 || ORIG_REF_NAME==bd_15e9_ila_lib_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_system_ila_2_0/system_system_ila_2_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_system_ila_2_0 || ORIG_REF_NAME==system_system_ila_2_0} -quiet] -quiet
+
+# Block Designs: bd/system/ip/system_system_ila_2_0/bd_0/bd_1519.bd
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_1519 || ORIG_REF_NAME==bd_1519} -quiet] -quiet
+
+# IP: bd/system/ip/system_system_ila_2_0/bd_0/ip/ip_0/bd_1519_ila_lib_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_1519_ila_lib_0 || ORIG_REF_NAME==bd_1519_ila_lib_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_system_ila_3_0/system_system_ila_3_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_system_ila_3_0 || ORIG_REF_NAME==system_system_ila_3_0} -quiet] -quiet
+
+# Block Designs: bd/system/ip/system_system_ila_3_0/bd_0/bd_d548.bd
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_d548 || ORIG_REF_NAME==bd_d548} -quiet] -quiet
+
+# IP: bd/system/ip/system_system_ila_3_0/bd_0/ip/ip_0/bd_d548_ila_lib_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_d548_ila_lib_0 || ORIG_REF_NAME==bd_d548_ila_lib_0} -quiet] -quiet
 
 # XDC: bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_processing_system7_0_0 || ORIG_REF_NAME==system_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
@@ -101,5 +140,53 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc
 
 # XDC: bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc
+
+# XDC: bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_d5b8_ila_lib_0 || ORIG_REF_NAME==bd_d5b8_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_d5b8_ila_lib_0 || ORIG_REF_NAME==bd_d5b8_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_0/bd_d5b8_ila_lib_0_ooc.xdc
+
+# XDC: bd/system/ip/system_system_ila_0_0/bd_0/bd_d5b8_ooc.xdc
+
+# XDC: bd/system/ip/system_system_ila_0_0/system_system_ila_0_0_ooc.xdc
+
+# XDC: bd/system/ip/system_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_15e9_ila_lib_0 || ORIG_REF_NAME==bd_15e9_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/system/ip/system_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_15e9_ila_lib_0 || ORIG_REF_NAME==bd_15e9_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/system/ip/system_system_ila_1_0/bd_0/ip/ip_0/bd_15e9_ila_lib_0_ooc.xdc
+
+# XDC: bd/system/ip/system_system_ila_1_0/bd_0/bd_15e9_ooc.xdc
+
+# XDC: bd/system/ip/system_system_ila_1_0/system_system_ila_1_0_ooc.xdc
+
+# XDC: bd/system/ip/system_system_ila_2_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_1519_ila_lib_0 || ORIG_REF_NAME==bd_1519_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/system/ip/system_system_ila_2_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_1519_ila_lib_0 || ORIG_REF_NAME==bd_1519_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/system/ip/system_system_ila_2_0/bd_0/ip/ip_0/bd_1519_ila_lib_0_ooc.xdc
+
+# XDC: bd/system/ip/system_system_ila_2_0/bd_0/bd_1519_ooc.xdc
+
+# XDC: bd/system/ip/system_system_ila_2_0/system_system_ila_2_0_ooc.xdc
+
+# XDC: bd/system/ip/system_system_ila_3_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_d548_ila_lib_0 || ORIG_REF_NAME==bd_d548_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/system/ip/system_system_ila_3_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_d548_ila_lib_0 || ORIG_REF_NAME==bd_d548_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/system/ip/system_system_ila_3_0/bd_0/ip/ip_0/bd_d548_ila_lib_0_ooc.xdc
+
+# XDC: bd/system/ip/system_system_ila_3_0/bd_0/bd_d548_ooc.xdc
+
+# XDC: bd/system/ip/system_system_ila_3_0/system_system_ila_3_0_ooc.xdc
 
 # XDC: bd/system/system_ooc.xdc
