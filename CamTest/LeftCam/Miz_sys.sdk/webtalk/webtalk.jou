@@ -2,11 +2,11 @@
 # Webtalk v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # 
-# Start of session at: Wed Sep  2 21:52:11 2020
-# Process ID: 7140
-# Current directory: E:/Project/Personal/PoseEstimation/SourceCode/ZYNQ/S03-CH07_AXI_VDMA_OV5640/Miz_sys/Miz_sys.sdk/webtalk
+# Start of session at: Fri Sep  4 00:01:11 2020
+# Process ID: 15056
+# Current directory: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/LeftCam/Miz_sys.sdk/webtalk
 # Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
-# Log file: E:/Project/Personal/PoseEstimation/SourceCode/ZYNQ/S03-CH07_AXI_VDMA_OV5640/Miz_sys/Miz_sys.sdk/webtalk/webtalk.log
-# Journal file: E:/Project/Personal/PoseEstimation/SourceCode/ZYNQ/S03-CH07_AXI_VDMA_OV5640/Miz_sys/Miz_sys.sdk/webtalk\webtalk.jou
+# Log file: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/LeftCam/Miz_sys.sdk/webtalk/webtalk.log
+# Journal file: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/LeftCam/Miz_sys.sdk/webtalk\webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl

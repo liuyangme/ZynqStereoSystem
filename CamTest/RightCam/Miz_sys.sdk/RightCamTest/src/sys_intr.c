@@ -5,6 +5,7 @@
  * copyright by nan jin mi lian dian zi www.osrc.cn
 */
 #include "sys_intr.h"
+
 void Setup_Intr_Exception(XScuGic * IntcInstancePtr)
 {
 	/* Enable interrupts from the hardware */
