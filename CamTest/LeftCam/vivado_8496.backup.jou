@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Sep  3 23:49:27 2020
+# Process ID: 8496
+# Current directory: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/LeftCam
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13008 E:\Project\Personal\PoseEstimation\ZYNQ\ZYNQ-SystemDebug\CamTest\LeftCam\Miz_sys.xpr
+# Log file: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/LeftCam/vivado.log
+# Journal file: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/LeftCam\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/LeftCam/Miz_sys.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/LeftCam/Miz_sys.sdk -hwspec E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/LeftCam/Miz_sys.sdk/system_wrapper.hdf
