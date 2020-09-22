@@ -1,0 +1,108 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port HDMI_CLK_P -pg 1 -y 1140 -defaultsOSRD
+preplace port DDR -pg 1 -y 510 -defaultsOSRD
+preplace port HDMI_D2_N -pg 1 -y 1200 -defaultsOSRD
+preplace port s_axis_video_tready -pg 1 -y 1120 -defaultsOSRD
+preplace port m_axis_video_tlast -pg 1 -y 170 -defaultsOSRD
+preplace port HDMI_D2_P -pg 1 -y 1180 -defaultsOSRD
+preplace port HDMI_D0_N -pg 1 -y 1280 -defaultsOSRD
+preplace port HDMI_D1_N -pg 1 -y 1240 -defaultsOSRD
+preplace port cmos_xclk_o -pg 1 -y 20 -defaultsOSRD
+preplace port s_axis_video_tlast -pg 1 -y 1100 -defaultsOSRD
+preplace port gpio_rtl -pg 1 -y 750 -defaultsOSRD
+preplace port HDMI_D0_P -pg 1 -y 1260 -defaultsOSRD
+preplace port HDMI_D1_P -pg 1 -y 1220 -defaultsOSRD
+preplace port cmos_vsync_i -pg 1 -y 120 -defaultsOSRD
+preplace port cmos_pclk_i -pg 1 -y 160 -defaultsOSRD
+preplace port GPIO_0 -pg 1 -y 490 -defaultsOSRD
+preplace port m_axis_video_tvalid -pg 1 -y 210 -defaultsOSRD
+preplace port s_axis_s2mm_tready -pg 1 -y 190 -defaultsOSRD
+preplace port cmos_href_i -pg 1 -y 140 -defaultsOSRD
+preplace port s_axis_s2mm_tlast -pg 1 -y 910 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 530 -defaultsOSRD
+preplace port s_axis_video_tuser -pg 1 -y 1270 -defaultsOSRD
+preplace port vid_io_rst_i -pg 1 -y 1290 -defaultsOSRD
+preplace port m_axis_mm2s_tvalid -pg 1 -y 890 -defaultsOSRD
+preplace port FCLK_CLK0 -pg 1 -y 570 -defaultsOSRD
+preplace port HDMI_CLK_N -pg 1 -y 1160 -defaultsOSRD
+preplace portBus cmos_data_i -pg 1 -y 180 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 4 -y 1190 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 3 -y 1190 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 3 -y 830 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -y 860 -defaultsOSRD
+preplace inst OV_Sensor_ML_0 -pg 1 -lvl 4 -y 140 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 4 -y 830 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 5 -y 750 -defaultsOSRD
+preplace inst rst_processing_system7_0_50M -pg 1 -lvl 1 -y 820 -defaultsOSRD
+preplace inst v_vid_in_axi4s_0 -pg 1 -lvl 5 -y 210 -defaultsOSRD
+preplace inst HDMI_FPGA_ML_0 -pg 1 -lvl 5 -y 1210 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -y 1030 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 4 -y 560 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 670 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -y 550 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 5 1 NJ
+preplace netloc v_axi4s_vid_out_0_vid_data 1 4 1 1880
+preplace netloc cmos_href_i_1 1 0 4 NJ 140 NJ 140 NJ 140 NJ
+preplace netloc OV_Sensor_ML_0_vs_o 1 4 1 1880
+preplace netloc clk_wiz_0_locked 1 2 3 680 1050 1230 1000 1930
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 3 NJ 410 NJ 410 1880
+preplace netloc v_axi4s_vid_out_0_vid_hsync 1 4 1 1890
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tvalid 1 2 4 670 10 NJ 10 NJ 10 2360
+preplace netloc rst_processing_system7_0_50M_interconnect_aresetn 1 1 3 350 530 NJ 530 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 380 390 NJ 390 NJ 390 NJ 390 2320
+preplace netloc HDMI_FPGA_ML_0_HDMI_CLK_N 1 5 1 NJ
+preplace netloc HDMI_FPGA_ML_0_HDMI_D2_N 1 5 1 NJ
+preplace netloc axi_dma_0_m_axis_mm2s_tdata 1 3 1 1210
+preplace netloc OV_Sensor_ML_0_hs_o 1 4 1 1940
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 30 950 NJ 950 NJ 990 NJ 950 NJ 950 2320
+preplace netloc axi_mem_intercon_M00_AXI 1 4 1 1870
+preplace netloc HDMI_FPGA_ML_0_HDMI_D2_P 1 5 1 NJ
+preplace netloc HDMI_FPGA_ML_0_HDMI_CLK_P 1 5 1 NJ
+preplace netloc HDMI_FPGA_ML_0_HDMI_D1_N 1 5 1 NJ
+preplace netloc v_axi4s_vid_out_0_vid_active_video 1 4 1 1900
+preplace netloc axi_dma_0_m_axis_mm2s_tvalid 1 3 3 1150 890 NJ 890 NJ
+preplace netloc rst_processing_system7_0_50M_peripheral_aresetn 1 1 4 380 960 680 1000 1180 770 NJ
+preplace netloc HDMI_FPGA_ML_0_HDMI_D0_N 1 5 1 NJ
+preplace netloc OV_Sensor_ML_0_cmos_xclk_o 1 4 2 NJ 20 NJ
+preplace netloc cmos_pclk_i_1 1 0 5 NJ 160 NJ 160 NJ 160 1170 50 NJ
+preplace netloc s_axis_s2mm_tlast_1 1 0 3 NJ 730 NJ 810 NJ
+preplace netloc axi_dma_0_s_axis_s2mm_tready 1 2 4 700 30 NJ 30 NJ 30 2350
+preplace netloc axi_dma_0_s2mm_introut 1 3 1 1160
+preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 1130
+preplace netloc HDMI_FPGA_ML_0_HDMI_D1_P 1 5 1 NJ
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tlast 1 5 1 NJ
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 2 3 700 1380 NJ 1380 1860
+preplace netloc xlconstant_0_dout 1 2 1 NJ
+preplace netloc xlconcat_0_dout 1 4 1 1910
+preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ
+preplace netloc HDMI_FPGA_ML_0_HDMI_D0_P 1 5 1 NJ
+preplace netloc OV_Sensor_ML_0_rgb_o 1 4 1 1910
+preplace netloc vid_io_in_reset_1 1 0 5 NJ 1290 NJ 1290 NJ 1290 1170 240 NJ
+preplace netloc axi_dma_0_mm2s_introut 1 3 1 1140
+preplace netloc axi_gpio_0_GPIO 1 5 1 NJ
+preplace netloc axi_dma_0_M_AXI_S2MM 1 3 1 1140
+preplace netloc cmos_vsync_i_1 1 0 4 NJ 120 NJ 120 NJ 120 NJ
+preplace netloc OV_Sensor_ML_0_vid_clk_ce 1 4 1 1870
+preplace netloc v_axi4s_vid_out_0_s_axis_video_tready 1 3 3 1130 990 NJ 990 NJ
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tdata 1 2 4 690 980 NJ 970 NJ 970 2340
+preplace netloc clk_wiz_0_clk_out2 1 2 3 660 1080 1120 1370 1920
+preplace netloc processing_system7_0_GPIO_0 1 5 1 NJ
+preplace netloc clk_wiz_0_clk_out3 1 2 3 NJ 1030 NJ 1010 1910
+preplace netloc cmos_data_i_1 1 0 4 NJ 180 NJ 180 NJ 180 NJ
+preplace netloc s_axis_video_tlast_1 1 0 4 NJ 1100 NJ 1100 NJ 1100 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 30 720 370 910 670 1010 1200 400 1940 660 2360
+preplace netloc v_tc_0_vtiming_out 1 3 1 N
+preplace netloc v_axi4s_vid_out_0_vid_vsync 1 4 1 1870
+preplace netloc processing_system7_0_FCLK_CLK1 1 3 3 NJ 370 NJ 370 2330
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 1 660
+preplace netloc s_axis_video_tuser_1 1 0 4 NJ 1110 NJ 1110 NJ 1110 NJ
+levelinfo -pg 1 0 190 520 920 1680 2130 2380 -top 0 -bot 1390
+",
+}
+{
+   da_axi4_cnt: "6",
+   da_board_cnt: "2",
+   da_ps7_cnt: "1",
+}
