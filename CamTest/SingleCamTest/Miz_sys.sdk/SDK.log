@@ -1,0 +1,13 @@
+20:21:03 INFO  : Registering command handlers for SDK TCF services
+20:21:04 INFO  : Launching XSCT server: xsct.bat -interactive E:\Project\Personal\PoseEstimation\ZYNQ\ZYNQ-SystemDebug\CamTest\S03-CH07_AXI_VDMA_OV5640\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+20:21:08 INFO  : XSCT server has started successfully.
+20:21:09 INFO  : Successfully done setting XSCT server connection channel  
+20:21:09 INFO  : Successfully done setting SDK workspace  
+20:21:09 INFO  : Processing command line option -hwspec E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/S03-CH07_AXI_VDMA_OV5640/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+20:35:51 INFO  : Launching XSCT server: xsct.bat -interactive E:\Project\Personal\PoseEstimation\ZYNQ\ZYNQ-SystemDebug\CamTest\S03-CH07_AXI_VDMA_OV5640\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+20:35:54 INFO  : XSCT server has started successfully.
+20:35:59 INFO  : Successfully done setting XSCT server connection channel  
+20:35:59 INFO  : Successfully done setting SDK workspace  
+20:36:03 INFO  : Registering command handlers for SDK TCF services
+20:36:04 INFO  : Processing command line option -hwspec E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/S03-CH07_AXI_VDMA_OV5640/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+20:36:05 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.

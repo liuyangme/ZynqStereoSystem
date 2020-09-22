@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/MIZ_SOC/SEASON_03/CH06_MIZ701N_7725/Miz_sys/Miz_sys.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="3205001fs"></ZoomEndTime>
+      <Cursor1Time time="150000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="4" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject db_ref_id="1" fp_name="system_i/OV_Sensor_ML_0_de_o" type="logic">
+      <obj_property name="ElementShortName">system_i/OV_Sensor_ML_0_de_o</obj_property>
+      <obj_property name="ObjectShortName">system_i/OV_Sensor_ML_0_de_o</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="system_i/OV_Sensor_ML_0_hblank_o" type="logic">
+      <obj_property name="ElementShortName">system_i/OV_Sensor_ML_0_hblank_o</obj_property>
+      <obj_property name="ObjectShortName">system_i/OV_Sensor_ML_0_hblank_o</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="system_i/OV_Sensor_ML_0_hs_o" type="logic">
+      <obj_property name="ElementShortName">system_i/OV_Sensor_ML_0_hs_o</obj_property>
+      <obj_property name="ObjectShortName">system_i/OV_Sensor_ML_0_hs_o</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="system_i/OV_Sensor_ML_0_vs_o" type="logic">
+      <obj_property name="ElementShortName">system_i/OV_Sensor_ML_0_vs_o</obj_property>
+      <obj_property name="ObjectShortName">system_i/OV_Sensor_ML_0_vs_o</obj_property>
+   </wvobject>
+</wave_config>
