@@ -1,0 +1,140 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 9548
+License: Customer
+
+Current time: 	Tue Sep 22 20:35:10 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 77 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	LiuYang_Laptop
+User home directory: C:/Users/LiuYang_Laptop
+User working directory: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/S03-CH07_AXI_VDMA_OV5640/Miz_sys
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/LiuYang_Laptop/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/LiuYang_Laptop/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/LiuYang_Laptop/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/S03-CH07_AXI_VDMA_OV5640/Miz_sys/vivado.log
+Vivado journal file location: 	E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/S03-CH07_AXI_VDMA_OV5640/Miz_sys/vivado.jou
+Engine tmp dir: 	E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/S03-CH07_AXI_VDMA_OV5640/Miz_sys/.Xil/Vivado-9548-LiuYang-Laptop
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	384 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 673 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: E:\Project\Personal\PoseEstimation\ZYNQ\ZYNQ-SystemDebug\CamTest\S03-CH07_AXI_VDMA_OV5640\Miz_sys\Miz_sys.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/S03-CH07_AXI_VDMA_OV5640/Miz_sys/Miz_sys.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/S03-CH07_AXI_VDMA_OV5640/Miz_sys' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 692 MB. GUI used memory: 45 MB. Current time: 9/22/20, 8:35:12 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 92 MB (+93807kb) [00:00:21]
+// [Engine Memory]: 700 MB (+583047kb) [00:00:21]
+// [GUI Memory]: 103 MB (+7216kb) [00:00:21]
+// [GUI Memory]: 109 MB (+268kb) [00:00:23]
+// [Engine Memory]: 736 MB (+820kb) [00:00:23]
+// [GUI Memory]: 121 MB (+6713kb) [00:00:24]
+// WARNING: HEventQueue.dispatchEvent() is taking  4964 ms.
+// Tcl Message: open_project E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/S03-CH07_AXI_VDMA_OV5640/Miz_sys/Miz_sys.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/S03-CH07_AXI_VDMA_OV5640/Miz_sys' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Repository/MyIPcoreLib/FPGA-IPcore-Library'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// [Engine Memory]: 788 MB (+15661kb) [00:00:26]
+// WARNING: HEventQueue.dispatchEvent() is taking  1687 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1127 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1094 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1485 ms. Increasing delay to 3000 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 891.117 ; gain = 54.781 
+// Project name: Miz_sys; location: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/S03-CH07_AXI_VDMA_OV5640/Miz_sys; part: xc7z020clg400-2
+// [Engine Memory]: 1,043 MB (+225574kb) [00:00:30]
+dismissDialog("Open Project"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,047 MB. GUI used memory: 60 MB. Current time: 9/22/20, 8:35:27 PM CST
+// a (cp): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cp): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (cp)
+// Tcl Message: launch_sdk -workspace E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/S03-CH07_AXI_VDMA_OV5640/Miz_sys/Miz_sys.sdk -hwspec E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/S03-CH07_AXI_VDMA_OV5640/Miz_sys/Miz_sys.sdk/system_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/S03-CH07_AXI_VDMA_OV5640/Miz_sys/Miz_sys.sdk -hwspec E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-SystemDebug/CamTest/S03-CH07_AXI_VDMA_OV5640/Miz_sys/Miz_sys.sdk/system_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2018 ms. Increasing delay to 6054 ms.

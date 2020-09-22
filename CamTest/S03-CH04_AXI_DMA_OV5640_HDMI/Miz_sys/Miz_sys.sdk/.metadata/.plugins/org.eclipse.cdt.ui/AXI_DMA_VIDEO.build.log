@@ -1,0 +1,21 @@
+17:59:48 **** Auto Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+'Building file: ../src/ov5640_config.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640_config.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ov5640_config.d" -MT"src/ov5640_config.d" -o "src/ov5640_config.o" "../src/ov5640_config.c"
+'Finished building: ../src/ov5640_config.c'
+' '
+'Building target: AXI_DMA_VIDEO.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/lib -o "AXI_DMA_VIDEO.elf"  ./src/dma_intr.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA_VIDEO.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size AXI_DMA_VIDEO.elf  |tee "AXI_DMA_VIDEO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50376	   2016	  24404	  76796	  12bfc	AXI_DMA_VIDEO.elf
+'Finished building: AXI_DMA_VIDEO.elf.size'
+' '
+
+17:59:51 Build Finished (took 2s.398ms)
+

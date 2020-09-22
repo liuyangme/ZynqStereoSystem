@@ -1,0 +1,23 @@
+14:39:19 **** Auto Build of configuration Debug for project DMA_VIDEO ****
+make all 
+'Building file: ../src/emio_initial.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/emio_initial.o" -I../../DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/emio_initial.d" -MT"src/emio_initial.d" -o "src/emio_initial.o" "../src/emio_initial.c"
+'Finished building: ../src/emio_initial.c'
+' '
+'Building file: ../src/i2c_ctr.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_ctr.o" -I../../DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_ctr.d" -MT"src/i2c_ctr.d" -o "src/i2c_ctr.o" "../src/i2c_ctr.c"
+'Finished building: ../src/i2c_ctr.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:13:22: fatal error: xaxivdma.h: No such file or directory
+ #include "xaxivdma.h"
+                      ^
+compilation terminated.
+make: *** [src/main.o] ´íÎó 1
+
+14:39:25 Build Finished (took 5s.428ms)
+

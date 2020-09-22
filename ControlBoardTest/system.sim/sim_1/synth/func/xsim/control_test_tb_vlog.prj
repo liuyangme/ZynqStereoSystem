@@ -1,7 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  \
-"control_test_tb_func_synth.v" \
-"../../../../../system.srcs/sim_1/new/control_test_tb.v" \
-
-# Do not sort compile order
-nosort

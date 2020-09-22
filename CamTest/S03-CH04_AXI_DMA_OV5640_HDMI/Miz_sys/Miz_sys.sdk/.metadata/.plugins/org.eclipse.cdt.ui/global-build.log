@@ -1,0 +1,712 @@
+14:49:14 **** Build of project AXI_DMA_VIDEO_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_0/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_0/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+In file included from xaxidma.h:470:0,
+                 from xaxidma.c:83:
+xaxidma.c: In function 'XAxiDma_Reset':
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+
+**** Build of configuration Debug for project AXI_DMA_VIDEO ****
+
+Nothing to build for project AXI_DMA_VIDEO
+14:50:40 **** Auto Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+'Building file: ../src/emio_initial.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/emio_initial.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/emio_initial.d" -MT"src/emio_initial.d" -o "src/emio_initial.o" "../src/emio_initial.c"
+'Finished building: ../src/emio_initial.c'
+' '
+'Building file: ../src/i2c_ctr.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_ctr.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_ctr.d" -MT"src/i2c_ctr.d" -o "src/i2c_ctr.o" "../src/i2c_ctr.c"
+'Finished building: ../src/i2c_ctr.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:13:22: fatal error: xaxivdma.h: No such file or directory
+ #include "xaxivdma.h"
+                      ^
+compilation terminated.
+make: *** [src/main.o] ´íÎó 1
+14:51:53 **** Clean-only build of configuration Debug for project AXI_DMA_VIDEO ****
+make clean 
+rm -rf  ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o ./src/vdma_api.o  ./src/emio_initial.d ./src/i2c_ctr.d ./src/main.d ./src/ov5640_config.d ./src/sys_intr.d ./src/vdma_api.d  AXI_DMA_VIDEO.elf.size  AXI_DMA_VIDEO.elf
+' '
+
+****  of configuration Debug for project AXI_DMA_VIDEO ****
+
+Nothing to build for project AXI_DMA_VIDEO
+14:55:53 **** Auto Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+'Building file: ../src/dma_intr.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_intr.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dma_intr.d" -MT"src/dma_intr.d" -o "src/dma_intr.o" "../src/dma_intr.c"
+../src/dma_intr.c: In function 'DMA_TxIntrHandler':
+../src/dma_intr.c:107:6: warning: unused variable 'TimeOut' [-Wunused-variable]
+  int TimeOut;
+      ^
+../src/dma_intr.c: In function 'DMA_RxIntrHandler':
+../src/dma_intr.c:180:6: warning: unused variable 'TimeOut' [-Wunused-variable]
+  int TimeOut;
+      ^
+'Finished building: ../src/dma_intr.c'
+' '
+'Building file: ../src/emio_initial.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/emio_initial.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/emio_initial.d" -MT"src/emio_initial.d" -o "src/emio_initial.o" "../src/emio_initial.c"
+'Finished building: ../src/emio_initial.c'
+' '
+'Building file: ../src/i2c_ctr.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_ctr.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_ctr.d" -MT"src/i2c_ctr.d" -o "src/i2c_ctr.o" "../src/i2c_ctr.c"
+'Finished building: ../src/i2c_ctr.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:35:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^
+../src/main.c: In function 'main':
+../src/main.c:59:2: warning: implicit declaration of function 'Miz702_EMIO_init' [-Wimplicit-function-declaration]
+  Miz702_EMIO_init();
+  ^
+../src/main.c:60:2: warning: implicit declaration of function 'ov5640_init_rgb' [-Wimplicit-function-declaration]
+  ov5640_init_rgb();
+  ^
+../src/main.c:44:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  u32 Status;
+      ^
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:38:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/ov5640_config.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640_config.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ov5640_config.d" -MT"src/ov5640_config.d" -o "src/ov5640_config.o" "../src/ov5640_config.c"
+'Finished building: ../src/ov5640_config.c'
+' '
+'Building file: ../src/sys_intr.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sys_intr.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sys_intr.d" -MT"src/sys_intr.d" -o "src/sys_intr.o" "../src/sys_intr.c"
+'Finished building: ../src/sys_intr.c'
+' '
+'Building target: AXI_DMA_VIDEO.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/lib -o "AXI_DMA_VIDEO.elf"  ./src/dma_intr.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA_VIDEO.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size AXI_DMA_VIDEO.elf  |tee "AXI_DMA_VIDEO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51144	   2016	  24404	  77564	  12efc	AXI_DMA_VIDEO.elf
+'Finished building: AXI_DMA_VIDEO.elf.size'
+' '
+14:56:12 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+14:57:53 **** Clean-only build of configuration Debug for project AXI_DMA_VIDEO ****
+make clean 
+rm -rf  ./src/dma_intr.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o  ./src/dma_intr.d ./src/emio_initial.d ./src/i2c_ctr.d ./src/main.d ./src/ov5640_config.d ./src/sys_intr.d  AXI_DMA_VIDEO.elf.size  AXI_DMA_VIDEO.elf
+' '
+
+****  of configuration Debug for project AXI_DMA_VIDEO ****
+
+Nothing to build for project AXI_DMA_VIDEO
+14:57:57 **** Auto Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+'Building file: ../src/dma_intr.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_intr.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dma_intr.d" -MT"src/dma_intr.d" -o "src/dma_intr.o" "../src/dma_intr.c"
+../src/dma_intr.c: In function 'DMA_TxIntrHandler':
+../src/dma_intr.c:107:6: warning: unused variable 'TimeOut' [-Wunused-variable]
+  int TimeOut;
+      ^
+../src/dma_intr.c: In function 'DMA_RxIntrHandler':
+../src/dma_intr.c:180:6: warning: unused variable 'TimeOut' [-Wunused-variable]
+  int TimeOut;
+      ^
+'Finished building: ../src/dma_intr.c'
+' '
+'Building file: ../src/emio_initial.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/emio_initial.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/emio_initial.d" -MT"src/emio_initial.d" -o "src/emio_initial.o" "../src/emio_initial.c"
+'Finished building: ../src/emio_initial.c'
+' '
+'Building file: ../src/i2c_ctr.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_ctr.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_ctr.d" -MT"src/i2c_ctr.d" -o "src/i2c_ctr.o" "../src/i2c_ctr.c"
+'Finished building: ../src/i2c_ctr.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:35:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^
+../src/main.c: In function 'main':
+../src/main.c:59:2: warning: implicit declaration of function 'Miz702_EMIO_init' [-Wimplicit-function-declaration]
+  Miz702_EMIO_init();
+  ^
+../src/main.c:60:2: warning: implicit declaration of function 'ov5640_init_rgb' [-Wimplicit-function-declaration]
+  ov5640_init_rgb();
+  ^
+../src/main.c:44:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  u32 Status;
+      ^
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:38:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/ov5640_config.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640_config.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ov5640_config.d" -MT"src/ov5640_config.d" -o "src/ov5640_config.o" "../src/ov5640_config.c"
+'Finished building: ../src/ov5640_config.c'
+' '
+'Building file: ../src/sys_intr.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sys_intr.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sys_intr.d" -MT"src/sys_intr.d" -o "src/sys_intr.o" "../src/sys_intr.c"
+'Finished building: ../src/sys_intr.c'
+' '
+'Building target: AXI_DMA_VIDEO.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/lib -o "AXI_DMA_VIDEO.elf"  ./src/dma_intr.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA_VIDEO.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size AXI_DMA_VIDEO.elf  |tee "AXI_DMA_VIDEO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51144	   2016	  24404	  77564	  12efc	AXI_DMA_VIDEO.elf
+'Finished building: AXI_DMA_VIDEO.elf.size'
+' '
+14:58:10 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+14:58:51 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+15:03:52 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+15:04:54 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:35:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^
+../src/main.c: In function 'main':
+../src/main.c:60:2: warning: implicit declaration of function 'Miz702_EMIO_init' [-Wimplicit-function-declaration]
+  Miz702_EMIO_init();
+  ^
+../src/main.c:61:2: warning: implicit declaration of function 'ov5640_init_rgb' [-Wimplicit-function-declaration]
+  ov5640_init_rgb();
+  ^
+../src/main.c:44:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  u32 Status;
+      ^
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:38:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: AXI_DMA_VIDEO.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/lib -o "AXI_DMA_VIDEO.elf"  ./src/dma_intr.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA_VIDEO.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size AXI_DMA_VIDEO.elf  |tee "AXI_DMA_VIDEO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51144	   2016	  24404	  77564	  12efc	AXI_DMA_VIDEO.elf
+'Finished building: AXI_DMA_VIDEO.elf.size'
+' '
+15:06:50 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+15:08:25 **** Auto Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+'Building file: ../src/ov5640_config.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640_config.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ov5640_config.d" -MT"src/ov5640_config.d" -o "src/ov5640_config.o" "../src/ov5640_config.c"
+'Finished building: ../src/ov5640_config.c'
+' '
+'Building target: AXI_DMA_VIDEO.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/lib -o "AXI_DMA_VIDEO.elf"  ./src/dma_intr.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA_VIDEO.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size AXI_DMA_VIDEO.elf  |tee "AXI_DMA_VIDEO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51144	   2016	  24404	  77564	  12efc	AXI_DMA_VIDEO.elf
+'Finished building: AXI_DMA_VIDEO.elf.size'
+' '
+15:08:31 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+15:11:08 **** Auto Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+'Building file: ../src/ov5640_config.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640_config.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ov5640_config.d" -MT"src/ov5640_config.d" -o "src/ov5640_config.o" "../src/ov5640_config.c"
+'Finished building: ../src/ov5640_config.c'
+' '
+'Building target: AXI_DMA_VIDEO.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/lib -o "AXI_DMA_VIDEO.elf"  ./src/dma_intr.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA_VIDEO.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size AXI_DMA_VIDEO.elf  |tee "AXI_DMA_VIDEO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51144	   2016	  24404	  77564	  12efc	AXI_DMA_VIDEO.elf
+'Finished building: AXI_DMA_VIDEO.elf.size'
+' '
+15:11:14 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+15:11:49 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+15:21:18 **** Auto Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+'Building file: ../src/ov5640_config.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640_config.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ov5640_config.d" -MT"src/ov5640_config.d" -o "src/ov5640_config.o" "../src/ov5640_config.c"
+'Finished building: ../src/ov5640_config.c'
+' '
+'Building target: AXI_DMA_VIDEO.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/lib -o "AXI_DMA_VIDEO.elf"  ./src/dma_intr.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA_VIDEO.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size AXI_DMA_VIDEO.elf  |tee "AXI_DMA_VIDEO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50376	   2016	  24404	  76796	  12bfc	AXI_DMA_VIDEO.elf
+'Finished building: AXI_DMA_VIDEO.elf.size'
+' '
+15:21:23 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+15:21:47 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+15:22:42 **** Auto Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+'Building file: ../src/ov5640_config.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640_config.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ov5640_config.d" -MT"src/ov5640_config.d" -o "src/ov5640_config.o" "../src/ov5640_config.c"
+'Finished building: ../src/ov5640_config.c'
+' '
+'Building target: AXI_DMA_VIDEO.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/lib -o "AXI_DMA_VIDEO.elf"  ./src/dma_intr.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA_VIDEO.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size AXI_DMA_VIDEO.elf  |tee "AXI_DMA_VIDEO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50376	   2016	  24404	  76796	  12bfc	AXI_DMA_VIDEO.elf
+'Finished building: AXI_DMA_VIDEO.elf.size'
+' '
+15:22:47 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+15:23:34 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+16:09:03 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+16:09:43 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+16:12:54 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+16:13:16 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+16:13:52 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+16:14:16 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+16:20:48 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+16:21:28 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+16:22:12 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+16:51:15 **** Auto Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+'Building file: ../src/ov5640_config.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640_config.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ov5640_config.d" -MT"src/ov5640_config.d" -o "src/ov5640_config.o" "../src/ov5640_config.c"
+'Finished building: ../src/ov5640_config.c'
+' '
+'Building target: AXI_DMA_VIDEO.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/lib -o "AXI_DMA_VIDEO.elf"  ./src/dma_intr.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA_VIDEO.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size AXI_DMA_VIDEO.elf  |tee "AXI_DMA_VIDEO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50376	   2016	  24404	  76796	  12bfc	AXI_DMA_VIDEO.elf
+'Finished building: AXI_DMA_VIDEO.elf.size'
+' '
+16:52:47 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+16:54:33 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+14:12:04 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+14:13:44 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+14:14:15 **** Incremental Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+make: Nothing to be done for `all'.
+17:55:55 **** Clean-only build of project AXI_DMA_VIDEO_bsp ****
+make -k clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+17:55:56 **** Clean-only build of configuration Debug for project AXI_DMA_VIDEO ****
+make clean 
+rm -rf  ./src/dma_intr.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o  ./src/dma_intr.d ./src/emio_initial.d ./src/i2c_ctr.d ./src/main.d ./src/ov5640_config.d ./src/sys_intr.d  AXI_DMA_VIDEO.elf.size  AXI_DMA_VIDEO.elf
+' '
+17:55:56 **** Build of project AXI_DMA_VIDEO_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_0/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_0/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+In file included from xaxidma.h:470:0,
+                 from xaxidma.c:83:
+xaxidma.c: In function 'XAxiDma_Reset':
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+17:56:38 **** Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+'Building file: ../src/dma_intr.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_intr.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dma_intr.d" -MT"src/dma_intr.d" -o "src/dma_intr.o" "../src/dma_intr.c"
+../src/dma_intr.c: In function 'DMA_TxIntrHandler':
+../src/dma_intr.c:107:6: warning: unused variable 'TimeOut' [-Wunused-variable]
+  int TimeOut;
+      ^
+../src/dma_intr.c: In function 'DMA_RxIntrHandler':
+../src/dma_intr.c:180:6: warning: unused variable 'TimeOut' [-Wunused-variable]
+  int TimeOut;
+      ^
+'Finished building: ../src/dma_intr.c'
+' '
+'Building file: ../src/emio_initial.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/emio_initial.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/emio_initial.d" -MT"src/emio_initial.d" -o "src/emio_initial.o" "../src/emio_initial.c"
+'Finished building: ../src/emio_initial.c'
+' '
+'Building file: ../src/i2c_ctr.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_ctr.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_ctr.d" -MT"src/i2c_ctr.d" -o "src/i2c_ctr.o" "../src/i2c_ctr.c"
+'Finished building: ../src/i2c_ctr.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:35:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^
+../src/main.c: In function 'main':
+../src/main.c:60:2: warning: implicit declaration of function 'Miz702_EMIO_init' [-Wimplicit-function-declaration]
+  Miz702_EMIO_init();
+  ^
+../src/main.c:61:2: warning: implicit declaration of function 'ov5640_init_rgb' [-Wimplicit-function-declaration]
+  ov5640_init_rgb();
+  ^
+../src/main.c:44:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  u32 Status;
+      ^
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:38:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/ov5640_config.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640_config.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ov5640_config.d" -MT"src/ov5640_config.d" -o "src/ov5640_config.o" "../src/ov5640_config.c"
+'Finished building: ../src/ov5640_config.c'
+' '
+'Building file: ../src/sys_intr.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sys_intr.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sys_intr.d" -MT"src/sys_intr.d" -o "src/sys_intr.o" "../src/sys_intr.c"
+'Finished building: ../src/sys_intr.c'
+' '
+'Building target: AXI_DMA_VIDEO.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/lib -o "AXI_DMA_VIDEO.elf"  ./src/dma_intr.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA_VIDEO.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size AXI_DMA_VIDEO.elf  |tee "AXI_DMA_VIDEO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50376	   2016	  24404	  76796	  12bfc	AXI_DMA_VIDEO.elf
+'Finished building: AXI_DMA_VIDEO.elf.size'
+' '
+17:59:48 **** Auto Build of configuration Debug for project AXI_DMA_VIDEO ****
+make all 
+'Building file: ../src/ov5640_config.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640_config.o" -I../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ov5640_config.d" -MT"src/ov5640_config.d" -o "src/ov5640_config.o" "../src/ov5640_config.c"
+'Finished building: ../src/ov5640_config.c'
+' '
+'Building target: AXI_DMA_VIDEO.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_VIDEO_bsp/ps7_cortexa9_0/lib -o "AXI_DMA_VIDEO.elf"  ./src/dma_intr.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA_VIDEO.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size AXI_DMA_VIDEO.elf  |tee "AXI_DMA_VIDEO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50376	   2016	  24404	  76796	  12bfc	AXI_DMA_VIDEO.elf
+'Finished building: AXI_DMA_VIDEO.elf.size'
+' '
