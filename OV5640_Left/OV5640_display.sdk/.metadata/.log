@@ -1,60 +1,60 @@
-!SESSION 2020-09-27 21:43:09.321 -----------------------------------------------
+!SESSION 2020-09-28 21:07:33.802 -----------------------------------------------
 eclipse.buildId=2018.3
 java.version=1.8.0_112
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk
 
-!ENTRY org.eclipse.ui 2 0 2020-09-27 21:43:12.908
+!ENTRY org.eclipse.ui 2 0 2020-09-28 21:07:37.521
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2020-09-27 21:43:12.908
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-09-28 21:07:37.521
 !MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
 
-!ENTRY org.eclipse.ui 2 0 2020-09-27 21:43:13.886
+!ENTRY org.eclipse.ui 2 0 2020-09-28 21:07:38.542
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2020-09-27 21:43:13.886
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-09-28 21:07:38.542
 !MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:27.236
-!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:07:51.749
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-6
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:27.239
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:07:51.750
 !MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:28.182
-!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:07:52.285
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-6
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:28.182
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:07:52.286
 !MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:28.184
-!MESSAGE XSCT Command: [setws E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk], Thread: Thread-14
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:07:52.288
+!MESSAGE XSCT Command: [setws E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk], Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:28.187
-!MESSAGE XSCT command with result: [setws E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk], Result: [null, ]. Thread: Thread-14
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:07:52.292
+!MESSAGE XSCT command with result: [setws E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk], Result: [null, ]. Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:28.377
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:07:52.449
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:35.633
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:01.121
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:35.704
-!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:01.147
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:35.711
-!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7z020",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:01.152
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7z020",
 "family": "zynq",
-"timestamp": "Sun Sep 27 21:14:07 2020",
+"timestamp": "Mon Sep 28 20:37:00 2020",
 "vivado_version": "2018.3",
 "part": "xc7z020clg400-2",
-}]. Thread: Worker-6
+}]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:35.715
-!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:01.155
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:35.764
-!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, {"HDMI_TX_0": {"hier_name": "HDMI_TX_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:01.202
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, {"HDMI_TX_0": {"hier_name": "HDMI_TX_0",
 "type": "HDMI_TX",
 "version": "1.0",
 "ip_type": "PERIPHERAL",
@@ -82,6 +82,11 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data E:/Project/Perso
 "clk_wiz_0": {"hier_name": "clk_wiz_0",
 "type": "clk_wiz",
 "version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"ila_0": {"hier_name": "ila_0",
+"type": "ila",
+"version": "6.2",
 "ip_type": "PERIPHERAL",
 },
 "proc_sys_reset_0": {"hier_name": "proc_sys_reset_0",
@@ -369,13 +374,13 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data E:/Project/Perso
 "version": "6.2",
 "ip_type": "PERIPHERAL",
 },
-}]. Thread: Worker-6
+}]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:35.998
-!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:01.451
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:36.031
-!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"axi_vdma_0_S_AXI_LITE": {"name": "axi_vdma_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:01.488
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"axi_vdma_0_S_AXI_LITE": {"name": "axi_vdma_0",
 "base": "0x43000000",
 "high": "0x4300FFFF",
 "size": "65536",
@@ -762,11 +767,11 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data E:/Project/Perso
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:36.147
-!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:01.604
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:36.233
-!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"axi_vdma_0": {"MM2S_VDMACR": {"description": "MM2S VDMA Control Register",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:01.690
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"axi_vdma_0": {"MM2S_VDMACR": {"description": "MM2S VDMA Control Register",
 "address_offset": "0x00",
 "access": "read-write",
 "size": "32",
@@ -2347,11 +2352,11 @@ Note: Frame Delay must be less than or equal to Frame Buffers or an undefined re
 "ps7_xadc_0": {},
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:36.253
-!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:01.723
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:43:36.327
-!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"axi_vdma_0": {"MM2S_VDMACR": {"description": "MM2S VDMA Control Register",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:01.800
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"axi_vdma_0": {"MM2S_VDMACR": {"description": "MM2S VDMA Control Register",
 "address_offset": "0x00",
 "access": "read-write",
 "size": "32",
@@ -3932,11 +3937,11 @@ Note: Frame Delay must be less than or equal to Frame Buffers or an undefined re
 "ps7_xadc_0": {},
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.434
-!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.311
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.447
-!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, {"ps7_cortexa9_0": {"freertos10_xilinx_v1_2": {"name": "freertos10_xilinx",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.325
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, {"ps7_cortexa9_0": {"freertos10_xilinx_v1_2": {"name": "freertos10_xilinx",
 "version": "1.2",
 "desc": "FreeRTOS is a market leading open source RTOS",
 "compilerflags": "",
@@ -3968,46 +3973,46 @@ Note: Frame Delay must be less than or equal to Frame Buffers or an undefined re
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.475
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.356
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.481
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.359
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.489
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.370
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.492
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.373
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.494
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.375
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.498
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.380
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.500
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.382
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.503
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.385
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.505
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.387
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.507
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.390
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.518
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.404
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.521
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.407
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.522
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.408
 !MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.594
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.486
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"ddr_self_refresh": {"userdefname": "DDR self refresh",
 "description": "This DDR self refresh application provides a simple demonstration of how to enter to/exit from DDR self refresh mode. This application runs on R5 out of TCM.",
 "supp_proc": "psu_cortexr5",
@@ -4247,124 +4252,100 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.603
-!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.496
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.656
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.543
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.658
-!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.545
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:05.709
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:13.591
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:11.710
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:32.834
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:11.713
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:32.838
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:11.731
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:32.852
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:11.734
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:32.856
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:11.737
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:33.828
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:11.740
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:33.831
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:12.108
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:34.028
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:12.111
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:34.031
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:12.241
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:34.996
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:12.244
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:34.999
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:14.639
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:35.648
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:14.642
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:35.651
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:15.834
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:38.627
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:15.837
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:38.631
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:15.891
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:38.636
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:15.894
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:38.639
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:16.131
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:38.642
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:16.135
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:38.646
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:16.792
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:38.651
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:16.796
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:38.655
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:20.721
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:38.659
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:20.725
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:38.663
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:20.752
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:38.691
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:20.756
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:38.695
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:20.761
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:38.701
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:20.764
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:38.707
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:20.767
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:20.770
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:20.798
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:20.803
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:20.809
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:20.813
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:20.818
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:20.821
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:32.714
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:44.489
 !MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:32.785
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:44.564
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"ddr_self_refresh": {"userdefname": "DDR self refresh",
 "description": "This DDR self refresh application provides a simple demonstration of how to enter to/exit from DDR self refresh mode. This application runs on R5 out of TCM.",
 "supp_proc": "psu_cortexr5",
@@ -4604,65 +4585,68 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:32.790
-!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app empty_application -sw {} -arch {}], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:44.567
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:32.861
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app empty_application -sw {} -arch {}], Result: [null, 1]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:44.629
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:34.159
-!MESSAGE XSCT Command: [::hsi::utils::write_sw_mss -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -sw OV5640Display_bsp -dir E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp -processor ps7_cortexa9_0 -os standalone -app empty_application], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:44.830
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app empty_application -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:34.227
-!MESSAGE XSCT command with result: [::hsi::utils::write_sw_mss -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -sw OV5640Display_bsp -dir E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp -processor ps7_cortexa9_0 -os standalone -app empty_application], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:44.874
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app empty_application -sw {} -arch {}], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:34.579
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:46.329
+!MESSAGE XSCT Command: [::hsi::utils::write_sw_mss -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -sw OV5640Display_bsp -dir E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp -processor ps7_cortexa9_0 -os standalone -app empty_application], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:34.584
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:46.382
+!MESSAGE XSCT command with result: [::hsi::utils::write_sw_mss -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -sw OV5640Display_bsp -dir E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp -processor ps7_cortexa9_0 -os standalone -app empty_application], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:34.585
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:46.679
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:34.590
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:46.685
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:46.687
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:46.691
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "6.8",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:34.591
-!MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:46.692
+!MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:40.372
-!MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:53.388
+!MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:40.889
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:54.943
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:40.893
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:54.949
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:40.894
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:54.950
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:40.899
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
-"osname": "standalone",
-"osver": "6.8",
-}]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:54.954
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {}]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:40.922
-!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:54.955
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:40.926
-!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, axi_vdma_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_sd_1 ps7_slcr_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:54.958
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, axi_vdma_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_sd_1 ps7_slcr_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:40.927
-!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:54.959
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:40.942
-!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {"axi_vdma_0": {"name": "axivdma",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:54.968
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {"axi_vdma_0": {"name": "axivdma",
 "ver": "6.6",
 },
 "ps7_afi_0": {"name": "generic",
@@ -4772,11 +4756,11 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:40.945
-!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:54.969
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:41.139
-!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, {"HDMI_TX_0": {"version": "1.0",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:55.192
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, {"HDMI_TX_0": {"version": "1.0",
 "driver_info": {"generic": {"name": "generic",
 "version": "2.0",
 "repo": "C:/Xilinx/SDK/2018.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
@@ -4827,6 +4811,13 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 "repo": "C:/Xilinx/SDK/2018.3/data/embeddedsw/XilinxProcessorIPLib/drivers/clk_wiz_v1_2",
 "compilerflags": "",
 "linkerflags": "",
+},
+},
+},
+"ila_0": {"version": "6.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
 },
 },
 },
@@ -5345,50 +5336,77 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:41.316
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:55.196
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:41.320
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:55.201
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:41.321
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:55.202
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:41.325
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:55.206
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:55.209
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:55.214
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:55.308
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:55.314
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:55.314
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:55.320
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "6.8",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:41.336
-!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:55.322
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:41.341
-!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:55.326
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:41.447
-!MESSAGE XSCT Command: [::hsi::utils::closesw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:55.326
+!MESSAGE XSCT Command: [::hsi::utils::opensw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:41.450
-!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:55.329
+!MESSAGE XSCT command with result: [::hsi::utils::opensw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.424
-!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:55.331
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display/src], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.429
-!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:55.459
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display/src], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.430
-!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:56.342
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.433
-!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {}]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:56.346
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.434
-!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:56.347
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.443
-!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {"axi_vdma_0": {"name": "axivdma",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:56.351
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.8",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:56.368
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:56.377
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {"axi_vdma_0": {"name": "axivdma",
 "ver": "6.6",
 },
 "ps7_afi_0": {"name": "generic",
@@ -5498,88 +5516,55 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.444
-!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:56.612
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.448
-!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:56.616
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.449
-!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:56.617
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.452
-!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {}]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.455
-!MESSAGE XSCT Command: [::hsi::utils::closesw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.458
-!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.513
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.532
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.533
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.537
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:56.621
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "6.8",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.538
-!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:56.631
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.541
-!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:56.635
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.542
-!MESSAGE XSCT Command: [::hsi::utils::opensw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:56.761
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.544
-!MESSAGE XSCT command with result: [::hsi::utils::opensw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:56.764
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.545
-!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display/src], Thread: main
+!ENTRY org.eclipse.cdt.core 1 0 2020-09-28 21:08:58.037
+!MESSAGE Indexed 'OV5640Display' (0 sources, 0 headers) in 0.01 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:43.655
-!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display/src], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:58.425
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:44.762
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:58.441
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:44.766
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:58.443
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:44.768
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:44.775
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:58.456
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "6.8",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:44.799
-!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:58.475
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:44.804
-!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:44.988
-!MESSAGE XSCT Command: [::hsi::utils::closesw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:44:45.001
-!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
-
-!ENTRY org.eclipse.cdt.core 1 0 2020-09-27 21:44:45.008
-!MESSAGE Indexed 'OV5640Display' (0 sources, 0 headers) in 0.004 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
-
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:45.619
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:08:58.497
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5606,7 +5591,13 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:48.107
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:58.600
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:58.825
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:08:58.989
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5617,10 +5608,10 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 1 0 2020-09-27 21:44:48.187
-!MESSAGE Indexed 'OV5640Display_bsp' (119 sources, 74 headers) in 3.1 sec: 4,929 declarations; 31,026 references; 51 unresolved inclusions; 3 syntax errors; 53 unresolved names (0.15%)
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:08:59.004
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:48.197
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:08:59.069
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5631,7 +5622,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:48.463
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:01.527
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5642,7 +5633,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:48.472
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:01.543
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5652,8 +5643,11 @@ java.lang.NullPointerException
 	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-09-28 21:09:03.002
+!MESSAGE Indexed 'OV5640Display_bsp' (119 sources, 74 headers) in 4.87 sec: 4,929 declarations; 31,026 references; 51 unresolved inclusions; 3 syntax errors; 53 unresolved names (0.15%)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:48.650
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:03.113
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5664,7 +5658,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:48.659
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:03.486
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5675,7 +5669,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:48.767
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:03.688
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5686,7 +5680,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:48.774
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:03.702
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5697,7 +5691,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:48.890
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:03.925
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5708,7 +5702,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:48.902
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:03.952
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5719,7 +5713,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:49.031
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:04.231
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5730,7 +5724,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:49.037
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:04.245
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5741,7 +5735,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:49.223
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:04.455
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5752,7 +5746,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:49.226
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:04.464
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5763,7 +5757,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:49.509
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:04.692
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5774,7 +5768,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:49.516
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:04.702
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5785,7 +5779,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:49.769
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:04.851
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5796,7 +5790,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:49.776
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:04.862
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5807,7 +5801,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:49.917
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:05.001
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5818,7 +5812,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:49.924
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:05.008
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5829,7 +5823,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:50.062
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:05.141
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5840,7 +5834,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:50.069
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:05.148
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5851,7 +5845,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:50.213
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:05.284
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5862,7 +5856,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:50.221
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:05.290
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5873,7 +5867,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:50.371
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:05.423
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5884,7 +5878,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:50.379
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:05.432
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5895,7 +5889,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:50.521
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:05.576
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5906,7 +5900,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:50.528
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:05.583
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5917,7 +5911,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:51.638
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:06.552
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5928,7 +5922,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:51.645
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:06.558
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5939,7 +5933,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:51.782
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:06.695
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5950,7 +5944,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:51.788
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:06.702
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5961,7 +5955,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:51.949
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:06.863
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5972,7 +5966,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:51.957
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:06.872
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5983,7 +5977,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:52.103
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:07.037
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5994,7 +5988,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:52.109
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:07.046
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6005,7 +5999,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:52.178
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:07.121
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6016,7 +6010,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:54.752
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:09.699
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6027,7 +6021,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:54.884
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:09.783
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6038,7 +6032,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:54.894
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:09.789
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6049,7 +6043,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:54.994
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:09.947
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6060,7 +6054,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:55.672
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:10.555
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6071,7 +6065,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:55.739
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:10.566
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6082,7 +6076,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:55.867
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:10.651
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6093,7 +6087,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:55.970
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:10.720
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6104,7 +6098,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:55.979
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:10.727
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6115,7 +6109,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:56.096
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:10.815
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6126,7 +6120,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:56.205
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:10.932
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6137,7 +6131,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:56.210
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:10.958
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6148,7 +6142,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:56.288
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:11.087
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6159,7 +6153,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:58.241
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:13.291
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6170,7 +6164,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:58.251
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:13.300
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6181,7 +6175,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:44:58.335
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:13.384
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6192,7 +6186,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:00.179
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:15.451
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6203,7 +6197,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:00.186
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:15.457
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6214,7 +6208,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:00.307
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:15.546
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6225,7 +6219,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:03.060
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:18.848
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6236,7 +6230,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:03.066
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:18.854
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6247,7 +6241,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:03.164
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:18.934
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6258,7 +6252,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:05.949
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:21.693
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6269,7 +6263,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:05.958
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:21.700
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6280,7 +6274,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:06.077
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:21.784
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6291,7 +6285,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:09.037
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:23.958
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6302,7 +6296,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:09.051
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:23.965
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6313,7 +6307,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:09.450
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:24.042
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6324,7 +6318,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:12.049
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:26.106
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6335,7 +6329,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:12.055
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:26.113
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6346,7 +6340,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:12.137
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:26.196
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6357,7 +6351,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:13.482
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:27.404
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6368,7 +6362,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:13.488
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:27.411
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6379,7 +6373,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:13.566
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:27.494
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6390,7 +6384,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:15.068
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:28.747
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6401,7 +6395,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:15.080
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:28.751
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6412,7 +6406,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:15.178
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:28.826
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6423,7 +6417,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:17.421
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:30.938
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6434,7 +6428,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:17.429
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:30.946
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6445,7 +6439,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:17.588
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:31.108
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6456,7 +6450,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:17.770
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:31.335
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6467,7 +6461,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:17.781
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:31.346
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6478,7 +6472,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:17.782
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:31.348
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6489,7 +6483,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:17.784
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:31.350
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6500,7 +6494,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:22.566
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:36.240
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6511,7 +6505,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:22.568
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:36.241
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6522,7 +6516,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:22.569
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:36.243
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6533,7 +6527,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:22.571
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:36.244
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6544,7 +6538,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:23.549
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:37.210
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6555,7 +6549,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:23.550
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:37.212
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6566,7 +6560,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:23.551
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:37.214
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6577,7 +6571,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:23.552
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:37.215
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6588,7 +6582,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:25.259
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:38.844
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6599,7 +6593,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:25.261
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:38.846
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6610,7 +6604,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:25.263
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:38.847
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6621,7 +6615,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:25.264
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:38.849
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6632,7 +6626,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:28.317
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:41.982
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6643,7 +6637,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:28.322
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:41.986
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6654,7 +6648,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:28.407
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:42.073
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6665,7 +6659,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:30.826
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:44.729
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6676,7 +6670,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:30.835
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:44.737
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6687,7 +6681,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:30.917
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:44.815
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6698,7 +6692,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:33.239
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:47.662
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6709,7 +6703,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:33.248
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:47.669
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6720,7 +6714,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:33.327
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:47.748
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6731,7 +6725,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:35.673
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:49.973
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6742,7 +6736,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-09-27 21:45:35.735
+!ENTRY org.eclipse.cdt.core 4 0 2020-09-28 21:09:50.019
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -6767,35 +6761,35 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:46:32.237
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:34.583
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:46:32.247
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:34.591
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:46:32.248
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:34.592
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:46:32.267
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:34.597
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "6.8",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:46:32.269
-!MESSAGE XSCT Command: [::hsi::utils::closesw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:34.599
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:46:32.272
-!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:34.602
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 1 0 2020-09-27 21:47:07.772
+!ENTRY com.xilinx.sdk.utils 1 0 2020-09-28 21:10:51.849
 !MESSAGE Updating toolusage
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.795
-!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:51.898
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.805
-!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "666.666666",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:51.934
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "666.666666",
 "PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
 "PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
 "PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
@@ -6807,61 +6801,64 @@ java.lang.NullPointerException
 "PCW_FPGA0_PERIPHERAL_FREQMHZ": "100",
 "PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
 "PCW_UIPARAM_DDR_FREQ_MHZ": "533.333333",
-}]. Thread: Worker-6
+}]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.806
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:51.941
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.809
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:51.947
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.810
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:51.948
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.814
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.007
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.815
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.008
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.820
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.030
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.822
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.031
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.825
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.043
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.826
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.045
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.829
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-6
+!ENTRY org.eclipse.ui 4 4 2020-09-28 21:10:52.049
+!MESSAGE Unable to process element: viewright in perspective extension: null
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.830
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.149
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.833
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 675000000]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.151
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.834
-!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.162
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 675000000]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.838
-!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.164
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.205
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
 "index": "0",
 },
 "ps7_cortexa9_1": {"bscan": "",
 "index": "1",
 },
-}]. Thread: Worker-6
+}]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.840
-!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.207
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.860
-!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"axi_vdma_0_S_AXI_LITE": {"name": "axi_vdma_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.306
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"axi_vdma_0_S_AXI_LITE": {"name": "axi_vdma_0",
 "base": "0x43000000",
 "high": "0x4300FFFF",
 "size": "65536",
@@ -7246,342 +7243,292 @@ java.lang.NullPointerException
 "acctype": "",
 "tz": "",
 },
-}]. Thread: Worker-6
+}]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.862
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.308
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.880
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.678
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.881
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.679
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.884
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.772
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.885
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.773
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.888
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.783
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.889
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.785
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.915
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.792
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.916
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.794
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.922
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.805
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.924
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.806
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.928
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 675000000]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.813
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 675000000]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.943
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf bit], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.838
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf bit], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.946
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf bit], Result: [null, system_wrapper.bit]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.842
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf bit], Result: [null, system_wrapper.bit]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:07.947
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.844
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-7
 
-!ENTRY org.eclipse.ui 4 4 2020-09-27 21:47:09.163
-!MESSAGE Unable to process element: viewright in perspective extension: null
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.874
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:11.181
-!MESSAGE XSCT Command: [enable_info_messages], Thread: Worker-0
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:52.877
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:11.332
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.087
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210249855850]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:11.333
-!MESSAGE XSCT command with result: [enable_info_messages], Result: [null, ]. Thread: Worker-0
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.089
+!MESSAGE XSCT Command: [version -server], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:11.336
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.092
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.3]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:11.928
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210249855850 (error DR shift through all zeroes)]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.093
+!MESSAGE XSCT Command: [version], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:11.931
-!MESSAGE XSCT Command: [version -server], Thread: Worker-6
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:11.935
-!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.3]. Thread: Worker-6
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:11.937
-!MESSAGE XSCT Command: [version], Thread: Worker-6
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:11.963
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.095
 !MESSAGE XSCT command with result: [version], Result: [null, xsct 2018.3
 SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
-Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-6
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:12.022
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.101
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:12.032
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210249855850 (error DR shift through all zeroes)]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.113
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210249855850]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:12.033
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850 (error DR shift through all zeroes)" && level==1}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.114
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:15.083
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850 (error DR shift through all zeroes)" && level==1}], Result: [null, ]. Thread: Worker-6
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:18.090
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850 (error DR shift through all zeroes)" && level==1}], Thread: Worker-6
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:47:21.120
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850 (error DR shift through all zeroes)" && level==1}], Result: [null, ]. Thread: Worker-6
-
-!ENTRY com.xilinx.sdk.utils 1 0 2020-09-27 21:48:36.732
-!MESSAGE Updating toolusage
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.744
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-6
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.758
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-6
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.759
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.776
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210249855850]. Thread: Worker-6
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.777
-!MESSAGE XSCT Command: [version -server], Thread: Worker-6
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.780
-!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.3]. Thread: Worker-6
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.781
-!MESSAGE XSCT Command: [version], Thread: Worker-6
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.783
-!MESSAGE XSCT command with result: [version], Result: [null, xsct 2018.3
-SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
-Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-6
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.784
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.799
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210249855850]. Thread: Worker-6
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.800
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Thread: Worker-6
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.834
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.140
 !MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-6
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.836
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.142
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.844
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210249855850]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.154
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210249855850]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.845
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.155
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.870
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.185
 !MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-6
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.872
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.186
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.884
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210249855850]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.197
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210249855850]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.885
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.199
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.919
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.230
 !MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-6
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.922
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.232
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.934
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210249855850]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.245
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210249855850]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.935
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.246
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.977
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.273
 !MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-6
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.980
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.274
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.998
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210249855850]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.283
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210249855850]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:36.999
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.284
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:37.029
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.323
 !MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-6
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:37.030
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.324
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:37.039
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210249855850]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.355
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210249855850]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:37.040
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.356
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:37.073
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.390
 !MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-6
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:37.074
-!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-HS1 210249855850" && level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.391
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-HS1 210249855850" && level == 0}], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:37.103
-!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-HS1 210249855850" && level == 0}], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.414
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-HS1 210249855850" && level == 0}], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:37.104
-!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.415
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:37.107
-!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 10000000]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.418
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 10000000]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:37.110
-!MESSAGE XSCT Command: [source E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.419
+!MESSAGE XSCT Command: [source E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:37.123
-!MESSAGE XSCT command with result: [source E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.422
+!MESSAGE XSCT command with result: [source E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:37.125
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.423
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:37.165
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.472
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:37.167
-!MESSAGE XSCT Command: [rst -system], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.474
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:37.343
-!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.825
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:37.344
-!MESSAGE XSCT Command: [after 3000], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:53.826
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:40.350
-!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:54.282
+!MESSAGE XSCT Command: [enable_info_messages], Thread: Worker-8
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:40.374
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:56.833
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:56.834
+!MESSAGE XSCT command with result: [enable_info_messages], Result: [null, ]. Thread: Worker-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:56.862
 !MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:40.382
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:56.878
 !MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210249855850]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:40.383
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:56.879
 !MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:40.404
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:56.907
 !MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
      3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:40.406
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:56.908
 !MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:40.435
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:56.938
 !MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:40.436
-!MESSAGE XSCT Command: [fpga -file E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:10:56.939
+!MESSAGE XSCT Command: [fpga -file E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:43.911
-!MESSAGE XSCT command with result: [fpga -file E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:00.430
+!MESSAGE XSCT command with result: [fpga -file E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:43.962
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:00.672
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:44.038
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:00.733
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:44.040
-!MESSAGE XSCT Command: [loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:00.735
+!MESSAGE XSCT Command: [loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:44.139
-!MESSAGE XSCT command with result: [loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, system_wrapper]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:00.831
+!MESSAGE XSCT command with result: [loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, system_wrapper]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:44.140
-!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:00.833
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:44.143
-!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:00.836
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:44.144
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:00.837
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:44.175
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:00.869
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:44.176
-!MESSAGE XSCT Command: [ps7_init], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:00.870
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:44.767
-!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:01.481
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:44.768
-!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:01.482
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:44.813
-!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:01.493
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:44.814
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:01.495
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:44.846
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:01.539
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:44.847
-!MESSAGE XSCT Command: [dow E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display/Debug/OV5640Display.elf], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:01.540
+!MESSAGE XSCT Command: [dow E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display/Debug/OV5640Display.elf], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:45.077
-!MESSAGE XSCT command with result: [dow E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display/Debug/OV5640Display.elf], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:01.784
+!MESSAGE XSCT command with result: [dow E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display/Debug/OV5640Display.elf], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:45.078
-!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:01.786
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:45.082
-!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:01.789
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:45.313
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:02.023
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:45.582
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:02.248
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:45.584
-!MESSAGE XSCT Command: [con], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:02.249
+!MESSAGE XSCT Command: [con], Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:48:45.594
-!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:11:02.267
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-7
 
-!ENTRY com.xilinx.sdk.utils 1 0 2020-09-27 21:59:34.522
+!ENTRY com.xilinx.sdk.utils 1 0 2020-09-28 21:17:25.561
 !MESSAGE Executed Webtalk command
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:59:34.578
-!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-166
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:17:25.598
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-151
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-09-27 21:59:34.605
-!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-166
+!ENTRY com.xilinx.sdk.utils 0 0 2020-09-28 21:17:25.607
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-151

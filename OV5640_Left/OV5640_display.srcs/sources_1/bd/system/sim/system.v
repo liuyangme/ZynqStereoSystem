@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Sun Sep 27 21:13:14 2020
+//Date        : Mon Sep 28 20:36:01 2020
 //Host        : LiuYang-Laptop running 64-bit major release  (build 9200)
 //Command     : generate_target system.bd
 //Design      : system
@@ -933,7 +933,7 @@ module s01_couplers_imp_1CYGJQJ
   assign s01_couplers_to_s01_couplers_WVALID = S_AXI_wvalid[0];
 endmodule
 
-(* CORE_GENERATION_INFO = "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=23,numReposBlks=17,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_clkrst_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "system.hwdef" *) 
+(* CORE_GENERATION_INFO = "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=24,numReposBlks=18,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_clkrst_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "system.hwdef" *) 
 module system
    (DDR_0_addr,
     DDR_0_ba,
@@ -1157,10 +1157,10 @@ module system
   wire clk_wiz_0_clk_out1;
   wire clk_wiz_0_clk_out2;
   wire clk_wiz_0_locked;
-  wire [7:0]cmos_data_i_0_1;
-  wire cmos_href_i_0_1;
-  wire cmos_pclk_i_0_1;
-  wire cmos_vsync_i_0_1;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [7:0]cmos_data_i_0_1;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire cmos_href_i_0_1;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire cmos_pclk_i_0_1;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire cmos_vsync_i_0_1;
   wire [14:0]processing_system7_0_DDR_ADDR;
   wire [2:0]processing_system7_0_DDR_BA;
   wire processing_system7_0_DDR_CAS_N;
@@ -1458,6 +1458,12 @@ module system
         .clk_out2(clk_wiz_0_clk_out2),
         .locked(clk_wiz_0_locked),
         .reset(util_vector_logic_1_Res));
+  system_ila_0_0 ila_0
+       (.clk(ACLK_1),
+        .probe0(cmos_pclk_i_0_1),
+        .probe1(cmos_href_i_0_1),
+        .probe2(cmos_vsync_i_0_1),
+        .probe3(cmos_data_i_0_1));
   system_proc_sys_reset_0_0 proc_sys_reset_0
        (.aux_reset_in(1'b1),
         .dcm_locked(1'b1),

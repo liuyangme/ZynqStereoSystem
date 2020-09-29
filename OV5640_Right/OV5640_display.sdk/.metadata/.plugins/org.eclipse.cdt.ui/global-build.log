@@ -8,3 +8,33 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
+19:33:56 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:35:37 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:36:50 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:38:14 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:40:14 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:41:07 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
