@@ -1,8 +1,8 @@
-21:10:50 **** Incremental Build of configuration Debug for project OV5640Display ****
+17:01:24 **** Incremental Build of configuration Debug for project OV5640Display ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
 
-21:10:50 Build Finished (took 664ms)
+17:01:25 Build Finished (took 661ms)
 

@@ -87,9 +87,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_1519 || ORIG
 # IP: bd/system/ip/system_system_ila_2_0/bd_0/ip/ip_0/bd_1519_ila_lib_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_1519_ila_lib_0 || ORIG_REF_NAME==bd_1519_ila_lib_0} -quiet] -quiet
 
-# IP: bd/system/ip/system_ila_0_0/system_ila_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_ila_0_0 || ORIG_REF_NAME==system_ila_0_0} -quiet] -quiet
-
 # IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0} -quiet] -quiet
 
@@ -153,14 +150,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: bd/system/ip/system_system_ila_2_0/bd_0/bd_1519_ooc.xdc
 
 # XDC: bd/system/ip/system_system_ila_2_0/system_system_ila_2_0_ooc.xdc
-
-# XDC: bd/system/ip/system_ila_0_0/ila_v6_2/constraints/ila_impl.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_ila_0_0 || ORIG_REF_NAME==system_ila_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: bd/system/ip/system_ila_0_0/ila_v6_2/constraints/ila.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_ila_0_0 || ORIG_REF_NAME==system_ila_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: bd/system/ip/system_ila_0_0/system_ila_0_0_ooc.xdc
 
 # XDC: bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc
 

@@ -1,0 +1,675 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Xilinx/Vivado/2018.3/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'LiuYang_Laptop' on host 'liuyang-laptop' (Windows NT_amd64 version 6.2) on Tue Sep 29 17:04:08 +0800 2020
+INFO: [HLS 200-10] In directory 'E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.runs/synth_1'
+INFO: [HLS 200-10] Creating and opening project 'E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.runs/synth_1/system_v_mix_0_0'.
+INFO: [HLS 200-10] Adding design file 'e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix_config.h' to the project
+INFO: [HLS 200-10] Adding design file 'e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.h' to the project
+INFO: [HLS 200-10] Adding design file 'e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_dma.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_dma.h' to the project
+INFO: [HLS 200-10] Adding design file 'e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_csc.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_csc.h' to the project
+INFO: [HLS 200-10] Creating and opening solution 'E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.runs/synth_1/system_v_mix_0_0/prj'.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-2'
+INFO: [SYN 201-201] Setting up clock 'ap_clk' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_csc.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_dma.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:01:20 . Memory (MB): peak = 103.664 ; gain = 21.133
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:01:20 . Memory (MB): peak = 103.664 ; gain = 21.133
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:234) in function 'hls::Scalar<1, unsigned char>::operator=(unsigned char)' completely with a factor of 1.
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<24, ap_uint<8> >.1' into 'hls::AXIGetBitFields<24, ap_uint<8> >' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:71).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<24, ap_uint<8> >' into 'AXIvideo2MultiPixStream' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2448).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<24, ap_uint<8> >' into 'AXIvideo2MultiPixStream' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2449).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<24, ap_uint<8> >' into 'AXIvideo2MultiPixStream' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2450).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:05 ; elapsed = 00:01:26 . Memory (MB): peak = 244.289 ; gain = 161.758
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2577: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:07 ; elapsed = 00:01:29 . Memory (MB): peak = 341.352 ; gain = 258.820
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'v_mix_yuv2rgb<false>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'v_mix_upsample<false>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'v_mix_rgb2yuv<false>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'v_mix_core_alpha<true, false>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'v_mix_444_to_422<false>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'v_mix_422_to_444<false>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'v_mix_422_to_420<false>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'v_mix_420_to_422<false>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-2.1' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2553) in function 'MultiPixStream2AXIvideo' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2428) in function 'AXIvideo2MultiPixStream' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' in function 'v_mix_yuv2rgb<false>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' in function 'v_mix_upsample<false>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' in function 'v_mix_rgb2yuv<false>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' in function 'v_mix_core_alpha<true, false>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' in function 'v_mix_core_alpha<true, false>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.3' in function 'v_mix_core_alpha<true, false>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4' in function 'v_mix_core_alpha<true, false>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' in function 'v_mix_444_to_422<false>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' in function 'v_mix_422_to_444<false>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' in function 'v_mix_422_to_420<false>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' in function 'v_mix_420_to_422<false>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:180) in function 'MultiPixStream2AXIvideo' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2571) in function 'MultiPixStream2AXIvideo' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2.1' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2573) in function 'MultiPixStream2AXIvideo' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2441) in function 'AXIvideo2MultiPixStream' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1.1' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2443) in function 'AXIvideo2MultiPixStream' completely with a factor of 3.
+INFO: [XFORM 203-102] Partitioning array 'mapComp' in dimension 1 automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'srcLayer1Rgb.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'srcLayer1x.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'outLayer1.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'outYuv.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'outLayer0.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'out422.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'out420.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'srcLayer0.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'srcLayer0Yuv422.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'srcLayer0Yuv.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'srcLayer1.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'srcLayer1Yuv.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'srcLayer1Yuv422.V.val.V' .
+INFO: [XFORM 203-101] Partitioning array 'pix.val.V' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2496) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'map.V' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2543) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'tmp.val.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val.V' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2401) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'map'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val.V' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2401) in dimension 1 completely.
+INFO: [XFORM 203-712] Applying dataflow to function 'v_mix' , detected/extracted 17 process function(s): 
+	 'v_mix.entry123'
+	 'Block_._crit_edge302_proc'
+	 'AXIvideo2MultiPixStream78'
+	 'v_mix_420_to_422<false>79'
+	 'v_mix_422_to_444<false>80'
+	 'v_mix_yuv2rgb<false>81'
+	 'Block_._crit_edge3027_proc'
+	 'AXIvideo2MultiPixStream'
+	 'v_mix_420_to_422<false>82'
+	 'v_mix_422_to_444<false>83'
+	 'v_mix_yuv2rgb<false>84'
+	 'v_mix_upsample<false>'
+	 'v_mix_core_alpha<true, false>'
+	 'v_mix_rgb2yuv<false>'
+	 'v_mix_444_to_422<false>'
+	 'v_mix_422_to_420<false>'
+	 'MultiPixStream2AXIvideo'.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:15 ; elapsed = 00:01:38 . Memory (MB): peak = 460.078 ; gain = 377.547
+WARNING: [XFORM 203-631] Renaming function 'v_mix_yuv2rgb<false>84' to 'v_mix_yuv2rgb84' 
+WARNING: [XFORM 203-631] Renaming function 'v_mix_yuv2rgb<false>81' to 'v_mix_yuv2rgb81' 
+WARNING: [XFORM 203-631] Renaming function 'v_mix_upsample<false>' to 'v_mix_upsample' 
+WARNING: [XFORM 203-631] Renaming function 'v_mix_core_alpha<true, false>' to 'v_mix_core_alpha' 
+WARNING: [XFORM 203-631] Renaming function 'v_mix_444_to_422<false>' to 'v_mix_444_to_422' 
+WARNING: [XFORM 203-631] Renaming function 'v_mix_422_to_444<false>83' to 'v_mix_422_to_44483' 
+WARNING: [XFORM 203-631] Renaming function 'v_mix_422_to_444<false>80' to 'v_mix_422_to_44480' 
+WARNING: [XFORM 203-631] Renaming function 'v_mix_422_to_420<false>' to 'v_mix_422_to_420' 
+WARNING: [XFORM 203-631] Renaming function 'v_mix_420_to_422<false>82' to 'v_mix_420_to_42282' 
+WARNING: [XFORM 203-631] Renaming function 'v_mix_420_to_422<false>79' to 'v_mix_420_to_42279' 
+WARNING: [XFORM 203-631] Renaming function 'MultiPixStream2AXIvideo' to 'MultiPixStream2AXIvi' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:180:53)
+WARNING: [XFORM 203-631] Renaming function 'Block_._crit_edge302_proc' to 'Block_._crit_edge302' 
+WARNING: [XFORM 203-631] Renaming function 'Block_._crit_edge3027_proc' to 'Block_._crit_edge302.1' 
+WARNING: [XFORM 203-631] Renaming function 'AXIvideo2MultiPixStream78' to 'AXIvideo2MultiPixStr' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:49:4)
+WARNING: [XFORM 203-631] Renaming function 'AXIvideo2MultiPixStream' to 'AXIvideo2MultiPixStr.1' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:49:4)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:22 ; elapsed = 00:01:45 . Memory (MB): peak = 676.371 ; gain = 593.840
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'v_mix' ...
+WARNING: [SYN 201-103] Legalizing function name 'v_mix.entry123' to 'v_mix_entry123'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_._crit_edge302' to 'Block_crit_edge302'.
+WARNING: [SYN 201-103] Legalizing function name 'reg<unsigned short>' to 'reg_unsigned_short_s'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_._crit_edge302.1' to 'Block_crit_edge302_1'.
+WARNING: [SYN 201-103] Legalizing function name 'AXIvideo2MultiPixStr.1' to 'AXIvideo2MultiPixStr_1'.
+WARNING: [SYN 201-103] Legalizing function name 'v_mix_rgb2yuv<false>' to 'v_mix_rgb2yuv_false_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_mix_entry123' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 105.627 seconds; current allocated memory: 598.618 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.05 seconds; current allocated memory: 598.703 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_crit_edge302' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.362 seconds; current allocated memory: 598.749 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.877 seconds; current allocated memory: 598.832 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'reg_unsigned_short_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.924 seconds; current allocated memory: 598.845 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.498 seconds; current allocated memory: 598.886 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2MultiPixStr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.823 seconds; current allocated memory: 599.102 MB.
+INFO: [HLS 200-434] Only 3 loops out of a total 4 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 10.722 seconds; current allocated memory: 599.390 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_mix_420_to_42279' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 8.087 seconds; current allocated memory: 599.501 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.929 seconds; current allocated memory: 599.678 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_mix_422_to_44480' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.096 seconds; current allocated memory: 599.788 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.919 seconds; current allocated memory: 599.965 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_mix_yuv2rgb81' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.082 seconds; current allocated memory: 600.093 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.001 seconds; current allocated memory: 600.260 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_crit_edge302_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.205 seconds; current allocated memory: 600.290 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 600.322 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2MultiPixStr_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.518 seconds; current allocated memory: 600.519 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 7.132 seconds; current allocated memory: 600.794 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_mix_420_to_42282' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 11.57 seconds; current allocated memory: 600.888 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.806 seconds; current allocated memory: 601.068 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_mix_422_to_44483' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.928 seconds; current allocated memory: 601.162 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.785 seconds; current allocated memory: 601.342 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_mix_yuv2rgb84' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.007 seconds; current allocated memory: 601.451 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.04 seconds; current allocated memory: 601.631 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_mix_upsample' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.368 seconds; current allocated memory: 601.725 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.68 seconds; current allocated memory: 601.942 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_mix_core_alpha' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-21] Estimated clock period (8.951ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'v_mix_core_alpha' consists of the following:
+	'phi' operation ('srcpix.val[1].V') with incoming values : ('srcpix.val[1].V', e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:402) ('tmp.val[1].V', e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:415) [109]  (0 ns)
+	'sub' operation of DSP[150] ('ret_V_i_16', e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:436) [146]  (0 ns)
+	'mul' operation of DSP[150] ('ret_V_1_1_i', e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:436) [148]  (2.82 ns)
+	'add' operation of DSP[150] ('ret_V_2_1_i', e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:436) [150]  (2.73 ns)
+	fifo write on port 'outImg_V_val_0_V' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:439) [160]  (3.4 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 4.562 seconds; current allocated memory: 602.307 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 6.542 seconds; current allocated memory: 602.794 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_mix_rgb2yuv_false_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 5.926 seconds; current allocated memory: 602.889 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.412 seconds; current allocated memory: 603.029 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_mix_444_to_422' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.902 seconds; current allocated memory: 603.108 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.68 seconds; current allocated memory: 603.247 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_mix_422_to_420' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.875 seconds; current allocated memory: 603.327 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.788 seconds; current allocated memory: 603.466 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.592 seconds; current allocated memory: 603.731 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 6.047 seconds; current allocated memory: 604.016 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_mix' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.499 seconds; current allocated memory: 604.474 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 13.867 seconds; current allocated memory: 606.032 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_entry123' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_entry123'.
+INFO: [HLS 200-111]  Elapsed time: 12.974 seconds; current allocated memory: 606.401 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_crit_edge302' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_crit_edge302'.
+INFO: [HLS 200-111]  Elapsed time: 1.262 seconds; current allocated memory: 606.776 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'reg_unsigned_short_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_unsigned_short_s'.
+INFO: [HLS 200-111]  Elapsed time: 1.053 seconds; current allocated memory: 606.843 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2MultiPixStr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2MultiPixStr'.
+INFO: [HLS 200-111]  Elapsed time: 0.742 seconds; current allocated memory: 607.798 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_420_to_42279' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_420_to_42279'.
+INFO: [HLS 200-111]  Elapsed time: 8.343 seconds; current allocated memory: 608.131 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_422_to_44480' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_422_to_44480'.
+INFO: [HLS 200-111]  Elapsed time: 1.9 seconds; current allocated memory: 608.521 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_yuv2rgb81' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_yuv2rgb81'.
+INFO: [HLS 200-111]  Elapsed time: 1.873 seconds; current allocated memory: 608.849 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_crit_edge302_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_crit_edge302_1'.
+INFO: [HLS 200-111]  Elapsed time: 1.846 seconds; current allocated memory: 608.977 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2MultiPixStr_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2MultiPixStr_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.463 seconds; current allocated memory: 609.935 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_420_to_42282' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_420_to_42282'.
+INFO: [HLS 200-111]  Elapsed time: 8.2 seconds; current allocated memory: 610.253 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_422_to_44483' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_422_to_44483'.
+INFO: [HLS 200-111]  Elapsed time: 1.957 seconds; current allocated memory: 610.644 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_yuv2rgb84' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_yuv2rgb84'.
+INFO: [HLS 200-111]  Elapsed time: 2.229 seconds; current allocated memory: 611.000 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_upsample' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_upsample'.
+INFO: [HLS 200-111]  Elapsed time: 2.036 seconds; current allocated memory: 611.325 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_core_alpha' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'v_mix_ama_submuladd_8ns_8ns_16s_16ns_16_1_1' to 'v_mix_ama_submulabkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'v_mix_ama_submulabkb': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_core_alpha'.
+INFO: [HLS 200-111]  Elapsed time: 2.083 seconds; current allocated memory: 612.200 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_rgb2yuv_false_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_rgb2yuv_false_s'.
+INFO: [HLS 200-111]  Elapsed time: 5.84 seconds; current allocated memory: 612.535 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_444_to_422' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_444_to_422'.
+INFO: [HLS 200-111]  Elapsed time: 2.059 seconds; current allocated memory: 612.839 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_422_to_420' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_422_to_420'.
+INFO: [HLS 200-111]  Elapsed time: 1.733 seconds; current allocated memory: 613.141 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'MultiPixStream2AXIvi_mapComp_0' to 'MultiPixStream2AXcud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'v_mix_mux_32_8_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvi'.
+INFO: [HLS 200-111]  Elapsed time: 1.719 seconds; current allocated memory: 614.159 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_mix' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/s_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/s_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/s_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/s_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/s_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/s_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/s_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/s_axis_video1_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/s_axis_video1_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/s_axis_video1_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/s_axis_video1_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/s_axis_video1_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/s_axis_video1_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/s_axis_video1_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_width' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_height' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_video_format' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_background_Y_R' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_background_U_G' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_background_V_B' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_layerEnable' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_layerAlpha_0' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_layerAlpha_1' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_layerStartX_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_layerStartX_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_layerStartY_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_layerStartY_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_layerWidth_0' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_layerWidth_1' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_layerHeight_0' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_layerHeight_1' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_layerScaleFactor_0' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_layerScaleFactor_1' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_layerVideoFormat_0' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_layerVideoFormat_1' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_layerStride_0' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_layerStride_1' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/HwReg_reserve' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/m_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/m_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/m_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/m_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/m_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/m_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_mix/m_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'v_mix' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'HwReg_width', 'HwReg_height', 'HwReg_video_format', 'HwReg_background_Y_R', 'HwReg_background_U_G', 'HwReg_background_V_B', 'HwReg_layerEnable', 'HwReg_layerAlpha_0', 'HwReg_layerStartX_0', 'HwReg_layerStartY_0', 'HwReg_layerWidth_0', 'HwReg_layerStride_0', 'HwReg_layerHeight_0', 'HwReg_layerScaleFactor_0', 'HwReg_layerVideoFormat_0', 'HwReg_layerAlpha_1', 'HwReg_layerStartX_1', 'HwReg_layerStartY_1', 'HwReg_layerWidth_1', 'HwReg_layerStride_1', 'HwReg_layerHeight_1', 'HwReg_layerScaleFactor_1', 'HwReg_layerVideoFormat_1', 'HwReg_reserve' to AXI-Lite port CTRL.
+INFO: [SYN 201-210] Renamed object name 'start_for_Block_crit_edge302_U0' to 'start_for_Block_cdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Block_crit_edge302_1_U0' to 'start_for_Block_ceOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_v_mix_core_alpha_U0' to 'start_for_v_mix_cfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_v_mix_420_to_42279_U0' to 'start_for_v_mix_4g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_v_mix_422_to_44480_U0' to 'start_for_v_mix_4hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_v_mix_yuv2rgb81_U0' to 'start_for_v_mix_yibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_v_mix_420_to_42282_U0' to 'start_for_v_mix_4jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_v_mix_422_to_44483_U0' to 'start_for_v_mix_4kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_v_mix_yuv2rgb84_U0' to 'start_for_v_mix_ylbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_v_mix_upsample_U0' to 'start_for_v_mix_umb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_v_mix_rgb2yuv_false_U0' to 'start_for_v_mix_rncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_v_mix_444_to_422_U0' to 'start_for_v_mix_4ocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_v_mix_422_to_420_U0' to 'start_for_v_mix_4pcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_MultiPixStream2AXIvi_U0' to 'start_for_MultiPiqcK' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix'.
+INFO: [HLS 200-111]  Elapsed time: 8.371 seconds; current allocated memory: 617.307 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [RTMG 210-279] Implementing memory 'system_v_mix_0_0_MultiPixStream2AXcud_rom' using distributed ROMs.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_layerEnable_c_U(system_v_mix_0_0_fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_layerEnable_c3_U(system_v_mix_0_0_fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_layerStartX_1_s_25_U(system_v_mix_0_0_fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_layerStartY_1_s_24_U(system_v_mix_0_0_fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_layerStartY_1_s_U(system_v_mix_0_0_fifo_w16_d7_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_layerStartX_1_s_U(system_v_mix_0_0_fifo_w16_d7_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_layerEnable_by_7_U(system_v_mix_0_0_fifo_w16_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_layerEnable_by_6_U(system_v_mix_0_0_fifo_w16_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_layerEnable_ca_U(system_v_mix_0_0_fifo_w1_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer0_V_val_0_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer0_V_val_1_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer0_V_val_2_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer0Yuv422_V_va_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer0Yuv422_V_va_1_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer0Yuv422_V_va_2_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_layerEnable_by_5_U(system_v_mix_0_0_fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer0Yuv_V_val_0_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer0Yuv_V_val_1_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer0Yuv_V_val_2_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_layerEnable_by_4_U(system_v_mix_0_0_fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'outLayer0_V_val_0_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'outLayer0_V_val_1_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'outLayer0_V_val_2_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'tmp_25_loc_channel_U(system_v_mix_0_0_fifo_w1_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer1_V_val_0_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer1_V_val_1_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer1_V_val_2_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer1Yuv422_V_va_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer1Yuv422_V_va_1_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer1Yuv422_V_va_2_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_layerEnable_by_3_U(system_v_mix_0_0_fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer1Yuv_V_val_0_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer1Yuv_V_val_1_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer1Yuv_V_val_2_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_layerEnable_by_2_U(system_v_mix_0_0_fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer1Rgb_V_val_0_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer1Rgb_V_val_1_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer1Rgb_V_val_2_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_layerEnable_by_1_U(system_v_mix_0_0_fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer1x_V_val_0_s_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer1x_V_val_1_s_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'srcLayer1x_V_val_2_s_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_layerEnable_by_U(system_v_mix_0_0_fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'outLayer1_V_val_0_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'outLayer1_V_val_1_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'outLayer1_V_val_2_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'outYuv_V_val_0_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'outYuv_V_val_1_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'outYuv_V_val_2_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out422_V_val_0_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out422_V_val_1_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out422_V_val_2_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out420_V_val_0_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out420_V_val_1_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out420_V_val_2_V_U(system_v_mix_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Block_cdEe_U(system_v_mix_0_0_start_for_Block_cdEe)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Block_ceOg_U(system_v_mix_0_0_start_for_Block_ceOg)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_mix_cfYi_U(system_v_mix_0_0_start_for_v_mix_cfYi)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_mix_4g8j_U(system_v_mix_0_0_start_for_v_mix_4g8j)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_mix_4hbi_U(system_v_mix_0_0_start_for_v_mix_4hbi)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_mix_yibs_U(system_v_mix_0_0_start_for_v_mix_yibs)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_mix_4jbC_U(system_v_mix_0_0_start_for_v_mix_4jbC)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_mix_4kbM_U(system_v_mix_0_0_start_for_v_mix_4kbM)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_mix_ylbW_U(system_v_mix_0_0_start_for_v_mix_ylbW)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_mix_umb6_U(system_v_mix_0_0_start_for_v_mix_umb6)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_mix_rncg_U(system_v_mix_0_0_start_for_v_mix_rncg)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_mix_4ocq_U(system_v_mix_0_0_start_for_v_mix_4ocq)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_mix_4pcA_U(system_v_mix_0_0_start_for_v_mix_4pcA)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_MultiPiqcK_U(system_v_mix_0_0_start_for_MultiPiqcK)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:03:23 ; elapsed = 00:05:26 . Memory (MB): peak = 691.945 ; gain = 609.414
+INFO: [SYSC 207-301] Generating SystemC RTL for v_mix with prefix system_v_mix_0_0_.
+INFO: [VHDL 208-304] Generating VHDL RTL for v_mix with prefix system_v_mix_0_0_.
+INFO: [VLOG 209-307] Generating Verilog RTL for v_mix with prefix system_v_mix_0_0_.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 29 17:10:06 2020...
+INFO: [HLS 200-112] Total elapsed time: 359.443 seconds; peak allocated memory: 617.307 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Tue Sep 29 17:10:06 2020...

@@ -218,16 +218,6 @@ proc create_root_design { parentCell } {
    CONFIG.NUM_OUT_CLKS {2} \
  ] $clk_wiz_0
 
-  # Create instance: ila_0, and set properties
-  set ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0 ]
-  set_property -dict [ list \
-   CONFIG.C_DATA_DEPTH {4096} \
-   CONFIG.C_ENABLE_ILA_AXI_MON {false} \
-   CONFIG.C_MONITOR_TYPE {Native} \
-   CONFIG.C_NUM_OF_PROBES {4} \
-   CONFIG.C_PROBE3_WIDTH {8} \
- ] $ila_0
-
   # Create instance: proc_sys_reset_0, and set properties
   set proc_sys_reset_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0 ]
 
@@ -719,7 +709,7 @@ connect_bd_intf_net -intf_net [get_bd_intf_nets v_vid_in_axi4s_0_video_out] [get
 set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_intf_nets v_vid_in_axi4s_0_video_out]
 
   # Create port connections
-  connect_bd_net -net ACLK_1 [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins axi_interconnect_1/ACLK] [get_bd_pins axi_interconnect_1/M00_ACLK] [get_bd_pins axi_interconnect_1/S00_ACLK] [get_bd_pins axi_interconnect_1/S01_ACLK] [get_bd_pins axi_vdma_0/m_axi_mm2s_aclk] [get_bd_pins axi_vdma_0/m_axi_s2mm_aclk] [get_bd_pins axi_vdma_0/m_axis_mm2s_aclk] [get_bd_pins axi_vdma_0/s_axi_lite_aclk] [get_bd_pins axi_vdma_0/s_axis_s2mm_aclk] [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins ila_0/clk] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/S_AXI_HP0_ACLK] [get_bd_pins system_ila_0/clk] [get_bd_pins system_ila_1/clk] [get_bd_pins v_axi4s_vid_out_0/aclk] [get_bd_pins v_vid_in_axi4s_0/aclk]
+  connect_bd_net -net ACLK_1 [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins axi_interconnect_1/ACLK] [get_bd_pins axi_interconnect_1/M00_ACLK] [get_bd_pins axi_interconnect_1/S00_ACLK] [get_bd_pins axi_interconnect_1/S01_ACLK] [get_bd_pins axi_vdma_0/m_axi_mm2s_aclk] [get_bd_pins axi_vdma_0/m_axi_s2mm_aclk] [get_bd_pins axi_vdma_0/m_axis_mm2s_aclk] [get_bd_pins axi_vdma_0/s_axi_lite_aclk] [get_bd_pins axi_vdma_0/s_axis_s2mm_aclk] [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/S_AXI_HP0_ACLK] [get_bd_pins system_ila_0/clk] [get_bd_pins system_ila_1/clk] [get_bd_pins v_axi4s_vid_out_0/aclk] [get_bd_pins v_vid_in_axi4s_0/aclk]
   connect_bd_net -net ARESETN_1 [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins axi_interconnect_1/ARESETN] [get_bd_pins proc_sys_reset_0/interconnect_aresetn]
   connect_bd_net -net HDMI_TX_0_HDMI_CLK_N [get_bd_ports HDMI_CLK_N_0] [get_bd_pins HDMI_TX_0/HDMI_CLK_N]
   connect_bd_net -net HDMI_TX_0_HDMI_CLK_P [get_bd_ports HDMI_CLK_P_0] [get_bd_pins HDMI_TX_0/HDMI_CLK_P]
@@ -740,14 +730,10 @@ set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets OV5640_Sensor_0_rgb_o]
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins HDMI_TX_0/PXLCLK_I] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_clk] [get_bd_pins v_tc_0/clk]
   connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins HDMI_TX_0/PXLCLK_5X_I] [get_bd_pins clk_wiz_0/clk_out2]
   connect_bd_net -net clk_wiz_0_locked [get_bd_pins HDMI_TX_0/LOCKED_I] [get_bd_pins HDMI_TX_0/RST_N] [get_bd_pins clk_wiz_0/locked] [get_bd_pins util_vector_logic_0/Op1] [get_bd_pins v_axi4s_vid_out_0/aclken] [get_bd_pins v_axi4s_vid_out_0/aresetn] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_ce] [get_bd_pins v_tc_0/clken] [get_bd_pins v_tc_0/resetn] [get_bd_pins v_vid_in_axi4s_0/aclken] [get_bd_pins v_vid_in_axi4s_0/aresetn] [get_bd_pins v_vid_in_axi4s_0/axis_enable]
-  connect_bd_net -net cmos_data_i_0_1 [get_bd_ports cmos_data_i_0] [get_bd_pins OV5640_Sensor_0/cmos_data_i] [get_bd_pins ila_0/probe3]
-set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets cmos_data_i_0_1]
-  connect_bd_net -net cmos_href_i_0_1 [get_bd_ports cmos_href_i_0] [get_bd_pins OV5640_Sensor_0/cmos_href_i] [get_bd_pins ila_0/probe1]
-set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets cmos_href_i_0_1]
-  connect_bd_net -net cmos_pclk_i_0_1 [get_bd_ports cmos_pclk_i_0] [get_bd_pins OV5640_Sensor_0/cmos_pclk_i] [get_bd_pins ila_0/probe0] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_clk]
-set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets cmos_pclk_i_0_1]
-  connect_bd_net -net cmos_vsync_i_0_1 [get_bd_ports cmos_vsync_i_0] [get_bd_pins OV5640_Sensor_0/cmos_vsync_i] [get_bd_pins ila_0/probe2]
-set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets cmos_vsync_i_0_1]
+  connect_bd_net -net cmos_data_i_0_1 [get_bd_ports cmos_data_i_0] [get_bd_pins OV5640_Sensor_0/cmos_data_i]
+  connect_bd_net -net cmos_href_i_0_1 [get_bd_ports cmos_href_i_0] [get_bd_pins OV5640_Sensor_0/cmos_href_i]
+  connect_bd_net -net cmos_pclk_i_0_1 [get_bd_ports cmos_pclk_i_0] [get_bd_pins OV5640_Sensor_0/cmos_pclk_i] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_clk]
+  connect_bd_net -net cmos_vsync_i_0_1 [get_bd_ports cmos_vsync_i_0] [get_bd_pins OV5640_Sensor_0/cmos_vsync_i]
   connect_bd_net -net processing_system7_0_FCLK_CLK1 [get_bd_pins OV5640_Sensor_0/clk_i] [get_bd_pins processing_system7_0/FCLK_CLK1]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins proc_sys_reset_0/ext_reset_in] [get_bd_pins processing_system7_0/FCLK_RESET0_N]
   connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_reset] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_reset]

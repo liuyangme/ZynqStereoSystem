@@ -1,7 +1,7 @@
 /*
  * ov5640_config.c
  *
- *  Created on: 2016楠烇拷10閺堬拷23閺冿拷
+ *  Created on: 2016妤犵儑鎷�10闁哄牞鎷�23闁哄喛鎷�
  *      Author: Administrator
  */
 
@@ -9,7 +9,7 @@
 /*
  * ov7725_config.c
  *
- *  Created on: 2016楠烇拷10閺堬拷22閺冿拷
+ *  Created on: 2016妤犵儑鎷�10闁哄牞鎷�22闁哄喛鎷�
  *      Author: Administrator
  */
 #include"sleep.h"
@@ -251,9 +251,9 @@ void ov5640_init_rgb(void)
 	 sccb_senddata(0x38,0x05, 0x3f); // HW (HE)
 	 sccb_senddata(0x38,0x06, 0x06); // VH (VE)
 	 sccb_senddata(0x38,0x07, 0xa9); // VH (VE)
-	 sccb_senddata(0x38,0x08, 0x05); // DVPHO
+	 sccb_senddata(0x38,0x08, 0x05); // DVPHO  1280
 	 sccb_senddata(0x38,0x09, 0x00); // DVPHO
-	 sccb_senddata(0x38,0x0a, 0x02); // DVPVO
+	 sccb_senddata(0x38,0x0a, 0x02); // DVPVO  720
 	 sccb_senddata(0x38,0x0b, 0xd0); // DVPVO
 	 sccb_senddata(0x38,0x0c, 0x07); // HTS
 	 sccb_senddata(0x38,0x0d, 0x64); // HTS

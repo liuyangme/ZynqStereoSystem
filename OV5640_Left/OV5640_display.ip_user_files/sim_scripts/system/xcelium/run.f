@@ -139,6 +139,7 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/system/ip/system_util_vector_logic_1_0/sim/system_util_vector_logic_1_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/sim/bd_d5b8.v" \
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_0/sim/bd_d5b8_ila_lib_0.v" \
 -endlib
 -makelib xcelium_lib/gigantic_mux \
@@ -157,12 +158,11 @@
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_4/sim/bd_d5b8_slot_1_b_0.v" \
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_5/sim/bd_d5b8_slot_1_ar_0.v" \
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_6/sim/bd_d5b8_slot_1_r_0.v" \
-  "../../../bd/system/ip/system_system_ila_0_0/bd_0/sim/bd_d5b8.v" \
   "../../../bd/system/ip/system_system_ila_0_0/sim/system_system_ila_0_0.v" \
-  "../../../bd/system/ip/system_system_ila_2_0/bd_0/ip/ip_0/sim/bd_1519_ila_lib_0.v" \
   "../../../bd/system/ip/system_system_ila_2_0/bd_0/sim/bd_1519.v" \
+  "../../../bd/system/ip/system_system_ila_2_0/bd_0/ip/ip_0/sim/bd_1519_ila_lib_0.v" \
   "../../../bd/system/ip/system_system_ila_2_0/sim/system_system_ila_2_0.v" \
-  "../../../bd/system/ip/system_ila_0_0/sim/system_ila_0_0.v" \
+  "../../../bd/system/sim/system.v" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_18 \
   "../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
@@ -170,7 +170,6 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/system/ip/system_auto_pc_0/sim/system_auto_pc_0.v" \
   "../../../bd/system/ip/system_auto_pc_1/sim/system_auto_pc_1.v" \
-  "../../../bd/system/sim/system.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

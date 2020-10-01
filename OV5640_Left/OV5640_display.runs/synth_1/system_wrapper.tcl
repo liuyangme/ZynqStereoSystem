@@ -17,8 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param tcl.collectionResultDisplayLimit 0
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7z020clg400-2
 
 set_param project.singleFileAddWarning.threshold 0
@@ -60,10 +58,6 @@ set_property used_in_implementation false [get_files -all e:/Project/Personal/Po
 set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_2_0/bd_0/ip/ip_0/bd_1519_ila_lib_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_2_0/bd_0/bd_1519_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_2_0/system_system_ila_2_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.srcs/sources_1/bd/system/ip/system_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.srcs/sources_1/bd/system/ip/system_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.srcs/sources_1/bd/system/ip/system_ila_0_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.srcs/sources_1/bd/system/ip/system_ila_0_0/system_ila_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.srcs/sources_1/bd/system/system_ooc.xdc]
