@@ -1,58 +1,6 @@
-21:43:21 INFO  : Registering command handlers for SDK TCF services
-21:43:23 INFO  : Launching XSCT server: xsct.bat -interactive E:\Project\Personal\PoseEstimation\ZYNQ\ZYNQ-Stereo-System\OV5640_display\OV5640_display.sdk\temp_xsdb_launch_script.tcl
-21:43:27 INFO  : XSCT server has started successfully.
-21:43:28 INFO  : Successfully done setting XSCT server connection channel  
-21:43:28 INFO  : Successfully done setting SDK workspace  
-21:43:28 INFO  : Processing command line option -hwspec E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper.hdf.
-21:47:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-21:47:21 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-----------------End of Script----------------
-
-21:48:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-21:48:37 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
-21:48:37 INFO  : 'jtag frequency' command is executed.
-21:48:37 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
-21:48:37 INFO  : Context for 'APU' is selected.
-21:48:37 INFO  : System reset is completed.
-21:48:40 INFO  : 'after 3000' command is executed.
-21:48:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
-21:48:43 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
-21:48:44 INFO  : Context for 'APU' is selected.
-21:48:44 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
-21:48:44 INFO  : 'configparams force-mem-access 1' command is executed.
-21:48:44 INFO  : Context for 'APU' is selected.
-21:48:44 INFO  : 'ps7_init' command is executed.
-21:48:44 INFO  : 'ps7_post_config' command is executed.
-21:48:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-21:48:45 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display/Debug/OV5640Display.elf' is downloaded to processor 'ps7_cortexa9_0'.
-21:48:45 INFO  : 'configparams force-mem-access 0' command is executed.
-21:48:45 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-source E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
-targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
-rst -system
-after 3000
-targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
-fpga -file E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
-targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
-loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
-configparams force-mem-access 1
-targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
-ps7_init
-ps7_post_config
-targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
-dow E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/OV5640Display/Debug/OV5640Display.elf
-configparams force-mem-access 0
-----------------End of Script----------------
-
-21:48:45 INFO  : Memory regions updated for context APU
-21:48:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-21:48:45 INFO  : 'con' command is executed.
-21:48:45 INFO  : ----------------XSDB Script (After Launch)----------------
-targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
-con
-----------------End of Script----------------
-
-21:48:45 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQ\ZYNQ-Stereo-System\OV5640_display\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640display.elf_on_local.tcl'
-21:59:34 INFO  : Disconnected from the channel tcfchan#1.
+16:01:16 INFO  : Registering command handlers for SDK TCF services
+16:01:18 INFO  : Launching XSCT server: xsct.bat -interactive E:\Project\Personal\PoseEstimation\ZYNQ\ZYNQ-Stereo-System\OV5640_Stereo\OV5640_display.sdk\temp_xsdb_launch_script.tcl
+16:01:22 INFO  : XSCT server has started successfully.
+16:01:22 INFO  : Successfully done setting XSCT server connection channel  
+16:01:23 INFO  : Successfully done setting SDK workspace  
+16:01:23 INFO  : Processing command line option -hwspec E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.sdk/system_wrapper.hdf.

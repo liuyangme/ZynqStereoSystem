@@ -2,11 +2,11 @@
 # Webtalk v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # 
-# Start of session at: Sun Sep 27 21:59:41 2020
-# Process ID: 1340
-# Current directory: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/webtalk
+# Start of session at: Thu Oct  1 21:27:18 2020
+# Process ID: 8816
+# Current directory: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.sdk/webtalk
 # Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
-# Log file: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/webtalk/webtalk.log
-# Journal file: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.sdk/webtalk\webtalk.jou
+# Log file: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.sdk/webtalk/webtalk.log
+# Journal file: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.sdk/webtalk\webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl
