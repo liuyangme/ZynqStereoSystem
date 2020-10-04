@@ -105,10 +105,16 @@ module system_system_ila_0_0 (
   SLOT_3_AXIS_tuser,
   SLOT_3_AXIS_tvalid,
   SLOT_3_AXIS_tready,
+  SLOT_4_AXIS_tdata,
+  SLOT_4_AXIS_tkeep,
+  SLOT_4_AXIS_tlast,
+  SLOT_4_AXIS_tuser,
+  SLOT_4_AXIS_tvalid,
+  SLOT_4_AXIS_tready,
   resetn
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.clk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, ASSOCIATED_BUSIF SLOT_0_AXIS:SLOT_1_AXI:SLOT_2_AXIS:SLOT_3_AXIS, ASSOCIATED_RESET resetn, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.clk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, ASSOCIATED_BUSIF SLOT_0_AXIS:SLOT_1_AXI:SLOT_2_AXIS:SLOT_3_AXIS:SLOT_4_AXIS, ASSOCIATED_RESET resetn, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.clk CLK" *)
 input wire clk;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TDATA" *)
@@ -223,6 +229,19 @@ input wire SLOT_3_AXIS_tvalid;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_3_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_3_AXIS TREADY" *)
 input wire SLOT_3_AXIS_tready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_4_AXIS TDATA" *)
+input wire [23 : 0] SLOT_4_AXIS_tdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_4_AXIS TKEEP" *)
+input wire [2 : 0] SLOT_4_AXIS_tkeep;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_4_AXIS TLAST" *)
+input wire SLOT_4_AXIS_tlast;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_4_AXIS TUSER" *)
+input wire [0 : 0] SLOT_4_AXIS_tuser;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_4_AXIS TVALID" *)
+input wire SLOT_4_AXIS_tvalid;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_4_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_4_AXIS TREADY" *)
+input wire SLOT_4_AXIS_tready;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.resetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.resetn RST" *)
 input wire resetn;
@@ -279,6 +298,12 @@ input wire resetn;
     .SLOT_3_AXIS_tuser(SLOT_3_AXIS_tuser),
     .SLOT_3_AXIS_tvalid(SLOT_3_AXIS_tvalid),
     .SLOT_3_AXIS_tready(SLOT_3_AXIS_tready),
+    .SLOT_4_AXIS_tdata(SLOT_4_AXIS_tdata),
+    .SLOT_4_AXIS_tkeep(SLOT_4_AXIS_tkeep),
+    .SLOT_4_AXIS_tlast(SLOT_4_AXIS_tlast),
+    .SLOT_4_AXIS_tuser(SLOT_4_AXIS_tuser),
+    .SLOT_4_AXIS_tvalid(SLOT_4_AXIS_tvalid),
+    .SLOT_4_AXIS_tready(SLOT_4_AXIS_tready),
     .resetn(resetn)
   );
 endmodule

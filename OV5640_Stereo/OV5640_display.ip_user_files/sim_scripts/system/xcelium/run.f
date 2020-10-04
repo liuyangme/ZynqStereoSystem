@@ -159,10 +159,9 @@
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_6/sim/bd_d5b8_slot_1_r_0.v" \
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/sim/bd_d5b8.v" \
   "../../../bd/system/ip/system_system_ila_0_0/sim/system_system_ila_0_0.v" \
-  "../../../bd/system/ip/system_system_ila_2_0/bd_0/sim/bd_1519.v" \
   "../../../bd/system/ip/system_system_ila_2_0/bd_0/ip/ip_0/sim/bd_1519_ila_lib_0.v" \
+  "../../../bd/system/ip/system_system_ila_2_0/bd_0/sim/bd_1519.v" \
   "../../../bd/system/ip/system_system_ila_2_0/sim/system_system_ila_2_0.v" \
-  "../../../bd/system/sim/system.v" \
   "../../../bd/system/ip/system_xbar_2/sim/system_xbar_2.v" \
   "../../../bd/system/ip/system_OV5640_Sensor_1_0/sim/system_OV5640_Sensor_1_0.v" \
   "../../../bd/system/ip/system_v_vid_in_axi4s_1_0/sim/system_v_vid_in_axi4s_1_0.v" \
@@ -189,6 +188,7 @@
   "../../../bd/system/ip/system_auto_pc_1/sim/system_auto_pc_1.v" \
   "../../../bd/system/ip/system_auto_pc_2/sim/system_auto_pc_2.v" \
   "../../../bd/system/ip/system_auto_pc_3/sim/system_auto_pc_3.v" \
+  "../../../bd/system/sim/system.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

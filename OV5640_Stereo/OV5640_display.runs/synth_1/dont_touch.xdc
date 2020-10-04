@@ -163,8 +163,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: bd/system/ip/system_v_tc_0_0/system_v_tc_0_0_clocks.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_v_tc_0_0 || ORIG_REF_NAME==system_v_tc_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: bd/system/ip/system_system_ila_0_0/system_system_ila_0_0_ooc.xdc
-
 # XDC: bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_d5b8_ila_lib_0 || ORIG_REF_NAME==bd_d5b8_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
@@ -175,7 +173,7 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/system/ip/system_system_ila_0_0/bd_0/bd_d5b8_ooc.xdc
 
-# XDC: bd/system/ip/system_system_ila_2_0/system_system_ila_2_0_ooc.xdc
+# XDC: bd/system/ip/system_system_ila_0_0/system_system_ila_0_0_ooc.xdc
 
 # XDC: bd/system/ip/system_system_ila_2_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_1519_ila_lib_0 || ORIG_REF_NAME==bd_1519_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
@@ -186,6 +184,8 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: bd/system/ip/system_system_ila_2_0/bd_0/ip/ip_0/bd_1519_ila_lib_0_ooc.xdc
 
 # XDC: bd/system/ip/system_system_ila_2_0/bd_0/bd_1519_ooc.xdc
+
+# XDC: bd/system/ip/system_system_ila_2_0/system_system_ila_2_0_ooc.xdc
 
 # XDC: bd/system/ip/system_xbar_2/system_xbar_2_ooc.xdc
 

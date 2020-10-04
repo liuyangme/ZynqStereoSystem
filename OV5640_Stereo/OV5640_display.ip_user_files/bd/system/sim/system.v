@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Tue Sep 29 16:58:57 2020
+//Date        : Sat Oct  3 15:23:59 2020
 //Host        : LiuYang-Laptop running 64-bit major release  (build 9200)
 //Command     : generate_target system.bd
 //Design      : system
@@ -2194,9 +2194,9 @@ module system
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO_0 PS_CLK" *) inout FIXED_IO_0_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO_0 PS_PORB" *) inout FIXED_IO_0_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO_0 PS_SRSTB" *) inout FIXED_IO_0_ps_srstb;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_I" *) input [1:0]GPIO_0_0_tri_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_O" *) output [1:0]GPIO_0_0_tri_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_T" *) output [1:0]GPIO_0_0_tri_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_I" *) input [3:0]GPIO_0_0_tri_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_O" *) output [3:0]GPIO_0_0_tri_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_T" *) output [3:0]GPIO_0_0_tri_t;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.HDMI_CLK_N_0 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.HDMI_CLK_N_0, CLK_DOMAIN system_HDMI_TX_0_0_HDMI_CLK_N, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) output HDMI_CLK_N_0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.HDMI_CLK_P_0 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.HDMI_CLK_P_0, CLK_DOMAIN system_HDMI_TX_0_0_HDMI_CLK_P, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) output HDMI_CLK_P_0;
   output HDMI_D0_N_0;
@@ -2233,7 +2233,7 @@ module system
   wire OV5640_Sensor_0_vs_o;
   wire OV5640_Sensor_1_cmos_xclk_o;
   wire OV5640_Sensor_1_hs_o;
-  wire [23:0]OV5640_Sensor_1_rgb_o;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [23:0]OV5640_Sensor_1_rgb_o;
   wire OV5640_Sensor_1_vid_clk_ce;
   wire OV5640_Sensor_1_vs_o;
   wire [0:0]S00_ARESETN_1;
@@ -2474,12 +2474,12 @@ module system
   wire [7:0]axi_vdma_0_M_AXI_S2MM_WSTRB;
   wire axi_vdma_0_M_AXI_S2MM_WVALID;
   wire axi_vdma_0_mm2s_introut;
-  wire [23:0]axi_vdma_1_M_AXIS_MM2S_TDATA;
-  wire [2:0]axi_vdma_1_M_AXIS_MM2S_TKEEP;
-  wire axi_vdma_1_M_AXIS_MM2S_TLAST;
-  wire axi_vdma_1_M_AXIS_MM2S_TREADY;
-  wire [0:0]axi_vdma_1_M_AXIS_MM2S_TUSER;
-  wire axi_vdma_1_M_AXIS_MM2S_TVALID;
+  (* CONN_BUS_INFO = "axi_vdma_1_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TDATA" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [23:0]axi_vdma_1_M_AXIS_MM2S_TDATA;
+  (* CONN_BUS_INFO = "axi_vdma_1_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TKEEP" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [2:0]axi_vdma_1_M_AXIS_MM2S_TKEEP;
+  (* CONN_BUS_INFO = "axi_vdma_1_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TLAST" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_vdma_1_M_AXIS_MM2S_TLAST;
+  (* CONN_BUS_INFO = "axi_vdma_1_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TREADY" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_vdma_1_M_AXIS_MM2S_TREADY;
+  (* CONN_BUS_INFO = "axi_vdma_1_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TUSER" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [0:0]axi_vdma_1_M_AXIS_MM2S_TUSER;
+  (* CONN_BUS_INFO = "axi_vdma_1_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TVALID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axi_vdma_1_M_AXIS_MM2S_TVALID;
   wire [31:0]axi_vdma_1_M_AXI_MM2S_ARADDR;
   wire [1:0]axi_vdma_1_M_AXI_MM2S_ARBURST;
   wire [3:0]axi_vdma_1_M_AXI_MM2S_ARCACHE;
@@ -2544,9 +2544,9 @@ module system
   wire processing_system7_0_FIXED_IO_PS_CLK;
   wire processing_system7_0_FIXED_IO_PS_PORB;
   wire processing_system7_0_FIXED_IO_PS_SRSTB;
-  wire [1:0]processing_system7_0_GPIO_0_TRI_I;
-  wire [1:0]processing_system7_0_GPIO_0_TRI_O;
-  wire [1:0]processing_system7_0_GPIO_0_TRI_T;
+  wire [3:0]processing_system7_0_GPIO_0_TRI_I;
+  wire [3:0]processing_system7_0_GPIO_0_TRI_O;
+  wire [3:0]processing_system7_0_GPIO_0_TRI_T;
   wire [0:0]util_vector_logic_0_Res;
   wire [0:0]util_vector_logic_1_Res;
   wire v_axi4s_vid_out_0_vid_active_video;
@@ -2583,8 +2583,8 @@ module system
   wire [2:0]xlconstant_0_dout;
   wire [2:0]xlconstant_1_dout;
 
-  assign GPIO_0_0_tri_o[1:0] = processing_system7_0_GPIO_0_TRI_O;
-  assign GPIO_0_0_tri_t[1:0] = processing_system7_0_GPIO_0_TRI_T;
+  assign GPIO_0_0_tri_o[3:0] = processing_system7_0_GPIO_0_TRI_O;
+  assign GPIO_0_0_tri_t[3:0] = processing_system7_0_GPIO_0_TRI_T;
   assign HDMI_CLK_N_0 = HDMI_TX_0_HDMI_CLK_N;
   assign HDMI_CLK_P_0 = HDMI_TX_0_HDMI_CLK_P;
   assign HDMI_D0_N_0 = HDMI_TX_0_HDMI_D0_N;
@@ -2603,7 +2603,7 @@ module system
   assign cmos_vsync_i_1_1 = cmos_vsync_i_1;
   assign cmos_xclk_o_0 = OV5640_Sensor_0_cmos_xclk_o;
   assign cmos_xclk_o_1 = OV5640_Sensor_1_cmos_xclk_o;
-  assign processing_system7_0_GPIO_0_TRI_I = GPIO_0_0_tri_i[1:0];
+  assign processing_system7_0_GPIO_0_TRI_I = GPIO_0_0_tri_i[3:0];
   system_HDMI_TX_0_0 HDMI_TX_0
        (.HDMI_CLK_N(HDMI_TX_0_HDMI_CLK_N),
         .HDMI_CLK_P(HDMI_TX_0_HDMI_CLK_P),
@@ -3321,12 +3321,19 @@ module system
         .SLOT_3_AXIS_tstrb(v_mix_0_m_axis_video_TSTRB),
         .SLOT_3_AXIS_tuser(v_mix_0_m_axis_video_TUSER),
         .SLOT_3_AXIS_tvalid(v_mix_0_m_axis_video_TVALID),
+        .SLOT_4_AXIS_tdata(axi_vdma_1_M_AXIS_MM2S_TDATA),
+        .SLOT_4_AXIS_tkeep(axi_vdma_1_M_AXIS_MM2S_TKEEP),
+        .SLOT_4_AXIS_tlast(axi_vdma_1_M_AXIS_MM2S_TLAST),
+        .SLOT_4_AXIS_tready(axi_vdma_1_M_AXIS_MM2S_TREADY),
+        .SLOT_4_AXIS_tuser(axi_vdma_1_M_AXIS_MM2S_TUSER),
+        .SLOT_4_AXIS_tvalid(axi_vdma_1_M_AXIS_MM2S_TVALID),
         .clk(ACLK_1),
         .resetn(S00_ARESETN_1));
   system_system_ila_2_0 system_ila_1
        (.clk(ACLK_1),
         .probe0(v_axi4s_vid_out_0_vid_data),
-        .probe1(OV5640_Sensor_0_rgb_o));
+        .probe1(OV5640_Sensor_0_rgb_o),
+        .probe2(OV5640_Sensor_1_rgb_o));
   system_util_vector_logic_0_0 util_vector_logic_0
        (.Op1(clk_wiz_0_locked),
         .Res(util_vector_logic_0_Res));

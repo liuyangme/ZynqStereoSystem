@@ -337,8 +337,8 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_FPGA_FCLK2_ENABLE {0} \
    CONFIG.PCW_FPGA_FCLK3_ENABLE {0} \
    CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE {1} \
-   CONFIG.PCW_GPIO_EMIO_GPIO_IO {2} \
-   CONFIG.PCW_GPIO_EMIO_GPIO_WIDTH {2} \
+   CONFIG.PCW_GPIO_EMIO_GPIO_IO {4} \
+   CONFIG.PCW_GPIO_EMIO_GPIO_WIDTH {4} \
    CONFIG.PCW_GPIO_MIO_GPIO_ENABLE {1} \
    CONFIG.PCW_GPIO_MIO_GPIO_IO {MIO} \
    CONFIG.PCW_I2C0_RESET_ENABLE {0} \
@@ -645,10 +645,10 @@ proc create_root_design { parentCell } {
   # Create instance: system_ila_0, and set properties
   set system_ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0 ]
   set_property -dict [ list \
-   CONFIG.C_BRAM_CNT {27} \
+   CONFIG.C_BRAM_CNT {39} \
    CONFIG.C_DATA_DEPTH {4096} \
    CONFIG.C_MON_TYPE {INTERFACE} \
-   CONFIG.C_NUM_MONITOR_SLOTS {4} \
+   CONFIG.C_NUM_MONITOR_SLOTS {5} \
    CONFIG.C_SLOT_0_APC_EN {0} \
    CONFIG.C_SLOT_0_AXI_DATA_SEL {1} \
    CONFIG.C_SLOT_0_AXI_TRIG_SEL {1} \
@@ -673,13 +673,18 @@ proc create_root_design { parentCell } {
    CONFIG.C_SLOT_3_AXI_DATA_SEL {1} \
    CONFIG.C_SLOT_3_AXI_TRIG_SEL {1} \
    CONFIG.C_SLOT_3_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+   CONFIG.C_SLOT_4_APC_EN {0} \
+   CONFIG.C_SLOT_4_AXI_DATA_SEL {1} \
+   CONFIG.C_SLOT_4_AXI_TRIG_SEL {1} \
+   CONFIG.C_SLOT_4_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
  ] $system_ila_0
 
   # Create instance: system_ila_1, and set properties
   set system_ila_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_1 ]
   set_property -dict [ list \
+   CONFIG.C_DATA_DEPTH {4096} \
    CONFIG.C_MON_TYPE {NATIVE} \
-   CONFIG.C_NUM_OF_PROBES {2} \
+   CONFIG.C_NUM_OF_PROBES {3} \
    CONFIG.C_PROBE0_TYPE {0} \
    CONFIG.C_PROBE_WIDTH_PROPAGATION {AUTO} \
  ] $system_ila_1
@@ -774,6 +779,8 @@ set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_intf_nets axi_vdma_0_M_AXIS_MM2S
   connect_bd_intf_net -intf_net axi_vdma_0_M_AXI_MM2S [get_bd_intf_pins axi_interconnect_1/S00_AXI] [get_bd_intf_pins axi_vdma_0/M_AXI_MM2S]
   connect_bd_intf_net -intf_net axi_vdma_0_M_AXI_S2MM [get_bd_intf_pins axi_interconnect_1/S01_AXI] [get_bd_intf_pins axi_vdma_0/M_AXI_S2MM]
   connect_bd_intf_net -intf_net axi_vdma_1_M_AXIS_MM2S [get_bd_intf_pins axi_vdma_1/M_AXIS_MM2S] [get_bd_intf_pins v_mix_0/s_axis_video1]
+connect_bd_intf_net -intf_net [get_bd_intf_nets axi_vdma_1_M_AXIS_MM2S] [get_bd_intf_pins axi_vdma_1/M_AXIS_MM2S] [get_bd_intf_pins system_ila_0/SLOT_4_AXIS]
+set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_intf_nets axi_vdma_1_M_AXIS_MM2S]
   connect_bd_intf_net -intf_net axi_vdma_1_M_AXI_MM2S [get_bd_intf_pins axi_interconnect_3/S00_AXI] [get_bd_intf_pins axi_vdma_1/M_AXI_MM2S]
   connect_bd_intf_net -intf_net axi_vdma_1_M_AXI_S2MM [get_bd_intf_pins axi_interconnect_3/S01_AXI] [get_bd_intf_pins axi_vdma_1/M_AXI_S2MM]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR_0] [get_bd_intf_pins processing_system7_0/DDR]
@@ -807,7 +814,8 @@ set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets OV5640_Sensor_0_rgb_o]
   connect_bd_net -net OV5640_Sensor_0_vs_o [get_bd_pins OV5640_Sensor_0/vs_o] [get_bd_pins v_vid_in_axi4s_0/vid_vsync]
   connect_bd_net -net OV5640_Sensor_1_cmos_xclk_o [get_bd_ports cmos_xclk_o_1] [get_bd_pins OV5640_Sensor_1/cmos_xclk_o]
   connect_bd_net -net OV5640_Sensor_1_hs_o [get_bd_pins OV5640_Sensor_1/hs_o] [get_bd_pins v_vid_in_axi4s_1/vid_active_video] [get_bd_pins v_vid_in_axi4s_1/vid_hsync]
-  connect_bd_net -net OV5640_Sensor_1_rgb_o [get_bd_pins OV5640_Sensor_1/rgb_o] [get_bd_pins v_vid_in_axi4s_1/vid_data]
+  connect_bd_net -net OV5640_Sensor_1_rgb_o [get_bd_pins OV5640_Sensor_1/rgb_o] [get_bd_pins system_ila_1/probe2] [get_bd_pins v_vid_in_axi4s_1/vid_data]
+set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets OV5640_Sensor_1_rgb_o]
   connect_bd_net -net OV5640_Sensor_1_vid_clk_ce [get_bd_pins OV5640_Sensor_1/vid_clk_ce] [get_bd_pins v_vid_in_axi4s_1/vid_io_in_ce]
   connect_bd_net -net OV5640_Sensor_1_vs_o [get_bd_pins OV5640_Sensor_1/vs_o] [get_bd_pins v_vid_in_axi4s_1/vid_vsync]
   connect_bd_net -net S00_ARESETN_1 [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins axi_interconnect_1/M00_ARESETN] [get_bd_pins axi_interconnect_1/S00_ARESETN] [get_bd_pins axi_interconnect_1/S01_ARESETN] [get_bd_pins axi_interconnect_2/M00_ARESETN] [get_bd_pins axi_interconnect_2/S00_ARESETN] [get_bd_pins axi_interconnect_3/M00_ARESETN] [get_bd_pins axi_interconnect_3/S00_ARESETN] [get_bd_pins axi_interconnect_3/S01_ARESETN] [get_bd_pins axi_vdma_0/axi_resetn] [get_bd_pins axi_vdma_1/axi_resetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins system_ila_0/resetn] [get_bd_pins util_vector_logic_1/Op1] [get_bd_pins v_mix_0/ap_rst_n]

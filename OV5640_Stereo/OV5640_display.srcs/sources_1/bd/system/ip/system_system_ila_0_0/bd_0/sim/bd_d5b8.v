@@ -58,6 +58,12 @@ module bd_d5b8
     SLOT_3_AXIS_tstrb,
     SLOT_3_AXIS_tuser,
     SLOT_3_AXIS_tvalid,
+    SLOT_4_AXIS_tdata,
+    SLOT_4_AXIS_tkeep,
+    SLOT_4_AXIS_tlast,
+    SLOT_4_AXIS_tready,
+    SLOT_4_AXIS_tuser,
+    SLOT_4_AXIS_tvalid,
     clk,
     resetn);
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TDATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_0_AXIS, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, FREQ_HZ 100000000, HAS_TKEEP 0, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value xilinx.com:video:G_B_R_444:1.0} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value rows} size {attribs {resolve_type generated dependency active_rows format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency active_rows_stride format long minimum {} maximum {}} value 24} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value cols} size {attribs {resolve_type generated dependency active_cols format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency active_cols_stride format long minimum {} maximum {}} value 24} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_G {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value G} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency video_data_width format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}} field_B {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value B} enabled {attribs {resolve_type generated dependency video_comp1_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency video_data_width format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type generated dependency video_comp1_offset format long minimum {} maximum {}} value 8} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}} field_R {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value R} enabled {attribs {resolve_type generated dependency video_comp2_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency video_data_width format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type generated dependency video_comp2_offset format long minimum {} maximum {}} value 16} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}}}}}} TDATA_WIDTH 24}, PHASE 0.000, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1" *) input [23:0]SLOT_0_AXIS_tdata;
@@ -110,7 +116,13 @@ module bd_d5b8
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_3_AXIS TSTRB" *) input [2:0]SLOT_3_AXIS_tstrb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_3_AXIS TUSER" *) input [0:0]SLOT_3_AXIS_tuser;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_3_AXIS TVALID" *) input SLOT_3_AXIS_tvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_BUSIF SLOT_0_AXIS:SLOT_1_AXI:SLOT_2_AXIS:SLOT_3_AXIS, ASSOCIATED_RESET resetn, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) input clk;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_4_AXIS TDATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_4_AXIS, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, FREQ_HZ 100000000, HAS_TKEEP 1, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.000, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1" *) input [23:0]SLOT_4_AXIS_tdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_4_AXIS TKEEP" *) input [2:0]SLOT_4_AXIS_tkeep;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_4_AXIS TLAST" *) input SLOT_4_AXIS_tlast;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_4_AXIS TREADY" *) input SLOT_4_AXIS_tready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_4_AXIS TUSER" *) input [0:0]SLOT_4_AXIS_tuser;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_4_AXIS TVALID" *) input SLOT_4_AXIS_tvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_BUSIF SLOT_0_AXIS:SLOT_1_AXI:SLOT_2_AXIS:SLOT_3_AXIS:SLOT_4_AXIS, ASSOCIATED_RESET resetn, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) input clk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESETN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input resetn;
 
   wire [31:0]Conn1_ARADDR;
@@ -158,6 +170,12 @@ module bd_d5b8
   wire [2:0]Conn3_TSTRB;
   wire [0:0]Conn3_TUSER;
   wire Conn3_TVALID;
+  wire [23:0]Conn4_TDATA;
+  wire [2:0]Conn4_TKEEP;
+  wire Conn4_TLAST;
+  wire Conn4_TREADY;
+  wire [0:0]Conn4_TUSER;
+  wire Conn4_TVALID;
   wire [23:0]Conn_TDATA;
   wire Conn_TLAST;
   wire Conn_TREADY;
@@ -223,6 +241,12 @@ module bd_d5b8
   wire [2:0]net_slot_3_axis_tstrb;
   wire [0:0]net_slot_3_axis_tuser;
   wire net_slot_3_axis_tvalid;
+  wire [23:0]net_slot_4_axis_tdata;
+  wire [2:0]net_slot_4_axis_tkeep;
+  wire net_slot_4_axis_tlast;
+  wire net_slot_4_axis_tready;
+  wire [0:0]net_slot_4_axis_tuser;
+  wire net_slot_4_axis_tvalid;
   wire resetn_1;
 
   assign Conn1_ARADDR = SLOT_1_AXI_araddr[31:0];
@@ -270,6 +294,12 @@ module bd_d5b8
   assign Conn3_TSTRB = SLOT_3_AXIS_tstrb[2:0];
   assign Conn3_TUSER = SLOT_3_AXIS_tuser[0];
   assign Conn3_TVALID = SLOT_3_AXIS_tvalid;
+  assign Conn4_TDATA = SLOT_4_AXIS_tdata[23:0];
+  assign Conn4_TKEEP = SLOT_4_AXIS_tkeep[2:0];
+  assign Conn4_TLAST = SLOT_4_AXIS_tlast;
+  assign Conn4_TREADY = SLOT_4_AXIS_tready;
+  assign Conn4_TUSER = SLOT_4_AXIS_tuser[0];
+  assign Conn4_TVALID = SLOT_4_AXIS_tvalid;
   assign Conn_TDATA = SLOT_0_AXIS_tdata[23:0];
   assign Conn_TLAST = SLOT_0_AXIS_tlast;
   assign Conn_TREADY = SLOT_0_AXIS_tready;
@@ -334,6 +364,12 @@ module bd_d5b8
         .m_slot_3_axis_tstrb(net_slot_3_axis_tstrb),
         .m_slot_3_axis_tuser(net_slot_3_axis_tuser),
         .m_slot_3_axis_tvalid(net_slot_3_axis_tvalid),
+        .m_slot_4_axis_tdata(net_slot_4_axis_tdata),
+        .m_slot_4_axis_tkeep(net_slot_4_axis_tkeep),
+        .m_slot_4_axis_tlast(net_slot_4_axis_tlast),
+        .m_slot_4_axis_tready(net_slot_4_axis_tready),
+        .m_slot_4_axis_tuser(net_slot_4_axis_tuser),
+        .m_slot_4_axis_tvalid(net_slot_4_axis_tvalid),
         .slot_0_axis_tdata(Conn_TDATA),
         .slot_0_axis_tlast(Conn_TLAST),
         .slot_0_axis_tready(Conn_TREADY),
@@ -383,7 +419,13 @@ module bd_d5b8
         .slot_3_axis_tready(Conn3_TREADY),
         .slot_3_axis_tstrb(Conn3_TSTRB),
         .slot_3_axis_tuser(Conn3_TUSER),
-        .slot_3_axis_tvalid(Conn3_TVALID));
+        .slot_3_axis_tvalid(Conn3_TVALID),
+        .slot_4_axis_tdata(Conn4_TDATA),
+        .slot_4_axis_tkeep(Conn4_TKEEP),
+        .slot_4_axis_tlast(Conn4_TLAST),
+        .slot_4_axis_tready(Conn4_TREADY),
+        .slot_4_axis_tuser(Conn4_TUSER),
+        .slot_4_axis_tvalid(Conn4_TVALID));
   bd_d5b8_ila_lib_0 ila_lib
        (.clk(clk_1),
         .probe0(net_slot_0_axis_tdata),
@@ -428,7 +470,13 @@ module bd_d5b8
         .probe44(net_slot_3_axis_tvalid),
         .probe45(net_slot_3_axis_tready),
         .probe46(net_slot_3_axis_tlast),
+        .probe47(net_slot_4_axis_tdata),
+        .probe48(net_slot_4_axis_tkeep),
+        .probe49(net_slot_4_axis_tuser),
         .probe5(net_slot_1_axi_ar_cnt),
+        .probe50(net_slot_4_axis_tvalid),
+        .probe51(net_slot_4_axis_tready),
+        .probe52(net_slot_4_axis_tlast),
         .probe6(net_slot_1_axi_araddr),
         .probe7(net_slot_1_axi_arid),
         .probe8(net_slot_1_axi_arlen),

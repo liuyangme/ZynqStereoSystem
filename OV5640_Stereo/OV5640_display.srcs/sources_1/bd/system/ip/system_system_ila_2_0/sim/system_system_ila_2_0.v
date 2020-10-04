@@ -56,7 +56,8 @@
 module system_system_ila_2_0 (
   clk,
   probe0,
-  probe1
+  probe1,
+  probe2
 );
 
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.clk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
@@ -64,10 +65,12 @@ module system_system_ila_2_0 (
 input wire clk;
 input wire [23 : 0] probe0;
 input wire [23 : 0] probe1;
+input wire [23 : 0] probe2;
 
   bd_1519 inst (
     .clk(clk),
     .probe0(probe0),
-    .probe1(probe1)
+    .probe1(probe1),
+    .probe2(probe2)
   );
 endmodule

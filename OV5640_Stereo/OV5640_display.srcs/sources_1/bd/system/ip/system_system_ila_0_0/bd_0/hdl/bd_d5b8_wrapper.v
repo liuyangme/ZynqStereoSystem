@@ -57,6 +57,12 @@ module bd_d5b8_wrapper
     SLOT_3_AXIS_tstrb,
     SLOT_3_AXIS_tuser,
     SLOT_3_AXIS_tvalid,
+    SLOT_4_AXIS_tdata,
+    SLOT_4_AXIS_tkeep,
+    SLOT_4_AXIS_tlast,
+    SLOT_4_AXIS_tready,
+    SLOT_4_AXIS_tuser,
+    SLOT_4_AXIS_tvalid,
     clk,
     resetn);
   input [23:0]SLOT_0_AXIS_tdata;
@@ -109,6 +115,12 @@ module bd_d5b8_wrapper
   input [2:0]SLOT_3_AXIS_tstrb;
   input [0:0]SLOT_3_AXIS_tuser;
   input SLOT_3_AXIS_tvalid;
+  input [23:0]SLOT_4_AXIS_tdata;
+  input [2:0]SLOT_4_AXIS_tkeep;
+  input SLOT_4_AXIS_tlast;
+  input SLOT_4_AXIS_tready;
+  input [0:0]SLOT_4_AXIS_tuser;
+  input SLOT_4_AXIS_tvalid;
   input clk;
   input resetn;
 
@@ -162,6 +174,12 @@ module bd_d5b8_wrapper
   wire [2:0]SLOT_3_AXIS_tstrb;
   wire [0:0]SLOT_3_AXIS_tuser;
   wire SLOT_3_AXIS_tvalid;
+  wire [23:0]SLOT_4_AXIS_tdata;
+  wire [2:0]SLOT_4_AXIS_tkeep;
+  wire SLOT_4_AXIS_tlast;
+  wire SLOT_4_AXIS_tready;
+  wire [0:0]SLOT_4_AXIS_tuser;
+  wire SLOT_4_AXIS_tvalid;
   wire clk;
   wire resetn;
 
@@ -216,6 +234,12 @@ module bd_d5b8_wrapper
         .SLOT_3_AXIS_tstrb(SLOT_3_AXIS_tstrb),
         .SLOT_3_AXIS_tuser(SLOT_3_AXIS_tuser),
         .SLOT_3_AXIS_tvalid(SLOT_3_AXIS_tvalid),
+        .SLOT_4_AXIS_tdata(SLOT_4_AXIS_tdata),
+        .SLOT_4_AXIS_tkeep(SLOT_4_AXIS_tkeep),
+        .SLOT_4_AXIS_tlast(SLOT_4_AXIS_tlast),
+        .SLOT_4_AXIS_tready(SLOT_4_AXIS_tready),
+        .SLOT_4_AXIS_tuser(SLOT_4_AXIS_tuser),
+        .SLOT_4_AXIS_tvalid(SLOT_4_AXIS_tvalid),
         .clk(clk),
         .resetn(resetn));
 endmodule

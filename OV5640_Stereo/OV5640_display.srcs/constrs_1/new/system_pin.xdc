@@ -50,13 +50,13 @@ set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets cmos_pclk_i_0_IBUF]
 #####################################################################
 
 # "CMOS_SCL"
-set_property PACKAGE_PIN K14 [get_ports {IIC_1_0_scl_io[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {IIC_1_0_scl_io[0]}]
-set_property PULLUP true [get_ports {IIC_1_0_scl_io[0]}]
+set_property PACKAGE_PIN K14 [get_ports {GPIO_0_0_tri_io[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_0_0_tri_io[2]}]
+set_property PULLUP true [get_ports {GPIO_0_0_tri_io[2]}]
 # "CMOS_SDAT"
-set_property IOSTANDARD LVCMOS33 [get_ports {IIC_1_0_sda_io[1]}]
-set_property PACKAGE_PIN J14 [get_ports {IIC_1_0_sda_io[1]}]
-set_property PULLUP true [get_ports {IIC_1_0_sda_io[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_0_0_tri_io[3]}]
+set_property PACKAGE_PIN J14 [get_ports {GPIO_0_0_tri_io[3]}]
+set_property PULLUP true [get_ports {GPIO_0_0_tri_io[3]}]
 # "CMOS_VSYNC"
 set_property PACKAGE_PIN H15 [get_ports cmos_vsync_i_1]
 set_property IOSTANDARD LVCMOS33 [get_ports cmos_vsync_i_1]

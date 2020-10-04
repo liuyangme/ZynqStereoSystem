@@ -6,7 +6,7 @@
 
 source C:/Xilinx/Vivado/2018.3/scripts/vivado_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'LiuYang_Laptop' on host 'liuyang-laptop' (Windows NT_amd64 version 6.2) on Tue Sep 29 17:04:08 +0800 2020
+INFO: [HLS 200-10] For user 'LiuYang_Laptop' on host 'liuyang-laptop' (Windows NT_amd64 version 6.2) on Sat Oct 03 15:28:38 +0800 2020
 INFO: [HLS 200-10] In directory 'E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.runs/synth_1'
 INFO: [HLS 200-10] Creating and opening project 'E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.runs/synth_1/system_v_mix_0_0'.
 INFO: [HLS 200-10] Adding design file 'e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix_config.h' to the project
@@ -23,19 +23,19 @@ INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II t
 INFO: [HLS 200-10] Analyzing design file 'e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_csc.cpp' ... 
 INFO: [HLS 200-10] Analyzing design file 'e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_dma.cpp' ... 
 INFO: [HLS 200-10] Analyzing design file 'e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:01:20 . Memory (MB): peak = 103.664 ; gain = 21.133
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:01:20 . Memory (MB): peak = 103.664 ; gain = 21.133
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:01:11 . Memory (MB): peak = 103.652 ; gain = 21.254
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:01:11 . Memory (MB): peak = 103.652 ; gain = 21.254
 INFO: [HLS 200-10] Starting code transformations ...
 INFO: [HLS 200-489] Unrolling loop 'Loop-1' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:234) in function 'hls::Scalar<1, unsigned char>::operator=(unsigned char)' completely with a factor of 1.
 INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<24, ap_uint<8> >.1' into 'hls::AXIGetBitFields<24, ap_uint<8> >' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:71).
 INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<24, ap_uint<8> >' into 'AXIvideo2MultiPixStream' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2448).
 INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<24, ap_uint<8> >' into 'AXIvideo2MultiPixStream' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2449).
 INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<24, ap_uint<8> >' into 'AXIvideo2MultiPixStream' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2450).
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:05 ; elapsed = 00:01:26 . Memory (MB): peak = 244.289 ; gain = 161.758
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:05 ; elapsed = 00:01:16 . Memory (MB): peak = 243.086 ; gain = 160.688
 INFO: [HLS 200-10] Checking synthesizability ...
 WARNING: [SYNCHK 200-23] e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:2577: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:07 ; elapsed = 00:01:29 . Memory (MB): peak = 341.352 ; gain = 258.820
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:07 ; elapsed = 00:01:19 . Memory (MB): peak = 340.895 ; gain = 258.496
 INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'v_mix_yuv2rgb<false>' for pipelining.
 INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'v_mix_upsample<false>' for pipelining.
 INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'v_mix_rgb2yuv<false>' for pipelining.
@@ -100,7 +100,7 @@ INFO: [XFORM 203-712] Applying dataflow to function 'v_mix' , detected/extracted
 	 'v_mix_444_to_422<false>'
 	 'v_mix_422_to_420<false>'
 	 'MultiPixStream2AXIvideo'.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:15 ; elapsed = 00:01:38 . Memory (MB): peak = 460.078 ; gain = 377.547
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:15 ; elapsed = 00:01:27 . Memory (MB): peak = 460.625 ; gain = 378.227
 WARNING: [XFORM 203-631] Renaming function 'v_mix_yuv2rgb<false>84' to 'v_mix_yuv2rgb84' 
 WARNING: [XFORM 203-631] Renaming function 'v_mix_yuv2rgb<false>81' to 'v_mix_yuv2rgb81' 
 WARNING: [XFORM 203-631] Renaming function 'v_mix_upsample<false>' to 'v_mix_upsample' 
@@ -116,7 +116,7 @@ WARNING: [XFORM 203-631] Renaming function 'Block_._crit_edge302_proc' to 'Block
 WARNING: [XFORM 203-631] Renaming function 'Block_._crit_edge3027_proc' to 'Block_._crit_edge302.1' 
 WARNING: [XFORM 203-631] Renaming function 'AXIvideo2MultiPixStream78' to 'AXIvideo2MultiPixStr' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:49:4)
 WARNING: [XFORM 203-631] Renaming function 'AXIvideo2MultiPixStream' to 'AXIvideo2MultiPixStr.1' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:49:4)
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:22 ; elapsed = 00:01:45 . Memory (MB): peak = 676.371 ; gain = 593.840
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:01:32 . Memory (MB): peak = 677.227 ; gain = 594.828
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'v_mix' ...
 WARNING: [SYN 201-103] Legalizing function name 'v_mix.entry123' to 'v_mix_entry123'.
@@ -130,37 +130,37 @@ INFO: [HLS 200-42] -- Implementing module 'v_mix_entry123'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 105.627 seconds; current allocated memory: 598.618 MB.
+INFO: [HLS 200-111]  Elapsed time: 92.844 seconds; current allocated memory: 598.599 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.05 seconds; current allocated memory: 598.703 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.008 seconds; current allocated memory: 598.684 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'Block_crit_edge302' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.362 seconds; current allocated memory: 598.749 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.243 seconds; current allocated memory: 598.730 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.877 seconds; current allocated memory: 598.832 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.658 seconds; current allocated memory: 598.813 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reg_unsigned_short_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.924 seconds; current allocated memory: 598.845 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.784 seconds; current allocated memory: 598.826 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.498 seconds; current allocated memory: 598.886 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.588 seconds; current allocated memory: 598.867 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'AXIvideo2MultiPixStr' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -172,14 +172,14 @@ INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.823 seconds; current allocated memory: 599.102 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.607 seconds; current allocated memory: 599.099 MB.
 INFO: [HLS 200-434] Only 3 loops out of a total 4 loops have been pipelined in this design.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 10.722 seconds; current allocated memory: 599.390 MB.
+INFO: [HLS 200-111]  Elapsed time: 6.2 seconds; current allocated memory: 599.387 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_mix_420_to_42279' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -187,13 +187,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 8.087 seconds; current allocated memory: 599.501 MB.
+INFO: [HLS 200-111]  Elapsed time: 6.629 seconds; current allocated memory: 599.497 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.929 seconds; current allocated memory: 599.678 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.532 seconds; current allocated memory: 599.675 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_mix_422_to_44480' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -201,13 +201,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 2.096 seconds; current allocated memory: 599.788 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.698 seconds; current allocated memory: 599.784 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.919 seconds; current allocated memory: 599.965 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.524 seconds; current allocated memory: 599.962 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_mix_yuv2rgb81' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -215,25 +215,25 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 2.082 seconds; current allocated memory: 600.093 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.011 seconds; current allocated memory: 600.090 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 2.001 seconds; current allocated memory: 600.260 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.447 seconds; current allocated memory: 600.257 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'Block_crit_edge302_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 2.205 seconds; current allocated memory: 600.290 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.471 seconds; current allocated memory: 600.271 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 600.322 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.287 seconds; current allocated memory: 600.303 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'AXIvideo2MultiPixStr_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -245,13 +245,13 @@ INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.518 seconds; current allocated memory: 600.519 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.424 seconds; current allocated memory: 600.500 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 7.132 seconds; current allocated memory: 600.794 MB.
+INFO: [HLS 200-111]  Elapsed time: 6.542 seconds; current allocated memory: 600.787 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_mix_420_to_42282' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -259,13 +259,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 11.57 seconds; current allocated memory: 600.888 MB.
+INFO: [HLS 200-111]  Elapsed time: 6.608 seconds; current allocated memory: 600.897 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.806 seconds; current allocated memory: 601.068 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.574 seconds; current allocated memory: 601.077 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_mix_422_to_44483' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -273,13 +273,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.928 seconds; current allocated memory: 601.162 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.038 seconds; current allocated memory: 601.171 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.785 seconds; current allocated memory: 601.342 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.503 seconds; current allocated memory: 601.350 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_mix_yuv2rgb84' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -287,13 +287,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 2.007 seconds; current allocated memory: 601.451 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.707 seconds; current allocated memory: 601.444 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 2.04 seconds; current allocated memory: 601.631 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.547 seconds; current allocated memory: 601.624 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_mix_upsample' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -301,13 +301,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 2.368 seconds; current allocated memory: 601.725 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.761 seconds; current allocated memory: 601.706 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.68 seconds; current allocated memory: 601.942 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.562 seconds; current allocated memory: 601.923 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_mix_core_alpha' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -322,13 +322,13 @@ WARNING: [SCHED 204-21] The critical path in module 'v_mix_core_alpha' consists 
 	'add' operation of DSP[150] ('ret_V_2_1_i', e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:436) [150]  (2.73 ns)
 	fifo write on port 'outImg_V_val_0_V' (e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/src/v_mix.cpp:439) [160]  (3.4 ns)
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 4.562 seconds; current allocated memory: 602.307 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.063 seconds; current allocated memory: 602.304 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 6.542 seconds; current allocated memory: 602.794 MB.
+INFO: [HLS 200-111]  Elapsed time: 4.641 seconds; current allocated memory: 602.791 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_mix_rgb2yuv_false_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -336,13 +336,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 5.926 seconds; current allocated memory: 602.889 MB.
+INFO: [HLS 200-111]  Elapsed time: 5.023 seconds; current allocated memory: 602.886 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.412 seconds; current allocated memory: 603.029 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.229 seconds; current allocated memory: 603.026 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_mix_444_to_422' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -350,13 +350,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.902 seconds; current allocated memory: 603.108 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.451 seconds; current allocated memory: 603.105 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.68 seconds; current allocated memory: 603.247 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.259 seconds; current allocated memory: 603.244 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_mix_422_to_420' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -364,13 +364,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.875 seconds; current allocated memory: 603.327 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.384 seconds; current allocated memory: 603.323 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.788 seconds; current allocated memory: 603.466 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.247 seconds; current allocated memory: 603.463 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvi' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -378,106 +378,106 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 2.1'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.592 seconds; current allocated memory: 603.731 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.392 seconds; current allocated memory: 603.713 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 6.047 seconds; current allocated memory: 604.016 MB.
+INFO: [HLS 200-111]  Elapsed time: 5.458 seconds; current allocated memory: 603.998 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_mix' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 6.499 seconds; current allocated memory: 604.474 MB.
+INFO: [HLS 200-111]  Elapsed time: 5.461 seconds; current allocated memory: 604.455 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 13.867 seconds; current allocated memory: 606.032 MB.
+INFO: [HLS 200-111]  Elapsed time: 11.14 seconds; current allocated memory: 606.013 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_entry123' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_entry123'.
-INFO: [HLS 200-111]  Elapsed time: 12.974 seconds; current allocated memory: 606.401 MB.
+INFO: [HLS 200-111]  Elapsed time: 10.782 seconds; current allocated memory: 606.382 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'Block_crit_edge302' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_crit_edge302'.
-INFO: [HLS 200-111]  Elapsed time: 1.262 seconds; current allocated memory: 606.776 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.063 seconds; current allocated memory: 606.789 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reg_unsigned_short_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_unsigned_short_s'.
-INFO: [HLS 200-111]  Elapsed time: 1.053 seconds; current allocated memory: 606.843 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.84 seconds; current allocated memory: 606.840 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2MultiPixStr' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2MultiPixStr'.
-INFO: [HLS 200-111]  Elapsed time: 0.742 seconds; current allocated memory: 607.798 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.549 seconds; current allocated memory: 607.795 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_420_to_42279' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_420_to_42279'.
-INFO: [HLS 200-111]  Elapsed time: 8.343 seconds; current allocated memory: 608.131 MB.
+INFO: [HLS 200-111]  Elapsed time: 6.898 seconds; current allocated memory: 608.112 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_422_to_44480' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_422_to_44480'.
-INFO: [HLS 200-111]  Elapsed time: 1.9 seconds; current allocated memory: 608.521 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.756 seconds; current allocated memory: 608.487 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_yuv2rgb81' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_yuv2rgb81'.
-INFO: [HLS 200-111]  Elapsed time: 1.873 seconds; current allocated memory: 608.849 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.666 seconds; current allocated memory: 608.831 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'Block_crit_edge302_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_crit_edge302_1'.
-INFO: [HLS 200-111]  Elapsed time: 1.846 seconds; current allocated memory: 608.977 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.609 seconds; current allocated memory: 608.959 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2MultiPixStr_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2MultiPixStr_1'.
-INFO: [HLS 200-111]  Elapsed time: 0.463 seconds; current allocated memory: 609.935 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.424 seconds; current allocated memory: 609.916 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_420_to_42282' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_420_to_42282'.
-INFO: [HLS 200-111]  Elapsed time: 8.2 seconds; current allocated memory: 610.253 MB.
+INFO: [HLS 200-111]  Elapsed time: 6.883 seconds; current allocated memory: 610.234 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_422_to_44483' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_422_to_44483'.
-INFO: [HLS 200-111]  Elapsed time: 1.957 seconds; current allocated memory: 610.644 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.728 seconds; current allocated memory: 610.609 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_yuv2rgb84' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_yuv2rgb84'.
-INFO: [HLS 200-111]  Elapsed time: 2.229 seconds; current allocated memory: 611.000 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.728 seconds; current allocated memory: 610.981 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_upsample' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_upsample'.
-INFO: [HLS 200-111]  Elapsed time: 2.036 seconds; current allocated memory: 611.325 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.937 seconds; current allocated memory: 611.322 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -486,28 +486,28 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 INFO: [SYN 201-210] Renamed object name 'v_mix_ama_submuladd_8ns_8ns_16s_16ns_16_1_1' to 'v_mix_ama_submulabkb' due to the length limit 20
 INFO: [RTGEN 206-100] Generating core module 'v_mix_ama_submulabkb': 3 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_core_alpha'.
-INFO: [HLS 200-111]  Elapsed time: 2.083 seconds; current allocated memory: 612.200 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.942 seconds; current allocated memory: 612.182 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_rgb2yuv_false_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_rgb2yuv_false_s'.
-INFO: [HLS 200-111]  Elapsed time: 5.84 seconds; current allocated memory: 612.535 MB.
+INFO: [HLS 200-111]  Elapsed time: 4.971 seconds; current allocated memory: 612.501 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_444_to_422' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_444_to_422'.
-INFO: [HLS 200-111]  Elapsed time: 2.059 seconds; current allocated memory: 612.839 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.402 seconds; current allocated memory: 612.820 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_mix_422_to_420' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix_422_to_420'.
-INFO: [HLS 200-111]  Elapsed time: 1.733 seconds; current allocated memory: 613.141 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.417 seconds; current allocated memory: 613.138 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -516,7 +516,7 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 INFO: [SYN 201-210] Renamed object name 'MultiPixStream2AXIvi_mapComp_0' to 'MultiPixStream2AXcud' due to the length limit 20
 INFO: [RTGEN 206-100] Generating core module 'v_mix_mux_32_8_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvi'.
-INFO: [HLS 200-111]  Elapsed time: 1.719 seconds; current allocated memory: 614.159 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.708 seconds; current allocated memory: 614.140 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_mix' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -582,7 +582,7 @@ INFO: [SYN 201-210] Renamed object name 'start_for_v_mix_444_to_422_U0' to 'star
 INFO: [SYN 201-210] Renamed object name 'start_for_v_mix_422_to_420_U0' to 'start_for_v_mix_4pcA' due to the length limit 20
 INFO: [SYN 201-210] Renamed object name 'start_for_MultiPixStream2AXIvi_U0' to 'start_for_MultiPiqcK' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_mix'.
-INFO: [HLS 200-111]  Elapsed time: 8.371 seconds; current allocated memory: 617.307 MB.
+INFO: [HLS 200-111]  Elapsed time: 6.959 seconds; current allocated memory: 617.289 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [RTMG 210-279] Implementing memory 'system_v_mix_0_0_MultiPixStream2AXcud_rom' using distributed ROMs.
@@ -655,7 +655,7 @@ INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_mix_rncg_U(system_v_mix_0_0_
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_mix_4ocq_U(system_v_mix_0_0_start_for_v_mix_4ocq)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_mix_4pcA_U(system_v_mix_0_0_start_for_v_mix_4pcA)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_MultiPiqcK_U(system_v_mix_0_0_start_for_MultiPiqcK)' using Shift Registers.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:03:23 ; elapsed = 00:05:26 . Memory (MB): peak = 691.945 ; gain = 609.414
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:02:51 ; elapsed = 00:04:29 . Memory (MB): peak = 692.914 ; gain = 610.516
 INFO: [SYSC 207-301] Generating SystemC RTL for v_mix with prefix system_v_mix_0_0_.
 INFO: [VHDL 208-304] Generating VHDL RTL for v_mix with prefix system_v_mix_0_0_.
 INFO: [VLOG 209-307] Generating Verilog RTL for v_mix with prefix system_v_mix_0_0_.
@@ -670,6 +670,6 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Tue Sep 29 17:10:06 2020...
-INFO: [HLS 200-112] Total elapsed time: 359.443 seconds; peak allocated memory: 617.307 MB.
-INFO: [Common 17-206] Exiting vivado_hls at Tue Sep 29 17:10:06 2020...
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  3 15:33:33 2020...
+INFO: [HLS 200-112] Total elapsed time: 296.652 seconds; peak allocated memory: 617.289 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Sat Oct  3 15:33:34 2020...
