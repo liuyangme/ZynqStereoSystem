@@ -28,9 +28,6 @@ int run_triple_frame_buffer(XAxiVdma* InstancePtr, int DeviceId, int hsize,
 		int vsize, int buf_base_addr, int number_frame_count,
 		int enable_frm_cnt_intr);
 
-void ov5640_init_rgb(void);
-int Miz702_EMIO_init(void);
-
 int main(void)
 {
 

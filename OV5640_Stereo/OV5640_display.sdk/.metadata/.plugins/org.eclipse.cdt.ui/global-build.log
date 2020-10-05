@@ -699,3 +699,144 @@ arm-none-eabi-size StereoDisplay.elf  |tee "StereoDisplay.elf.size"
   47920	   2192	  23384	  73496	  11f18	StereoDisplay.elf
 'Finished building: StereoDisplay.elf.size'
 ' '
+10:00:40 **** Clean-only build of configuration Debug for project StereoDisplay ****
+make clean 
+rm -rf  ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o ./src/vdma_api.o  ./src/emio_initial.d ./src/i2c_ctr.d ./src/main.d ./src/ov5640_config.d ./src/sys_intr.d ./src/vdma_api.d  StereoDisplay.elf.size  StereoDisplay.elf
+' '
+10:00:41 **** Auto Build of configuration Debug for project StereoDisplay ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/emio_initial.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/emio_initial.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../StereoDisplay_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/emio_initial.d" -MT"src/emio_initial.o" -o "src/emio_initial.o" "../src/emio_initial.c"
+'Finished building: ../src/emio_initial.c'
+' '
+'Building file: ../src/i2c_ctr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_ctr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../StereoDisplay_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_ctr.d" -MT"src/i2c_ctr.o" -o "src/i2c_ctr.o" "../src/i2c_ctr.c"
+'Finished building: ../src/i2c_ctr.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../StereoDisplay_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:37:2: warning: implicit declaration of function 'Miz702_EMIO_init' [-Wimplicit-function-declaration]
+  Miz702_EMIO_init();
+  ^~~~~~~~~~~~~~~~
+../src/main.c:38:2: warning: implicit declaration of function 'ov5640_init_rgb' [-Wimplicit-function-declaration]
+  ov5640_init_rgb();
+  ^~~~~~~~~~~~~~~
+../src/main.c:50:68: error: 'Status' undeclared (first use in this function); did you mean 'XStatus'?
+   xil_printf("VDMA0:Transfer of frames failed with error = %d\r\n",Status);
+                                                                    ^~~~~~
+                                                                    XStatus
+../src/main.c:50:68: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:75:2: warning: "/*" within comment [-Wcomment]
+  /*****************从DDR读数据设置**********************/
+   
+../src/main.c:84:2: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+  while (1) ;
+  ^~~~~
+../src/main.c:85:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+   return XST_SUCCESS;
+   ^~~~~~
+make: *** [src/subdir.mk:38: src/main.o] Error 1
+10:01:04 **** Auto Build of configuration Debug for project StereoDisplay ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../StereoDisplay_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:37:2: warning: implicit declaration of function 'Miz702_EMIO_init' [-Wimplicit-function-declaration]
+  Miz702_EMIO_init();
+  ^~~~~~~~~~~~~~~~
+../src/main.c:38:2: warning: implicit declaration of function 'ov5640_init_rgb' [-Wimplicit-function-declaration]
+  ov5640_init_rgb();
+  ^~~~~~~~~~~~~~~
+../src/main.c:75:2: warning: "/*" within comment [-Wcomment]
+  /*****************从DDR读数据设置**********************/
+   
+../src/main.c:84:2: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+  while (1) ;
+  ^~~~~
+../src/main.c:85:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+   return XST_SUCCESS;
+   ^~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/ov5640_config.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640_config.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../StereoDisplay_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ov5640_config.d" -MT"src/ov5640_config.o" -o "src/ov5640_config.o" "../src/ov5640_config.c"
+'Finished building: ../src/ov5640_config.c'
+' '
+'Building file: ../src/sys_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sys_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../StereoDisplay_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sys_intr.d" -MT"src/sys_intr.o" -o "src/sys_intr.o" "../src/sys_intr.c"
+'Finished building: ../src/sys_intr.c'
+' '
+'Building file: ../src/vdma_api.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vdma_api.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../StereoDisplay_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vdma_api.d" -MT"src/vdma_api.o" -o "src/vdma_api.o" "../src/vdma_api.c"
+'Finished building: ../src/vdma_api.c'
+' '
+'Building target: StereoDisplay.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../StereoDisplay_bsp/ps7_cortexa9_0/lib -o "StereoDisplay.elf"  ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o ./src/vdma_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: StereoDisplay.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size StereoDisplay.elf  |tee "StereoDisplay.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48148	   2192	  23384	  73724	  11ffc	StereoDisplay.elf
+'Finished building: StereoDisplay.elf.size'
+' '
+19:14:00 **** Auto Build of configuration Debug for project StereoDisplay ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../StereoDisplay_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:37:2: warning: implicit declaration of function 'Miz702_EMIO_init' [-Wimplicit-function-declaration]
+  Miz702_EMIO_init();
+  ^~~~~~~~~~~~~~~~
+../src/main.c:38:2: warning: implicit declaration of function 'ov5640_init_rgb' [-Wimplicit-function-declaration]
+  ov5640_init_rgb();
+  ^~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: StereoDisplay.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../StereoDisplay_bsp/ps7_cortexa9_0/lib -o "StereoDisplay.elf"  ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o ./src/vdma_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: StereoDisplay.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size StereoDisplay.elf  |tee "StereoDisplay.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48148	   2192	  23384	  73724	  11ffc	StereoDisplay.elf
+'Finished building: StereoDisplay.elf.size'
+' '
+19:15:18 **** Auto Build of configuration Debug for project StereoDisplay ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../StereoDisplay_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: StereoDisplay.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../StereoDisplay_bsp/ps7_cortexa9_0/lib -o "StereoDisplay.elf"  ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o ./src/vdma_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: StereoDisplay.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size StereoDisplay.elf  |tee "StereoDisplay.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48148	   2192	  23384	  73724	  11ffc	StereoDisplay.elf
+'Finished building: StereoDisplay.elf.size'
+' '

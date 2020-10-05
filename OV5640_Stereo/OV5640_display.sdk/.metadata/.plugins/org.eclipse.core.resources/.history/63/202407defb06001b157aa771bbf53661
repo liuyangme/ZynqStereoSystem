@@ -28,9 +28,6 @@ int run_triple_frame_buffer(XAxiVdma* InstancePtr, int DeviceId, int hsize,
 		int vsize, int buf_base_addr, int number_frame_count,
 		int enable_frm_cnt_intr);
 
-void ov5640_init_rgb(void);
-int Miz702_EMIO_init(void);
-
 int main(void)
 {
 
@@ -65,9 +62,27 @@ int main(void)
 
 	print("TEST PASS\r\n");
 
-	while(1){};
 
-	return XST_SUCCESS;
+	//VDMA configurateAXI VDMA0
+	/*****************往DDR写数据设置**********************/
+	/*Xil_Out32((VDMA_BASEADDR + 0x030), 0x00000003);// enable circular mode
+	Xil_Out32((VDMA_BASEADDR + 0x0AC), VIDEO_BASEADDR0);	// start address
+	Xil_Out32((VDMA_BASEADDR + 0x0B0), VIDEO_BASEADDR1);	// start address
+	Xil_Out32((VDMA_BASEADDR + 0x0B4), VIDEO_BASEADDR2);	// start address
+	Xil_Out32((VDMA_BASEADDR + 0x0A8), (H_STRIDE*4));		// h offset (640 * 4) bytes
+	Xil_Out32((VDMA_BASEADDR + 0x0A4), (H_ACTIVE*4));		// h size (640 * 4) bytes
+	Xil_Out32((VDMA_BASEADDR + 0x0A0), V_ACTIVE);			// v size (480)
+	/*****************从DDR读数据设置**********************/
+	/*Xil_Out32((VDMA_BASEADDR + 0x000), 0x00000003); 		// enable circular mode
+	Xil_Out32((VDMA_BASEADDR + 0x05c), VIDEO_BASEADDR0); 	// start address
+	Xil_Out32((VDMA_BASEADDR + 0x060), VIDEO_BASEADDR1); 	// start address
+	Xil_Out32((VDMA_BASEADDR + 0x064), VIDEO_BASEADDR2); 	// start address
+	Xil_Out32((VDMA_BASEADDR + 0x058), (H_STRIDE*4)); 		// h offset (640 * 4) bytes
+	Xil_Out32((VDMA_BASEADDR + 0x054), (H_ACTIVE*4)); 		// h size (640 * 4) bytes
+	Xil_Out32((VDMA_BASEADDR + 0x050), V_ACTIVE); 			// v size (480)
+	*/
+	while (1) ;
+		return XST_SUCCESS;
 }
 
 
