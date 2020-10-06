@@ -65,8 +65,10 @@ set_property used_in_implementation false [get_files -all e:/Project/Personal/Po
 set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_axi_vdma_1_0/system_axi_vdma_1_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_axi_vdma_1_0/system_axi_vdma_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/system_v_mix_0_0.xdc]
-set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/system_v_mix_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_1_0/system_v_axi4s_vid_out_1_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_1_0/system_v_axi4s_vid_out_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_tc_1_0/system_v_tc_1_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_v_tc_1_0/system_v_tc_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2_ooc.xdc]
@@ -86,8 +88,6 @@ set_property used_in_implementation false [get_files E:/Project/Personal/PoseEst
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
-compile_c [get_files E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Stereo/OV5640_display.srcs/sources_1/bd/system/system.bd
-]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 

@@ -97,7 +97,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {cmos_data_i_1[7]}]
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets cmos_pclk_i_1_IBUF]
 
 #####################################################################
-# HDMI
+# HDMI 1
 #####################################################################
 set_property IOSTANDARD TMDS_33 [get_ports HDMI_CLK_P_0]
 set_property IOSTANDARD TMDS_33 [get_ports HDMI_D0_P_0]
@@ -109,10 +109,20 @@ set_property PACKAGE_PIN L19 [get_ports HDMI_D0_P_0]
 set_property PACKAGE_PIN M17 [get_ports HDMI_D1_P_0]
 set_property PACKAGE_PIN L16 [get_ports HDMI_D2_P_0]
 
-
-
 set_property IOSTANDARD LVCMOS33 [get_ports HDMI_HPD]
 set_property PACKAGE_PIN R19 [get_ports HDMI_HPD]
+#####################################################################
+# HDMI 2 (useless)
+#####################################################################
+#set_property IOSTANDARD TMDS_33 [get_ports HDMI_CLK_P_1]
+#set_property IOSTANDARD TMDS_33 [get_ports HDMI_D0_P_1]
+#set_property IOSTANDARD TMDS_33 [get_ports HDMI_D1_P_1]
+#set_property IOSTANDARD TMDS_33 [get_ports HDMI_D2_P_1]
+
+#set_property PACKAGE_PIN N20 [get_ports HDMI_CLK_P_1]
+#set_property PACKAGE_PIN T20 [get_ports HDMI_D0_P_1]
+#set_property PACKAGE_PIN T17 [get_ports HDMI_D1_P_1]
+#set_property PACKAGE_PIN V20 [get_ports HDMI_D2_P_1]
 
 #set_property SEVERITY {Warning} [get_drc_checks NSTD-1]
 #set_property SEVERITY {Warning} [get_drc_checks UCIO-1]

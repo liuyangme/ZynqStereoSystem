@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="system" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1601709910"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1601709910"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1601709910"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1601709910"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1601980918"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1601980918"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1601980918"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1601980918"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\system_HDMI_TX_0_0\system_HDMI_TX_0_0.xci" Type="IP">
         <Instance HierarchyPath="HDMI_TX_0"/>
@@ -215,8 +215,24 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\system_v_mix_0_0\system_v_mix_0_0.xci" Type="IP">
-        <Instance HierarchyPath="v_mix_0"/>
+      <File Name="ip\system_v_axi4s_vid_out_1_0\system_v_axi4s_vid_out_1_0.xci" Type="IP">
+        <Instance HierarchyPath="v_axi4s_vid_out_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\system_HDMI_TX_1_0\system_HDMI_TX_1_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_TX_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\system_v_tc_1_0\system_v_tc_1_0.xci" Type="IP">
+        <Instance HierarchyPath="v_tc_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

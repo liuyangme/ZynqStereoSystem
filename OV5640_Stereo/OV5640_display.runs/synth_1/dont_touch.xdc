@@ -78,6 +78,21 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_d5b8_slot_1_
 # IP: bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_6/bd_d5b8_slot_1_r_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_d5b8_slot_1_r_0 || ORIG_REF_NAME==bd_d5b8_slot_1_r_0} -quiet] -quiet
 
+# IP: bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_7/bd_d5b8_slot_4_aw_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_d5b8_slot_4_aw_0 || ORIG_REF_NAME==bd_d5b8_slot_4_aw_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_8/bd_d5b8_slot_4_w_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_d5b8_slot_4_w_0 || ORIG_REF_NAME==bd_d5b8_slot_4_w_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_9/bd_d5b8_slot_4_b_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_d5b8_slot_4_b_0 || ORIG_REF_NAME==bd_d5b8_slot_4_b_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_10/bd_d5b8_slot_4_ar_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_d5b8_slot_4_ar_0 || ORIG_REF_NAME==bd_d5b8_slot_4_ar_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_11/bd_d5b8_slot_4_r_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_d5b8_slot_4_r_0 || ORIG_REF_NAME==bd_d5b8_slot_4_r_0} -quiet] -quiet
+
 # IP: bd/system/ip/system_system_ila_2_0/system_system_ila_2_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_system_ila_2_0 || ORIG_REF_NAME==system_system_ila_2_0} -quiet] -quiet
 
@@ -114,8 +129,14 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_inte
 # IP: bd/system/ip/system_xlconcat_0_0/system_xlconcat_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xlconcat_0_0 || ORIG_REF_NAME==system_xlconcat_0_0} -quiet] -quiet
 
-# IP: bd/system/ip/system_v_mix_0_0/system_v_mix_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_v_mix_0_0 || ORIG_REF_NAME==system_v_mix_0_0} -quiet] -quiet
+# IP: bd/system/ip/system_v_axi4s_vid_out_1_0/system_v_axi4s_vid_out_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_v_axi4s_vid_out_1_0 || ORIG_REF_NAME==system_v_axi4s_vid_out_1_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_HDMI_TX_1_0/system_HDMI_TX_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_HDMI_TX_1_0 || ORIG_REF_NAME==system_HDMI_TX_1_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_v_tc_1_0/system_v_tc_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_v_tc_1_0 || ORIG_REF_NAME==system_v_tc_1_0} -quiet] -quiet
 
 # IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0} -quiet] -quiet
@@ -204,10 +225,15 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/system/ip/system_xbar_1/system_xbar_1_ooc.xdc
 
-# XDC: bd/system/ip/system_v_mix_0_0/system_v_mix_0_0.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_v_mix_0_0 || ORIG_REF_NAME==system_v_mix_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+# XDC: bd/system/ip/system_v_axi4s_vid_out_1_0/system_v_axi4s_vid_out_1_0_clocks.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_v_axi4s_vid_out_1_0 || ORIG_REF_NAME==system_v_axi4s_vid_out_1_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: bd/system/ip/system_v_mix_0_0/system_v_mix_0_0_ooc.xdc
+# XDC: bd/system/ip/system_v_axi4s_vid_out_1_0/system_v_axi4s_vid_out_1_0_ooc.xdc
+
+# XDC: bd/system/ip/system_v_tc_1_0/system_v_tc_1_0_clocks.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_v_tc_1_0 || ORIG_REF_NAME==system_v_tc_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/system/ip/system_v_tc_1_0/system_v_tc_1_0_ooc.xdc
 
 # XDC: bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc
 

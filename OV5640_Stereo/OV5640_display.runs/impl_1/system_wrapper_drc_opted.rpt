@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat Oct  3 15:57:15 2020
+| Date         : Tue Oct  6 19:13:41 2020
 | Host         : LiuYang-Laptop running 64-bit major release  (build 9200)
 | Command      : report_drc -file system_wrapper_drc_opted.rpt -pb system_wrapper_drc_opted.pb -rpx system_wrapper_drc_opted.rpx
 | Design       : system_wrapper
@@ -24,12 +24,11 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 34
+             Violations found: 31
 +-----------+----------+----------------------------+------------+
 | Rule      | Severity | Description                | Violations |
 +-----------+----------+----------------------------+------------+
 | CHECK-3   | Warning  | Report rule limit reached  | 1          |
-| DPOP-2    | Warning  | MREG Output pipelining     | 3          |
 | PLCK-12   | Warning  | Clock Placer Checks        | 2          |
 | REQP-1839 | Warning  | RAMB36 async control check | 20         |
 | REQP-165  | Advisory | writefirst                 | 4          |
@@ -41,21 +40,6 @@ Table of Contents
 CHECK-3#1 Warning
 Report rule limit reached  
 REQP-1839 rule limit reached: 20 violations have been found.
-Related violations: <none>
-
-DPOP-2#1 Warning
-MREG Output pipelining  
-DSP system_i/v_mix_0/inst/v_mix_core_alpha_U0/v_mix_ama_submulabkb_U112/system_v_mix_0_0_v_mix_ama_submulabkb_DSP48_0_U/p multiplier stage system_i/v_mix_0/inst/v_mix_core_alpha_U0/v_mix_ama_submulabkb_U112/system_v_mix_0_0_v_mix_ama_submulabkb_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-Related violations: <none>
-
-DPOP-2#2 Warning
-MREG Output pipelining  
-DSP system_i/v_mix_0/inst/v_mix_core_alpha_U0/v_mix_ama_submulabkb_U113/system_v_mix_0_0_v_mix_ama_submulabkb_DSP48_0_U/p multiplier stage system_i/v_mix_0/inst/v_mix_core_alpha_U0/v_mix_ama_submulabkb_U113/system_v_mix_0_0_v_mix_ama_submulabkb_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-Related violations: <none>
-
-DPOP-2#3 Warning
-MREG Output pipelining  
-DSP system_i/v_mix_0/inst/v_mix_core_alpha_U0/v_mix_ama_submulabkb_U114/system_v_mix_0_0_v_mix_ama_submulabkb_DSP48_0_U/p multiplier stage system_i/v_mix_0/inst/v_mix_core_alpha_U0/v_mix_ama_submulabkb_U114/system_v_mix_0_0_v_mix_ama_submulabkb_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 PLCK-12#1 Warning

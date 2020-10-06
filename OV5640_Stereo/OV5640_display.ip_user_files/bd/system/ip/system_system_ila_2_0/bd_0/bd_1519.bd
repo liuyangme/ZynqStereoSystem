@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xF677227A8BF1AAF2",
+      "boundary_crc": "0x3A5FDADFCA500885",
       "design_src": "SBD",
       "device": "xc7z020clg400-2",
       "name": "bd_1519",
@@ -50,6 +50,11 @@
         "direction": "I",
         "left": "23",
         "right": "0"
+      },
+      "probe3": {
+        "direction": "I",
+        "left": "23",
+        "right": "0"
       }
     },
     "components": {
@@ -85,7 +90,7 @@
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "3"
+            "value": "4"
           },
           "C_PROBE0_MU_CNT": {
             "value": "1"
@@ -112,6 +117,15 @@
             "value": "0"
           },
           "C_PROBE2_WIDTH": {
+            "value": "24"
+          },
+          "C_PROBE3_MU_CNT": {
+            "value": "1"
+          },
+          "C_PROBE3_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE3_WIDTH": {
             "value": "24"
           },
           "C_TIME_TAG_WIDTH": {
@@ -152,6 +166,12 @@
         "ports": [
           "probe2",
           "ila_lib/probe2"
+        ]
+      },
+      "probe3_1": {
+        "ports": [
+          "probe3",
+          "ila_lib/probe3"
         ]
       }
     }

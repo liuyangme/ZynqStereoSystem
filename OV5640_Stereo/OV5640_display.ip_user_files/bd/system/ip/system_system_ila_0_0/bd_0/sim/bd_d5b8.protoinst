@@ -71,27 +71,60 @@
 						"ACLK": { "actual": "aclk"},
 						"ARESETN": { "actual": "aresetn"},
 						"TDATA": { "actual": "slot_3_axis_tdata"},
-						"TDEST": { "actual": "slot_3_axis_tdest"},
-						"TID": { "actual": "slot_3_axis_tid"},
-						"TKEEP": { "actual": "slot_3_axis_tkeep"},
 						"TLAST": { "actual": "slot_3_axis_tlast"},
 						"TREADY": { "actual": "slot_3_axis_tready"},
-						"TSTRB": { "actual": "slot_3_axis_tstrb"},
 						"TUSER": { "actual": "slot_3_axis_tuser"},
 						"TVALID": { "actual": "slot_3_axis_tvalid"}
 					}
 				},
-				"/g_inst/slot_4_axis": {
+				"/g_inst/slot_4_axi": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARADDR": { "actual": "slot_4_axi_araddr"},
+						"ARESETN": { "actual": "aresetn"},
+						"ARID": { "actual": "slot_4_axi_arid"},
+						"ARLEN": { "actual": "slot_4_axi_arlen"},
+						"ARPROT": { "actual": "slot_4_axi_arprot"},
+						"ARREADY": { "actual": "slot_4_axi_arready"},
+						"ARSIZE": { "actual": "slot_4_axi_arsize"},
+						"ARVALID": { "actual": "slot_4_axi_arvalid"},
+						"AWADDR": { "actual": "slot_4_axi_awaddr"},
+						"AWID": { "actual": "slot_4_axi_awid"},
+						"AWLEN": { "actual": "slot_4_axi_awlen"},
+						"AWPROT": { "actual": "slot_4_axi_awprot"},
+						"AWREADY": { "actual": "slot_4_axi_awready"},
+						"AWSIZE": { "actual": "slot_4_axi_awsize"},
+						"AWVALID": { "actual": "slot_4_axi_awvalid"},
+						"BID": { "actual": "slot_4_axi_bid"},
+						"BREADY": { "actual": "slot_4_axi_bready"},
+						"BRESP": { "actual": "slot_4_axi_bresp"},
+						"BVALID": { "actual": "slot_4_axi_bvalid"},
+						"RDATA": { "actual": "slot_4_axi_rdata"},
+						"RID": { "actual": "slot_4_axi_rid"},
+						"RLAST": { "actual": "slot_4_axi_rlast"},
+						"RREADY": { "actual": "slot_4_axi_rready"},
+						"RRESP": { "actual": "slot_4_axi_rresp"},
+						"RVALID": { "actual": "slot_4_axi_rvalid"},
+						"WDATA": { "actual": "slot_4_axi_wdata"},
+						"WID": { "actual": "slot_4_axi_wid"},
+						"WLAST": { "actual": "slot_4_axi_wlast"},
+						"WREADY": { "actual": "slot_4_axi_wready"},
+						"WSTRB": { "actual": "slot_4_axi_wstrb"},
+						"WVALID": { "actual": "slot_4_axi_wvalid"}
+					}
+				},
+				"/g_inst/slot_5_axis": {
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "aclk"},
 						"ARESETN": { "actual": "aresetn"},
-						"TDATA": { "actual": "slot_4_axis_tdata"},
-						"TKEEP": { "actual": "slot_4_axis_tkeep"},
-						"TLAST": { "actual": "slot_4_axis_tlast"},
-						"TREADY": { "actual": "slot_4_axis_tready"},
-						"TUSER": { "actual": "slot_4_axis_tuser"},
-						"TVALID": { "actual": "slot_4_axis_tvalid"}
+						"TDATA": { "actual": "slot_5_axis_tdata"},
+						"TKEEP": { "actual": "slot_5_axis_tkeep"},
+						"TLAST": { "actual": "slot_5_axis_tlast"},
+						"TREADY": { "actual": "slot_5_axis_tready"},
+						"TUSER": { "actual": "slot_5_axis_tuser"},
+						"TVALID": { "actual": "slot_5_axis_tvalid"}
 					}
 				}
 			}

@@ -8,5 +8,7 @@ vhdl xil_defaultlib  \
 "../../../bd/system/ip/system_proc_sys_reset_0_0/sim/system_proc_sys_reset_0_0.vhd" \
 "../../../bd/system/ip/system_v_tc_0_0/sim/system_v_tc_0_0.vhd" \
 "../../../bd/system/ip/system_axi_vdma_1_0/sim/system_axi_vdma_1_0.vhd" \
+"../../../bd/system/ip/system_HDMI_TX_1_0/sim/system_HDMI_TX_1_0.vhd" \
+"../../../bd/system/ip/system_v_tc_1_0/sim/system_v_tc_1_0.vhd" \
 
 nosort

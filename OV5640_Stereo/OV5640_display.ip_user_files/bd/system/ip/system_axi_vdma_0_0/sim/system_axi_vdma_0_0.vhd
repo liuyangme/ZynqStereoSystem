@@ -80,7 +80,9 @@ ENTITY system_axi_vdma_0_0 IS
     s_axi_lite_rready : IN STD_LOGIC;
     s_axi_lite_rdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     s_axi_lite_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+    mm2s_frame_ptr_in : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
     mm2s_frame_ptr_out : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
+    s2mm_frame_ptr_in : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
     s2mm_frame_ptr_out : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
     m_axi_mm2s_araddr : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     m_axi_mm2s_arlen : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
@@ -358,7 +360,9 @@ ARCHITECTURE system_axi_vdma_0_0_arch OF system_axi_vdma_0_0 IS
 "1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF m_axi_mm2s_araddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_MM2S ARADDR";
   ATTRIBUTE X_INTERFACE_INFO OF s2mm_frame_ptr_out: SIGNAL IS "xilinx.com:signal:video_frame_ptr:1.0 S2MM_FRAME_PTR_OUT FRAME_PTR";
+  ATTRIBUTE X_INTERFACE_INFO OF s2mm_frame_ptr_in: SIGNAL IS "xilinx.com:signal:video_frame_ptr:1.0 S2MM_FRAME_PTR_IN_0 FRAME_PTR";
   ATTRIBUTE X_INTERFACE_INFO OF mm2s_frame_ptr_out: SIGNAL IS "xilinx.com:signal:video_frame_ptr:1.0 MM2S_FRAME_PTR_OUT FRAME_PTR";
+  ATTRIBUTE X_INTERFACE_INFO OF mm2s_frame_ptr_in: SIGNAL IS "xilinx.com:signal:video_frame_ptr:1.0 MM2S_FRAME_PTR_IN_0 FRAME_PTR";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_lite_rresp: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI_LITE RRESP";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_lite_rdata: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI_LITE RDATA";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_lite_rready: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI_LITE RREADY";
@@ -408,7 +412,7 @@ BEGIN
       C_M_AXI_SG_ADDR_WIDTH => 32,
       C_M_AXI_SG_DATA_WIDTH => 32,
       C_INCLUDE_MM2S => 1,
-      C_MM2S_GENLOCK_MODE => 0,
+      C_MM2S_GENLOCK_MODE => 3,
       C_MM2S_GENLOCK_NUM_MASTERS => 1,
       C_MM2S_GENLOCK_REPEAT_EN => 0,
       C_MM2S_SOF_ENABLE => 1,
@@ -482,10 +486,10 @@ BEGIN
       s_axi_lite_rdata => s_axi_lite_rdata,
       s_axi_lite_rresp => s_axi_lite_rresp,
       mm2s_fsync => '0',
-      mm2s_frame_ptr_in => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 6)),
+      mm2s_frame_ptr_in => mm2s_frame_ptr_in,
       mm2s_frame_ptr_out => mm2s_frame_ptr_out,
       s2mm_fsync => '0',
-      s2mm_frame_ptr_in => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 6)),
+      s2mm_frame_ptr_in => s2mm_frame_ptr_in,
       s2mm_frame_ptr_out => s2mm_frame_ptr_out,
       m_axi_sg_arready => '0',
       m_axi_sg_rdata => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 32)),

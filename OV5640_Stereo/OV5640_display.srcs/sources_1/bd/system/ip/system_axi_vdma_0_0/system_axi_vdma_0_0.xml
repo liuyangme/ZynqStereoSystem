@@ -3209,7 +3209,7 @@ dency video_comp2_offset format long minimum {} maximum {}} value 16} integer {s
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.MM2S_FRAME_PTR_IN_0" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_NUM_MASTERS&apos;))>1) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_INCLUDE_S2MM&apos;)) = 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;))!=0)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;)) = 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;))!=0)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;)) = 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;))!=3)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;)) = 3) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;))!=2)))">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.MM2S_FRAME_PTR_IN_0" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_NUM_MASTERS&apos;))>1) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_INCLUDE_S2MM&apos;)) = 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;))!=0)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;)) = 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;))!=0)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;)) = 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;))!=3)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;)) = 3) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;))!=2)))">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -3673,7 +3673,7 @@ dency video_comp2_offset format long minimum {} maximum {}} value 16} integer {s
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.S2MM_FRAME_PTR_IN_0" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_NUM_MASTERS&apos;))>1) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_INCLUDE_MM2S&apos;)) = 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;))!=0)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;)) = 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;))!=0)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;)) = 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;))!=3)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;)) = 3) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;))!=2)))">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.S2MM_FRAME_PTR_IN_0" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_NUM_MASTERS&apos;))>1) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_INCLUDE_MM2S&apos;)) = 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;))!=0)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;)) = 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;))!=0)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;)) = 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;))!=3)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;)) = 3) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;))!=2)))">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -6401,11 +6401,11 @@ Note: Frame Delay must be less than or equal to Frame Buffers or an undefined re
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Oct 03 07:24:45 UTC 2020</spirit:value>
+            <spirit:value>Tue Oct 06 10:41:32 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1a3c8e85</spirit:value>
+            <spirit:value>9:d7cf2c80</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -6421,11 +6421,11 @@ Note: Frame Delay must be less than or equal to Frame Buffers or an undefined re
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Oct 03 07:24:45 UTC 2020</spirit:value>
+            <spirit:value>Tue Oct 06 10:41:32 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1a3c8e85</spirit:value>
+            <spirit:value>9:d7cf2c80</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -6464,11 +6464,11 @@ Note: Frame Delay must be less than or equal to Frame Buffers or an undefined re
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Oct 03 07:24:45 UTC 2020</spirit:value>
+            <spirit:value>Tue Oct 06 10:41:32 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2dbca378</spirit:value>
+            <spirit:value>9:c48f8293</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -6484,11 +6484,11 @@ Note: Frame Delay must be less than or equal to Frame Buffers or an undefined re
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Oct 03 07:24:46 UTC 2020</spirit:value>
+            <spirit:value>Tue Oct 06 10:41:32 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2dbca378</spirit:value>
+            <spirit:value>9:c48f8293</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -6942,7 +6942,7 @@ Note: Frame Delay must be less than or equal to Frame Buffers or an undefined re
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.mm2s_frame_ptr_in" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_NUM_MASTERS&apos;))>1) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_INCLUDE_S2MM&apos;)) = 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;))!=0)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;)) = 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;))!=0)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;)) = 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;))!=3)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;)) = 3) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;))!=2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.mm2s_frame_ptr_in" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_NUM_MASTERS&apos;))>1) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_INCLUDE_S2MM&apos;)) = 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;))!=0)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;)) = 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;))!=0)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;)) = 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;))!=3)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;)) = 3) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;))!=2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -7016,7 +7016,7 @@ Note: Frame Delay must be less than or equal to Frame Buffers or an undefined re
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.s2mm_frame_ptr_in" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_NUM_MASTERS&apos;))>1) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_INCLUDE_MM2S&apos;)) = 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;))!=0)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;)) = 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;))!=0)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;)) = 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;))!=3)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;)) = 3) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;))!=2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.s2mm_frame_ptr_in" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_NUM_MASTERS&apos;))>1) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_INCLUDE_MM2S&apos;)) = 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;))!=0)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;)) = 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;))!=0)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;)) = 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;))!=3)) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S2MM_GENLOCK_MODE&apos;)) = 3) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE&apos;))!=2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -8641,7 +8641,7 @@ Note: Frame Delay must be less than or equal to Frame Buffers or an undefined re
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_MM2S_GENLOCK_MODE</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE" spirit:minimum="0" spirit:maximum="3" spirit:rangeType="long">0</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MM2S_GENLOCK_MODE" spirit:minimum="0" spirit:maximum="3" spirit:rangeType="long">3</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_MM2S_GENLOCK_NUM_MASTERS</spirit:name>
@@ -9666,7 +9666,7 @@ Note: Frame Delay must be less than or equal to Frame Buffers or an undefined re
     <spirit:parameter>
       <spirit:name>c_mm2s_genlock_mode</spirit:name>
       <spirit:displayName>GenLock Mode</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.c_mm2s_genlock_mode" spirit:choiceRef="choice_pairs_40223f55" spirit:order="180" spirit:configGroups="0 NoDisplay">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.c_mm2s_genlock_mode" spirit:choiceRef="choice_pairs_40223f55" spirit:order="180" spirit:configGroups="0 NoDisplay">3</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -9682,7 +9682,7 @@ Note: Frame Delay must be less than or equal to Frame Buffers or an undefined re
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.c_mm2s_genlock_num_masters">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.c_mm2s_genlock_num_masters">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>

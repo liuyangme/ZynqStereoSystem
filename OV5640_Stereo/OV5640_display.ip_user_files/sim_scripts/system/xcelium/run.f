@@ -157,6 +157,11 @@
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_4/sim/bd_d5b8_slot_1_b_0.v" \
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_5/sim/bd_d5b8_slot_1_ar_0.v" \
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_6/sim/bd_d5b8_slot_1_r_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_7/sim/bd_d5b8_slot_4_aw_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_8/sim/bd_d5b8_slot_4_w_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_9/sim/bd_d5b8_slot_4_b_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_10/sim/bd_d5b8_slot_4_ar_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_11/sim/bd_d5b8_slot_4_r_0.v" \
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/sim/bd_d5b8.v" \
   "../../../bd/system/ip/system_system_ila_0_0/sim/system_system_ila_0_0.v" \
   "../../../bd/system/ip/system_system_ila_2_0/bd_0/ip/ip_0/sim/bd_1519_ila_lib_0.v" \
@@ -173,12 +178,11 @@
   "../../../bd/system/ip/system_xlconstant_1_0/sim/system_xlconstant_1_0.v" \
   "../../../bd/system/ip/system_xbar_1/sim/system_xbar_1.v" \
   "../../../bd/system/ip/system_xlconcat_0_0/sim/system_xlconcat_0_0.v" \
--endlib
--makelib xcelium_lib/v_mix_v3_0_2 \
-  "../../../../OV5640_display.srcs/sources_1/bd/system/ip/system_v_mix_0_0/hdl/v_mix_v3_0_rfs.v" \
+  "../../../bd/system/ip/system_v_axi4s_vid_out_1_0/sim/system_v_axi4s_vid_out_1_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/system/ip/system_v_mix_0_0/sim/system_v_mix_0_0.v" \
+  "../../../bd/system/ip/system_HDMI_TX_1_0/sim/system_HDMI_TX_1_0.vhd" \
+  "../../../bd/system/ip/system_v_tc_1_0/sim/system_v_tc_1_0.vhd" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_18 \
   "../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
