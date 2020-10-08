@@ -1,28 +1,11 @@
-22:20:15 **** Auto Build of configuration Debug for project OV5640_SDcard ****
+11:00:37 **** Auto Build of configuration Debug for project OV5640_SDcard ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/main.c'
+'Building file: ../src/ov5640_config.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV5640_SDcard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from ../src/main.c:20:0:
-../../OV5640_SDcard_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-../src/main.c: In function 'main':
-../src/main.c:34:2: warning: implicit declaration of function 'Miz702_EMIO_init' [-Wimplicit-function-declaration]
-  Miz702_EMIO_init();
-  ^~~~~~~~~~~~~~~~
-../src/main.c:35:2: warning: implicit declaration of function 'ov5640_init_rgb' [-Wimplicit-function-declaration]
-  ov5640_init_rgb();
-  ^~~~~~~~~~~~~~~
-../src/main.c:52:2: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
-  while (1) ;
-  ^~~~~
-../src/main.c:53:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
-   return XST_SUCCESS;
-   ^~~~~~
-'Finished building: ../src/main.c'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640_config.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV5640_SDcard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ov5640_config.d" -MT"src/ov5640_config.o" -o "src/ov5640_config.o" "../src/ov5640_config.c"
+'Finished building: ../src/ov5640_config.c'
 ' '
 'Building target: OV5640_SDcard.elf'
 'Invoking: ARM v7 gcc linker'
@@ -36,5 +19,5 @@ arm-none-eabi-size OV5640_SDcard.elf  |tee "OV5640_SDcard.elf.size"
 'Finished building: OV5640_SDcard.elf.size'
 ' '
 
-22:20:17 Build Finished (took 2s.505ms)
+11:00:40 Build Finished (took 2s.326ms)
 

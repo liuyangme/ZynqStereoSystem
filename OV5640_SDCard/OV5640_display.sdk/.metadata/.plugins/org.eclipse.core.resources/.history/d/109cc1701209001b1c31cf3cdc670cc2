@@ -1,7 +1,7 @@
 /*
  * ov5640_config.c
  *
- *  Created on: 2016濡ょ姷鍎戦幏锟�10闂佸搫鐗為幏锟�23闂佸搫鍠涢幏锟�
+ *  Created on: 2016妤犵儑鎷�10闁哄牞鎷�23闁哄喛鎷�
  *      Author: Administrator
  */
 
@@ -9,7 +9,7 @@
 /*
  * ov7725_config.c
  *
- *  Created on: 2016濡ょ姷鍎戦幏锟�10闂佸搫鐗為幏锟�22闂佸搫鍠涢幏锟�
+ *  Created on: 2016妤犵儑鎷�10闁哄牞鎷�22闁哄喛鎷�
  *      Author: Administrator
  */
 #include"sleep.h"
@@ -239,10 +239,8 @@ void ov5640_init_rgb(void)
 	 sccb_senddata(0x30,0x35, 0x41); // PLL
 	 sccb_senddata(0x30,0x36, 0x69); // PLL
 	 sccb_senddata(0x3c,0x07, 0x07); // lightmeter 1 threshold[7:0]
-
-	 sccb_senddata(0x38,0x20, 0x40); // flip
-	 sccb_senddata(0x38,0x21, 0x07); // mirror
-
+	 sccb_senddata(0x38,0x20, 0x47); // flip
+	 sccb_senddata(0x38,0x21, 0x01); // mirror
 	 sccb_senddata(0x38,0x14, 0x31); // timing X inc
 	 sccb_senddata(0x38,0x15, 0x31); // timing Y inc
 	 sccb_senddata(0x38,0x00, 0x00); // HS

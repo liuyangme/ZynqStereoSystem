@@ -9936,3 +9936,43 @@ java.lang.NullPointerException
 
 !ENTRY com.xilinx.sdk.utils 0 0 2020-10-08 10:37:39.157
 !MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-320
+!SESSION 2020-10-08 10:59:28.788 -----------------------------------------------
+eclipse.buildId=2018.3
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk
+
+!ENTRY org.eclipse.ui 2 0 2020-10-08 10:59:33.061
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-08 10:59:33.062
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2020-10-08 10:59:34.235
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-08 10:59:34.236
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-08 10:59:55.318
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-08 10:59:55.322
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-08 10:59:56.333
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-08 10:59:56.335
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-08 10:59:56.338
+!MESSAGE XSCT Command: [setws E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-08 10:59:56.351
+!MESSAGE XSCT command with result: [setws E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk], Result: [null, ]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-08 10:59:56.378
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-10-08 11:00:04.330
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-1

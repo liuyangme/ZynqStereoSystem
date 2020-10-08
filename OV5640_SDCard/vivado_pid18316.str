@@ -1,0 +1,138 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 18316
+License: Customer
+
+Current time: 	Thu Oct 08 10:58:30 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 73 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	LiuYang_Laptop
+User home directory: C:/Users/LiuYang_Laptop
+User working directory: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/LiuYang_Laptop/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/LiuYang_Laptop/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/LiuYang_Laptop/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/vivado.log
+Vivado journal file location: 	E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/vivado.jou
+Engine tmp dir: 	E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/.Xil/Vivado-18316-LiuYang-Laptop
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 611 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 77 MB (+78190kb) [00:00:15]
+// [Engine Memory]: 573 MB (+449051kb) [00:00:15]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: E:\Project\Personal\PoseEstimation\ZYNQ\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 676 MB. GUI used memory: 45 MB. Current time: 10/8/20, 10:58:32 AM CST
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 707 MB. GUI used memory: 45 MB. Current time: 10/8/20, 10:58:47 AM CST
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 775 MB. GUI used memory: 44 MB. Current time: 10/8/20, 10:59:02 AM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 102 MB (+21732kb) [00:00:53]
+// [Engine Memory]: 814 MB (+222523kb) [00:00:53]
+// [Engine Memory]: 855 MB (+388kb) [00:00:55]
+// WARNING: HEventQueue.dispatchEvent() is taking  5728 ms.
+// Tcl Message: open_project E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Repository/MyIPcoreLib/FPGA-IPcore-Library'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// WARNING: HEventQueue.dispatchEvent() is taking  1764 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1040 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 872.004 ; gain = 266.184 
+// Project name: OV5640_display; location: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard; part: xc7z020clg400-2
+// [GUI Memory]: 118 MB (+12274kb) [00:01:01]
+// [Engine Memory]: 1,100 MB (+212570kb) [00:01:01]
+dismissDialog("Open Project"); // bx (cp)
+// [Engine Memory]: 1,159 MB (+3579kb) [00:01:03]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,167 MB. GUI used memory: 63 MB. Current time: 10/8/20, 10:59:17 AM CST
+// a (cp): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cp): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (cp)
+// bx (cp):  Launch SDK : addNotify
+// Tcl Message: launch_sdk -workspace E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk -hwspec E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk -hwspec E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+dismissDialog("Launch SDK"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,167 MB. GUI used memory: 63 MB. Current time: 10/8/20, 11:29:17 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,167 MB. GUI used memory: 59 MB. Current time: 10/8/20, 11:59:18 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,167 MB. GUI used memory: 59 MB. Current time: 10/8/20, 12:29:18 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,167 MB. GUI used memory: 59 MB. Current time: 10/8/20, 12:59:18 PM CST
