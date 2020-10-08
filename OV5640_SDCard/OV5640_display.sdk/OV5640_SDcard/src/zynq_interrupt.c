@@ -9,12 +9,10 @@ int InterruptSystemSetup(XScuGic *XScuGicInstancePtr)
 	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,(Xil_ExceptionHandler)XScuGic_InterruptHandler,XScuGicInstancePtr);
     Xil_ExceptionEnable();
     return XST_SUCCESS;
-
 }
 
 int InterruptInit(u16 DeviceId,XScuGic *XScuGicInstancePtr)
 {
-
 	XScuGic_Config *IntcConfig;
 	int status;
 	// Interrupt controller initialization

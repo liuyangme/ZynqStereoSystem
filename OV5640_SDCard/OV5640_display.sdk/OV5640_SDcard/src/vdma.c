@@ -33,7 +33,6 @@ int vdma_read_init(short DeviceID, XAxiVdma *Vdma, short HoriSizeInput,short Ver
 	XAxiVdma_DmaSetup ReadCfg;
 	int Status;
 
-
 	Config = XAxiVdma_LookupConfig(DeviceID);
 	if (NULL == Config) {
 		xil_printf("XAxiVdma_LookupConfig failure\r\n");
