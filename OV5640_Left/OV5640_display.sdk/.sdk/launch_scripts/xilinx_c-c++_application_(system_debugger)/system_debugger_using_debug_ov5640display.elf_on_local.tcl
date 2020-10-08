@@ -14,4 +14,5 @@ ps7_post_config
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
 dow E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.sdk/OV5640Display/Debug/OV5640Display.elf
 configparams force-mem-access 0
-bpadd -addr &main
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
