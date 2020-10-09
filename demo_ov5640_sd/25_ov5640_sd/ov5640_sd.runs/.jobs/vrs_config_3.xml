@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_axi_vdma_0_0_synth_1" LaunchDir="F:/intel_project/AX7015/new/update/new/ov5640_sd/ov5640_sd.runs/system_axi_vdma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

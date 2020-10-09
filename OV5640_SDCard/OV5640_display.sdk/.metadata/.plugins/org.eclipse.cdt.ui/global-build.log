@@ -1,9 +1,4 @@
-14:45:52 **** Incremental Build of configuration Debug for project OV5640_SDcard ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-14:46:27 **** Auto Build of configuration Debug for project OV5640_SDcard ****
+13:52:51 **** Incremental Build of configuration Debug for project OV5640_SDcard ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -15,82 +10,7 @@ In file included from ../src/main.c:20:0:
  #pragma message ("For the sleep routines, Global timer is being used")
          ^~~~~~~
 ../src/main.c: In function 'main':
-../src/main.c:62:19: warning: unused variable 'vdmaConfig' [-Wunused-variable]
-  XAxiVdma_Config *vdmaConfig;
-                   ^~~~~~~~~~
-At top level:
-../src/main.c:210:13: warning: 'ReadCallBack' defined but not used [-Wunused-function]
- static void ReadCallBack(void *CallbackRef, u32 Mask)
-             ^~~~~~~~~~~~
-../src/main.c:202:13: warning: 'WriteErrorCallBack' defined but not used [-Wunused-function]
- static void WriteErrorCallBack(void *CallbackRef, u32 Mask)
-             ^~~~~~~~~~~~~~~~~~
-../src/main.c:162:13: warning: 'WriteCallBack' defined but not used [-Wunused-function]
- static void WriteCallBack(void *CallbackRef, u32 Mask)
-             ^~~~~~~~~~~~~
-'Finished building: ../src/main.c'
-' '
-'Building target: OV5640_SDcard.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../OV5640_SDcard_bsp/ps7_cortexa9_0/lib -o "OV5640_SDcard.elf"  ./src/bmp.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o ./src/vdma.o ./src/vdma_api.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-'Finished building target: OV5640_SDcard.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size OV5640_SDcard.elf  |tee "OV5640_SDcard.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 146208	   3536	37363088	37512832	23c6680	OV5640_SDcard.elf
-'Finished building: OV5640_SDcard.elf.size'
-' '
-14:46:40 **** Incremental Build of configuration Debug for project OV5640_SDcard ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-14:59:33 **** Auto Build of configuration Debug for project OV5640_SDcard ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV5640_SDcard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from ../src/main.c:20:0:
-../../OV5640_SDcard_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-../src/main.c: In function 'main':
-../src/main.c:27:20: error: 'XPAR_FABRIC_AXI_VDMA_1_S2MM_INTROUT_INTR' undeclared (first use in this function); did you mean 'XPAR_FABRIC_AXI_VDMA_0_MM2S_INTROUT_INTR'?
- #define S2MM_INTID XPAR_FABRIC_AXI_VDMA_1_S2MM_INTROUT_INTR
-                    ^
-../src/main.c:27:20: note: in definition of macro 'S2MM_INTID'
- #define S2MM_INTID XPAR_FABRIC_AXI_VDMA_1_S2MM_INTROUT_INTR
-                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/main.c:27:20: note: each undeclared identifier is reported only once for each function it appears in
- #define S2MM_INTID XPAR_FABRIC_AXI_VDMA_1_S2MM_INTROUT_INTR
-                    ^
-../src/main.c:27:20: note: in definition of macro 'S2MM_INTID'
- #define S2MM_INTID XPAR_FABRIC_AXI_VDMA_1_S2MM_INTROUT_INTR
-                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/main.c:65:19: warning: unused variable 'vdmaConfig' [-Wunused-variable]
-  XAxiVdma_Config *vdmaConfig;
-                   ^~~~~~~~~~
-At top level:
-../src/main.c:226:13: warning: 'ReadCallBack' defined but not used [-Wunused-function]
- static void ReadCallBack(void *CallbackRef, u32 Mask)
-             ^~~~~~~~~~~~
-make: *** [src/subdir.mk:47: src/main.o] Error 1
-14:59:42 **** Auto Build of configuration Debug for project OV5640_SDcard ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV5640_SDcard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from ../src/main.c:20:0:
-../../OV5640_SDcard_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-../src/main.c: In function 'main':
-../src/main.c:27:20: error: 'XPAR_FABRIC_AXI_VDMA_0_S2MM_INTROUT_INTR' undeclared (first use in this function); did you mean 'XPAR_FABRIC_AXI_VDMA_0_MM2S_INTROUT_INTR'?
+../src/main.c:27:20: error: 'XPAR_FABRIC_AXI_VDMA_0_S2MM_INTROUT_INTR' undeclared (first use in this function); did you mean 'XPAR_FABRIC_AXI_VDMA_1_S2MM_INTROUT_INTR'?
  #define S2MM_INTID XPAR_FABRIC_AXI_VDMA_0_S2MM_INTROUT_INTR
                     ^
 ../src/main.c:27:20: note: in definition of macro 'S2MM_INTID'
@@ -106,83 +26,11 @@ In file included from ../src/main.c:20:0:
   XAxiVdma_Config *vdmaConfig;
                    ^~~~~~~~~~
 At top level:
-../src/main.c:226:13: warning: 'ReadCallBack' defined but not used [-Wunused-function]
+../src/main.c:224:13: warning: 'ReadCallBack' defined but not used [-Wunused-function]
  static void ReadCallBack(void *CallbackRef, u32 Mask)
              ^~~~~~~~~~~~
 make: *** [src/subdir.mk:47: src/main.o] Error 1
-15:01:18 **** Auto Build of configuration Debug for project OV5640_SDcard ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV5640_SDcard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from ../src/main.c:20:0:
-../../OV5640_SDcard_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-../src/main.c: In function 'main':
-../src/main.c:65:19: warning: unused variable 'vdmaConfig' [-Wunused-variable]
-  XAxiVdma_Config *vdmaConfig;
-                   ^~~~~~~~~~
-At top level:
-../src/main.c:226:13: warning: 'ReadCallBack' defined but not used [-Wunused-function]
- static void ReadCallBack(void *CallbackRef, u32 Mask)
-             ^~~~~~~~~~~~
-'Finished building: ../src/main.c'
-' '
-'Building target: OV5640_SDcard.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../OV5640_SDcard_bsp/ps7_cortexa9_0/lib -o "OV5640_SDcard.elf"  ./src/bmp.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o ./src/vdma.o ./src/vdma_api.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-'Finished building target: OV5640_SDcard.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size OV5640_SDcard.elf  |tee "OV5640_SDcard.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 146336	   3536	37365520	37515392	23c7080	OV5640_SDcard.elf
-'Finished building: OV5640_SDcard.elf.size'
-' '
-15:02:06 **** Auto Build of configuration Debug for project OV5640_SDcard ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV5640_SDcard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from ../src/main.c:20:0:
-../../OV5640_SDcard_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-../src/main.c: In function 'main':
-../src/main.c:65:19: warning: unused variable 'vdmaConfig' [-Wunused-variable]
-  XAxiVdma_Config *vdmaConfig;
-                   ^~~~~~~~~~
-../src/main.c:64:6: warning: unused variable 'Status' [-Wunused-variable]
-  u32 Status;
-      ^~~~~~
-At top level:
-../src/main.c:226:13: warning: 'ReadCallBack' defined but not used [-Wunused-function]
- static void ReadCallBack(void *CallbackRef, u32 Mask)
-             ^~~~~~~~~~~~
-'Finished building: ../src/main.c'
-' '
-'Building target: OV5640_SDcard.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../OV5640_SDcard_bsp/ps7_cortexa9_0/lib -o "OV5640_SDcard.elf"  ./src/bmp.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o ./src/vdma.o ./src/vdma_api.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-'Finished building target: OV5640_SDcard.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size OV5640_SDcard.elf  |tee "OV5640_SDcard.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 146096	   3536	37365520	37515152	23c6f90	OV5640_SDcard.elf
-'Finished building: OV5640_SDcard.elf.size'
-' '
-15:02:22 **** Incremental Build of configuration Debug for project OV5640_SDcard ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-15:04:50 **** Auto Build of configuration Debug for project OV5640_SDcard ****
+13:53:02 **** Auto Build of configuration Debug for project OV5640_SDcard ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -203,6 +51,31 @@ At top level:
              ^~~~~~~~~~~~
 'Finished building: ../src/main.c'
 ' '
+'Building file: ../src/ov5640_config.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640_config.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV5640_SDcard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ov5640_config.d" -MT"src/ov5640_config.o" -o "src/ov5640_config.o" "../src/ov5640_config.c"
+'Finished building: ../src/ov5640_config.c'
+' '
+'Building file: ../src/sys_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sys_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV5640_SDcard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sys_intr.d" -MT"src/sys_intr.o" -o "src/sys_intr.o" "../src/sys_intr.c"
+'Finished building: ../src/sys_intr.c'
+' '
+'Building file: ../src/vdma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vdma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV5640_SDcard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vdma.d" -MT"src/vdma.o" -o "src/vdma.o" "../src/vdma.c"
+'Finished building: ../src/vdma.c'
+' '
+'Building file: ../src/vdma_api.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vdma_api.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV5640_SDcard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vdma_api.d" -MT"src/vdma_api.o" -o "src/vdma_api.o" "../src/vdma_api.c"
+'Finished building: ../src/vdma_api.c'
+' '
+'Building file: ../src/zynq_interrupt.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_interrupt.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV5640_SDcard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zynq_interrupt.d" -MT"src/zynq_interrupt.o" -o "src/zynq_interrupt.o" "../src/zynq_interrupt.c"
+'Finished building: ../src/zynq_interrupt.c'
+' '
 'Building target: OV5640_SDcard.elf'
 'Invoking: ARM v7 gcc linker'
 arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../OV5640_SDcard_bsp/ps7_cortexa9_0/lib -o "OV5640_SDcard.elf"  ./src/bmp.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o ./src/vdma.o ./src/vdma_api.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
@@ -211,15 +84,10 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size OV5640_SDcard.elf  |tee "OV5640_SDcard.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 146336	   3536	37365520	37515392	23c7080	OV5640_SDcard.elf
+ 146408	   3664	37365904	37515976	23c72c8	OV5640_SDcard.elf
 'Finished building: OV5640_SDcard.elf.size'
 ' '
-15:05:03 **** Incremental Build of configuration Debug for project OV5640_SDcard ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for 'main-build'.
-16:35:39 **** Auto Build of configuration Debug for project OV5640_SDcard ****
+13:57:49 **** Auto Build of configuration Debug for project OV5640_SDcard ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -231,23 +99,150 @@ In file included from ../src/main.c:20:0:
  #pragma message ("For the sleep routines, Global timer is being used")
          ^~~~~~~
 ../src/main.c: In function 'main':
-../src/main.c:27:20: error: 'XPAR_FABRIC_AXI_VDMA_0_S2MM_INTROUT_INTR' undeclared (first use in this function); did you mean 'XPAR_FABRIC_AXI_VDMA_0_MM2S_INTROUT_INTR'?
- #define S2MM_INTID XPAR_FABRIC_AXI_VDMA_0_S2MM_INTROUT_INTR
-                    ^
-../src/main.c:27:20: note: in definition of macro 'S2MM_INTID'
- #define S2MM_INTID XPAR_FABRIC_AXI_VDMA_0_S2MM_INTROUT_INTR
-                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/main.c:27:20: note: each undeclared identifier is reported only once for each function it appears in
- #define S2MM_INTID XPAR_FABRIC_AXI_VDMA_0_S2MM_INTROUT_INTR
-                    ^
-../src/main.c:27:20: note: in definition of macro 'S2MM_INTID'
- #define S2MM_INTID XPAR_FABRIC_AXI_VDMA_0_S2MM_INTROUT_INTR
-                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/main.c:65:19: warning: unused variable 'vdmaConfig' [-Wunused-variable]
-  XAxiVdma_Config *vdmaConfig;
-                   ^~~~~~~~~~
-At top level:
-../src/main.c:224:13: warning: 'ReadCallBack' defined but not used [-Wunused-function]
- static void ReadCallBack(void *CallbackRef, u32 Mask)
-             ^~~~~~~~~~~~
+../src/main.c:118:37: error: 'DISPLAY_VDMA_ID' undeclared (first use in this function); did you mean 'DISPLAY_DEMO_H_'?
+  vdmaConfig = XAxiVdma_LookupConfig(DISPLAY_VDMA_ID);
+                                     ^~~~~~~~~~~~~~~
+                                     DISPLAY_DEMO_H_
+../src/main.c:118:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:123:35: error: 'display_vdma' undeclared (first use in this function); did you mean 'camera_vdma'?
+  Status = XAxiVdma_CfgInitialize(&display_vdma, vdmaConfig, vdmaConfig->BaseAddress);
+                                   ^~~~~~~~~~~~
+                                   camera_vdma
+../src/main.c:131:11: warning: implicit declaration of function 'DisplayInitialize'; did you mean 'DemoInitialize'? [-Wimplicit-function-declaration]
+  Status = DisplayInitialize(&dispCtrl, &display_vdma, DISP_VTC_ID, DYNCLK_BASEADDR,pFrames, DEMO_STRIDE);
+           ^~~~~~~~~~~~~~~~~
+           DemoInitialize
+../src/main.c:131:30: error: 'dispCtrl' undeclared (first use in this function); did you mean 'iscntrl'?
+  Status = DisplayInitialize(&dispCtrl, &display_vdma, DISP_VTC_ID, DYNCLK_BASEADDR,pFrames, DEMO_STRIDE);
+                              ^~~~~~~~
+                              iscntrl
+../src/main.c:131:55: error: 'DISP_VTC_ID' undeclared (first use in this function); did you mean 'DISPLAY_VDMA_ID'?
+  Status = DisplayInitialize(&dispCtrl, &display_vdma, DISP_VTC_ID, DYNCLK_BASEADDR,pFrames, DEMO_STRIDE);
+                                                       ^~~~~~~~~~~
+                                                       DISPLAY_VDMA_ID
+../src/main.c:131:68: error: 'DYNCLK_BASEADDR' undeclared (first use in this function); did you mean 'XPS_OCM_BASEADDR'?
+  Status = DisplayInitialize(&dispCtrl, &display_vdma, DISP_VTC_ID, DYNCLK_BASEADDR,pFrames, DEMO_STRIDE);
+                                                                    ^~~~~~~~~~~~~~~
+                                                                    XPS_OCM_BASEADDR
+../src/main.c:137:11: warning: implicit declaration of function 'DisplayStart' [-Wimplicit-function-declaration]
+  Status = DisplayStart(&dispCtrl);
+           ^~~~~~~~~~~~
 make: *** [src/subdir.mk:47: src/main.o] Error 1
+13:58:44 **** Auto Build of configuration Debug for project OV5640_SDcard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV5640_SDcard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:20:0:
+../../OV5640_SDcard_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:127:35: error: 'display_vdma' undeclared (first use in this function); did you mean 'camera_vdma'?
+  Status = XAxiVdma_CfgInitialize(&display_vdma, vdmaConfig, vdmaConfig->BaseAddress);
+                                   ^~~~~~~~~~~~
+                                   camera_vdma
+../src/main.c:127:35: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:135:11: warning: implicit declaration of function 'DisplayInitialize'; did you mean 'DemoInitialize'? [-Wimplicit-function-declaration]
+  Status = DisplayInitialize(&dispCtrl, &display_vdma, DISP_VTC_ID, DYNCLK_BASEADDR,pFrames, DEMO_STRIDE);
+           ^~~~~~~~~~~~~~~~~
+           DemoInitialize
+../src/main.c:135:30: error: 'dispCtrl' undeclared (first use in this function); did you mean 'iscntrl'?
+  Status = DisplayInitialize(&dispCtrl, &display_vdma, DISP_VTC_ID, DYNCLK_BASEADDR,pFrames, DEMO_STRIDE);
+                              ^~~~~~~~
+                              iscntrl
+../src/main.c:135:55: error: 'DISP_VTC_ID' undeclared (first use in this function); did you mean 'DISPLAY_VDMA_ID'?
+  Status = DisplayInitialize(&dispCtrl, &display_vdma, DISP_VTC_ID, DYNCLK_BASEADDR,pFrames, DEMO_STRIDE);
+                                                       ^~~~~~~~~~~
+                                                       DISPLAY_VDMA_ID
+../src/main.c:135:68: error: 'DYNCLK_BASEADDR' undeclared (first use in this function); did you mean 'XPS_OCM_BASEADDR'?
+  Status = DisplayInitialize(&dispCtrl, &display_vdma, DISP_VTC_ID, DYNCLK_BASEADDR,pFrames, DEMO_STRIDE);
+                                                                    ^~~~~~~~~~~~~~~
+                                                                    XPS_OCM_BASEADDR
+../src/main.c:141:11: warning: implicit declaration of function 'DisplayStart' [-Wimplicit-function-declaration]
+  Status = DisplayStart(&dispCtrl);
+           ^~~~~~~~~~~~
+make: *** [src/subdir.mk:47: src/main.o] Error 1
+13:59:25 **** Auto Build of configuration Debug for project OV5640_SDcard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV5640_SDcard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:20:0:
+../../OV5640_SDcard_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:136:11: warning: implicit declaration of function 'DisplayInitialize'; did you mean 'DemoInitialize'? [-Wimplicit-function-declaration]
+  Status = DisplayInitialize(&dispCtrl, &display_vdma, DISP_VTC_ID, DYNCLK_BASEADDR,pFrames, DEMO_STRIDE);
+           ^~~~~~~~~~~~~~~~~
+           DemoInitialize
+../src/main.c:136:30: error: 'dispCtrl' undeclared (first use in this function); did you mean 'iscntrl'?
+  Status = DisplayInitialize(&dispCtrl, &display_vdma, DISP_VTC_ID, DYNCLK_BASEADDR,pFrames, DEMO_STRIDE);
+                              ^~~~~~~~
+                              iscntrl
+../src/main.c:136:30: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:136:55: error: 'DISP_VTC_ID' undeclared (first use in this function); did you mean 'DISPLAY_VDMA_ID'?
+  Status = DisplayInitialize(&dispCtrl, &display_vdma, DISP_VTC_ID, DYNCLK_BASEADDR,pFrames, DEMO_STRIDE);
+                                                       ^~~~~~~~~~~
+                                                       DISPLAY_VDMA_ID
+../src/main.c:136:68: error: 'DYNCLK_BASEADDR' undeclared (first use in this function); did you mean 'XPS_OCM_BASEADDR'?
+  Status = DisplayInitialize(&dispCtrl, &display_vdma, DISP_VTC_ID, DYNCLK_BASEADDR,pFrames, DEMO_STRIDE);
+                                                                    ^~~~~~~~~~~~~~~
+                                                                    XPS_OCM_BASEADDR
+../src/main.c:142:11: warning: implicit declaration of function 'DisplayStart' [-Wimplicit-function-declaration]
+  Status = DisplayStart(&dispCtrl);
+           ^~~~~~~~~~~~
+make: *** [src/subdir.mk:47: src/main.o] Error 1
+14:00:04 **** Auto Build of configuration Debug for project OV5640_SDcard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV5640_SDcard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:20:0:
+../../OV5640_SDcard_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: OV5640_SDcard.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../OV5640_SDcard_bsp/ps7_cortexa9_0/lib -o "OV5640_SDcard.elf"  ./src/bmp.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o ./src/vdma.o ./src/vdma_api.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: OV5640_SDcard.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size OV5640_SDcard.elf  |tee "OV5640_SDcard.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146680	   3664	37368336	37518680	23c7d58	OV5640_SDcard.elf
+'Finished building: OV5640_SDcard.elf.size'
+' '
+14:01:02 **** Incremental Build of configuration Debug for project OV5640_SDcard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV5640_SDcard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:20:0:
+../../OV5640_SDcard_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: OV5640_SDcard.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../OV5640_SDcard_bsp/ps7_cortexa9_0/lib -o "OV5640_SDcard.elf"  ./src/bmp.o ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/sys_intr.o ./src/vdma.o ./src/vdma_api.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: OV5640_SDcard.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size OV5640_SDcard.elf  |tee "OV5640_SDcard.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146680	   3664	37368336	37518680	23c7d58	OV5640_SDcard.elf
+'Finished building: OV5640_SDcard.elf.size'
+' '

@@ -107,12 +107,6 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/system/ip/system_axi_vdma_0_0/sim/system_axi_vdma_0_0.vhd" \
 -endlib
--makelib ies_lib/xlconstant_v1_1_5 \
-  "../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/system/ip/system_xlconstant_0_0/sim/system_xlconstant_0_0.v" \
--endlib
 -makelib ies_lib/proc_sys_reset_v5_0_13 \
   "../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
 -endlib
@@ -162,6 +156,13 @@
   "../../../bd/system/ip/system_system_ila_2_0/bd_0/ip/ip_0/sim/bd_1519_ila_lib_0.v" \
   "../../../bd/system/ip/system_system_ila_2_0/bd_0/sim/bd_1519.v" \
   "../../../bd/system/ip/system_system_ila_2_0/sim/system_system_ila_2_0.v" \
+  "../../../bd/system/ip/system_xbar_1/sim/system_xbar_1.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/system/ip/system_axi_vdma_1_0/sim/system_axi_vdma_1_0.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/system/ip/system_xlconcat_0_0/sim/system_xlconcat_0_0.v" \
 -endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_18 \
   "../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

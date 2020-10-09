@@ -30,9 +30,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_util_vec
 # IP: bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_vdma_0_0 || ORIG_REF_NAME==system_axi_vdma_0_0} -quiet] -quiet
 
-# IP: bd/system/ip/system_xlconstant_0_0/system_xlconstant_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xlconstant_0_0 || ORIG_REF_NAME==system_xlconstant_0_0} -quiet] -quiet
-
 # IP: bd/system/ip/system_axi_interconnect_0_0/system_axi_interconnect_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_interconnect_0_0 || ORIG_REF_NAME==system_axi_interconnect_0_0} -quiet] -quiet
 
@@ -86,6 +83,15 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_1519 || ORIG
 
 # IP: bd/system/ip/system_system_ila_2_0/bd_0/ip/ip_0/bd_1519_ila_lib_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_1519_ila_lib_0 || ORIG_REF_NAME==bd_1519_ila_lib_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_xbar_1/system_xbar_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_1 || ORIG_REF_NAME==system_xbar_1} -quiet] -quiet
+
+# IP: bd/system/ip/system_axi_vdma_1_0/system_axi_vdma_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_vdma_1_0 || ORIG_REF_NAME==system_axi_vdma_1_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_xlconcat_0_0/system_xlconcat_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xlconcat_0_0 || ORIG_REF_NAME==system_xlconcat_0_0} -quiet] -quiet
 
 # IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0} -quiet] -quiet
@@ -150,6 +156,16 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: bd/system/ip/system_system_ila_2_0/bd_0/bd_1519_ooc.xdc
 
 # XDC: bd/system/ip/system_system_ila_2_0/system_system_ila_2_0_ooc.xdc
+
+# XDC: bd/system/ip/system_xbar_1/system_xbar_1_ooc.xdc
+
+# XDC: bd/system/ip/system_axi_vdma_1_0/system_axi_vdma_1_0.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_vdma_1_0 || ORIG_REF_NAME==system_axi_vdma_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/system/ip/system_axi_vdma_1_0/system_axi_vdma_1_0_clocks.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_vdma_1_0 || ORIG_REF_NAME==system_axi_vdma_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/system/ip/system_axi_vdma_1_0/system_axi_vdma_1_0_ooc.xdc
 
 # XDC: bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc
 

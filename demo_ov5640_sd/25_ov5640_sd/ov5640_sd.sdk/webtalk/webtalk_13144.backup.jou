@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# 
+# Start of session at: Fri Sep 21 16:41:24 2018
+# Process ID: 13144
+# Current directory: F:/intel_project/AX7020/update2017p4/21_ov5640_sd/ov5640_sd.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: F:/intel_project/AX7020/update2017p4/21_ov5640_sd/ov5640_sd.sdk/webtalk/webtalk.log
+# Journal file: F:/intel_project/AX7020/update2017p4/21_ov5640_sd/ov5640_sd.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

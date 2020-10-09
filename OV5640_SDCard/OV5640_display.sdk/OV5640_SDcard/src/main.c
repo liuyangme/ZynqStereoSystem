@@ -21,12 +21,18 @@
 
 #define KEY_INTR_ID XPAR_XGPIOPS_0_INTR
 #define MIO_0_ID XPAR_PS7_GPIO_0_DEVICE_ID
+
 #define GPIO_INPUT 0
 #define GPIO_OUTPUT 1
-#define CAME_VDMA_ID XPAR_AXIVDMA_0_DEVICE_ID
-#define S2MM_INTID XPAR_FABRIC_AXI_VDMA_0_S2MM_INTROUT_INTR
+
+#define DISPLAY_VDMA_ID XPAR_AXIVDMA_0_DEVICE_ID
+#define CAME_VDMA_ID XPAR_AXIVDMA_1_DEVICE_ID
+
+#define S2MM_INTID XPAR_FABRIC_AXI_VDMA_1_S2MM_INTROUT_INTR
+#define MM2S_INTID XPAR_FABRIC_AXI_VDMA_0_MM2S_INTROUT_INTR
 
 XAxiVdma camera_vdma;
+XAxiVdma display_vdma;
 u32 *BufferPtr[3];
 XScuGic XScuGicInstance;
 static FIL fil;
@@ -101,16 +107,54 @@ int main(void)
 	//Set PS LED off
 	XGpioPs_WritePin(&GpioInstance, 51, 0);
 
-	/* Initial Camera Vdma */
+	//Initial Camera Vdma
 	vdma_write_init(CAME_VDMA_ID, &camera_vdma, 1280 * 3, 720, DEMO_STRIDE, (unsigned int)pFrames[0], DISPLAY_NUM_FRAMES);
-	/* Set General Callback for Sensor Vdma */
+	//Set General Callback for Sensor Vdma
 	XAxiVdma_SetCallBack(&camera_vdma, XAXIVDMA_HANDLER_GENERAL, WriteCallBack, (void *)&camera_vdma, XAXIVDMA_WRITE);
-	/* Set Error Callback for Sensor Vdma */
+	//Set Error Callback for Sensor Vdma
 	XAxiVdma_SetCallBack(&camera_vdma, XAXIVDMA_HANDLER_ERROR, WriteErrorCallBack, (void *)&camera_vdma, XAXIVDMA_WRITE);
-	/* Connect interrupt to GIC */
+	//Connect interrupt to GIC
 	InterruptConnect(&XScuGicInstance, S2MM_INTID, XAxiVdma_WriteIntrHandler, (void *)&camera_vdma);
-	/* enable vdma interrupt */
+	//enable vdma interrupt
 	XAxiVdma_IntrEnable(&camera_vdma, XAXIVDMA_IXR_ALL_MASK, XAXIVDMA_WRITE);
+
+
+	//Initialize Display VDMA driver
+	vdmaConfig = XAxiVdma_LookupConfig(DISPLAY_VDMA_ID);
+	if (!vdmaConfig)
+	{
+		xil_printf("No video DMA found for ID %d\r\n", DISPLAY_VDMA_ID);
+	}
+	Status = XAxiVdma_CfgInitialize(&display_vdma, vdmaConfig, vdmaConfig->BaseAddress);
+	if (Status != XST_SUCCESS)
+	{
+		xil_printf("VDMA Configuration Initialization failed %d\r\n", Status);
+
+	}
+
+	//Initialize the Display controller and start it
+//	Status = DisplayInitialize(&dispCtrl, &display_vdma, DISP_VTC_ID, DYNCLK_BASEADDR,pFrames, DEMO_STRIDE);
+//	if (Status != XST_SUCCESS)
+//	{
+//		xil_printf("Display Ctrl initialization failed during demo initialization%d\r\n", Status);
+//
+//	}
+//	Status = DisplayStart(&dispCtrl);
+//	if (Status != XST_SUCCESS)
+//	{
+//		xil_printf("Couldn't start display during demo initialization%d\r\n", Status);
+//
+//	}
+
+	//Set General Callback for dispaly Vdma
+	XAxiVdma_SetCallBack(&display_vdma, XAXIVDMA_HANDLER_GENERAL,ReadCallBack, (void *)&display_vdma, XAXIVDMA_READ);
+	//Connect interrupt to GIC
+	InterruptConnect(&XScuGicInstance,MM2S_INTID,XAxiVdma_ReadIntrHandler,(void *)&display_vdma);
+	//enable vdma interrupt
+	XAxiVdma_IntrEnable(&display_vdma, XAXIVDMA_IXR_ALL_MASK, XAXIVDMA_READ);
+
+
+
 
 	rc = f_mount(&fatfs, "0:/", 0);
 	if (rc != FR_OK)
