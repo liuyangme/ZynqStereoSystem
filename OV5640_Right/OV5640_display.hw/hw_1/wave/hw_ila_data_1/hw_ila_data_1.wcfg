@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_display/OV5640_display.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+      <db_ref path="E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_Right/OV5640_display.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
          <top_modules>
          </top_modules>
       </db_ref>
@@ -15,7 +15,7 @@
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="208"></NameColumnWidth>
-      <ValueColumnWidth column_width="220"></ValueColumnWidth>
+      <ValueColumnWidth column_width="176"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="3" />
    <wave_markers>
@@ -29,7 +29,7 @@
       <obj_property name="CustomSignalColor">OliveDrab</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-      <wvobject fp_name="group59" type="group">
+      <wvobject fp_name="group61" type="group">
          <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : Write Transactions 0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
          <obj_property name="Detail_Data">slot_1___axi_interconnect_1_M00_AXI___Write_Transactions_0_tooltip</obj_property>
@@ -39,7 +39,7 @@
          <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
       </wvobject>
-      <wvobject fp_name="group58" type="group">
+      <wvobject fp_name="group60" type="group">
          <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : Read Transactions 1</obj_property>
          <obj_property name="DisplayName">label</obj_property>
          <obj_property name="Detail_Data">slot_1___axi_interconnect_1_M00_AXI___Read_Transactions_1_tooltip</obj_property>
@@ -49,7 +49,7 @@
          <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
       </wvobject>
-      <wvobject fp_name="group57" type="group">
+      <wvobject fp_name="group59" type="group">
          <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : Read Transactions 0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
          <obj_property name="Detail_Data">slot_1___axi_interconnect_1_M00_AXI___Read_Transactions_0_tooltip</obj_property>

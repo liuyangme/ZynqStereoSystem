@@ -442,3 +442,103 @@ arm-none-eabi-size OV5640Display.elf  |tee "OV5640Display.elf.size"
   47728	   2064	  23016	  72808	  11c68	OV5640Display.elf
 'Finished building: OV5640Display.elf.size'
 ' '
+14:13:11 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:14:11 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:18:02 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:06:20 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:09:33 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:50:43 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:51:27 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:51:28 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:12:52 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:28:11 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:26:10 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:28:44 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:31:00 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:33:20 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:06:44 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:18:33 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:39:50 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:42:37 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:56:33 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:02:51 **** Incremental Build of configuration Debug for project OV5640Display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
