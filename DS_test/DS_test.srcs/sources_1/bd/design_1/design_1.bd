@@ -1,0 +1,411 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x82FF20F18054A26B",
+      "device": "xc7z020clg400-2",
+      "name": "design_1",
+      "synth_flow_mode": "None",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz_0": ""
+    },
+    "ports": {
+      "reset_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "clk_in1_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_in1_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk_out1_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "200000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "clk_out2_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "ip_prop"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "clk_out3_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "50000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "clk_out4_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "25000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "clk_out5_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "15000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "clk_out6_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "10000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "clk_out7_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "5000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "parameters": {
+          "CLKOUT1_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "132.221"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "132.063"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "200"
+          },
+          "CLKOUT2_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "151.366"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "132.063"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "100"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "CLKOUT3_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT3_JITTER": {
+            "value": "174.353"
+          },
+          "CLKOUT3_PHASE_ERROR": {
+            "value": "132.063"
+          },
+          "CLKOUT3_REQUESTED_OUT_FREQ": {
+            "value": "50"
+          },
+          "CLKOUT3_USED": {
+            "value": "true"
+          },
+          "CLKOUT4_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT4_JITTER": {
+            "value": "200.470"
+          },
+          "CLKOUT4_PHASE_ERROR": {
+            "value": "132.063"
+          },
+          "CLKOUT4_REQUESTED_OUT_FREQ": {
+            "value": "25"
+          },
+          "CLKOUT4_USED": {
+            "value": "true"
+          },
+          "CLKOUT5_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT5_JITTER": {
+            "value": "221.936"
+          },
+          "CLKOUT5_PHASE_ERROR": {
+            "value": "132.063"
+          },
+          "CLKOUT5_REQUESTED_OUT_FREQ": {
+            "value": "15"
+          },
+          "CLKOUT5_USED": {
+            "value": "true"
+          },
+          "CLKOUT6_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT6_JITTER": {
+            "value": "240.439"
+          },
+          "CLKOUT6_PHASE_ERROR": {
+            "value": "132.063"
+          },
+          "CLKOUT6_REQUESTED_OUT_FREQ": {
+            "value": "10"
+          },
+          "CLKOUT6_USED": {
+            "value": "true"
+          },
+          "CLKOUT7_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT7_JITTER": {
+            "value": "275.378"
+          },
+          "CLKOUT7_PHASE_ERROR": {
+            "value": "132.063"
+          },
+          "CLKOUT7_REQUESTED_OUT_FREQ": {
+            "value": "5"
+          },
+          "CLKOUT7_USED": {
+            "value": "true"
+          },
+          "FEEDBACK_SOURCE": {
+            "value": "FDBK_AUTO"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "6.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "3.000"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "6"
+          },
+          "MMCM_CLKOUT2_DIVIDE": {
+            "value": "12"
+          },
+          "MMCM_CLKOUT3_DIVIDE": {
+            "value": "24"
+          },
+          "MMCM_CLKOUT4_DIVIDE": {
+            "value": "40"
+          },
+          "MMCM_CLKOUT5_DIVIDE": {
+            "value": "60"
+          },
+          "MMCM_CLKOUT6_DIVIDE": {
+            "value": "120"
+          },
+          "MMCM_COMPENSATION": {
+            "value": "ZHOLD"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "1"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "7"
+          },
+          "PRIMITIVE": {
+            "value": "MMCM"
+          }
+        }
+      }
+    },
+    "nets": {
+      "reset_0_1": {
+        "ports": [
+          "reset_0",
+          "clk_wiz_0/reset"
+        ]
+      },
+      "clk_in1_0_1": {
+        "ports": [
+          "clk_in1_0",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "clk_out1_0"
+        ]
+      },
+      "clk_wiz_0_clk_out2": {
+        "ports": [
+          "clk_wiz_0/clk_out2",
+          "clk_out2_0"
+        ]
+      },
+      "clk_wiz_0_clk_out3": {
+        "ports": [
+          "clk_wiz_0/clk_out3",
+          "clk_out3_0"
+        ]
+      },
+      "clk_wiz_0_clk_out4": {
+        "ports": [
+          "clk_wiz_0/clk_out4",
+          "clk_out4_0"
+        ]
+      },
+      "clk_wiz_0_clk_out5": {
+        "ports": [
+          "clk_wiz_0/clk_out5",
+          "clk_out5_0"
+        ]
+      },
+      "clk_wiz_0_clk_out6": {
+        "ports": [
+          "clk_wiz_0/clk_out6",
+          "clk_out6_0"
+        ]
+      },
+      "clk_wiz_0_clk_out7": {
+        "ports": [
+          "clk_wiz_0/clk_out7",
+          "clk_out7_0"
+        ]
+      }
+    }
+  }
+}
