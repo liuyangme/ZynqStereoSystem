@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x82FF20F18054A26B",
+      "boundary_crc": "0x82FF20F1FC502C3B",
       "device": "xc7z020clg400-2",
       "name": "design_1",
       "synth_flow_mode": "None",
@@ -56,7 +56,7 @@
             "value_src": "ip_prop"
           },
           "FREQ_HZ": {
-            "value": "200000000"
+            "value": "400000000"
           },
           "INSERT_VIP": {
             "value": "0",
@@ -69,6 +69,27 @@
         }
       },
       "clk_out2_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "200000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "clk_out3_0": {
         "type": "clk",
         "direction": "O",
         "parameters": {
@@ -90,7 +111,7 @@
           }
         }
       },
-      "clk_out3_0": {
+      "clk_out4_0": {
         "type": "clk",
         "direction": "O",
         "parameters": {
@@ -111,27 +132,6 @@
           }
         }
       },
-      "clk_out4_0": {
-        "type": "clk",
-        "direction": "O",
-        "parameters": {
-          "CLK_DOMAIN": {
-            "value": "/clk_wiz_0_clk_out1",
-            "value_src": "ip_prop"
-          },
-          "FREQ_HZ": {
-            "value": "25000000"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "ip_prop"
-          }
-        }
-      },
       "clk_out5_0": {
         "type": "clk",
         "direction": "O",
@@ -141,7 +141,7 @@
             "value_src": "ip_prop"
           },
           "FREQ_HZ": {
-            "value": "15000000"
+            "value": "25000000"
           },
           "INSERT_VIP": {
             "value": "0",
@@ -183,7 +183,7 @@
             "value_src": "ip_prop"
           },
           "FREQ_HZ": {
-            "value": "5000000"
+            "value": "6250000"
           },
           "INSERT_VIP": {
             "value": "0",
@@ -205,25 +205,25 @@
             "value": "BUFG"
           },
           "CLKOUT1_JITTER": {
-            "value": "132.221"
+            "value": "111.164"
           },
           "CLKOUT1_PHASE_ERROR": {
-            "value": "132.063"
+            "value": "114.212"
           },
           "CLKOUT1_REQUESTED_OUT_FREQ": {
-            "value": "200"
+            "value": "400"
           },
           "CLKOUT2_DRIVES": {
             "value": "BUFG"
           },
           "CLKOUT2_JITTER": {
-            "value": "151.366"
+            "value": "126.455"
           },
           "CLKOUT2_PHASE_ERROR": {
-            "value": "132.063"
+            "value": "114.212"
           },
           "CLKOUT2_REQUESTED_OUT_FREQ": {
-            "value": "100"
+            "value": "200"
           },
           "CLKOUT2_USED": {
             "value": "true"
@@ -232,13 +232,13 @@
             "value": "BUFG"
           },
           "CLKOUT3_JITTER": {
-            "value": "174.353"
+            "value": "144.719"
           },
           "CLKOUT3_PHASE_ERROR": {
-            "value": "132.063"
+            "value": "114.212"
           },
           "CLKOUT3_REQUESTED_OUT_FREQ": {
-            "value": "50"
+            "value": "100"
           },
           "CLKOUT3_USED": {
             "value": "true"
@@ -247,13 +247,13 @@
             "value": "BUFG"
           },
           "CLKOUT4_JITTER": {
-            "value": "200.470"
+            "value": "167.017"
           },
           "CLKOUT4_PHASE_ERROR": {
-            "value": "132.063"
+            "value": "114.212"
           },
           "CLKOUT4_REQUESTED_OUT_FREQ": {
-            "value": "25"
+            "value": "50"
           },
           "CLKOUT4_USED": {
             "value": "true"
@@ -262,13 +262,13 @@
             "value": "BUFG"
           },
           "CLKOUT5_JITTER": {
-            "value": "221.936"
+            "value": "191.696"
           },
           "CLKOUT5_PHASE_ERROR": {
-            "value": "132.063"
+            "value": "114.212"
           },
           "CLKOUT5_REQUESTED_OUT_FREQ": {
-            "value": "15"
+            "value": "25"
           },
           "CLKOUT5_USED": {
             "value": "true"
@@ -277,10 +277,10 @@
             "value": "BUFG"
           },
           "CLKOUT6_JITTER": {
-            "value": "240.439"
+            "value": "229.362"
           },
           "CLKOUT6_PHASE_ERROR": {
-            "value": "132.063"
+            "value": "114.212"
           },
           "CLKOUT6_REQUESTED_OUT_FREQ": {
             "value": "10"
@@ -292,13 +292,13 @@
             "value": "BUFG"
           },
           "CLKOUT7_JITTER": {
-            "value": "275.378"
+            "value": "251.196"
           },
           "CLKOUT7_PHASE_ERROR": {
-            "value": "132.063"
+            "value": "114.212"
           },
           "CLKOUT7_REQUESTED_OUT_FREQ": {
-            "value": "5"
+            "value": "6.25"
           },
           "CLKOUT7_USED": {
             "value": "true"
@@ -307,34 +307,34 @@
             "value": "FDBK_AUTO"
           },
           "MMCM_CLKFBOUT_MULT_F": {
-            "value": "6.000"
+            "value": "8.000"
           },
           "MMCM_CLKIN1_PERIOD": {
-            "value": "10.0"
+            "value": "10.000"
           },
           "MMCM_CLKIN2_PERIOD": {
-            "value": "10.0"
+            "value": "10.000"
           },
           "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "3.000"
+            "value": "2.000"
           },
           "MMCM_CLKOUT1_DIVIDE": {
-            "value": "6"
+            "value": "4"
           },
           "MMCM_CLKOUT2_DIVIDE": {
-            "value": "12"
+            "value": "8"
           },
           "MMCM_CLKOUT3_DIVIDE": {
-            "value": "24"
+            "value": "16"
           },
           "MMCM_CLKOUT4_DIVIDE": {
-            "value": "40"
+            "value": "32"
           },
           "MMCM_CLKOUT5_DIVIDE": {
-            "value": "60"
+            "value": "80"
           },
           "MMCM_CLKOUT6_DIVIDE": {
-            "value": "120"
+            "value": "128"
           },
           "MMCM_COMPENSATION": {
             "value": "ZHOLD"

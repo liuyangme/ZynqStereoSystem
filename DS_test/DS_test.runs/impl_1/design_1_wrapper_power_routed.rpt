@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Wed Oct 28 10:14:40 2020
+| Date             : Thu Oct 29 12:45:24 2020
 | Host             : LiuYang-Laptop running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.244        |
+| Total On-Chip Power (W)  | 0.305        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.136        |
-| Device Static (W)        | 0.108        |
+| Dynamic (W)              | 0.196        |
+| Device Static (W)        | 0.109        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 82.2         |
-| Junction Temperature (C) | 27.8         |
+| Max Ambient (C)          | 81.5         |
+| Junction Temperature (C) | 28.5         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,14 +52,14 @@ Table of Contents
 +--------------+-----------+----------+-----------+-----------------+
 | On-Chip      | Power (W) | Used     | Available | Utilization (%) |
 +--------------+-----------+----------+-----------+-----------------+
-| Clocks       |     0.004 |       11 |       --- |             --- |
+| Clocks       |     0.007 |       11 |       --- |             --- |
 | Slice Logic  |     0.000 |        2 |       --- |             --- |
 |   Others     |     0.000 |        2 |       --- |             --- |
 | Signals      |     0.000 |        1 |       --- |             --- |
-| MMCM         |     0.086 |        1 |         4 |           25.00 |
-| I/O          |     0.047 |        9 |       125 |            7.20 |
-| Static Power |     0.108 |          |           |                 |
-| Total        |     0.244 |          |           |                 |
+| MMCM         |     0.098 |        1 |         4 |           25.00 |
+| I/O          |     0.091 |        9 |       125 |            7.20 |
+| Static Power |     0.109 |          |           |                 |
+| Total        |     0.305 |          |           |                 |
 +--------------+-----------+----------+-----------+-----------------+
 
 
@@ -69,9 +69,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.013 |       0.005 |      0.008 |
-| Vccaux    |       1.800 |     0.059 |       0.049 |      0.011 |
-| Vcco33    |       3.300 |     0.014 |       0.013 |      0.001 |
+| Vccint    |       1.000 |     0.017 |       0.008 |      0.008 |
+| Vccaux    |       1.800 |     0.067 |       0.056 |      0.011 |
+| Vcco33    |       3.300 |     0.027 |       0.026 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -82,7 +82,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.017 |       0.000 |      0.017 |
+| Vccpint   |       1.000 |     0.018 |       0.000 |      0.018 |
 | Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
 | Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -133,13 +133,13 @@ Table of Contents
 | Clock                         | Domain                                                  | Constraint (ns) |
 +-------------------------------+---------------------------------------------------------+-----------------+
 | clk_in1_0                     | clk_in1_0                                               |            10.0 |
-| clk_out1_design_1_clk_wiz_0_0 | design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0 |             5.0 |
-| clk_out2_design_1_clk_wiz_0_0 | design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0 |            10.0 |
-| clk_out3_design_1_clk_wiz_0_0 | design_1_i/clk_wiz_0/inst/clk_out3_design_1_clk_wiz_0_0 |            20.0 |
-| clk_out4_design_1_clk_wiz_0_0 | design_1_i/clk_wiz_0/inst/clk_out4_design_1_clk_wiz_0_0 |            40.0 |
-| clk_out5_design_1_clk_wiz_0_0 | design_1_i/clk_wiz_0/inst/clk_out5_design_1_clk_wiz_0_0 |            66.7 |
+| clk_out1_design_1_clk_wiz_0_0 | design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0 |             2.5 |
+| clk_out2_design_1_clk_wiz_0_0 | design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0 |             5.0 |
+| clk_out3_design_1_clk_wiz_0_0 | design_1_i/clk_wiz_0/inst/clk_out3_design_1_clk_wiz_0_0 |            10.0 |
+| clk_out4_design_1_clk_wiz_0_0 | design_1_i/clk_wiz_0/inst/clk_out4_design_1_clk_wiz_0_0 |            20.0 |
+| clk_out5_design_1_clk_wiz_0_0 | design_1_i/clk_wiz_0/inst/clk_out5_design_1_clk_wiz_0_0 |            40.0 |
 | clk_out6_design_1_clk_wiz_0_0 | design_1_i/clk_wiz_0/inst/clk_out6_design_1_clk_wiz_0_0 |           100.0 |
-| clk_out7_design_1_clk_wiz_0_0 | design_1_i/clk_wiz_0/inst/clk_out7_design_1_clk_wiz_0_0 |           200.0 |
+| clk_out7_design_1_clk_wiz_0_0 | design_1_i/clk_wiz_0/inst/clk_out7_design_1_clk_wiz_0_0 |           160.0 |
 | clkfbout_design_1_clk_wiz_0_0 | design_1_i/clk_wiz_0/inst/clkfbout_design_1_clk_wiz_0_0 |            10.0 |
 +-------------------------------+---------------------------------------------------------+-----------------+
 
@@ -153,10 +153,10 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| design_1_wrapper |     0.136 |
-|   design_1_i     |     0.087 |
-|     clk_wiz_0    |     0.087 |
-|       inst       |     0.087 |
+| design_1_wrapper |     0.196 |
+|   design_1_i     |     0.099 |
+|     clk_wiz_0    |     0.099 |
+|       inst       |     0.099 |
 +------------------+-----------+
 
 

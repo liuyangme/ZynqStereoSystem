@@ -4,13 +4,13 @@
 #  -string -flagsOSRD
 preplace port clk_in1_0 -pg 1 -y -150 -defaultsOSRD
 preplace port clk_out7_0 -pg 1 -y -90 -defaultsOSRD
-preplace port clk_out6_0 -pg 1 -y -110 -defaultsOSRD
-preplace port clk_out3_0 -pg 1 -y -170 -defaultsOSRD
+preplace port clk_out6_0 -pg 1 -y -130 -defaultsOSRD
+preplace port clk_out3_0 -pg 1 -y -190 -defaultsOSRD
 preplace port clk_out1_0 -pg 1 -y -230 -defaultsOSRD
-preplace port clk_out4_0 -pg 1 -y -150 -defaultsOSRD
+preplace port clk_out4_0 -pg 1 -y -170 -defaultsOSRD
 preplace port reset_0 -pg 1 -y -170 -defaultsOSRD
-preplace port clk_out2_0 -pg 1 -y -190 -defaultsOSRD
-preplace port clk_out5_0 -pg 1 -y -130 -defaultsOSRD
+preplace port clk_out2_0 -pg 1 -y -210 -defaultsOSRD
+preplace port clk_out5_0 -pg 1 -y -150 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 1 -y -160 -defaultsOSRD
 preplace netloc clk_wiz_0_clk_out6 1 1 1 N
 preplace netloc clk_wiz_0_clk_out7 1 1 1 N
@@ -21,7 +21,7 @@ preplace netloc clk_wiz_0_clk_out3 1 1 1 N
 preplace netloc clk_wiz_0_clk_out4 1 1 1 N
 preplace netloc reset_0_1 1 0 1 N
 preplace netloc clk_wiz_0_clk_out5 1 1 1 N
-levelinfo -pg 1 -10 100 210 -top -290 -bot 140
+levelinfo -pg 1 -20 100 270 -top -290 -bot 140
 "
 }
 {

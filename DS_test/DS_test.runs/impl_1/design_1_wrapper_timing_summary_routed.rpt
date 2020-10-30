@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Oct 28 10:14:40 2020
+| Date         : Thu Oct 29 12:45:24 2020
 | Host         : LiuYang-Laptop running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation
 | Design       : design_1_wrapper
@@ -126,7 +126,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-         NA           NA                     NA                   NA           NA           NA                     NA                   NA        3.000        0.000                       0                    18  
+         NA           NA                     NA                   NA           NA           NA                     NA                   NA        0.908        0.000                       0                    18  
 
 
 All user specified timing constraints are met.
@@ -140,13 +140,13 @@ All user specified timing constraints are met.
 Clock                            Waveform(ns)         Period(ns)      Frequency(MHz)
 -----                            ------------         ----------      --------------
 clk_in1_0                        {0.000 5.000}        10.000          100.000         
-  clk_out1_design_1_clk_wiz_0_0  {0.000 2.500}        5.000           200.000         
-  clk_out2_design_1_clk_wiz_0_0  {0.000 5.000}        10.000          100.000         
-  clk_out3_design_1_clk_wiz_0_0  {0.000 10.000}       20.000          50.000          
-  clk_out4_design_1_clk_wiz_0_0  {0.000 20.000}       40.000          25.000          
-  clk_out5_design_1_clk_wiz_0_0  {0.000 33.333}       66.667          15.000          
+  clk_out1_design_1_clk_wiz_0_0  {0.000 1.250}        2.500           400.000         
+  clk_out2_design_1_clk_wiz_0_0  {0.000 2.500}        5.000           200.000         
+  clk_out3_design_1_clk_wiz_0_0  {0.000 5.000}        10.000          100.000         
+  clk_out4_design_1_clk_wiz_0_0  {0.000 10.000}       20.000          50.000          
+  clk_out5_design_1_clk_wiz_0_0  {0.000 20.000}       40.000          25.000          
   clk_out6_design_1_clk_wiz_0_0  {0.000 50.000}       100.000         10.000          
-  clk_out7_design_1_clk_wiz_0_0  {0.000 100.000}      200.000         5.000           
+  clk_out7_design_1_clk_wiz_0_0  {0.000 80.000}       160.000         6.250           
   clkfbout_design_1_clk_wiz_0_0  {0.000 5.000}        10.000          100.000         
 
 
@@ -158,13 +158,13 @@ clk_in1_0                        {0.000 5.000}        10.000          100.000
 Clock                                WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----                                -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
 clk_in1_0                                                                                                                                                                          3.000        0.000                       0                     1  
-  clk_out1_design_1_clk_wiz_0_0                                                                                                                                                    3.408        0.000                       0                     2  
-  clk_out2_design_1_clk_wiz_0_0                                                                                                                                                    8.408        0.000                       0                     2  
-  clk_out3_design_1_clk_wiz_0_0                                                                                                                                                   18.408        0.000                       0                     2  
-  clk_out4_design_1_clk_wiz_0_0                                                                                                                                                   38.408        0.000                       0                     2  
-  clk_out5_design_1_clk_wiz_0_0                                                                                                                                                   65.074        0.000                       0                     2  
+  clk_out1_design_1_clk_wiz_0_0                                                                                                                                                    0.908        0.000                       0                     2  
+  clk_out2_design_1_clk_wiz_0_0                                                                                                                                                    3.408        0.000                       0                     2  
+  clk_out3_design_1_clk_wiz_0_0                                                                                                                                                    8.408        0.000                       0                     2  
+  clk_out4_design_1_clk_wiz_0_0                                                                                                                                                   18.408        0.000                       0                     2  
+  clk_out5_design_1_clk_wiz_0_0                                                                                                                                                   38.408        0.000                       0                     2  
   clk_out6_design_1_clk_wiz_0_0                                                                                                                                                   98.408        0.000                       0                     2  
-  clk_out7_design_1_clk_wiz_0_0                                                                                                                                                   13.360        0.000                       0                     2  
+  clk_out7_design_1_clk_wiz_0_0                                                                                                                                                   53.360        0.000                       0                     2  
   clkfbout_design_1_clk_wiz_0_0                                                                                                                                                    8.408        0.000                       0                     3  
 
 
@@ -225,21 +225,21 @@ From Clock:  clk_out1_design_1_clk_wiz_0_0
 
 Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
 Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
-PW    :            0  Failing Endpoints,  Worst Slack        3.408ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        0.908ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Pulse Width Checks
 --------------------------------------------------------------------------------------
 Clock Name:         clk_out1_design_1_clk_wiz_0_0
-Waveform(ns):       { 0.000 2.500 }
-Period(ns):         5.000
+Waveform(ns):       { 0.000 1.250 }
+Period(ns):         2.500
 Sources:            { design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0 }
 
 Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
-Min Period  n/a     BUFG/I              n/a            1.592         5.000       3.408      BUFGCTRL_X0Y16   design_1_i/clk_wiz_0/inst/clkout1_buf/I
-Min Period  n/a     MMCME2_ADV/CLKOUT0  n/a            1.249         5.000       3.751      MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
-Max Period  n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       5.000       208.360    MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+Min Period  n/a     BUFG/I              n/a            1.592         2.500       0.908      BUFGCTRL_X0Y16   design_1_i/clk_wiz_0/inst/clkout1_buf/I
+Min Period  n/a     MMCME2_ADV/CLKOUT0  n/a            1.249         2.500       1.251      MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+Max Period  n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       2.500       210.860    MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
 
 
 
@@ -249,21 +249,21 @@ From Clock:  clk_out2_design_1_clk_wiz_0_0
 
 Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
 Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
-PW    :            0  Failing Endpoints,  Worst Slack        8.408ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.408ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Pulse Width Checks
 --------------------------------------------------------------------------------------
 Clock Name:         clk_out2_design_1_clk_wiz_0_0
-Waveform(ns):       { 0.000 5.000 }
-Period(ns):         10.000
+Waveform(ns):       { 0.000 2.500 }
+Period(ns):         5.000
 Sources:            { design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1 }
 
 Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
-Min Period  n/a     BUFG/I              n/a            1.592         10.000      8.408      BUFGCTRL_X0Y17   design_1_i/clk_wiz_0/inst/clkout2_buf/I
-Min Period  n/a     MMCME2_ADV/CLKOUT1  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
-Max Period  n/a     MMCME2_ADV/CLKOUT1  n/a            213.360       10.000      203.360    MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+Min Period  n/a     BUFG/I              n/a            1.592         5.000       3.408      BUFGCTRL_X0Y17   design_1_i/clk_wiz_0/inst/clkout2_buf/I
+Min Period  n/a     MMCME2_ADV/CLKOUT1  n/a            1.249         5.000       3.751      MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+Max Period  n/a     MMCME2_ADV/CLKOUT1  n/a            213.360       5.000       208.360    MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
 
 
 
@@ -273,21 +273,21 @@ From Clock:  clk_out3_design_1_clk_wiz_0_0
 
 Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
 Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
-PW    :            0  Failing Endpoints,  Worst Slack       18.408ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        8.408ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Pulse Width Checks
 --------------------------------------------------------------------------------------
 Clock Name:         clk_out3_design_1_clk_wiz_0_0
-Waveform(ns):       { 0.000 10.000 }
-Period(ns):         20.000
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
 Sources:            { design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT2 }
 
 Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
-Min Period  n/a     BUFG/I              n/a            1.592         20.000      18.408     BUFGCTRL_X0Y18   design_1_i/clk_wiz_0/inst/clkout3_buf/I
-Min Period  n/a     MMCME2_ADV/CLKOUT2  n/a            1.249         20.000      18.751     MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT2
-Max Period  n/a     MMCME2_ADV/CLKOUT2  n/a            213.360       20.000      193.360    MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT2
+Min Period  n/a     BUFG/I              n/a            1.592         10.000      8.408      BUFGCTRL_X0Y18   design_1_i/clk_wiz_0/inst/clkout3_buf/I
+Min Period  n/a     MMCME2_ADV/CLKOUT2  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT2
+Max Period  n/a     MMCME2_ADV/CLKOUT2  n/a            213.360       10.000      203.360    MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT2
 
 
 
@@ -297,21 +297,21 @@ From Clock:  clk_out4_design_1_clk_wiz_0_0
 
 Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
 Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
-PW    :            0  Failing Endpoints,  Worst Slack       38.408ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       18.408ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Pulse Width Checks
 --------------------------------------------------------------------------------------
 Clock Name:         clk_out4_design_1_clk_wiz_0_0
-Waveform(ns):       { 0.000 20.000 }
-Period(ns):         40.000
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
 Sources:            { design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT3 }
 
 Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
-Min Period  n/a     BUFG/I              n/a            1.592         40.000      38.408     BUFGCTRL_X0Y19   design_1_i/clk_wiz_0/inst/clkout4_buf/I
-Min Period  n/a     MMCME2_ADV/CLKOUT3  n/a            1.249         40.000      38.751     MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT3
-Max Period  n/a     MMCME2_ADV/CLKOUT3  n/a            213.360       40.000      173.360    MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT3
+Min Period  n/a     BUFG/I              n/a            1.592         20.000      18.408     BUFGCTRL_X0Y19   design_1_i/clk_wiz_0/inst/clkout4_buf/I
+Min Period  n/a     MMCME2_ADV/CLKOUT3  n/a            1.249         20.000      18.751     MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT3
+Max Period  n/a     MMCME2_ADV/CLKOUT3  n/a            213.360       20.000      193.360    MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT3
 
 
 
@@ -321,21 +321,21 @@ From Clock:  clk_out5_design_1_clk_wiz_0_0
 
 Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
 Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
-PW    :            0  Failing Endpoints,  Worst Slack       65.074ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       38.408ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Pulse Width Checks
 --------------------------------------------------------------------------------------
 Clock Name:         clk_out5_design_1_clk_wiz_0_0
-Waveform(ns):       { 0.000 33.333 }
-Period(ns):         66.667
+Waveform(ns):       { 0.000 20.000 }
+Period(ns):         40.000
 Sources:            { design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT4 }
 
 Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
-Min Period  n/a     BUFG/I              n/a            1.592         66.667      65.074     BUFGCTRL_X0Y20   design_1_i/clk_wiz_0/inst/clkout5_buf/I
-Min Period  n/a     MMCME2_ADV/CLKOUT4  n/a            1.249         66.667      65.418     MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT4
-Max Period  n/a     MMCME2_ADV/CLKOUT4  n/a            213.360       66.667      146.693    MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT4
+Min Period  n/a     BUFG/I              n/a            1.592         40.000      38.408     BUFGCTRL_X0Y20   design_1_i/clk_wiz_0/inst/clkout5_buf/I
+Min Period  n/a     MMCME2_ADV/CLKOUT4  n/a            1.249         40.000      38.751     MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT4
+Max Period  n/a     MMCME2_ADV/CLKOUT4  n/a            213.360       40.000      173.360    MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT4
 
 
 
@@ -369,21 +369,21 @@ From Clock:  clk_out7_design_1_clk_wiz_0_0
 
 Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
 Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
-PW    :            0  Failing Endpoints,  Worst Slack       13.360ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       53.360ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Pulse Width Checks
 --------------------------------------------------------------------------------------
 Clock Name:         clk_out7_design_1_clk_wiz_0_0
-Waveform(ns):       { 0.000 100.000 }
-Period(ns):         200.000
+Waveform(ns):       { 0.000 80.000 }
+Period(ns):         160.000
 Sources:            { design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT6 }
 
 Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
-Min Period  n/a     BUFG/I              n/a            1.592         200.000     198.408    BUFGCTRL_X0Y22   design_1_i/clk_wiz_0/inst/clkout7_buf/I
-Min Period  n/a     MMCME2_ADV/CLKOUT6  n/a            1.249         200.000     198.751    MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT6
-Max Period  n/a     MMCME2_ADV/CLKOUT6  n/a            213.360       200.000     13.360     MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT6
+Min Period  n/a     BUFG/I              n/a            1.592         160.000     158.408    BUFGCTRL_X0Y22   design_1_i/clk_wiz_0/inst/clkout7_buf/I
+Min Period  n/a     MMCME2_ADV/CLKOUT6  n/a            1.249         160.000     158.751    MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT6
+Max Period  n/a     MMCME2_ADV/CLKOUT6  n/a            213.360       160.000     53.360     MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT6
 
 
 

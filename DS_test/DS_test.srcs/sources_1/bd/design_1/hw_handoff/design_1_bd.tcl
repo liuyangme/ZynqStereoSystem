@@ -160,20 +160,20 @@ proc create_root_design { parentCell } {
   set clk_in1_0 [ create_bd_port -dir I -type clk clk_in1_0 ]
   set clk_out1_0 [ create_bd_port -dir O -type clk clk_out1_0 ]
   set_property -dict [ list \
-   CONFIG.FREQ_HZ {200000000} \
+   CONFIG.FREQ_HZ {400000000} \
  ] $clk_out1_0
   set clk_out2_0 [ create_bd_port -dir O -type clk clk_out2_0 ]
-  set clk_out3_0 [ create_bd_port -dir O -type clk clk_out3_0 ]
   set_property -dict [ list \
-   CONFIG.FREQ_HZ {50000000} \
- ] $clk_out3_0
+   CONFIG.FREQ_HZ {200000000} \
+ ] $clk_out2_0
+  set clk_out3_0 [ create_bd_port -dir O -type clk clk_out3_0 ]
   set clk_out4_0 [ create_bd_port -dir O -type clk clk_out4_0 ]
   set_property -dict [ list \
-   CONFIG.FREQ_HZ {25000000} \
+   CONFIG.FREQ_HZ {50000000} \
  ] $clk_out4_0
   set clk_out5_0 [ create_bd_port -dir O -type clk clk_out5_0 ]
   set_property -dict [ list \
-   CONFIG.FREQ_HZ {15000000} \
+   CONFIG.FREQ_HZ {25000000} \
  ] $clk_out5_0
   set clk_out6_0 [ create_bd_port -dir O -type clk clk_out6_0 ]
   set_property -dict [ list \
@@ -181,7 +181,7 @@ proc create_root_design { parentCell } {
  ] $clk_out6_0
   set clk_out7_0 [ create_bd_port -dir O -type clk clk_out7_0 ]
   set_property -dict [ list \
-   CONFIG.FREQ_HZ {5000000} \
+   CONFIG.FREQ_HZ {6250000} \
  ] $clk_out7_0
   set reset_0 [ create_bd_port -dir I -type rst reset_0 ]
   set_property -dict [ list \
@@ -192,50 +192,50 @@ proc create_root_design { parentCell } {
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
   set_property -dict [ list \
    CONFIG.CLKOUT1_DRIVES {BUFG} \
-   CONFIG.CLKOUT1_JITTER {132.221} \
-   CONFIG.CLKOUT1_PHASE_ERROR {132.063} \
-   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {200} \
+   CONFIG.CLKOUT1_JITTER {111.164} \
+   CONFIG.CLKOUT1_PHASE_ERROR {114.212} \
+   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {400} \
    CONFIG.CLKOUT2_DRIVES {BUFG} \
-   CONFIG.CLKOUT2_JITTER {151.366} \
-   CONFIG.CLKOUT2_PHASE_ERROR {132.063} \
-   CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {100} \
+   CONFIG.CLKOUT2_JITTER {126.455} \
+   CONFIG.CLKOUT2_PHASE_ERROR {114.212} \
+   CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {200} \
    CONFIG.CLKOUT2_USED {true} \
    CONFIG.CLKOUT3_DRIVES {BUFG} \
-   CONFIG.CLKOUT3_JITTER {174.353} \
-   CONFIG.CLKOUT3_PHASE_ERROR {132.063} \
-   CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {50} \
+   CONFIG.CLKOUT3_JITTER {144.719} \
+   CONFIG.CLKOUT3_PHASE_ERROR {114.212} \
+   CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {100} \
    CONFIG.CLKOUT3_USED {true} \
    CONFIG.CLKOUT4_DRIVES {BUFG} \
-   CONFIG.CLKOUT4_JITTER {200.470} \
-   CONFIG.CLKOUT4_PHASE_ERROR {132.063} \
-   CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {25} \
+   CONFIG.CLKOUT4_JITTER {167.017} \
+   CONFIG.CLKOUT4_PHASE_ERROR {114.212} \
+   CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {50} \
    CONFIG.CLKOUT4_USED {true} \
    CONFIG.CLKOUT5_DRIVES {BUFG} \
-   CONFIG.CLKOUT5_JITTER {221.936} \
-   CONFIG.CLKOUT5_PHASE_ERROR {132.063} \
-   CONFIG.CLKOUT5_REQUESTED_OUT_FREQ {15} \
+   CONFIG.CLKOUT5_JITTER {191.696} \
+   CONFIG.CLKOUT5_PHASE_ERROR {114.212} \
+   CONFIG.CLKOUT5_REQUESTED_OUT_FREQ {25} \
    CONFIG.CLKOUT5_USED {true} \
    CONFIG.CLKOUT6_DRIVES {BUFG} \
-   CONFIG.CLKOUT6_JITTER {240.439} \
-   CONFIG.CLKOUT6_PHASE_ERROR {132.063} \
+   CONFIG.CLKOUT6_JITTER {229.362} \
+   CONFIG.CLKOUT6_PHASE_ERROR {114.212} \
    CONFIG.CLKOUT6_REQUESTED_OUT_FREQ {10} \
    CONFIG.CLKOUT6_USED {true} \
    CONFIG.CLKOUT7_DRIVES {BUFG} \
-   CONFIG.CLKOUT7_JITTER {275.378} \
-   CONFIG.CLKOUT7_PHASE_ERROR {132.063} \
-   CONFIG.CLKOUT7_REQUESTED_OUT_FREQ {5} \
+   CONFIG.CLKOUT7_JITTER {251.196} \
+   CONFIG.CLKOUT7_PHASE_ERROR {114.212} \
+   CONFIG.CLKOUT7_REQUESTED_OUT_FREQ {6.25} \
    CONFIG.CLKOUT7_USED {true} \
    CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} \
-   CONFIG.MMCM_CLKFBOUT_MULT_F {6.000} \
-   CONFIG.MMCM_CLKIN1_PERIOD {10.0} \
-   CONFIG.MMCM_CLKIN2_PERIOD {10.0} \
-   CONFIG.MMCM_CLKOUT0_DIVIDE_F {3.000} \
-   CONFIG.MMCM_CLKOUT1_DIVIDE {6} \
-   CONFIG.MMCM_CLKOUT2_DIVIDE {12} \
-   CONFIG.MMCM_CLKOUT3_DIVIDE {24} \
-   CONFIG.MMCM_CLKOUT4_DIVIDE {40} \
-   CONFIG.MMCM_CLKOUT5_DIVIDE {60} \
-   CONFIG.MMCM_CLKOUT6_DIVIDE {120} \
+   CONFIG.MMCM_CLKFBOUT_MULT_F {8.000} \
+   CONFIG.MMCM_CLKIN1_PERIOD {10.000} \
+   CONFIG.MMCM_CLKIN2_PERIOD {10.000} \
+   CONFIG.MMCM_CLKOUT0_DIVIDE_F {2.000} \
+   CONFIG.MMCM_CLKOUT1_DIVIDE {4} \
+   CONFIG.MMCM_CLKOUT2_DIVIDE {8} \
+   CONFIG.MMCM_CLKOUT3_DIVIDE {16} \
+   CONFIG.MMCM_CLKOUT4_DIVIDE {32} \
+   CONFIG.MMCM_CLKOUT5_DIVIDE {80} \
+   CONFIG.MMCM_CLKOUT6_DIVIDE {128} \
    CONFIG.MMCM_COMPENSATION {ZHOLD} \
    CONFIG.MMCM_DIVCLK_DIVIDE {1} \
    CONFIG.NUM_OUT_CLKS {7} \

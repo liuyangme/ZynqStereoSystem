@@ -56,13 +56,13 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// clk_out1___200.000______0.000______50.0______132.221____132.063
-// clk_out2___100.000______0.000______50.0______151.366____132.063
-// clk_out3____50.000______0.000______50.0______174.353____132.063
-// clk_out4____25.000______0.000______50.0______200.470____132.063
-// clk_out5____15.000______0.000______50.0______221.936____132.063
-// clk_out6____10.000______0.000______50.0______240.439____132.063
-// clk_out7_____5.000______0.000______50.0______275.378____132.063
+// clk_out1___400.000______0.000______50.0______111.164____114.212
+// clk_out2___200.000______0.000______50.0______126.455____114.212
+// clk_out3___100.000______0.000______50.0______144.719____114.212
+// clk_out4____50.000______0.000______50.0______167.017____114.212
+// clk_out5____25.000______0.000______50.0______191.696____114.212
+// clk_out6____10.000______0.000______50.0______229.362____114.212
+// clk_out7_____6.250______0.000______50.0______251.196____114.212
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
@@ -134,38 +134,38 @@ wire clk_in2_design_1_clk_wiz_0_0;
     .COMPENSATION         ("ZHOLD"),
     .STARTUP_WAIT         ("FALSE"),
     .DIVCLK_DIVIDE        (1),
-    .CLKFBOUT_MULT_F      (6.000),
+    .CLKFBOUT_MULT_F      (8.000),
     .CLKFBOUT_PHASE       (0.000),
     .CLKFBOUT_USE_FINE_PS ("FALSE"),
-    .CLKOUT0_DIVIDE_F     (3.000),
+    .CLKOUT0_DIVIDE_F     (2.000),
     .CLKOUT0_PHASE        (0.000),
     .CLKOUT0_DUTY_CYCLE   (0.500),
     .CLKOUT0_USE_FINE_PS  ("FALSE"),
-    .CLKOUT1_DIVIDE       (6),
+    .CLKOUT1_DIVIDE       (4),
     .CLKOUT1_PHASE        (0.000),
     .CLKOUT1_DUTY_CYCLE   (0.500),
     .CLKOUT1_USE_FINE_PS  ("FALSE"),
-    .CLKOUT2_DIVIDE       (12),
+    .CLKOUT2_DIVIDE       (8),
     .CLKOUT2_PHASE        (0.000),
     .CLKOUT2_DUTY_CYCLE   (0.500),
     .CLKOUT2_USE_FINE_PS  ("FALSE"),
-    .CLKOUT3_DIVIDE       (24),
+    .CLKOUT3_DIVIDE       (16),
     .CLKOUT3_PHASE        (0.000),
     .CLKOUT3_DUTY_CYCLE   (0.500),
     .CLKOUT3_USE_FINE_PS  ("FALSE"),
-    .CLKOUT4_DIVIDE       (40),
+    .CLKOUT4_DIVIDE       (32),
     .CLKOUT4_PHASE        (0.000),
     .CLKOUT4_DUTY_CYCLE   (0.500),
     .CLKOUT4_USE_FINE_PS  ("FALSE"),
-    .CLKOUT5_DIVIDE       (60),
+    .CLKOUT5_DIVIDE       (80),
     .CLKOUT5_PHASE        (0.000),
     .CLKOUT5_DUTY_CYCLE   (0.500),
     .CLKOUT5_USE_FINE_PS  ("FALSE"),
-    .CLKOUT6_DIVIDE       (120),
+    .CLKOUT6_DIVIDE       (128),
     .CLKOUT6_PHASE        (0.000),
     .CLKOUT6_DUTY_CYCLE   (0.500),
     .CLKOUT6_USE_FINE_PS  ("FALSE"),
-    .CLKIN1_PERIOD        (10.0))
+    .CLKIN1_PERIOD        (10.000))
   mmcm_adv_inst
     // Output clocks
    (

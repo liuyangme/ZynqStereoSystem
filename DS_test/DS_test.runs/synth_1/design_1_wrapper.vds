@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Oct 28 10:11:46 2020
-# Process ID: 23248
+# Start of session at: Thu Oct 29 12:42:47 2020
+# Process ID: 29644
 # Current directory: E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/DS_test/DS_test.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/DS_test/DS_test.runs/synth_1/design_1_wrapper.vds
@@ -18,9 +18,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5432 
+INFO: Helper process launched with PID 23400 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 467.730 ; gain = 93.711
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 468.230 ; gain = 94.246
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/DS_test/DS_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/DS_test/DS_test.srcs/sources_1/bd/design_1/synth/design_1.v:13]
@@ -35,37 +35,37 @@ INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2018.3/scripts
 INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20408]
 INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26717]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
-	Parameter CLKFBOUT_MULT_F bound to: 6.000000 - type: float 
+	Parameter CLKFBOUT_MULT_F bound to: 8.000000 - type: float 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
 	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
 	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
-	Parameter CLKOUT0_DIVIDE_F bound to: 3.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 2.000000 - type: float 
 	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
-	Parameter CLKOUT1_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT1_DIVIDE bound to: 4 - type: integer 
 	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
-	Parameter CLKOUT2_DIVIDE bound to: 12 - type: integer 
+	Parameter CLKOUT2_DIVIDE bound to: 8 - type: integer 
 	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
-	Parameter CLKOUT3_DIVIDE bound to: 24 - type: integer 
+	Parameter CLKOUT3_DIVIDE bound to: 16 - type: integer 
 	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
 	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
-	Parameter CLKOUT4_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT4_DIVIDE bound to: 32 - type: integer 
 	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
-	Parameter CLKOUT5_DIVIDE bound to: 60 - type: integer 
+	Parameter CLKOUT5_DIVIDE bound to: 80 - type: integer 
 	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
-	Parameter CLKOUT6_DIVIDE bound to: 120 - type: integer 
+	Parameter CLKOUT6_DIVIDE bound to: 128 - type: integer 
 	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
@@ -91,7 +91,7 @@ WARNING: [Synth 8-350] instance 'clk_wiz_0' of module 'design_1_clk_wiz_0_0' req
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (6#1) [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/DS_test/DS_test.srcs/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (7#1) [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/DS_test/DS_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 524.844 ; gain = 150.824
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 524.047 ; gain = 150.062
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -104,10 +104,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 524.844 ; gain = 150.824
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 524.047 ; gain = 150.062
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 524.844 ; gain = 150.824
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 524.047 ; gain = 150.062
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -123,7 +123,7 @@ Finished Parsing XDC File [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/DS_test/DS_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 800.895 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 800.492 ; gain = 0.000
 Parsing XDC File [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/DS_test/DS_test.srcs/constrs_1/new/system_pin.xdc]
 Finished Parsing XDC File [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/DS_test/DS_test.srcs/constrs_1/new/system_pin.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/DS_test/DS_test.srcs/constrs_1/new/system_pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
@@ -132,24 +132,24 @@ Parsing XDC File [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-Sy
 Finished Parsing XDC File [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/DS_test/DS_test.runs/synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/DS_test/DS_test.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 805.922 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 804.621 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 805.922 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 804.621 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 805.922 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 805.922 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 804.621 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 804.621 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 805.922 ; gain = 431.902
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 804.621 ; gain = 430.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 805.922 ; gain = 431.902
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 804.621 ; gain = 430.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -158,10 +158,10 @@ Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0/inst. (constrain
 Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 805.922 ; gain = 431.902
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 804.621 ; gain = 430.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 805.922 ; gain = 431.902
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 804.621 ; gain = 430.637
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -197,7 +197,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 805.922 ; gain = 431.902
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 804.621 ; gain = 430.637
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -209,13 +209,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 862.148 ; gain = 488.129
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 859.559 ; gain = 485.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 862.223 ; gain = 488.203
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 859.633 ; gain = 485.648
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -227,7 +227,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 871.945 ; gain = 497.926
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 869.207 ; gain = 495.223
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -251,7 +251,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 871.945 ; gain = 497.926
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 869.207 ; gain = 495.223
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -264,7 +264,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 871.945 ; gain = 497.926
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 869.207 ; gain = 495.223
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -276,25 +276,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 871.945 ; gain = 497.926
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 869.207 ; gain = 495.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 871.945 ; gain = 497.926
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 869.207 ; gain = 495.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 871.945 ; gain = 497.926
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 869.207 ; gain = 495.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 871.945 ; gain = 497.926
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 869.207 ; gain = 495.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -326,27 +326,27 @@ Report Instance Areas:
 |4     |      inst    |design_1_clk_wiz_0_0_clk_wiz |    10|
 +------+--------------+-----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 871.945 ; gain = 497.926
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 869.207 ; gain = 495.223
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 871.945 ; gain = 216.848
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 871.945 ; gain = 497.926
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 869.207 ; gain = 214.648
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 869.207 ; gain = 495.223
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 887.176 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 881.418 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 34 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 887.176 ; gain = 524.688
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 887.176 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 881.438 ; gain = 518.926
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 881.438 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/DS_test/DS_test.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Oct 28 10:12:39 2020...
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 29 12:43:39 2020...
