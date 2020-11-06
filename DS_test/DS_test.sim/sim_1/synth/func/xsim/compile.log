@@ -1,8 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/DS_test/DS_test.sim/sim_1/synth/func/xsim/ds_tb_func_synth.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module design_1
-INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
-INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0_clk_wiz
-INFO: [VRFC 10-311] analyzing module design_1_wrapper
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/DS_test/DS_test.srcs/sim_1/new/ds_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ds_tb

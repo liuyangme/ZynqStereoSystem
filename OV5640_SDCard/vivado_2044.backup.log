@@ -1,0 +1,275 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Oct  9 10:09:24 2020
+# Process ID: 2044
+# Current directory: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18028 E:\Project\Personal\PoseEstimation\ZYNQ\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.xpr
+# Log file: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/vivado.log
+# Journal file: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Repository/MyIPcoreLib/FPGA-IPcore-Library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'Arm.com:user:DAPLink_to_Arty_shield:1.0'. The one found in IP location 'e:/Repository/MyIPcoreLib/FPGA-IPcore-Library/CortexM1/AT472-BU-98000-r0p1-00rel0/vivado/Arm_ipi_repository/DAPLink_to_Arty_shield' will take precedence over the same IP in location e:/Repository/MyIPcoreLib/FPGA-IPcore-Library/CortexM3/AT426-BU-98000-r0p1-00rel0/vivado/Arm_ipi_repository/DAPLink_to_Arty_shield
+open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 865.934 ; gain = 284.543
+update_compile_order -fileset sources_1
+open_bd_design {E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:user:HDMI_TX:1.0 - HDMI_TX_0
+Adding cell -- xilinx.com:user:OV5640_Sensor:1.0 - OV5640_Sensor_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding cell -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_1
+Adding cell -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding cell -- xilinx.com:ip:system_ila:1.1 - system_ila_1
+WARNING: [BD 41-1731] Type mismatch between connected pins: /OV5640_Sensor_0/vid_clk_ce(undef) and /v_vid_in_axi4s_0/vid_io_in_ce(ce)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/locked(undef) and /v_vid_in_axi4s_0/aresetn(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/locked(undef) and /v_vid_in_axi4s_0/aclken(ce)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/locked(undef) and /v_tc_0/clken(ce)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/locked(undef) and /v_tc_0/resetn(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/locked(undef) and /v_axi4s_vid_out_0/aclken(ce)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/locked(undef) and /v_axi4s_vid_out_0/aresetn(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/locked(undef) and /v_axi4s_vid_out_0/vid_io_out_ce(ce)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/locked(undef) and /HDMI_TX_0/RST_N(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /HDMI_TX_0/PXLCLK_I(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out2(clk) and /HDMI_TX_0/PXLCLK_5X_I(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/FCLK_CLK1(clk) and /OV5640_Sensor_0/clk_i(undef)
+Successfully read diagram <system> from BD file <E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1017.227 ; gain = 4.207
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_vdma:6.3 axi_vdma_1
+endgroup
+set_property location {3 1194 9} [get_bd_cells axi_vdma_1]
+set_property location {3 1204 7} [get_bd_cells axi_vdma_1]
+startgroup
+set_property -dict [list CONFIG.NUM_SI {2} CONFIG.NUM_MI {1}] [get_bd_cells axi_interconnect_0]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.NUM_SI {2} CONFIG.NUM_MI {1}] [get_bd_cells axi_interconnect_0]'
+INFO: [Common 17-17] undo 'startgroup'
+startgroup
+set_property -dict [list CONFIG.NUM_MI {2}] [get_bd_cells axi_interconnect_0]
+endgroup
+set_property -dict [list CONFIG.c_m_axis_mm2s_tdata_width {24}] [get_bd_cells axi_vdma_1]
+set_property location {3 1163 -486} [get_bd_cells axi_vdma_1]
+startgroup
+set_property -dict [list CONFIG.c_s2mm_genlock_mode {0} CONFIG.c_include_s2mm {0}] [get_bd_cells axi_vdma_0]
+WARNING: [BD 41-1684] Pin /axi_vdma_0/m_axi_s2mm_aclk is now disabled. All connections to this pin have been removed. 
+WARNING: [BD 41-1684] Pin /axi_vdma_0/s_axis_s2mm_aclk is now disabled. All connections to this pin have been removed. 
+WARNING: [BD 41-1684] Pin /axi_vdma_0/s_axis_s2mm_tkeep is now disabled. All connections to this pin have been removed. 
+delete_bd_objs [get_bd_nets xlconstant_0_dout] [get_bd_intf_nets axi_vdma_0_M_AXI_S2MM]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins axi_vdma_1/S_AXIS_S2MM] [get_bd_intf_pins v_vid_in_axi4s_0/video_out]
+startgroup
+set_property -dict [list CONFIG.c_include_s2mm_dre {1}] [get_bd_cells axi_vdma_1]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_vdma_0_M_AXI_MM2S]
+disconnect_bd_intf_net [get_bd_intf_net axi_vdma_0_M_AXIS_MM2S] [get_bd_intf_pins axi_vdma_0/M_AXIS_MM2S]
+delete_bd_objs [get_bd_nets axi_vdma_0_mm2s_introut]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+set_property location {5 1764 -512} [get_bd_cells xlconcat_0]
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins processing_system7_0/IRQ_F2P]
+connect_bd_net [get_bd_pins axi_vdma_1/mm2s_introut] [get_bd_pins xlconcat_0/In1]
+connect_bd_net [get_bd_pins axi_vdma_0/mm2s_introut] [get_bd_pins xlconcat_0/In0]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI] [get_bd_intf_pins axi_vdma_1/S_AXI_LITE]
+connect_bd_intf_net [get_bd_intf_pins axi_vdma_1/M_AXI_S2MM] -boundary_type upper [get_bd_intf_pins axi_interconnect_1/S01_AXI]
+connect_bd_intf_net [get_bd_intf_pins axi_vdma_0/M_AXI_MM2S] -boundary_type upper [get_bd_intf_pins axi_interconnect_1/S00_AXI]
+connect_bd_intf_net [get_bd_intf_pins axi_vdma_0/M_AXIS_MM2S] [get_bd_intf_pins v_axi4s_vid_out_0/video_in]
+connect_bd_net [get_bd_pins axi_vdma_1/axi_resetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+startgroup
+set_property -dict [list CONFIG.c_m_axis_mm2s_tdata_width {32} CONFIG.c_mm2s_genlock_mode {0} CONFIG.c_include_mm2s {0}] [get_bd_cells axi_vdma_1]
+WARNING: [BD 41-1684] Pin /axi_vdma_1/mm2s_introut is now disabled. All connections to this pin have been removed. 
+delete_bd_objs [get_bd_nets axi_vdma_1_mm2s_introut]
+endgroup
+connect_bd_net [get_bd_pins axi_vdma_1/s2mm_introut] [get_bd_pins xlconcat_0/In1]
+connect_bd_net [get_bd_pins axi_vdma_1/s_axis_s2mm_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axi_vdma_1/m_axi_s2mm_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axi_vdma_1/s_axi_lite_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+startgroup
+set_property -dict [list CONFIG.c_s2mm_genlock_mode {0}] [get_bd_cells axi_vdma_1]
+endgroup
+connect_bd_net [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+save_bd_design
+Wrote  : <E:\Project\Personal\PoseEstimation\ZYNQ\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.srcs\sources_1\bd\system\system.bd> 
+Wrote  : <E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+delete_bd_objs [get_bd_cells xlconstant_0]
+save_bd_design
+Wrote  : <E:\Project\Personal\PoseEstimation\ZYNQ\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.srcs\sources_1\bd\system\system.bd> 
+Wrote  : <E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+CRITICAL WARNING: [BD 41-1356] Address block </axi_vdma_1/S_AXI_LITE/Reg> is not mapped into </processing_system7_0/Data>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is not mapped into </axi_vdma_1/Data_S2MM>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+CRITICAL WARNING: [BD 41-1356] Address block </axi_vdma_1/S_AXI_LITE/Reg> is not mapped into </processing_system7_0/Data>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is not mapped into </axi_vdma_1/Data_S2MM>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-927] Following properties on pin /HDMI_TX_0/HDMI_CLK_P have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_HDMI_TX_0_0_HDMI_CLK_P 
+WARNING: [BD 41-927] Following properties on pin /HDMI_TX_0/HDMI_CLK_N have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_HDMI_TX_0_0_HDMI_CLK_N 
+validate_bd_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1473.926 ; gain = 341.668
+assign_bd_address
+</processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is being mapped into </axi_vdma_1/Data_S2MM> at <0x00000000 [ 1G ]>
+</axi_vdma_1/S_AXI_LITE/Reg> is being mapped into </processing_system7_0/Data> at <0x43010000 [ 64K ]>
+save_bd_design
+Wrote  : <E:\Project\Personal\PoseEstimation\ZYNQ\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.srcs\sources_1\bd\system\system.bd> 
+Wrote  : <E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+save_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1529.852 ; gain = 16.301
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /processing_system7_0/IRQ_F2P
+WARNING: [BD 41-927] Following properties on pin /HDMI_TX_0/HDMI_CLK_P have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_HDMI_TX_0_0_HDMI_CLK_P 
+WARNING: [BD 41-927] Following properties on pin /HDMI_TX_0/HDMI_CLK_N have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_HDMI_TX_0_0_HDMI_CLK_N 
+validate_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1529.852 ; gain = 0.000
+save_bd_design
+Wrote  : <E:\Project\Personal\PoseEstimation\ZYNQ\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.srcs\sources_1\bd\system\system.bd> 
+save_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1532.863 ; gain = 3.012
+reset_target all [get_files  E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects  [get_files  E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/system.bd] -sync -no_script -force -quiet
+make_wrapper -files [get_files E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/system.bd] -top
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_interconnect_1_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_1_AXI_rid'(1) to net 'axi_interconnect_1_M00_AXI_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_1_AXI_bid'(1) to net 'axi_interconnect_1_M00_AXI_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_interconnect_1_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_interconnect_1_M00_AXI_WID'(1) - Only lower order bits will be connected.
+VHDL Output written to : E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_interconnect_1_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_1_AXI_rid'(1) to net 'axi_interconnect_1_M00_AXI_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_1_AXI_bid'(1) to net 'axi_interconnect_1_M00_AXI_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_interconnect_1_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_interconnect_1_M00_AXI_WID'(1) - Only lower order bits will be connected.
+VHDL Output written to : E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/hdl/system_wrapper.v
+generate_target all [get_files  E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/system.bd]
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_interconnect_1_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_1_AXI_rid'(1) to net 'axi_interconnect_1_M00_AXI_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_1_AXI_bid'(1) to net 'axi_interconnect_1_M00_AXI_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_interconnect_1_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_interconnect_1_M00_AXI_WID'(1) - Only lower order bits will be connected.
+VHDL Output written to : E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_interconnect_1_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_1_AXI_rid'(1) to net 'axi_interconnect_1_M00_AXI_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_1_AXI_bid'(1) to net 'axi_interconnect_1_M00_AXI_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_interconnect_1_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_interconnect_1_M00_AXI_WID'(1) - Only lower order bits will be connected.
+VHDL Output written to : E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block HDMI_TX_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV5640_Sensor_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_1 .
+Exporting to file e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_0_0/bd_0/hw_handoff/system_system_ila_0_0.hwh
+Generated Block Design Tcl file e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_0_0/bd_0/hw_handoff/system_system_ila_0_0_bd.tcl
+Generated Hardware Definition File e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_0_0/bd_0/synth/system_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+Exporting to file e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_2_0/bd_0/hw_handoff/system_system_ila_2_0.hwh
+Generated Block Design Tcl file e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_2_0/bd_0/hw_handoff/system_system_ila_2_0_bd.tcl
+Generated Hardware Definition File e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_2_0/bd_0/synth/system_system_ila_2_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/m00_couplers/auto_pc .
+Exporting to file E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:41 ; elapsed = 00:00:57 . Memory (MB): peak = 1834.570 ; gain = 272.000
+export_ip_user_files -of_objects [get_files E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/system.bd] -directory E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.ip_user_files/sim_scripts -ip_user_files_dir E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.ip_user_files -ipstatic_source_dir E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.cache/compile_simlib/modelsim} {questa=E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.cache/compile_simlib/questa} {riviera=E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.cache/compile_simlib/riviera} {activehdl=E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Oct  9 10:40:07 2020] Launched synth_1...
+Run output will be captured here: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/runme.log
+[Fri Oct  9 10:40:07 2020] Launched impl_1...
+Run output will be captured here: E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/impl_1/runme.log
+file copy -force E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/impl_1/system_wrapper.sysdef E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper.hdf
+
+launch_sdk -workspace E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk -hwspec E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk -hwspec E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  9 14:39:08 2020...
