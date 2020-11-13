@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date                      : Fri Oct  9 11:01:12 2020
+| Date                      : Fri Nov 13 16:43:07 2020
 | Host                      : LiuYang-Laptop running 64-bit major release  (build 9200)
 | Command                   : report_io -file system_wrapper_io_placed.rpt
 | Design                    : system_wrapper
@@ -151,7 +151,7 @@ Table of Contents
 | F14        | FIXED_IO_0_mio[21]  |            | PS_MIO21_501            | OUT         | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |              |                   |              |
 | F15        | FIXED_IO_0_mio[25]  |            | PS_MIO25_501            | IN          | LVCMOS18          |         |          8 | SLOW |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |              |                   |              |
 | F16        | cmos_pclk_i_0       | High Range | IO_L6P_T0_35            | INPUT       | LVCMOS33          |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| F17        | cmos_xclk_o_0       | High Range | IO_L6N_T0_VREF_35       | OUTPUT      | LVCMOS33          |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| F17        | cmos_xclk_o_0       | High Range | IO_L6N_T0_VREF_35       | OUTPUT      | LVCMOS33          |      35 |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | F18        |                     | High Range | VCCO_35                 | VCCO        |                   |      35 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | F19        |                     | High Range | IO_L15P_T2_DQS_AD12P_35 | User IO     |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | F20        |                     | High Range | IO_L15N_T2_DQS_AD12N_35 | User IO     |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

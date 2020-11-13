@@ -50,15 +50,13 @@ module bd_1519_ila_lib_0 (
 clk,
 
 
-probe0,
-probe1
+probe0
 );
 
 input clk;
 
 
 input [23 : 0] probe0;
-input [23 : 0] probe1;
 
 
 endmodule

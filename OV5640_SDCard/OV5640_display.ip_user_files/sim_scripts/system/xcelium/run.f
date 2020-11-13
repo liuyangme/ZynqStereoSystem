@@ -107,6 +107,12 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/system/ip/system_axi_vdma_0_0/sim/system_axi_vdma_0_0.vhd" \
 -endlib
+-makelib xcelium_lib/xlconstant_v1_1_5 \
+  "../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/system/ip/system_xlconstant_0_0/sim/system_xlconstant_0_0.v" \
+-endlib
 -makelib xcelium_lib/proc_sys_reset_v5_0_13 \
   "../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
 -endlib
@@ -133,6 +139,38 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/system/ip/system_util_vector_logic_1_0/sim/system_util_vector_logic_1_0.v" \
+  "../../../bd/system/ip/system_xbar_1/sim/system_xbar_1.v" \
+-endlib
+-makelib xcelium_lib/axis_infrastructure_v1_1_0 \
+  "../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/axis_register_slice_v1_1_18 \
+  "../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/af00/hdl/axis_register_slice_v1_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/system/ip/system_axis_subset_converter_0_0/hdl/tdata_system_axis_subset_converter_0_0.v" \
+  "../../../bd/system/ip/system_axis_subset_converter_0_0/hdl/tuser_system_axis_subset_converter_0_0.v" \
+  "../../../bd/system/ip/system_axis_subset_converter_0_0/hdl/tstrb_system_axis_subset_converter_0_0.v" \
+  "../../../bd/system/ip/system_axis_subset_converter_0_0/hdl/tkeep_system_axis_subset_converter_0_0.v" \
+  "../../../bd/system/ip/system_axis_subset_converter_0_0/hdl/tid_system_axis_subset_converter_0_0.v" \
+  "../../../bd/system/ip/system_axis_subset_converter_0_0/hdl/tdest_system_axis_subset_converter_0_0.v" \
+  "../../../bd/system/ip/system_axis_subset_converter_0_0/hdl/tlast_system_axis_subset_converter_0_0.v" \
+-endlib
+-makelib xcelium_lib/axis_subset_converter_v1_1_18 \
+  "../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/33dd/hdl/axis_subset_converter_v1_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/system/ip/system_axis_subset_converter_0_0/hdl/top_system_axis_subset_converter_0_0.v" \
+  "../../../bd/system/ip/system_axis_subset_converter_0_0/sim/system_axis_subset_converter_0_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/system/ip/system_axi_vdma_1_0/sim/system_axi_vdma_1_0.vhd" \
+-endlib
+-makelib xcelium_lib/xlconcat_v2_1_1 \
+  "../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/system/ip/system_xlconcat_0_0/sim/system_xlconcat_0_0.v" \
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_0/sim/bd_d5b8_ila_lib_0.v" \
 -endlib
 -makelib xcelium_lib/gigantic_mux \
@@ -141,35 +179,51 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_1/bd_d5b8_g_inst_0_gigantic_mux.v" \
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_1/sim/bd_d5b8_g_inst_0.v" \
--endlib
--makelib xcelium_lib/xlconcat_v2_1_1 \
-  "../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_2/sim/bd_d5b8_slot_1_aw_0.v" \
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_3/sim/bd_d5b8_slot_1_w_0.v" \
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_4/sim/bd_d5b8_slot_1_b_0.v" \
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_5/sim/bd_d5b8_slot_1_ar_0.v" \
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_6/sim/bd_d5b8_slot_1_r_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_7/sim/bd_d5b8_slot_2_aw_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_8/sim/bd_d5b8_slot_2_w_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_9/sim/bd_d5b8_slot_2_b_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_10/sim/bd_d5b8_slot_2_ar_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_11/sim/bd_d5b8_slot_2_r_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_12/sim/bd_d5b8_slot_3_aw_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_13/sim/bd_d5b8_slot_3_w_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_14/sim/bd_d5b8_slot_3_b_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_15/sim/bd_d5b8_slot_3_ar_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_16/sim/bd_d5b8_slot_3_r_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_17/sim/bd_d5b8_slot_4_aw_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_18/sim/bd_d5b8_slot_4_w_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_19/sim/bd_d5b8_slot_4_b_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_20/sim/bd_d5b8_slot_4_ar_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_21/sim/bd_d5b8_slot_4_r_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_22/sim/bd_d5b8_slot_7_aw_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_23/sim/bd_d5b8_slot_7_w_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_24/sim/bd_d5b8_slot_7_b_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_25/sim/bd_d5b8_slot_7_ar_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_0/bd_0/ip/ip_26/sim/bd_d5b8_slot_7_r_0.v" \
   "../../../bd/system/ip/system_system_ila_0_0/bd_0/sim/bd_d5b8.v" \
   "../../../bd/system/ip/system_system_ila_0_0/sim/system_system_ila_0_0.v" \
+  "../../../bd/system/ip/system_system_ila_1_0/bd_0/ip/ip_0/sim/bd_15e9_ila_lib_0.v" \
+  "../../../bd/system/ip/system_system_ila_1_0/bd_0/sim/bd_15e9.v" \
+  "../../../bd/system/ip/system_system_ila_1_0/sim/system_system_ila_1_0.v" \
   "../../../bd/system/ip/system_system_ila_2_0/bd_0/ip/ip_0/sim/bd_1519_ila_lib_0.v" \
   "../../../bd/system/ip/system_system_ila_2_0/bd_0/sim/bd_1519.v" \
   "../../../bd/system/ip/system_system_ila_2_0/sim/system_system_ila_2_0.v" \
-  "../../../bd/system/ip/system_xbar_1/sim/system_xbar_1.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/system/ip/system_axi_vdma_1_0/sim/system_axi_vdma_1_0.vhd" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/system/ip/system_xlconcat_0_0/sim/system_xlconcat_0_0.v" \
+  "../../../bd/system/ip/system_system_ila_3_0/bd_0/ip/ip_0/sim/bd_d548_ila_lib_0.v" \
+  "../../../bd/system/ip/system_system_ila_3_0/bd_0/sim/bd_d548.v" \
+  "../../../bd/system/ip/system_system_ila_3_0/sim/system_system_ila_3_0.v" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_18 \
   "../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/system/ip/system_auto_pc_2/sim/system_auto_pc_2.v" \
   "../../../bd/system/ip/system_auto_pc_0/sim/system_auto_pc_0.v" \
   "../../../bd/system/ip/system_auto_pc_1/sim/system_auto_pc_1.v" \
+  "../../../bd/system/ip/system_auto_pc_3/sim/system_auto_pc_3.v" \
   "../../../bd/system/sim/system.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \

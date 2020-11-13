@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Oct  9 10:38:41 2020" VIVADOVERSION="2018.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Nov 13 14:26:38 2020" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="bd_1519" PACKAGE="clg400" SPEEDGRADE="-2"/>
 
@@ -12,11 +12,6 @@
     <PORT DIR="I" LEFT="23" NAME="probe0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe0">
       <CONNECTIONS>
         <CONNECTION INSTANCE="ila_lib" PORT="probe0"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="23" NAME="probe1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe1">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ila_lib" PORT="probe1"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -44,8 +39,8 @@
         <PARAMETER NAME="C_SLOT_0_AXI_PROTOCOL" VALUE="AXI4"/>
         <PARAMETER NAME="C_NUM_MONITOR_SLOTS" VALUE="1"/>
         <PARAMETER NAME="C_ENABLE_ILA_AXI_MON" VALUE="0"/>
-        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="2"/>
-        <PARAMETER NAME="C_DATA_DEPTH" VALUE="2048"/>
+        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="1"/>
+        <PARAMETER NAME="C_DATA_DEPTH" VALUE="1024"/>
         <PARAMETER NAME="C_MAJOR_VERSION" VALUE="2018"/>
         <PARAMETER NAME="C_MINOR_VERSION" VALUE="3"/>
         <PARAMETER NAME="C_BUILD_REVISION" VALUE="0"/>
@@ -69,7 +64,7 @@
         <PARAMETER NAME="C_SLOT_0_AXI_WUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXI_BUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE0_WIDTH" VALUE="24"/>
-        <PARAMETER NAME="C_PROBE1_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="C_PROBE1_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE2_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE3_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE4_WIDTH" VALUE="1"/>
@@ -3172,11 +3167,6 @@
         <PORT DIR="I" LEFT="23" NAME="probe0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="probe0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="23" NAME="probe1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="probe1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

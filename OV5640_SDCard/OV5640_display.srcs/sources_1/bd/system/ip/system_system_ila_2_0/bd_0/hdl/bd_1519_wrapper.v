@@ -8,18 +8,14 @@
 
 module bd_1519_wrapper
    (clk,
-    probe0,
-    probe1);
+    probe0);
   input clk;
   input [23:0]probe0;
-  input [23:0]probe1;
 
   wire clk;
   wire [23:0]probe0;
-  wire [23:0]probe1;
 
   bd_1519 bd_1519_i
        (.clk(clk),
-        .probe0(probe0),
-        .probe1(probe1));
+        .probe0(probe0));
 endmodule

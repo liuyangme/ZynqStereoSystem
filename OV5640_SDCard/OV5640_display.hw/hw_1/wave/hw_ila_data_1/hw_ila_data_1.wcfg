@@ -3,21 +3,23 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+      <db_ref path="E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_Left/OV5640_display.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
          <top_modules>
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="894737fs"></ZoomEndTime>
+      <ZoomEndTime time="1024001fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="208"></NameColumnWidth>
-      <ValueColumnWidth column_width="216"></ValueColumnWidth>
+      <ValueColumnWidth column_width="180"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="3" />
+   <wave_markers>
+   </wave_markers>
    <wvobject fp_name="group1" type="group">
       <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : Interface</obj_property>
       <obj_property name="DisplayName">label</obj_property>
@@ -27,6 +29,26 @@
       <obj_property name="CustomSignalColor">OliveDrab</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <wvobject fp_name="group108" type="group">
+         <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : Read Transactions 1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">slot_1___axi_interconnect_1_M00_AXI___Read_Transactions_1_tooltip</obj_property>
+         <obj_property name="Render_Data">slot_1___axi_interconnect_1_M00_AXI___Read_Transactions_1</obj_property>
+         <obj_property name="EnumTransactionColorTable">0000=blank</obj_property>
+         <obj_property name="CustomSignalColor">Orange</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
+      <wvobject fp_name="group107" type="group">
+         <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : Read Transactions 0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">slot_1___axi_interconnect_1_M00_AXI___Read_Transactions_0_tooltip</obj_property>
+         <obj_property name="Render_Data">slot_1___axi_interconnect_1_M00_AXI___Read_Transactions_0</obj_property>
+         <obj_property name="EnumTransactionColorTable">0000=blank</obj_property>
+         <obj_property name="CustomSignalColor">Orange</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
       <wvobject fp_name="group2" type="group">
          <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : AR Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
@@ -37,7 +59,7 @@
          <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_arvalid" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_arvalid</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_arvalid</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : ARVALID</obj_property>
@@ -45,7 +67,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_arready" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_arready</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_arready</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : ARREADY</obj_property>
@@ -53,7 +75,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_arid" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_arid</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_arid</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : ARID</obj_property>
@@ -61,7 +83,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_araddr" type="array">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_araddr[31:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_araddr[31:0]</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : ARADDR</obj_property>
@@ -70,7 +92,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_arlen" type="array">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_arlen[3:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_arlen[3:0]</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : ARLEN</obj_property>
@@ -79,7 +101,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_arsize" type="array">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_arsize[2:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_arsize[2:0]</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : ARSIZE</obj_property>
@@ -88,7 +110,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_arprot" type="array">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_arprot[2:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_arprot[2:0]</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : ARPROT</obj_property>
@@ -116,7 +138,7 @@
          <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_rvalid" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_rvalid</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_rvalid</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : RVALID</obj_property>
@@ -124,7 +146,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_rready" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_rready</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_rready</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : RREADY</obj_property>
@@ -132,7 +154,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_rlast" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_rlast</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_rlast</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : RLAST</obj_property>
@@ -140,7 +162,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_rid" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_rid</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_rid</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : RID</obj_property>
@@ -148,7 +170,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_rdata" type="array">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_rdata[63:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_rdata[63:0]</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : RDATA</obj_property>
@@ -157,7 +179,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_rresp" type="array">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_rresp[1:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_rresp[1:0]</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : RRESP</obj_property>
@@ -185,7 +207,7 @@
          <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_awvalid" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_awvalid</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_awvalid</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : AWVALID</obj_property>
@@ -193,7 +215,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_awready" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_awready</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_awready</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : AWREADY</obj_property>
@@ -201,7 +223,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_awid" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_awid</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_awid</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : AWID</obj_property>
@@ -209,7 +231,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_awaddr" type="array">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_awaddr[31:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_awaddr[31:0]</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : AWADDR</obj_property>
@@ -218,7 +240,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_awlen" type="array">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_awlen[3:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_awlen[3:0]</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : AWLEN</obj_property>
@@ -227,7 +249,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_awsize" type="array">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_awsize[2:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_awsize[2:0]</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : AWSIZE</obj_property>
@@ -236,7 +258,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_awprot" type="array">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_awprot[2:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_awprot[2:0]</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : AWPROT</obj_property>
@@ -264,7 +286,7 @@
          <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_wvalid" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_wvalid</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_wvalid</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : WVALID</obj_property>
@@ -272,7 +294,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_wready" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_wready</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_wready</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : WREADY</obj_property>
@@ -280,7 +302,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_wlast" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_wlast</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_wlast</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : WLAST</obj_property>
@@ -288,7 +310,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_wdata" type="array">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_wdata[63:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_wdata[63:0]</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : WDATA</obj_property>
@@ -297,7 +319,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_wstrb" type="array">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_wstrb[7:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_wstrb[7:0]</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : WSTRB</obj_property>
@@ -316,7 +338,7 @@
          <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_bvalid" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_bvalid</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_bvalid</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : BVALID</obj_property>
@@ -324,7 +346,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_bready" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_bready</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_bready</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : BREADY</obj_property>
@@ -332,7 +354,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_bid" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_bid</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_bid</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : BID</obj_property>
@@ -340,7 +362,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_bresp" type="array">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_bresp[1:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axi_bresp[1:0]</obj_property>
             <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : BRESP</obj_property>
@@ -365,7 +387,7 @@
       <obj_property name="Detail_Data">Interface_(i1:s0)_(v_vid_in_axi4s_0_video_out)_tooltip</obj_property>
       <obj_property name="Render_Data">Interface_(i1:s0)_(v_vid_in_axi4s_0_video_out)</obj_property>
       <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
-      <obj_property name="CustomSignalColor">OliveDrab</obj_property>
+      <obj_property name="CustomSignalColor">Cornsilk</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
       <wvobject fp_name="group41" type="group">
@@ -378,7 +400,7 @@
          <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_0_axis_tvalid" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_0_axis_tvalid</obj_property>
             <obj_property name="ObjectShortName">net_slot_0_axis_tvalid</obj_property>
             <obj_property name="label">slot_0 : v_vid_in_axi4s_0_video_out : TVALID</obj_property>
@@ -386,7 +408,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_0_axis_tready" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_0_axis_tready</obj_property>
             <obj_property name="ObjectShortName">net_slot_0_axis_tready</obj_property>
             <obj_property name="label">slot_0 : v_vid_in_axi4s_0_video_out : TREADY</obj_property>
@@ -394,7 +416,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_0_axis_tlast" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_0_axis_tlast</obj_property>
             <obj_property name="ObjectShortName">net_slot_0_axis_tlast</obj_property>
             <obj_property name="label">slot_0 : v_vid_in_axi4s_0_video_out : TLAST</obj_property>
@@ -402,7 +424,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_0_axis_tdata" type="array">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_0_axis_tdata[23:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_0_axis_tdata[23:0]</obj_property>
             <obj_property name="label">slot_0 : v_vid_in_axi4s_0_video_out : TDATA</obj_property>
@@ -411,7 +433,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_0_axis_tuser" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_0_axis_tuser</obj_property>
             <obj_property name="ObjectShortName">net_slot_0_axis_tuser</obj_property>
             <obj_property name="label">slot_0 : v_vid_in_axi4s_0_video_out : TUSER</obj_property>
@@ -439,7 +461,7 @@
          <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_2_axis_tvalid" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_2_axis_tvalid</obj_property>
             <obj_property name="ObjectShortName">net_slot_2_axis_tvalid</obj_property>
             <obj_property name="label">slot_2 : axi_vdma_0_M_AXIS_MM2S : TVALID</obj_property>
@@ -447,7 +469,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_2_axis_tready" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_2_axis_tready</obj_property>
             <obj_property name="ObjectShortName">net_slot_2_axis_tready</obj_property>
             <obj_property name="label">slot_2 : axi_vdma_0_M_AXIS_MM2S : TREADY</obj_property>
@@ -455,7 +477,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_2_axis_tlast" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_2_axis_tlast</obj_property>
             <obj_property name="ObjectShortName">net_slot_2_axis_tlast</obj_property>
             <obj_property name="label">slot_2 : axi_vdma_0_M_AXIS_MM2S : TLAST</obj_property>
@@ -463,7 +485,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_2_axis_tdata" type="array">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_2_axis_tdata[23:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_2_axis_tdata[23:0]</obj_property>
             <obj_property name="label">slot_2 : axi_vdma_0_M_AXIS_MM2S : TDATA</obj_property>
@@ -472,7 +494,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_2_axis_tkeep" type="array">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_2_axis_tkeep[2:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_2_axis_tkeep[2:0]</obj_property>
             <obj_property name="label">slot_2 : axi_vdma_0_M_AXIS_MM2S : TKEEP</obj_property>
@@ -481,7 +503,7 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_2_axis_tuser" type="logic">
-            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_2_axis_tuser</obj_property>
             <obj_property name="ObjectShortName">net_slot_2_axis_tuser</obj_property>
             <obj_property name="label">slot_2 : axi_vdma_0_M_AXIS_MM2S : TUSER</obj_property>

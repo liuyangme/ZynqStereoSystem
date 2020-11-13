@@ -197,25 +197,26 @@ NT=1,C_PROBE1007_MU_CNT=1,C_PROBE1006_MU_CNT=1,C_PROBE1005_MU_CNT=1,C_PROBE1004_
 OBE82_MU_CNT=1,C_PROBE81_MU_CNT=1,C_PROBE80_MU_CNT=1,C_PROBE79_MU_CNT=1,C_PROBE78_MU_CNT=1,C_PROBE77_MU_CNT=1,C_PROBE76_MU_CNT=1,C_PROBE75_MU_CNT=1,C_PROBE74_MU_CNT=1,C_PROBE73_MU_CNT=1,C_PROBE72_MU_CNT=1,C_PROBE71_MU_CNT=1,C_PROBE70_MU_CNT=1,C_PROBE69_MU_CNT=1,C_PROBE68_MU_CNT=1,C_PROBE67_MU_CNT=1,C_PROBE66_MU_CNT=1,C_PROBE65_MU_CNT=1,C_PROBE64_MU_CNT=1,C_PROBE63_MU_CNT=1,C_PROBE62_MU_CNT=1,C_PROBE61_MU_CNT=1,C_PROBE60_MU_CNT=1,C_PROBE59_MU_CNT=1,C_PROBE58_MU_CNT=1,C_PROBE57_MU_CNT=1,C_PROBE56_\
 MU_CNT=1,C_PROBE55_MU_CNT=1,C_PROBE54_MU_CNT=1,C_PROBE53_MU_CNT=1,C_PROBE52_MU_CNT=1,C_PROBE51_MU_CNT=1,C_PROBE50_MU_CNT=1,C_PROBE49_MU_CNT=1,C_PROBE48_MU_CNT=1,C_PROBE47_MU_CNT=1,C_PROBE46_MU_CNT=1,C_PROBE45_MU_CNT=1,C_PROBE44_MU_CNT=1,C_PROBE43_MU_CNT=1,C_PROBE42_MU_CNT=1,C_PROBE41_MU_CNT=1,C_PROBE40_MU_CNT=1,C_PROBE39_MU_CNT=1,C_PROBE38_MU_CNT=1,C_PROBE37_MU_CNT=1,C_PROBE36_MU_CNT=1,C_PROBE35_MU_CNT=1,C_PROBE34_MU_CNT=1,C_PROBE33_MU_CNT=1,C_PROBE32_MU_CNT=1,C_PROBE31_MU_CNT=1,C_PROBE30_MU_CNT\
 =1,C_PROBE29_MU_CNT=1,C_PROBE28_MU_CNT=1,C_PROBE27_MU_CNT=1,C_PROBE26_MU_CNT=1,C_PROBE25_MU_CNT=1,C_PROBE24_MU_CNT=1,C_PROBE23_MU_CNT=1,C_PROBE22_MU_CNT=1,C_PROBE21_MU_CNT=1,C_PROBE20_MU_CNT=1,C_PROBE19_MU_CNT=1,C_PROBE18_MU_CNT=1,C_PROBE17_MU_CNT=1,C_PROBE16_MU_CNT=1,C_PROBE15_MU_CNT=1,C_PROBE14_MU_CNT=1,C_PROBE13_MU_CNT=1,C_PROBE12_MU_CNT=1,C_PROBE11_MU_CNT=1,C_PROBE10_MU_CNT=1,C_PROBE9_MU_CNT=1,C_PROBE8_MU_CNT=1,C_PROBE7_MU_CNT=1,C_PROBE6_MU_CNT=1,C_PROBE5_MU_CNT=1,C_PROBE4_MU_CNT=1,C_PROBE3_\
-MU_CNT=1,C_PROBE2_MU_CNT=1,C_PROBE1_MU_CNT=1,C_PROBE0_MU_CNT=1,C_TRIGIN_EN=false,EN_BRAM_DRC=TRUE,ALL_PROBE_SAME_MU=TRUE,ALL_PROBE_SAME_MU_CNT=1,C_NUM_MONITOR_SLOTS=3,C_SLOT_0_AXI_ARUSER_WIDTH=1,C_SLOT_0_AXI_RUSER_WIDTH=1,C_SLOT_0_AXI_AWUSER_WIDTH=1,C_SLOT_0_AXI_WUSER_WIDTH=1,C_SLOT_0_AXI_BUSER_WIDTH=1,C_SLOT_0_AXI_ID_WIDTH=AUTO,C_SLOT_0_AXI_DATA_WIDTH=AUTO,C_SLOT_0_AXI_ADDR_WIDTH=AUTO,C_SLOT_0_AXI_PROTOCOL=AXI4,C_SLOT_0_AXIS_TDATA_WIDTH=AUTO,C_SLOT_0_AXIS_TID_WIDTH=AUTO,C_SLOT_0_AXIS_TUSER_WIDT\
+MU_CNT=1,C_PROBE2_MU_CNT=1,C_PROBE1_MU_CNT=1,C_PROBE0_MU_CNT=1,C_TRIGIN_EN=false,EN_BRAM_DRC=TRUE,ALL_PROBE_SAME_MU=TRUE,ALL_PROBE_SAME_MU_CNT=1,C_NUM_MONITOR_SLOTS=8,C_SLOT_0_AXI_ARUSER_WIDTH=1,C_SLOT_0_AXI_RUSER_WIDTH=1,C_SLOT_0_AXI_AWUSER_WIDTH=1,C_SLOT_0_AXI_WUSER_WIDTH=1,C_SLOT_0_AXI_BUSER_WIDTH=1,C_SLOT_0_AXI_ID_WIDTH=AUTO,C_SLOT_0_AXI_DATA_WIDTH=AUTO,C_SLOT_0_AXI_ADDR_WIDTH=AUTO,C_SLOT_0_AXI_PROTOCOL=AXI4,C_SLOT_0_AXIS_TDATA_WIDTH=AUTO,C_SLOT_0_AXIS_TID_WIDTH=AUTO,C_SLOT_0_AXIS_TUSER_WIDT\
 H=AUTO,C_SLOT_0_AXIS_TDEST_WIDTH=AUTO,C_SLOT_1_AXI_ARUSER_WIDTH=1,C_SLOT_1_AXI_RUSER_WIDTH=1,C_SLOT_1_AXI_AWUSER_WIDTH=1,C_SLOT_1_AXI_WUSER_WIDTH=1,C_SLOT_1_AXI_BUSER_WIDTH=1,C_SLOT_1_AXI_ID_WIDTH=AUTO,C_SLOT_1_AXI_DATA_WIDTH=AUTO,C_SLOT_1_AXI_ADDR_WIDTH=AUTO,C_SLOT_1_AXI_PROTOCOL=AXI4,C_SLOT_1_AXIS_TDATA_WIDTH=AUTO,C_SLOT_1_AXIS_TID_WIDTH=AUTO,C_SLOT_1_AXIS_TUSER_WIDTH=AUTO,C_SLOT_1_AXIS_TDEST_WIDTH=AUTO,C_SLOT_0_INTF_TYPE=xilinx.com_interface_axis_rtl_1.0,C_SLOT_1_INTF_TYPE=xilinx.com_interfac\
-e_aximm_rtl_1.0,C_SLOT_2_INTF_TYPE=xilinx.com_interface_axis_rtl_1.0,C_SLOT_3_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_4_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_5_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_6_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_7_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_8_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_9_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_10_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.\
-0,C_SLOT_11_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_12_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_13_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_14_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_15_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_MON_TYPE=INTERFACE,C_SLOT_2_AXI_ARUSER_WIDTH=1,C_SLOT_2_AXI_RUSER_WIDTH=1,C_SLOT_2_AXI_AWUSER_WIDTH=1,C_SLOT_2_AXI_WUSER_WIDTH=1,C_SLOT_2_AXI_BUSER_WIDTH=1,C_SLOT_2_AXI_ID_WIDTH=AUTO,C_SLOT_2_AXI_DATA_WIDTH=AUTO,C_SLOT_2_\
-AXI_ADDR_WIDTH=AUTO,C_SLOT_2_AXI_PROTOCOL=AXI4,C_SLOT_2_AXIS_TDATA_WIDTH=AUTO,C_SLOT_2_AXIS_TID_WIDTH=AUTO,C_SLOT_2_AXIS_TUSER_WIDTH=AUTO,C_SLOT_2_AXIS_TDEST_WIDTH=AUTO,C_SLOT_3_AXI_ARUSER_WIDTH=1,C_SLOT_3_AXI_RUSER_WIDTH=1,C_SLOT_3_AXI_AWUSER_WIDTH=1,C_SLOT_3_AXI_WUSER_WIDTH=1,C_SLOT_3_AXI_BUSER_WIDTH=1,C_SLOT_3_AXI_ID_WIDTH=AUTO,C_SLOT_3_AXI_DATA_WIDTH=AUTO,C_SLOT_3_AXI_ADDR_WIDTH=AUTO,C_SLOT_3_AXI_PROTOCOL=AXI4,C_SLOT_3_AXIS_TDATA_WIDTH=AUTO,C_SLOT_3_AXIS_TID_WIDTH=AUTO,C_SLOT_3_AXIS_TUSER_WI\
-DTH=AUTO,C_SLOT_3_AXIS_TDEST_WIDTH=AUTO,C_SLOT_4_AXI_ARUSER_WIDTH=1,C_SLOT_4_AXI_RUSER_WIDTH=1,C_SLOT_4_AXI_AWUSER_WIDTH=1,C_SLOT_4_AXI_WUSER_WIDTH=1,C_SLOT_4_AXI_BUSER_WIDTH=1,C_SLOT_4_AXI_ID_WIDTH=AUTO,C_SLOT_4_AXI_DATA_WIDTH=AUTO,C_SLOT_4_AXI_ADDR_WIDTH=AUTO,C_SLOT_4_AXI_PROTOCOL=AXI4,C_SLOT_4_AXIS_TDATA_WIDTH=AUTO,C_SLOT_4_AXIS_TID_WIDTH=AUTO,C_SLOT_4_AXIS_TUSER_WIDTH=AUTO,C_SLOT_4_AXIS_TDEST_WIDTH=AUTO,C_SLOT_5_AXI_ARUSER_WIDTH=1,C_SLOT_5_AXI_RUSER_WIDTH=1,C_SLOT_5_AXI_AWUSER_WIDTH=1,C_SLOT\
-_5_AXI_WUSER_WIDTH=1,C_SLOT_5_AXI_BUSER_WIDTH=1,C_SLOT_5_AXI_ID_WIDTH=AUTO,C_SLOT_5_AXI_DATA_WIDTH=AUTO,C_SLOT_5_AXI_ADDR_WIDTH=AUTO,C_SLOT_5_AXI_PROTOCOL=AXI4,C_SLOT_5_AXIS_TDATA_WIDTH=AUTO,C_SLOT_5_AXIS_TID_WIDTH=AUTO,C_SLOT_5_AXIS_TUSER_WIDTH=AUTO,C_SLOT_5_AXIS_TDEST_WIDTH=AUTO,C_SLOT_6_AXI_ARUSER_WIDTH=1,C_SLOT_6_AXI_RUSER_WIDTH=1,C_SLOT_6_AXI_AWUSER_WIDTH=1,C_SLOT_6_AXI_WUSER_WIDTH=1,C_SLOT_6_AXI_BUSER_WIDTH=1,C_SLOT_6_AXI_ID_WIDTH=AUTO,C_SLOT_6_AXI_DATA_WIDTH=AUTO,C_SLOT_6_AXI_ADDR_WIDTH=A\
-UTO,C_SLOT_6_AXI_PROTOCOL=AXI4,C_SLOT_6_AXIS_TDATA_WIDTH=AUTO,C_SLOT_6_AXIS_TID_WIDTH=AUTO,C_SLOT_6_AXIS_TUSER_WIDTH=AUTO,C_SLOT_6_AXIS_TDEST_WIDTH=AUTO,C_SLOT_7_AXI_ARUSER_WIDTH=1,C_SLOT_7_AXI_RUSER_WIDTH=1,C_SLOT_7_AXI_AWUSER_WIDTH=1,C_SLOT_7_AXI_WUSER_WIDTH=1,C_SLOT_7_AXI_BUSER_WIDTH=1,C_SLOT_7_AXI_ID_WIDTH=AUTO,C_SLOT_7_AXI_DATA_WIDTH=AUTO,C_SLOT_7_AXI_ADDR_WIDTH=AUTO,C_SLOT_7_AXI_PROTOCOL=AXI4,C_SLOT_7_AXIS_TDATA_WIDTH=AUTO,C_SLOT_7_AXIS_TID_WIDTH=AUTO,C_SLOT_7_AXIS_TUSER_WIDTH=AUTO,C_SLOT_\
-7_AXIS_TDEST_WIDTH=AUTO,C_SLOT_8_AXI_ARUSER_WIDTH=1,C_SLOT_8_AXI_RUSER_WIDTH=1,C_SLOT_8_AXI_AWUSER_WIDTH=1,C_SLOT_8_AXI_WUSER_WIDTH=1,C_SLOT_8_AXI_BUSER_WIDTH=1,C_SLOT_8_AXI_ID_WIDTH=AUTO,C_SLOT_8_AXI_DATA_WIDTH=AUTO,C_SLOT_8_AXI_ADDR_WIDTH=AUTO,C_SLOT_8_AXI_PROTOCOL=AXI4,C_SLOT_8_AXIS_TDATA_WIDTH=AUTO,C_SLOT_8_AXIS_TID_WIDTH=AUTO,C_SLOT_8_AXIS_TUSER_WIDTH=AUTO,C_SLOT_8_AXIS_TDEST_WIDTH=AUTO,C_SLOT_9_AXI_ARUSER_WIDTH=1,C_SLOT_9_AXI_RUSER_WIDTH=1,C_SLOT_9_AXI_AWUSER_WIDTH=1,C_SLOT_9_AXI_WUSER_WID\
-TH=1,C_SLOT_9_AXI_BUSER_WIDTH=1,C_SLOT_9_AXI_ID_WIDTH=AUTO,C_SLOT_9_AXI_DATA_WIDTH=AUTO,C_SLOT_9_AXI_ADDR_WIDTH=AUTO,C_SLOT_9_AXI_PROTOCOL=AXI4,C_SLOT_9_AXIS_TDATA_WIDTH=AUTO,C_SLOT_9_AXIS_TID_WIDTH=AUTO,C_SLOT_9_AXIS_TUSER_WIDTH=AUTO,C_SLOT_9_AXIS_TDEST_WIDTH=AUTO,C_SLOT_10_AXI_ARUSER_WIDTH=1,C_SLOT_10_AXI_RUSER_WIDTH=1,C_SLOT_10_AXI_AWUSER_WIDTH=1,C_SLOT_10_AXI_WUSER_WIDTH=1,C_SLOT_10_AXI_BUSER_WIDTH=1,C_SLOT_10_AXI_ID_WIDTH=AUTO,C_SLOT_10_AXI_DATA_WIDTH=AUTO,C_SLOT_10_AXI_ADDR_WIDTH=AUTO,C_SL\
-OT_10_AXI_PROTOCOL=AXI4,C_SLOT_10_AXIS_TDATA_WIDTH=AUTO,C_SLOT_10_AXIS_TID_WIDTH=AUTO,C_SLOT_10_AXIS_TUSER_WIDTH=AUTO,C_SLOT_10_AXIS_TDEST_WIDTH=AUTO,C_SLOT_11_AXI_ARUSER_WIDTH=1,C_SLOT_11_AXI_RUSER_WIDTH=1,C_SLOT_11_AXI_AWUSER_WIDTH=1,C_SLOT_11_AXI_WUSER_WIDTH=1,C_SLOT_11_AXI_BUSER_WIDTH=1,C_SLOT_11_AXI_ID_WIDTH=AUTO,C_SLOT_11_AXI_DATA_WIDTH=AUTO,C_SLOT_11_AXI_ADDR_WIDTH=AUTO,C_SLOT_11_AXI_PROTOCOL=AXI4,C_SLOT_11_AXIS_TDATA_WIDTH=AUTO,C_SLOT_11_AXIS_TID_WIDTH=AUTO,C_SLOT_11_AXIS_TUSER_WIDTH=AUT\
-O,C_SLOT_11_AXIS_TDEST_WIDTH=AUTO,C_SLOT_12_AXI_ARUSER_WIDTH=1,C_SLOT_12_AXI_RUSER_WIDTH=1,C_SLOT_12_AXI_AWUSER_WIDTH=1,C_SLOT_12_AXI_WUSER_WIDTH=1,C_SLOT_12_AXI_BUSER_WIDTH=1,C_SLOT_12_AXI_ID_WIDTH=AUTO,C_SLOT_12_AXI_DATA_WIDTH=AUTO,C_SLOT_12_AXI_ADDR_WIDTH=AUTO,C_SLOT_12_AXI_PROTOCOL=AXI4,C_SLOT_12_AXIS_TDATA_WIDTH=AUTO,C_SLOT_12_AXIS_TID_WIDTH=AUTO,C_SLOT_12_AXIS_TUSER_WIDTH=AUTO,C_SLOT_12_AXIS_TDEST_WIDTH=AUTO,C_SLOT_13_AXI_ARUSER_WIDTH=1,C_SLOT_13_AXI_RUSER_WIDTH=1,C_SLOT_13_AXI_AWUSER_WIDT\
-H=1,C_SLOT_13_AXI_WUSER_WIDTH=1,C_SLOT_13_AXI_BUSER_WIDTH=1,C_SLOT_13_AXI_ID_WIDTH=AUTO,C_SLOT_13_AXI_DATA_WIDTH=AUTO,C_SLOT_13_AXI_ADDR_WIDTH=AUTO,C_SLOT_13_AXI_PROTOCOL=AXI4,C_SLOT_13_AXIS_TDATA_WIDTH=AUTO,C_SLOT_13_AXIS_TID_WIDTH=AUTO,C_SLOT_13_AXIS_TUSER_WIDTH=AUTO,C_SLOT_13_AXIS_TDEST_WIDTH=AUTO,C_SLOT_14_AXI_ARUSER_WIDTH=1,C_SLOT_14_AXI_RUSER_WIDTH=1,C_SLOT_14_AXI_AWUSER_WIDTH=1,C_SLOT_14_AXI_WUSER_WIDTH=1,C_SLOT_14_AXI_BUSER_WIDTH=1,C_SLOT_14_AXI_ID_WIDTH=AUTO,C_SLOT_14_AXI_DATA_WIDTH=AUT\
-O,C_SLOT_14_AXI_ADDR_WIDTH=AUTO,C_SLOT_14_AXI_PROTOCOL=AXI4,C_SLOT_14_AXIS_TDATA_WIDTH=AUTO,C_SLOT_14_AXIS_TID_WIDTH=AUTO,C_SLOT_14_AXIS_TUSER_WIDTH=AUTO,C_SLOT_14_AXIS_TDEST_WIDTH=AUTO,C_SLOT_15_AXI_ARUSER_WIDTH=1,C_SLOT_15_AXI_RUSER_WIDTH=1,C_SLOT_15_AXI_AWUSER_WIDTH=1,C_SLOT_15_AXI_WUSER_WIDTH=1,C_SLOT_15_AXI_BUSER_WIDTH=1,C_SLOT_15_AXI_ID_WIDTH=AUTO,C_SLOT_15_AXI_DATA_WIDTH=AUTO,C_SLOT_15_AXI_ADDR_WIDTH=AUTO,C_SLOT_15_AXI_PROTOCOL=AXI4,C_SLOT_15_AXIS_TDATA_WIDTH=AUTO,C_SLOT_15_AXIS_TID_WIDTH\
-=AUTO,C_SLOT_15_AXIS_TUSER_WIDTH=AUTO,C_SLOT_15_AXIS_TDEST_WIDTH=AUTO,C_PROBE_WIDTH_PROPAGATION=AUTO}" *)
+e_aximm_rtl_1.0,C_SLOT_2_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_3_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_4_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_5_INTF_TYPE=xilinx.com_interface_axis_rtl_1.0,C_SLOT_6_INTF_TYPE=xilinx.com_interface_axis_rtl_1.0,C_SLOT_7_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_8_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_9_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_10_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0\
+,C_SLOT_11_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_12_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_13_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_14_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_SLOT_15_INTF_TYPE=xilinx.com_interface_aximm_rtl_1.0,C_MON_TYPE=INTERFACE,C_SLOT_2_AXI_ARUSER_WIDTH=1,C_SLOT_2_AXI_RUSER_WIDTH=1,C_SLOT_2_AXI_AWUSER_WIDTH=1,C_SLOT_2_AXI_WUSER_WIDTH=1,C_SLOT_2_AXI_BUSER_WIDTH=1,C_SLOT_2_AXI_ID_WIDTH=AUTO,C_SLOT_2_AXI_DATA_WIDTH=AUTO,C_SLOT_2_A\
+XI_ADDR_WIDTH=AUTO,C_SLOT_2_AXI_PROTOCOL=AXI4,C_SLOT_2_AXIS_TDATA_WIDTH=AUTO,C_SLOT_2_AXIS_TID_WIDTH=AUTO,C_SLOT_2_AXIS_TUSER_WIDTH=AUTO,C_SLOT_2_AXIS_TDEST_WIDTH=AUTO,C_SLOT_3_AXI_ARUSER_WIDTH=1,C_SLOT_3_AXI_RUSER_WIDTH=1,C_SLOT_3_AXI_AWUSER_WIDTH=1,C_SLOT_3_AXI_WUSER_WIDTH=1,C_SLOT_3_AXI_BUSER_WIDTH=1,C_SLOT_3_AXI_ID_WIDTH=AUTO,C_SLOT_3_AXI_DATA_WIDTH=AUTO,C_SLOT_3_AXI_ADDR_WIDTH=AUTO,C_SLOT_3_AXI_PROTOCOL=AXI4,C_SLOT_3_AXIS_TDATA_WIDTH=AUTO,C_SLOT_3_AXIS_TID_WIDTH=AUTO,C_SLOT_3_AXIS_TUSER_WID\
+TH=AUTO,C_SLOT_3_AXIS_TDEST_WIDTH=AUTO,C_SLOT_4_AXI_ARUSER_WIDTH=1,C_SLOT_4_AXI_RUSER_WIDTH=1,C_SLOT_4_AXI_AWUSER_WIDTH=1,C_SLOT_4_AXI_WUSER_WIDTH=1,C_SLOT_4_AXI_BUSER_WIDTH=1,C_SLOT_4_AXI_ID_WIDTH=AUTO,C_SLOT_4_AXI_DATA_WIDTH=AUTO,C_SLOT_4_AXI_ADDR_WIDTH=AUTO,C_SLOT_4_AXI_PROTOCOL=AXI4,C_SLOT_4_AXIS_TDATA_WIDTH=AUTO,C_SLOT_4_AXIS_TID_WIDTH=AUTO,C_SLOT_4_AXIS_TUSER_WIDTH=AUTO,C_SLOT_4_AXIS_TDEST_WIDTH=AUTO,C_SLOT_5_AXI_ARUSER_WIDTH=1,C_SLOT_5_AXI_RUSER_WIDTH=1,C_SLOT_5_AXI_AWUSER_WIDTH=1,C_SLOT_\
+5_AXI_WUSER_WIDTH=1,C_SLOT_5_AXI_BUSER_WIDTH=1,C_SLOT_5_AXI_ID_WIDTH=AUTO,C_SLOT_5_AXI_DATA_WIDTH=AUTO,C_SLOT_5_AXI_ADDR_WIDTH=AUTO,C_SLOT_5_AXI_PROTOCOL=AXI4,C_SLOT_5_AXIS_TDATA_WIDTH=AUTO,C_SLOT_5_AXIS_TID_WIDTH=AUTO,C_SLOT_5_AXIS_TUSER_WIDTH=AUTO,C_SLOT_5_AXIS_TDEST_WIDTH=AUTO,C_SLOT_6_AXI_ARUSER_WIDTH=1,C_SLOT_6_AXI_RUSER_WIDTH=1,C_SLOT_6_AXI_AWUSER_WIDTH=1,C_SLOT_6_AXI_WUSER_WIDTH=1,C_SLOT_6_AXI_BUSER_WIDTH=1,C_SLOT_6_AXI_ID_WIDTH=AUTO,C_SLOT_6_AXI_DATA_WIDTH=AUTO,C_SLOT_6_AXI_ADDR_WIDTH=AU\
+TO,C_SLOT_6_AXI_PROTOCOL=AXI4,C_SLOT_6_AXIS_TDATA_WIDTH=AUTO,C_SLOT_6_AXIS_TID_WIDTH=AUTO,C_SLOT_6_AXIS_TUSER_WIDTH=AUTO,C_SLOT_6_AXIS_TDEST_WIDTH=AUTO,C_SLOT_7_AXI_ARUSER_WIDTH=1,C_SLOT_7_AXI_RUSER_WIDTH=1,C_SLOT_7_AXI_AWUSER_WIDTH=1,C_SLOT_7_AXI_WUSER_WIDTH=1,C_SLOT_7_AXI_BUSER_WIDTH=1,C_SLOT_7_AXI_ID_WIDTH=AUTO,C_SLOT_7_AXI_DATA_WIDTH=AUTO,C_SLOT_7_AXI_ADDR_WIDTH=AUTO,C_SLOT_7_AXI_PROTOCOL=AXI4,C_SLOT_7_AXIS_TDATA_WIDTH=AUTO,C_SLOT_7_AXIS_TID_WIDTH=AUTO,C_SLOT_7_AXIS_TUSER_WIDTH=AUTO,C_SLOT_7\
+_AXIS_TDEST_WIDTH=AUTO,C_SLOT_8_AXI_ARUSER_WIDTH=1,C_SLOT_8_AXI_RUSER_WIDTH=1,C_SLOT_8_AXI_AWUSER_WIDTH=1,C_SLOT_8_AXI_WUSER_WIDTH=1,C_SLOT_8_AXI_BUSER_WIDTH=1,C_SLOT_8_AXI_ID_WIDTH=AUTO,C_SLOT_8_AXI_DATA_WIDTH=AUTO,C_SLOT_8_AXI_ADDR_WIDTH=AUTO,C_SLOT_8_AXI_PROTOCOL=AXI4,C_SLOT_8_AXIS_TDATA_WIDTH=AUTO,C_SLOT_8_AXIS_TID_WIDTH=AUTO,C_SLOT_8_AXIS_TUSER_WIDTH=AUTO,C_SLOT_8_AXIS_TDEST_WIDTH=AUTO,C_SLOT_9_AXI_ARUSER_WIDTH=1,C_SLOT_9_AXI_RUSER_WIDTH=1,C_SLOT_9_AXI_AWUSER_WIDTH=1,C_SLOT_9_AXI_WUSER_WIDT\
+H=1,C_SLOT_9_AXI_BUSER_WIDTH=1,C_SLOT_9_AXI_ID_WIDTH=AUTO,C_SLOT_9_AXI_DATA_WIDTH=AUTO,C_SLOT_9_AXI_ADDR_WIDTH=AUTO,C_SLOT_9_AXI_PROTOCOL=AXI4,C_SLOT_9_AXIS_TDATA_WIDTH=AUTO,C_SLOT_9_AXIS_TID_WIDTH=AUTO,C_SLOT_9_AXIS_TUSER_WIDTH=AUTO,C_SLOT_9_AXIS_TDEST_WIDTH=AUTO,C_SLOT_10_AXI_ARUSER_WIDTH=1,C_SLOT_10_AXI_RUSER_WIDTH=1,C_SLOT_10_AXI_AWUSER_WIDTH=1,C_SLOT_10_AXI_WUSER_WIDTH=1,C_SLOT_10_AXI_BUSER_WIDTH=1,C_SLOT_10_AXI_ID_WIDTH=AUTO,C_SLOT_10_AXI_DATA_WIDTH=AUTO,C_SLOT_10_AXI_ADDR_WIDTH=AUTO,C_SLO\
+T_10_AXI_PROTOCOL=AXI4,C_SLOT_10_AXIS_TDATA_WIDTH=AUTO,C_SLOT_10_AXIS_TID_WIDTH=AUTO,C_SLOT_10_AXIS_TUSER_WIDTH=AUTO,C_SLOT_10_AXIS_TDEST_WIDTH=AUTO,C_SLOT_11_AXI_ARUSER_WIDTH=1,C_SLOT_11_AXI_RUSER_WIDTH=1,C_SLOT_11_AXI_AWUSER_WIDTH=1,C_SLOT_11_AXI_WUSER_WIDTH=1,C_SLOT_11_AXI_BUSER_WIDTH=1,C_SLOT_11_AXI_ID_WIDTH=AUTO,C_SLOT_11_AXI_DATA_WIDTH=AUTO,C_SLOT_11_AXI_ADDR_WIDTH=AUTO,C_SLOT_11_AXI_PROTOCOL=AXI4,C_SLOT_11_AXIS_TDATA_WIDTH=AUTO,C_SLOT_11_AXIS_TID_WIDTH=AUTO,C_SLOT_11_AXIS_TUSER_WIDTH=AUTO\
+,C_SLOT_11_AXIS_TDEST_WIDTH=AUTO,C_SLOT_12_AXI_ARUSER_WIDTH=1,C_SLOT_12_AXI_RUSER_WIDTH=1,C_SLOT_12_AXI_AWUSER_WIDTH=1,C_SLOT_12_AXI_WUSER_WIDTH=1,C_SLOT_12_AXI_BUSER_WIDTH=1,C_SLOT_12_AXI_ID_WIDTH=AUTO,C_SLOT_12_AXI_DATA_WIDTH=AUTO,C_SLOT_12_AXI_ADDR_WIDTH=AUTO,C_SLOT_12_AXI_PROTOCOL=AXI4,C_SLOT_12_AXIS_TDATA_WIDTH=AUTO,C_SLOT_12_AXIS_TID_WIDTH=AUTO,C_SLOT_12_AXIS_TUSER_WIDTH=AUTO,C_SLOT_12_AXIS_TDEST_WIDTH=AUTO,C_SLOT_13_AXI_ARUSER_WIDTH=1,C_SLOT_13_AXI_RUSER_WIDTH=1,C_SLOT_13_AXI_AWUSER_WIDTH\
+=1,C_SLOT_13_AXI_WUSER_WIDTH=1,C_SLOT_13_AXI_BUSER_WIDTH=1,C_SLOT_13_AXI_ID_WIDTH=AUTO,C_SLOT_13_AXI_DATA_WIDTH=AUTO,C_SLOT_13_AXI_ADDR_WIDTH=AUTO,C_SLOT_13_AXI_PROTOCOL=AXI4,C_SLOT_13_AXIS_TDATA_WIDTH=AUTO,C_SLOT_13_AXIS_TID_WIDTH=AUTO,C_SLOT_13_AXIS_TUSER_WIDTH=AUTO,C_SLOT_13_AXIS_TDEST_WIDTH=AUTO,C_SLOT_14_AXI_ARUSER_WIDTH=1,C_SLOT_14_AXI_RUSER_WIDTH=1,C_SLOT_14_AXI_AWUSER_WIDTH=1,C_SLOT_14_AXI_WUSER_WIDTH=1,C_SLOT_14_AXI_BUSER_WIDTH=1,C_SLOT_14_AXI_ID_WIDTH=AUTO,C_SLOT_14_AXI_DATA_WIDTH=AUTO\
+,C_SLOT_14_AXI_ADDR_WIDTH=AUTO,C_SLOT_14_AXI_PROTOCOL=AXI4,C_SLOT_14_AXIS_TDATA_WIDTH=AUTO,C_SLOT_14_AXIS_TID_WIDTH=AUTO,C_SLOT_14_AXIS_TUSER_WIDTH=AUTO,C_SLOT_14_AXIS_TDEST_WIDTH=AUTO,C_SLOT_15_AXI_ARUSER_WIDTH=1,C_SLOT_15_AXI_RUSER_WIDTH=1,C_SLOT_15_AXI_AWUSER_WIDTH=1,C_SLOT_15_AXI_WUSER_WIDTH=1,C_SLOT_15_AXI_BUSER_WIDTH=1,C_SLOT_15_AXI_ID_WIDTH=AUTO,C_SLOT_15_AXI_DATA_WIDTH=AUTO,C_SLOT_15_AXI_ADDR_WIDTH=AUTO,C_SLOT_15_AXI_PROTOCOL=AXI4,C_SLOT_15_AXIS_TDATA_WIDTH=AUTO,C_SLOT_15_AXIS_TID_WIDTH=\
+AUTO,C_SLOT_15_AXIS_TUSER_WIDTH=AUTO,C_SLOT_15_AXIS_TDEST_WIDTH=AUTO,C_PROBE_WIDTH_PROPAGATION=AUTO}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_system_ila_0_0 (
   clk,
   SLOT_0_AXIS_tdata,
+  SLOT_0_AXIS_tkeep,
   SLOT_0_AXIS_tlast,
   SLOT_0_AXIS_tuser,
   SLOT_0_AXIS_tvalid,
@@ -250,34 +251,110 @@ module system_system_ila_0_0 (
   SLOT_1_AXI_rlast,
   SLOT_1_AXI_rvalid,
   SLOT_1_AXI_rready,
-  SLOT_2_AXIS_tdata,
-  SLOT_2_AXIS_tkeep,
-  SLOT_2_AXIS_tlast,
-  SLOT_2_AXIS_tuser,
-  SLOT_2_AXIS_tvalid,
-  SLOT_2_AXIS_tready,
+  SLOT_2_AXI_awaddr,
+  SLOT_2_AXI_awvalid,
+  SLOT_2_AXI_awready,
+  SLOT_2_AXI_wdata,
+  SLOT_2_AXI_wstrb,
+  SLOT_2_AXI_wvalid,
+  SLOT_2_AXI_wready,
+  SLOT_2_AXI_bresp,
+  SLOT_2_AXI_bvalid,
+  SLOT_2_AXI_bready,
+  SLOT_2_AXI_araddr,
+  SLOT_2_AXI_arvalid,
+  SLOT_2_AXI_arready,
+  SLOT_2_AXI_rdata,
+  SLOT_2_AXI_rresp,
+  SLOT_2_AXI_rvalid,
+  SLOT_2_AXI_rready,
+  SLOT_3_AXI_awaddr,
+  SLOT_3_AXI_awlen,
+  SLOT_3_AXI_awsize,
+  SLOT_3_AXI_awvalid,
+  SLOT_3_AXI_awready,
+  SLOT_3_AXI_wdata,
+  SLOT_3_AXI_wlast,
+  SLOT_3_AXI_wvalid,
+  SLOT_3_AXI_wready,
+  SLOT_3_AXI_bvalid,
+  SLOT_3_AXI_bready,
+  SLOT_3_AXI_araddr,
+  SLOT_3_AXI_arlen,
+  SLOT_3_AXI_arsize,
+  SLOT_3_AXI_arvalid,
+  SLOT_3_AXI_arready,
+  SLOT_3_AXI_rdata,
+  SLOT_3_AXI_rresp,
+  SLOT_3_AXI_rlast,
+  SLOT_3_AXI_rvalid,
+  SLOT_3_AXI_rready,
+  SLOT_4_AXI_awaddr,
+  SLOT_4_AXI_awlen,
+  SLOT_4_AXI_awsize,
+  SLOT_4_AXI_awvalid,
+  SLOT_4_AXI_awready,
+  SLOT_4_AXI_wdata,
+  SLOT_4_AXI_wstrb,
+  SLOT_4_AXI_wlast,
+  SLOT_4_AXI_wvalid,
+  SLOT_4_AXI_wready,
+  SLOT_4_AXI_bresp,
+  SLOT_4_AXI_bvalid,
+  SLOT_4_AXI_bready,
+  SLOT_4_AXI_araddr,
+  SLOT_4_AXI_arlen,
+  SLOT_4_AXI_arsize,
+  SLOT_4_AXI_arvalid,
+  SLOT_4_AXI_arready,
+  SLOT_4_AXI_rdata,
+  SLOT_4_AXI_rlast,
+  SLOT_4_AXI_rvalid,
+  SLOT_4_AXI_rready,
+  SLOT_5_AXIS_tdata,
+  SLOT_5_AXIS_tlast,
+  SLOT_5_AXIS_tuser,
+  SLOT_5_AXIS_tvalid,
+  SLOT_5_AXIS_tready,
+  SLOT_6_AXIS_tdata,
+  SLOT_6_AXIS_tlast,
+  SLOT_6_AXIS_tuser,
+  SLOT_6_AXIS_tvalid,
+  SLOT_6_AXIS_tready,
+  SLOT_7_AXI_awaddr,
+  SLOT_7_AXI_awvalid,
+  SLOT_7_AXI_awready,
+  SLOT_7_AXI_wdata,
+  SLOT_7_AXI_wstrb,
+  SLOT_7_AXI_wvalid,
+  SLOT_7_AXI_wready,
+  SLOT_7_AXI_bresp,
+  SLOT_7_AXI_bvalid,
+  SLOT_7_AXI_bready,
+  SLOT_7_AXI_araddr,
+  SLOT_7_AXI_arvalid,
+  SLOT_7_AXI_arready,
+  SLOT_7_AXI_rdata,
+  SLOT_7_AXI_rresp,
+  SLOT_7_AXI_rvalid,
+  SLOT_7_AXI_rready,
   resetn
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.clk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, ASSOCIATED_BUSIF SLOT_0_AXIS:SLOT_1_AXI:SLOT_2_AXIS, ASSOCIATED_RESET resetn, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.clk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, ASSOCIATED_BUSIF SLOT_0_AXIS:SLOT_1_AXI:SLOT_2_AXI:SLOT_3_AXI:SLOT_4_AXI:SLOT_5_AXIS:SLOT_6_AXIS:SLOT_7_AXI, ASSOCIATED_RESET resetn, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.clk CLK" *)
 input wire clk;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TDATA" *)
 input wire [23 : 0] SLOT_0_AXIS_tdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TKEEP" *)
+input wire [2 : 0] SLOT_0_AXIS_tkeep;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TLAST" *)
 input wire SLOT_0_AXIS_tlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TUSER" *)
 input wire [0 : 0] SLOT_0_AXIS_tuser;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TVALID" *)
 input wire SLOT_0_AXIS_tvalid;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_0_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value xilinx.com:video:G_B_R_444:1.0} bitwidth {attribs {resolve_type automatic dependency {} format long minim\
-um {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value rows} size {attribs {resolve_type generated dependency active_rows format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency active_rows_stride format long minimum {} maximum {}} value 24} datatype {name {attribs {resolve_type \
-immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value cols} size {attribs {resolve_type generated dependency active_cols format long minimum {} maximum {}} value 1} stride {a\
-ttribs {resolve_type generated dependency active_cols_stride format long minimum {} maximum {}} value 24} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_G {name {attribs {resolve_type immediate dependency {} format string \
-minimum {} maximum {}} value G} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency video_data_width format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type imm\
-ediate dependency {} format bool minimum {} maximum {}} value true}}}} field_B {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value B} enabled {attribs {resolve_type generated dependency video_comp1_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency video_data_width format long minimum {} m\
-aximum {}} value 8} bitoffset {attribs {resolve_type generated dependency video_comp1_offset format long minimum {} maximum {}} value 8} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}} field_R {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value R} enabled {attribs {resolve_type generated dependency video_comp2_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs \
-{resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency video_data_width format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type generated dependency video_comp2_offset format long minimum {} maximum {}} value 16} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}}}}}} TDATA_WIDTH 24}, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_0_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TREADY" *)
 input wire SLOT_0_AXIS_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_1_AXI AWID" *)
@@ -342,19 +419,197 @@ input wire SLOT_1_AXI_rvalid;
 S 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_1_AXI RREADY" *)
 input wire SLOT_1_AXI_rready;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_2_AXIS TDATA" *)
-input wire [23 : 0] SLOT_2_AXIS_tdata;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_2_AXIS TKEEP" *)
-input wire [2 : 0] SLOT_2_AXIS_tkeep;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_2_AXIS TLAST" *)
-input wire SLOT_2_AXIS_tlast;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_2_AXIS TUSER" *)
-input wire [0 : 0] SLOT_2_AXIS_tuser;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_2_AXIS TVALID" *)
-input wire SLOT_2_AXIS_tvalid;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_2_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_2_AXIS TREADY" *)
-input wire SLOT_2_AXIS_tready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_2_AXI AWADDR" *)
+input wire [8 : 0] SLOT_2_AXI_awaddr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_2_AXI AWVALID" *)
+input wire SLOT_2_AXI_awvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_2_AXI AWREADY" *)
+input wire SLOT_2_AXI_awready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_2_AXI WDATA" *)
+input wire [31 : 0] SLOT_2_AXI_wdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_2_AXI WSTRB" *)
+input wire [3 : 0] SLOT_2_AXI_wstrb;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_2_AXI WVALID" *)
+input wire SLOT_2_AXI_wvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_2_AXI WREADY" *)
+input wire SLOT_2_AXI_wready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_2_AXI BRESP" *)
+input wire [1 : 0] SLOT_2_AXI_bresp;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_2_AXI BVALID" *)
+input wire SLOT_2_AXI_bvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_2_AXI BREADY" *)
+input wire SLOT_2_AXI_bready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_2_AXI ARADDR" *)
+input wire [8 : 0] SLOT_2_AXI_araddr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_2_AXI ARVALID" *)
+input wire SLOT_2_AXI_arvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_2_AXI ARREADY" *)
+input wire SLOT_2_AXI_arready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_2_AXI RDATA" *)
+input wire [31 : 0] SLOT_2_AXI_rdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_2_AXI RRESP" *)
+input wire [1 : 0] SLOT_2_AXI_rresp;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_2_AXI RVALID" *)
+input wire SLOT_2_AXI_rvalid;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_2_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, NUM_READ_THRE\
+ADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_2_AXI RREADY" *)
+input wire SLOT_2_AXI_rready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI AWADDR" *)
+input wire [31 : 0] SLOT_3_AXI_awaddr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI AWLEN" *)
+input wire [7 : 0] SLOT_3_AXI_awlen;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI AWSIZE" *)
+input wire [2 : 0] SLOT_3_AXI_awsize;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI AWVALID" *)
+input wire SLOT_3_AXI_awvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI AWREADY" *)
+input wire SLOT_3_AXI_awready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI WDATA" *)
+input wire [63 : 0] SLOT_3_AXI_wdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI WLAST" *)
+input wire SLOT_3_AXI_wlast;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI WVALID" *)
+input wire SLOT_3_AXI_wvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI WREADY" *)
+input wire SLOT_3_AXI_wready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI BVALID" *)
+input wire SLOT_3_AXI_bvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI BREADY" *)
+input wire SLOT_3_AXI_bready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI ARADDR" *)
+input wire [31 : 0] SLOT_3_AXI_araddr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI ARLEN" *)
+input wire [7 : 0] SLOT_3_AXI_arlen;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI ARSIZE" *)
+input wire [2 : 0] SLOT_3_AXI_arsize;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI ARVALID" *)
+input wire SLOT_3_AXI_arvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI ARREADY" *)
+input wire SLOT_3_AXI_arready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI RDATA" *)
+input wire [63 : 0] SLOT_3_AXI_rdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI RRESP" *)
+input wire [1 : 0] SLOT_3_AXI_rresp;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI RLAST" *)
+input wire SLOT_3_AXI_rlast;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI RVALID" *)
+input wire SLOT_3_AXI_rvalid;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_3_AXI, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_ONLY, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 0, HAS_BRESP 0, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 128, PHASE 0.000, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREAD\
+S 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_3_AXI RREADY" *)
+input wire SLOT_3_AXI_rready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI AWADDR" *)
+input wire [31 : 0] SLOT_4_AXI_awaddr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI AWLEN" *)
+input wire [7 : 0] SLOT_4_AXI_awlen;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI AWSIZE" *)
+input wire [2 : 0] SLOT_4_AXI_awsize;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI AWVALID" *)
+input wire SLOT_4_AXI_awvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI AWREADY" *)
+input wire SLOT_4_AXI_awready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI WDATA" *)
+input wire [63 : 0] SLOT_4_AXI_wdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI WSTRB" *)
+input wire [7 : 0] SLOT_4_AXI_wstrb;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI WLAST" *)
+input wire SLOT_4_AXI_wlast;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI WVALID" *)
+input wire SLOT_4_AXI_wvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI WREADY" *)
+input wire SLOT_4_AXI_wready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI BRESP" *)
+input wire [1 : 0] SLOT_4_AXI_bresp;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI BVALID" *)
+input wire SLOT_4_AXI_bvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI BREADY" *)
+input wire SLOT_4_AXI_bready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI ARADDR" *)
+input wire [31 : 0] SLOT_4_AXI_araddr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI ARLEN" *)
+input wire [7 : 0] SLOT_4_AXI_arlen;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI ARSIZE" *)
+input wire [2 : 0] SLOT_4_AXI_arsize;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI ARVALID" *)
+input wire SLOT_4_AXI_arvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI ARREADY" *)
+input wire SLOT_4_AXI_arready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI RDATA" *)
+input wire [63 : 0] SLOT_4_AXI_rdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI RLAST" *)
+input wire SLOT_4_AXI_rlast;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI RVALID" *)
+input wire SLOT_4_AXI_rvalid;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_4_AXI, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE WRITE_ONLY, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 0, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 128, PHASE 0.000, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREA\
+DS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_4_AXI RREADY" *)
+input wire SLOT_4_AXI_rready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_5_AXIS TDATA" *)
+input wire [23 : 0] SLOT_5_AXIS_tdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_5_AXIS TLAST" *)
+input wire SLOT_5_AXIS_tlast;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_5_AXIS TUSER" *)
+input wire [0 : 0] SLOT_5_AXIS_tuser;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_5_AXIS TVALID" *)
+input wire SLOT_5_AXIS_tvalid;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_5_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value xilinx.com:video:G_B_R_444:1.0} bitwidth {attribs {resolve_type automatic dependency {} format long minim\
+um {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value rows} size {attribs {resolve_type generated dependency active_rows format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency active_rows_stride format long minimum {} maximum {}} value 24} datatype {name {attribs {resolve_type \
+immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value cols} size {attribs {resolve_type generated dependency active_cols format long minimum {} maximum {}} value 1} stride {a\
+ttribs {resolve_type generated dependency active_cols_stride format long minimum {} maximum {}} value 24} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_G {name {attribs {resolve_type immediate dependency {} format string \
+minimum {} maximum {}} value G} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency video_data_width format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type imm\
+ediate dependency {} format bool minimum {} maximum {}} value true}}}} field_B {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value B} enabled {attribs {resolve_type generated dependency video_comp1_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency video_data_width format long minimum {} m\
+aximum {}} value 8} bitoffset {attribs {resolve_type generated dependency video_comp1_offset format long minimum {} maximum {}} value 8} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}} field_R {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value R} enabled {attribs {resolve_type generated dependency video_comp2_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs \
+{resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency video_data_width format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type generated dependency video_comp2_offset format long minimum {} maximum {}} value 16} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}}}}}} TDATA_WIDTH 24}, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_5_AXIS TREADY" *)
+input wire SLOT_5_AXIS_tready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_6_AXIS TDATA" *)
+input wire [23 : 0] SLOT_6_AXIS_tdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_6_AXIS TLAST" *)
+input wire SLOT_6_AXIS_tlast;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_6_AXIS TUSER" *)
+input wire [0 : 0] SLOT_6_AXIS_tuser;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_6_AXIS TVALID" *)
+input wire SLOT_6_AXIS_tvalid;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_6_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_6_AXIS TREADY" *)
+input wire SLOT_6_AXIS_tready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_7_AXI AWADDR" *)
+input wire [8 : 0] SLOT_7_AXI_awaddr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_7_AXI AWVALID" *)
+input wire SLOT_7_AXI_awvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_7_AXI AWREADY" *)
+input wire SLOT_7_AXI_awready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_7_AXI WDATA" *)
+input wire [31 : 0] SLOT_7_AXI_wdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_7_AXI WSTRB" *)
+input wire [3 : 0] SLOT_7_AXI_wstrb;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_7_AXI WVALID" *)
+input wire SLOT_7_AXI_wvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_7_AXI WREADY" *)
+input wire SLOT_7_AXI_wready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_7_AXI BRESP" *)
+input wire [1 : 0] SLOT_7_AXI_bresp;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_7_AXI BVALID" *)
+input wire SLOT_7_AXI_bvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_7_AXI BREADY" *)
+input wire SLOT_7_AXI_bready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_7_AXI ARADDR" *)
+input wire [8 : 0] SLOT_7_AXI_araddr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_7_AXI ARVALID" *)
+input wire SLOT_7_AXI_arvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_7_AXI ARREADY" *)
+input wire SLOT_7_AXI_arready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_7_AXI RDATA" *)
+input wire [31 : 0] SLOT_7_AXI_rdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_7_AXI RRESP" *)
+input wire [1 : 0] SLOT_7_AXI_rresp;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_7_AXI RVALID" *)
+input wire SLOT_7_AXI_rvalid;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_7_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, NUM_READ_THRE\
+ADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_7_AXI RREADY" *)
+input wire SLOT_7_AXI_rready;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.resetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.resetn RST" *)
 input wire resetn;
@@ -362,6 +617,7 @@ input wire resetn;
   bd_d5b8 inst (
     .clk(clk),
     .SLOT_0_AXIS_tdata(SLOT_0_AXIS_tdata),
+    .SLOT_0_AXIS_tkeep(SLOT_0_AXIS_tkeep),
     .SLOT_0_AXIS_tlast(SLOT_0_AXIS_tlast),
     .SLOT_0_AXIS_tuser(SLOT_0_AXIS_tuser),
     .SLOT_0_AXIS_tvalid(SLOT_0_AXIS_tvalid),
@@ -396,12 +652,93 @@ input wire resetn;
     .SLOT_1_AXI_rlast(SLOT_1_AXI_rlast),
     .SLOT_1_AXI_rvalid(SLOT_1_AXI_rvalid),
     .SLOT_1_AXI_rready(SLOT_1_AXI_rready),
-    .SLOT_2_AXIS_tdata(SLOT_2_AXIS_tdata),
-    .SLOT_2_AXIS_tkeep(SLOT_2_AXIS_tkeep),
-    .SLOT_2_AXIS_tlast(SLOT_2_AXIS_tlast),
-    .SLOT_2_AXIS_tuser(SLOT_2_AXIS_tuser),
-    .SLOT_2_AXIS_tvalid(SLOT_2_AXIS_tvalid),
-    .SLOT_2_AXIS_tready(SLOT_2_AXIS_tready),
+    .SLOT_2_AXI_awaddr(SLOT_2_AXI_awaddr),
+    .SLOT_2_AXI_awvalid(SLOT_2_AXI_awvalid),
+    .SLOT_2_AXI_awready(SLOT_2_AXI_awready),
+    .SLOT_2_AXI_wdata(SLOT_2_AXI_wdata),
+    .SLOT_2_AXI_wstrb(SLOT_2_AXI_wstrb),
+    .SLOT_2_AXI_wvalid(SLOT_2_AXI_wvalid),
+    .SLOT_2_AXI_wready(SLOT_2_AXI_wready),
+    .SLOT_2_AXI_bresp(SLOT_2_AXI_bresp),
+    .SLOT_2_AXI_bvalid(SLOT_2_AXI_bvalid),
+    .SLOT_2_AXI_bready(SLOT_2_AXI_bready),
+    .SLOT_2_AXI_araddr(SLOT_2_AXI_araddr),
+    .SLOT_2_AXI_arvalid(SLOT_2_AXI_arvalid),
+    .SLOT_2_AXI_arready(SLOT_2_AXI_arready),
+    .SLOT_2_AXI_rdata(SLOT_2_AXI_rdata),
+    .SLOT_2_AXI_rresp(SLOT_2_AXI_rresp),
+    .SLOT_2_AXI_rvalid(SLOT_2_AXI_rvalid),
+    .SLOT_2_AXI_rready(SLOT_2_AXI_rready),
+    .SLOT_3_AXI_awaddr(SLOT_3_AXI_awaddr),
+    .SLOT_3_AXI_awlen(SLOT_3_AXI_awlen),
+    .SLOT_3_AXI_awsize(SLOT_3_AXI_awsize),
+    .SLOT_3_AXI_awvalid(SLOT_3_AXI_awvalid),
+    .SLOT_3_AXI_awready(SLOT_3_AXI_awready),
+    .SLOT_3_AXI_wdata(SLOT_3_AXI_wdata),
+    .SLOT_3_AXI_wlast(SLOT_3_AXI_wlast),
+    .SLOT_3_AXI_wvalid(SLOT_3_AXI_wvalid),
+    .SLOT_3_AXI_wready(SLOT_3_AXI_wready),
+    .SLOT_3_AXI_bvalid(SLOT_3_AXI_bvalid),
+    .SLOT_3_AXI_bready(SLOT_3_AXI_bready),
+    .SLOT_3_AXI_araddr(SLOT_3_AXI_araddr),
+    .SLOT_3_AXI_arlen(SLOT_3_AXI_arlen),
+    .SLOT_3_AXI_arsize(SLOT_3_AXI_arsize),
+    .SLOT_3_AXI_arvalid(SLOT_3_AXI_arvalid),
+    .SLOT_3_AXI_arready(SLOT_3_AXI_arready),
+    .SLOT_3_AXI_rdata(SLOT_3_AXI_rdata),
+    .SLOT_3_AXI_rresp(SLOT_3_AXI_rresp),
+    .SLOT_3_AXI_rlast(SLOT_3_AXI_rlast),
+    .SLOT_3_AXI_rvalid(SLOT_3_AXI_rvalid),
+    .SLOT_3_AXI_rready(SLOT_3_AXI_rready),
+    .SLOT_4_AXI_awaddr(SLOT_4_AXI_awaddr),
+    .SLOT_4_AXI_awlen(SLOT_4_AXI_awlen),
+    .SLOT_4_AXI_awsize(SLOT_4_AXI_awsize),
+    .SLOT_4_AXI_awvalid(SLOT_4_AXI_awvalid),
+    .SLOT_4_AXI_awready(SLOT_4_AXI_awready),
+    .SLOT_4_AXI_wdata(SLOT_4_AXI_wdata),
+    .SLOT_4_AXI_wstrb(SLOT_4_AXI_wstrb),
+    .SLOT_4_AXI_wlast(SLOT_4_AXI_wlast),
+    .SLOT_4_AXI_wvalid(SLOT_4_AXI_wvalid),
+    .SLOT_4_AXI_wready(SLOT_4_AXI_wready),
+    .SLOT_4_AXI_bresp(SLOT_4_AXI_bresp),
+    .SLOT_4_AXI_bvalid(SLOT_4_AXI_bvalid),
+    .SLOT_4_AXI_bready(SLOT_4_AXI_bready),
+    .SLOT_4_AXI_araddr(SLOT_4_AXI_araddr),
+    .SLOT_4_AXI_arlen(SLOT_4_AXI_arlen),
+    .SLOT_4_AXI_arsize(SLOT_4_AXI_arsize),
+    .SLOT_4_AXI_arvalid(SLOT_4_AXI_arvalid),
+    .SLOT_4_AXI_arready(SLOT_4_AXI_arready),
+    .SLOT_4_AXI_rdata(SLOT_4_AXI_rdata),
+    .SLOT_4_AXI_rlast(SLOT_4_AXI_rlast),
+    .SLOT_4_AXI_rvalid(SLOT_4_AXI_rvalid),
+    .SLOT_4_AXI_rready(SLOT_4_AXI_rready),
+    .SLOT_5_AXIS_tdata(SLOT_5_AXIS_tdata),
+    .SLOT_5_AXIS_tlast(SLOT_5_AXIS_tlast),
+    .SLOT_5_AXIS_tuser(SLOT_5_AXIS_tuser),
+    .SLOT_5_AXIS_tvalid(SLOT_5_AXIS_tvalid),
+    .SLOT_5_AXIS_tready(SLOT_5_AXIS_tready),
+    .SLOT_6_AXIS_tdata(SLOT_6_AXIS_tdata),
+    .SLOT_6_AXIS_tlast(SLOT_6_AXIS_tlast),
+    .SLOT_6_AXIS_tuser(SLOT_6_AXIS_tuser),
+    .SLOT_6_AXIS_tvalid(SLOT_6_AXIS_tvalid),
+    .SLOT_6_AXIS_tready(SLOT_6_AXIS_tready),
+    .SLOT_7_AXI_awaddr(SLOT_7_AXI_awaddr),
+    .SLOT_7_AXI_awvalid(SLOT_7_AXI_awvalid),
+    .SLOT_7_AXI_awready(SLOT_7_AXI_awready),
+    .SLOT_7_AXI_wdata(SLOT_7_AXI_wdata),
+    .SLOT_7_AXI_wstrb(SLOT_7_AXI_wstrb),
+    .SLOT_7_AXI_wvalid(SLOT_7_AXI_wvalid),
+    .SLOT_7_AXI_wready(SLOT_7_AXI_wready),
+    .SLOT_7_AXI_bresp(SLOT_7_AXI_bresp),
+    .SLOT_7_AXI_bvalid(SLOT_7_AXI_bvalid),
+    .SLOT_7_AXI_bready(SLOT_7_AXI_bready),
+    .SLOT_7_AXI_araddr(SLOT_7_AXI_araddr),
+    .SLOT_7_AXI_arvalid(SLOT_7_AXI_arvalid),
+    .SLOT_7_AXI_arready(SLOT_7_AXI_arready),
+    .SLOT_7_AXI_rdata(SLOT_7_AXI_rdata),
+    .SLOT_7_AXI_rresp(SLOT_7_AXI_rresp),
+    .SLOT_7_AXI_rvalid(SLOT_7_AXI_rvalid),
+    .SLOT_7_AXI_rready(SLOT_7_AXI_rready),
     .resetn(resetn)
   );
 endmodule

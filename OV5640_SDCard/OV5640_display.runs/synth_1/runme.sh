@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='E:/Project/Personal/PoseEstimation/ZYNQ/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1'
+HD_PWD='E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

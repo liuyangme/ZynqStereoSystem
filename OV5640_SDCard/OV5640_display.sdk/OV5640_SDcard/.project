@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>OV5640_SDcard</name>
-	<comment>Created by SDK v2018.3. OV5640_SDcard_bsp - ps7_cortexa9_0</comment>
+	<name>ov5640_sdcard</name>
+	<comment>Created by SDK v2018.3. ov5640_sdcard_bsp - ps7_cortexa9_0</comment>
 	<projects>
-		<project>OV5640_SDcard_bsp</project>
+		<project>ov5640_sdcard_bsp</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

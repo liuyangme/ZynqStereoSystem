@@ -9,6 +9,7 @@
 						"ACLK": { "actual": "aclk"},
 						"ARESETN": { "actual": "aresetn"},
 						"TDATA": { "actual": "slot_0_axis_tdata"},
+						"TKEEP": { "actual": "slot_0_axis_tkeep"},
 						"TLAST": { "actual": "slot_0_axis_tlast"},
 						"TREADY": { "actual": "slot_0_axis_tready"},
 						"TUSER": { "actual": "slot_0_axis_tuser"},
@@ -52,17 +53,133 @@
 						"WVALID": { "actual": "slot_1_axi_wvalid"}
 					}
 				},
-				"/g_inst/slot_2_axis": {
+				"/g_inst/slot_2_axi": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARADDR": { "actual": "slot_2_axi_araddr"},
+						"ARESETN": { "actual": "aresetn"},
+						"ARREADY": { "actual": "slot_2_axi_arready"},
+						"ARVALID": { "actual": "slot_2_axi_arvalid"},
+						"AWADDR": { "actual": "slot_2_axi_awaddr"},
+						"AWREADY": { "actual": "slot_2_axi_awready"},
+						"AWVALID": { "actual": "slot_2_axi_awvalid"},
+						"BREADY": { "actual": "slot_2_axi_bready"},
+						"BRESP": { "actual": "slot_2_axi_bresp"},
+						"BVALID": { "actual": "slot_2_axi_bvalid"},
+						"RDATA": { "actual": "slot_2_axi_rdata"},
+						"RREADY": { "actual": "slot_2_axi_rready"},
+						"RRESP": { "actual": "slot_2_axi_rresp"},
+						"RVALID": { "actual": "slot_2_axi_rvalid"},
+						"WDATA": { "actual": "slot_2_axi_wdata"},
+						"WREADY": { "actual": "slot_2_axi_wready"},
+						"WSTRB": { "actual": "slot_2_axi_wstrb"},
+						"WVALID": { "actual": "slot_2_axi_wvalid"}
+					}
+				},
+				"/g_inst/slot_3_axi": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARADDR": { "actual": "slot_3_axi_araddr"},
+						"ARESETN": { "actual": "aresetn"},
+						"ARLEN": { "actual": "slot_3_axi_arlen"},
+						"ARREADY": { "actual": "slot_3_axi_arready"},
+						"ARSIZE": { "actual": "slot_3_axi_arsize"},
+						"ARVALID": { "actual": "slot_3_axi_arvalid"},
+						"AWADDR": { "actual": "slot_3_axi_awaddr"},
+						"AWLEN": { "actual": "slot_3_axi_awlen"},
+						"AWREADY": { "actual": "slot_3_axi_awready"},
+						"AWSIZE": { "actual": "slot_3_axi_awsize"},
+						"AWVALID": { "actual": "slot_3_axi_awvalid"},
+						"BREADY": { "actual": "slot_3_axi_bready"},
+						"BVALID": { "actual": "slot_3_axi_bvalid"},
+						"RDATA": { "actual": "slot_3_axi_rdata"},
+						"RLAST": { "actual": "slot_3_axi_rlast"},
+						"RREADY": { "actual": "slot_3_axi_rready"},
+						"RRESP": { "actual": "slot_3_axi_rresp"},
+						"RVALID": { "actual": "slot_3_axi_rvalid"},
+						"WDATA": { "actual": "slot_3_axi_wdata"},
+						"WLAST": { "actual": "slot_3_axi_wlast"},
+						"WREADY": { "actual": "slot_3_axi_wready"},
+						"WVALID": { "actual": "slot_3_axi_wvalid"}
+					}
+				},
+				"/g_inst/slot_4_axi": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARADDR": { "actual": "slot_4_axi_araddr"},
+						"ARESETN": { "actual": "aresetn"},
+						"ARLEN": { "actual": "slot_4_axi_arlen"},
+						"ARREADY": { "actual": "slot_4_axi_arready"},
+						"ARSIZE": { "actual": "slot_4_axi_arsize"},
+						"ARVALID": { "actual": "slot_4_axi_arvalid"},
+						"AWADDR": { "actual": "slot_4_axi_awaddr"},
+						"AWLEN": { "actual": "slot_4_axi_awlen"},
+						"AWREADY": { "actual": "slot_4_axi_awready"},
+						"AWSIZE": { "actual": "slot_4_axi_awsize"},
+						"AWVALID": { "actual": "slot_4_axi_awvalid"},
+						"BREADY": { "actual": "slot_4_axi_bready"},
+						"BRESP": { "actual": "slot_4_axi_bresp"},
+						"BVALID": { "actual": "slot_4_axi_bvalid"},
+						"RDATA": { "actual": "slot_4_axi_rdata"},
+						"RLAST": { "actual": "slot_4_axi_rlast"},
+						"RREADY": { "actual": "slot_4_axi_rready"},
+						"RVALID": { "actual": "slot_4_axi_rvalid"},
+						"WDATA": { "actual": "slot_4_axi_wdata"},
+						"WLAST": { "actual": "slot_4_axi_wlast"},
+						"WREADY": { "actual": "slot_4_axi_wready"},
+						"WSTRB": { "actual": "slot_4_axi_wstrb"},
+						"WVALID": { "actual": "slot_4_axi_wvalid"}
+					}
+				},
+				"/g_inst/slot_5_axis": {
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "aclk"},
 						"ARESETN": { "actual": "aresetn"},
-						"TDATA": { "actual": "slot_2_axis_tdata"},
-						"TKEEP": { "actual": "slot_2_axis_tkeep"},
-						"TLAST": { "actual": "slot_2_axis_tlast"},
-						"TREADY": { "actual": "slot_2_axis_tready"},
-						"TUSER": { "actual": "slot_2_axis_tuser"},
-						"TVALID": { "actual": "slot_2_axis_tvalid"}
+						"TDATA": { "actual": "slot_5_axis_tdata"},
+						"TLAST": { "actual": "slot_5_axis_tlast"},
+						"TREADY": { "actual": "slot_5_axis_tready"},
+						"TUSER": { "actual": "slot_5_axis_tuser"},
+						"TVALID": { "actual": "slot_5_axis_tvalid"}
+					}
+				},
+				"/g_inst/slot_6_axis": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARESETN": { "actual": "aresetn"},
+						"TDATA": { "actual": "slot_6_axis_tdata"},
+						"TLAST": { "actual": "slot_6_axis_tlast"},
+						"TREADY": { "actual": "slot_6_axis_tready"},
+						"TUSER": { "actual": "slot_6_axis_tuser"},
+						"TVALID": { "actual": "slot_6_axis_tvalid"}
+					}
+				},
+				"/g_inst/slot_7_axi": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARADDR": { "actual": "slot_7_axi_araddr"},
+						"ARESETN": { "actual": "aresetn"},
+						"ARREADY": { "actual": "slot_7_axi_arready"},
+						"ARVALID": { "actual": "slot_7_axi_arvalid"},
+						"AWADDR": { "actual": "slot_7_axi_awaddr"},
+						"AWREADY": { "actual": "slot_7_axi_awready"},
+						"AWVALID": { "actual": "slot_7_axi_awvalid"},
+						"BREADY": { "actual": "slot_7_axi_bready"},
+						"BRESP": { "actual": "slot_7_axi_bresp"},
+						"BVALID": { "actual": "slot_7_axi_bvalid"},
+						"RDATA": { "actual": "slot_7_axi_rdata"},
+						"RREADY": { "actual": "slot_7_axi_rready"},
+						"RRESP": { "actual": "slot_7_axi_rresp"},
+						"RVALID": { "actual": "slot_7_axi_rvalid"},
+						"WDATA": { "actual": "slot_7_axi_wdata"},
+						"WREADY": { "actual": "slot_7_axi_wready"},
+						"WSTRB": { "actual": "slot_7_axi_wstrb"},
+						"WVALID": { "actual": "slot_7_axi_wvalid"}
 					}
 				}
 			}
