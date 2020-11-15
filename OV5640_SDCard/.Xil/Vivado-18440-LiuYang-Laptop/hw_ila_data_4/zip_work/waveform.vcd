@@ -1,0 +1,25 @@
+$date
+        2020-Nov-15 10:14:17
+$end
+$version
+        Vivado v2018.3 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 2 " system_i/system_ila_3/inst/probe0_1 [1:0] $end
+$var reg 1 $ _TRIGGER $end
+$var reg 1 % _WINDOW $end
+$var reg 1 & _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 "
+0$
+1%
+0&
+$end
+#512
+1$

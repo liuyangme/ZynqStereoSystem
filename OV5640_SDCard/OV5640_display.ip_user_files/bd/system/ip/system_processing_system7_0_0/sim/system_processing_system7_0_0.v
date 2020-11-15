@@ -56,12 +56,12 @@
 `timescale 1ns/1ps
 
 module system_processing_system7_0_0 (
-GPIO_I, 
-GPIO_O, 
-GPIO_T, 
-USB0_PORT_INDCTL, 
-USB0_VBUS_PWRSELECT, 
-USB0_VBUS_PWRFAULT, 
+I2C0_SDA_I, 
+I2C0_SDA_O, 
+I2C0_SDA_T, 
+I2C0_SCL_I, 
+I2C0_SCL_O, 
+I2C0_SCL_T, 
 M_AXI_GP0_ARVALID, 
 M_AXI_GP0_AWVALID, 
 M_AXI_GP0_BREADY, 
@@ -172,12 +172,12 @@ PS_SRSTB,
 PS_CLK, 
 PS_PORB 
 );
-input [1 : 0] GPIO_I;
-output [1 : 0] GPIO_O;
-output [1 : 0] GPIO_T;
-output [1 : 0] USB0_PORT_INDCTL;
-output USB0_VBUS_PWRSELECT;
-input USB0_VBUS_PWRFAULT;
+input I2C0_SDA_I;
+output I2C0_SDA_O;
+output I2C0_SDA_T;
+input I2C0_SCL_I;
+output I2C0_SCL_O;
+output I2C0_SCL_T;
 output M_AXI_GP0_ARVALID;
 output M_AXI_GP0_AWVALID;
 output M_AXI_GP0_BREADY;

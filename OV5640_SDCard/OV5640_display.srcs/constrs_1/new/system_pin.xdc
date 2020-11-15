@@ -1,11 +1,11 @@
 # "CMOS_SCL"
-set_property PACKAGE_PIN L14 [get_ports {GPIO_0_0_tri_io[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_0_0_tri_io[0]}]
-set_property PULLUP true [get_ports {GPIO_0_0_tri_io[0]}]
+set_property PACKAGE_PIN L14 [get_ports {IIC_0_0_scl_io}]
+set_property IOSTANDARD LVCMOS33 [get_ports {IIC_0_0_scl_io}]
+set_property PULLUP true [get_ports {IIC_0_0_scl_io}]
 # "CMOS_SDAT"
-set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_0_0_tri_io[1]}]
-set_property PACKAGE_PIN L15 [get_ports {GPIO_0_0_tri_io[1]}]
-set_property PULLUP true [get_ports {GPIO_0_0_tri_io[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {IIC_0_0_sda_io}]
+set_property PACKAGE_PIN L15 [get_ports {IIC_0_0_sda_io}]
+set_property PULLUP true [get_ports {IIC_0_0_sda_io}]
 # "CMOS_VSYNC"
 set_property PACKAGE_PIN B19 [get_ports cmos_vsync_i_0]
 set_property IOSTANDARD LVCMOS33 [get_ports cmos_vsync_i_0]

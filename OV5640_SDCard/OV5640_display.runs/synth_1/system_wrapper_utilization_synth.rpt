@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Fri Nov 13 16:35:57 2020
+| Date         : Sun Nov 15 15:19:25 2020
 | Host         : LiuYang-Laptop running 64-bit major release  (build 9200)
 | Command      : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
 | Design       : system_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 15976 |     0 |     53200 | 30.03 |
-|   LUT as Logic             | 13221 |     0 |     53200 | 24.85 |
+| Slice LUTs*                | 16038 |     0 |     53200 | 30.15 |
+|   LUT as Logic             | 13283 |     0 |     53200 | 24.97 |
 |   LUT as Memory            |  2755 |     0 |     17400 | 15.83 |
 |     LUT as Distributed RAM |    22 |     0 |           |       |
 |     LUT as Shift Register  |  2733 |     0 |           |       |
@@ -159,7 +159,7 @@ Table of Contents
 | LUT3       |  2198 |                  LUT |
 | LUT5       |  1666 |                  LUT |
 | SRLC32E    |  1267 |   Distributed Memory |
-| LUT1       |  1017 |                  LUT |
+| LUT1       |  1079 |                  LUT |
 | CARRY4     |   735 |           CarryLogic |
 | MUXF7      |   411 |                MuxFx |
 | FDSE       |   322 |         Flop & Latch |
