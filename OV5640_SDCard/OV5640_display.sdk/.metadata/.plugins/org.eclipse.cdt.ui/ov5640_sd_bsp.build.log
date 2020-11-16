@@ -1,4 +1,4 @@
-15:43:35 **** Auto Build of project ov5640_sd_bsp ****
+13:27:27 **** Auto Build of project ov5640_sd_bsp ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_6/src"
 make -C ps7_cortexa9_0/libsrc/axivdma_v6_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
@@ -104,5 +104,5 @@ make -C ps7_cortexa9_0/libsrc/xilffs_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm
 "Compiling XilFFs Library"
 'Finished building libraries'
 
-15:44:30 Build Finished (took 55s.249ms)
+13:28:12 Build Finished (took 44s.537ms)
 

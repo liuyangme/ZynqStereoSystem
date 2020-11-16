@@ -2319,16 +2319,16 @@
           "g_inst/slot_0_axis"
         ]
       },
-      "Conn1": {
-        "interface_ports": [
-          "SLOT_1_AXI",
-          "g_inst/slot_1_axi"
-        ]
-      },
       "Conn2": {
         "interface_ports": [
           "SLOT_2_AXI",
           "g_inst/slot_2_axi"
+        ]
+      },
+      "Conn1": {
+        "interface_ports": [
+          "SLOT_1_AXI",
+          "g_inst/slot_1_axi"
         ]
       },
       "Conn3": {

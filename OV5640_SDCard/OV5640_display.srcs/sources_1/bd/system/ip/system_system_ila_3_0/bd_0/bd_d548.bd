@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xD9F224DFBEB048E9",
+      "boundary_crc": "0xCB478B31AC05E707",
       "design_src": "SBD",
       "device": "xc7z020clg400-2",
       "name": "bd_d548",
@@ -38,7 +38,7 @@
       },
       "probe0": {
         "direction": "I",
-        "left": "1",
+        "left": "2",
         "right": "0"
       }
     },
@@ -84,7 +84,7 @@
             "value": "0"
           },
           "C_PROBE0_WIDTH": {
-            "value": "2"
+            "value": "3"
           },
           "C_TIME_TAG_WIDTH": {
             "value": "32"

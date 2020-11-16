@@ -1,24 +1,691 @@
-15:45:40 **** Incremental Build of configuration Debug for project ov5640_sd ****
+13:28:27 **** Incremental Build of configuration Debug for project ov5640_sd ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
-15:48:21 **** Incremental Build of configuration Debug for project ov5640_sd ****
+13:28:34 **** Incremental Build of configuration Debug for project ov5640_sd ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
-15:48:49 **** Incremental Build of configuration Debug for project ov5640_sd ****
+13:28:52 **** Incremental Build of configuration Debug for project ov5640_sd ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
-19:01:26 **** Incremental Build of configuration Debug for project ov5640_sd ****
+13:29:57 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+../src/display_demo.c:23:10: fatal error: xgpio.h: No such file or directory
+ #include "xgpio.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:38: src/display_demo.o] Error 1
+13:30:34 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: ov5640_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ov5640_sd_bsp/ps7_cortexa9_0/lib -o "ov5640_sd.elf"  ./src/PS_i2c.o ./src/bmp.o ./src/display_demo.o ./src/ov5640.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ov5640_sd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ov5640_sd.elf  |tee "ov5640_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 145192	   4888	37367520	37517600	23c7920	ov5640_sd.elf
+'Finished building: ov5640_sd.elf.size'
+' '
+13:30:52 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: ov5640_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ov5640_sd_bsp/ps7_cortexa9_0/lib -o "ov5640_sd.elf"  ./src/PS_i2c.o ./src/bmp.o ./src/display_demo.o ./src/ov5640.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ov5640_sd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ov5640_sd.elf  |tee "ov5640_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 145192	   4888	37367520	37517600	23c7920	ov5640_sd.elf
+'Finished building: ov5640_sd.elf.size'
+' '
+13:31:43 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: ov5640_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ov5640_sd_bsp/ps7_cortexa9_0/lib -o "ov5640_sd.elf"  ./src/PS_i2c.o ./src/bmp.o ./src/display_demo.o ./src/ov5640.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ov5640_sd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ov5640_sd.elf  |tee "ov5640_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 145192	   4888	37367520	37517600	23c7920	ov5640_sd.elf
+'Finished building: ov5640_sd.elf.size'
+' '
+13:36:27 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/display_demo.c: In function 'GpioSetup':
+../src/display_demo.c:408:5: error: 'status' undeclared (first use in this function); did you mean 'Status'?
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+     ^~~~~~
+     Status
+../src/display_demo.c:408:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/display_demo.c:424:5: warning: implicit declaration of function 'IntcTypeSetup' [-Wimplicit-function-declaration]
+     IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+     ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:38: src/display_demo.o] Error 1
+13:36:37 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/display_demo.c: In function 'GpioSetup':
+../src/display_demo.c:408:5: error: 'status' undeclared (first use in this function); did you mean 'Status'?
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+     ^~~~~~
+     Status
+../src/display_demo.c:408:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/display_demo.c:424:5: warning: implicit declaration of function 'IntcTypeSetup' [-Wimplicit-function-declaration]
+     IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+     ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:38: src/display_demo.o] Error 1
+13:37:05 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/display_demo.c: In function 'GpioSetup':
+../src/display_demo.c:409:8: error: 'status' undeclared (first use in this function); did you mean 'Status'?
+     if(status != XST_SUCCESS) return XST_FAILURE;
+        ^~~~~~
+        Status
+../src/display_demo.c:409:8: note: each undeclared identifier is reported only once for each function it appears in
+../src/display_demo.c:424:5: warning: implicit declaration of function 'IntcTypeSetup' [-Wimplicit-function-declaration]
+     IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+     ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:38: src/display_demo.o] Error 1
+13:37:14 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/display_demo.c: In function 'GpioSetup':
+../src/display_demo.c:417:5: error: 'status' undeclared (first use in this function); did you mean 'Status'?
+     status = XScuGic_Connect(&INTCInst,
+     ^~~~~~
+     Status
+../src/display_demo.c:417:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/display_demo.c:424:5: warning: implicit declaration of function 'IntcTypeSetup' [-Wimplicit-function-declaration]
+     IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+     ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:38: src/display_demo.o] Error 1
+13:37:31 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/display_demo.c: In function 'GpioSetup':
+../src/display_demo.c:425:5: warning: implicit declaration of function 'IntcTypeSetup' [-Wimplicit-function-declaration]
+     IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+     ^~~~~~~~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: ov5640_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ov5640_sd_bsp/ps7_cortexa9_0/lib -o "ov5640_sd.elf"  ./src/PS_i2c.o ./src/bmp.o ./src/display_demo.o ./src/ov5640.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+./src/display_demo.o: In function `GpioSetup':
+E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\ov5640_sd\Debug/../src/display_demo.c:425: undefined reference to `IntcTypeSetup'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: ov5640_sd.elf] Error 1
+13:38:26 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: ov5640_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ov5640_sd_bsp/ps7_cortexa9_0/lib -o "ov5640_sd.elf"  ./src/PS_i2c.o ./src/bmp.o ./src/display_demo.o ./src/ov5640.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ov5640_sd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ov5640_sd.elf  |tee "ov5640_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 145768	   4888	37367584	37518240	23c7ba0	ov5640_sd.elf
+'Finished building: ov5640_sd.elf.size'
+' '
+13:38:39 **** Incremental Build of configuration Debug for project ov5640_sd ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
-19:01:55 **** Incremental Build of configuration Debug for project ov5640_sd ****
+13:39:25 **** Incremental Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:39:51 **** Incremental Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:52:01 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: ov5640_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ov5640_sd_bsp/ps7_cortexa9_0/lib -o "ov5640_sd.elf"  ./src/PS_i2c.o ./src/bmp.o ./src/display_demo.o ./src/ov5640.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ov5640_sd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ov5640_sd.elf  |tee "ov5640_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 145768	   4888	37367584	37518240	23c7ba0	ov5640_sd.elf
+'Finished building: ov5640_sd.elf.size'
+' '
+13:53:16 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: ov5640_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ov5640_sd_bsp/ps7_cortexa9_0/lib -o "ov5640_sd.elf"  ./src/PS_i2c.o ./src/bmp.o ./src/display_demo.o ./src/ov5640.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ov5640_sd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ov5640_sd.elf  |tee "ov5640_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 145768	   4888	37367584	37518240	23c7ba0	ov5640_sd.elf
+'Finished building: ov5640_sd.elf.size'
+' '
+13:54:11 **** Incremental Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:37:43 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: ov5640_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ov5640_sd_bsp/ps7_cortexa9_0/lib -o "ov5640_sd.elf"  ./src/PS_i2c.o ./src/bmp.o ./src/display_demo.o ./src/ov5640.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ov5640_sd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ov5640_sd.elf  |tee "ov5640_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 145768	   4888	37367584	37518240	23c7ba0	ov5640_sd.elf
+'Finished building: ov5640_sd.elf.size'
+' '
+15:38:43 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: ov5640_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ov5640_sd_bsp/ps7_cortexa9_0/lib -o "ov5640_sd.elf"  ./src/PS_i2c.o ./src/bmp.o ./src/display_demo.o ./src/ov5640.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ov5640_sd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ov5640_sd.elf  |tee "ov5640_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 145768	   4888	37367584	37518240	23c7ba0	ov5640_sd.elf
+'Finished building: ov5640_sd.elf.size'
+' '
+15:42:46 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/display_demo.c: In function 'GpioSetup':
+../src/display_demo.c:390:28: error: 'Gpio' undeclared (first use in this function); did you mean 'GpioCfg'?
+  Status = XGpioPs_SelfTest(Gpio);
+                            ^~~~
+                            GpioCfg
+../src/display_demo.c:390:28: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:38: src/display_demo.o] Error 1
+15:44:35 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/display_demo.c: In function 'GpioSetup':
+../src/display_demo.c:390:28: error: incompatible type for argument 1 of 'XGpioPs_SelfTest'
+  Status = XGpioPs_SelfTest(GpioInstance);
+                            ^~~~~~~~~~~~
+In file included from ../src/display_demo.c:28:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xgpiops.h:239:5: note: expected 'XGpioPs * {aka struct <anonymous> *}' but argument is of type 'XGpioPs {aka struct <anonymous>}'
+ s32 XGpioPs_SelfTest(XGpioPs *InstancePtr);
+     ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:38: src/display_demo.o] Error 1
+15:44:49 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: ov5640_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ov5640_sd_bsp/ps7_cortexa9_0/lib -o "ov5640_sd.elf"  ./src/PS_i2c.o ./src/bmp.o ./src/display_demo.o ./src/ov5640.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ov5640_sd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ov5640_sd.elf  |tee "ov5640_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146284	   4888	37367584	37518756	23c7da4	ov5640_sd.elf
+'Finished building: ov5640_sd.elf.size'
+' '
+15:55:55 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: ov5640_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ov5640_sd_bsp/ps7_cortexa9_0/lib -o "ov5640_sd.elf"  ./src/PS_i2c.o ./src/bmp.o ./src/display_demo.o ./src/ov5640.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ov5640_sd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ov5640_sd.elf  |tee "ov5640_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146284	   4888	37367520	37518692	23c7d64	ov5640_sd.elf
+'Finished building: ov5640_sd.elf.size'
+' '
+15:56:49 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: ov5640_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ov5640_sd_bsp/ps7_cortexa9_0/lib -o "ov5640_sd.elf"  ./src/PS_i2c.o ./src/bmp.o ./src/display_demo.o ./src/ov5640.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ov5640_sd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ov5640_sd.elf  |tee "ov5640_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146284	   4888	37367520	37518692	23c7d64	ov5640_sd.elf
+'Finished building: ov5640_sd.elf.size'
+' '
+15:58:42 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: ov5640_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ov5640_sd_bsp/ps7_cortexa9_0/lib -o "ov5640_sd.elf"  ./src/PS_i2c.o ./src/bmp.o ./src/display_demo.o ./src/ov5640.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ov5640_sd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ov5640_sd.elf  |tee "ov5640_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146284	   4888	37367520	37518692	23c7d64	ov5640_sd.elf
+'Finished building: ov5640_sd.elf.size'
+' '
+16:04:16 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: ov5640_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ov5640_sd_bsp/ps7_cortexa9_0/lib -o "ov5640_sd.elf"  ./src/PS_i2c.o ./src/bmp.o ./src/display_demo.o ./src/ov5640.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ov5640_sd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ov5640_sd.elf  |tee "ov5640_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146284	   4888	37367520	37518692	23c7d64	ov5640_sd.elf
+'Finished building: ov5640_sd.elf.size'
+' '
+16:12:12 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: ov5640_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ov5640_sd_bsp/ps7_cortexa9_0/lib -o "ov5640_sd.elf"  ./src/PS_i2c.o ./src/bmp.o ./src/display_demo.o ./src/ov5640.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ov5640_sd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ov5640_sd.elf  |tee "ov5640_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146316	   4888	37367520	37518724	23c7d84	ov5640_sd.elf
+'Finished building: ov5640_sd.elf.size'
+' '
+16:26:02 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/display_demo.c: In function 'GpioSetup':
+../src/display_demo.c:394:18: error: incompatible types when assigning to type 'XScuGic {aka struct <anonymous>}' from type 'XScuGic_Config * {aka struct <anonymous> *}'
+  XScuGicInstance = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                  ^
+../src/display_demo.c:395:11: error: invalid operands to binary == (have 'void *' and 'XScuGic {aka struct <anonymous>}')
+  if (NULL == XScuGicInstance) {
+           ^~
+../src/display_demo.c:399:19: error: invalid type argument of '->' (have 'XScuGic {aka struct <anonymous>}')
+    XScuGicInstance->CpuBaseAddress);
+                   ^~
+../src/display_demo.c:398:33: error: incompatible type for argument 1 of 'XScuGic_CfgInitialize'
+  Status = XScuGic_CfgInitialize(XScuGicInstance, GpioInstance,
+                                 ^~~~~~~~~~~~~~~
+In file included from ../src/display_demo.c:26:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xscugic.h:334:6: note: expected 'XScuGic * {aka struct <anonymous> *}' but argument is of type 'XScuGic {aka struct <anonymous>}'
+ s32  XScuGic_CfgInitialize(XScuGic *InstancePtr, XScuGic_Config *ConfigPtr,
+      ^~~~~~~~~~~~~~~~~~~~~
+../src/display_demo.c:398:50: error: incompatible type for argument 2 of 'XScuGic_CfgInitialize'
+  Status = XScuGic_CfgInitialize(XScuGicInstance, GpioInstance,
+                                                  ^~~~~~~~~~~~
+In file included from ../src/display_demo.c:26:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xscugic.h:334:6: note: expected 'XScuGic_Config * {aka struct <anonymous> *}' but argument is of type 'XGpioPs {aka struct <anonymous>}'
+ s32  XScuGic_CfgInitialize(XScuGic *InstancePtr, XScuGic_Config *ConfigPtr,
+      ^~~~~~~~~~~~~~~~~~~~~
+../src/display_demo.c:411:5: error: 'GicInstancePtr' undeclared (first use in this function); did you mean 'GpioInstancePtr'?
+     GicInstancePtr);
+     ^~~~~~~~~~~~~~
+     GpioInstancePtr
+../src/display_demo.c:411:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/display_demo.c:418:43: error: 'GpioIntrId' undeclared (first use in this function); did you mean 'IntrID'?
+  Status = XScuGic_Connect(GicInstancePtr, GpioIntrId,
+                                           ^~~~~~~~~~
+                                           IntrID
+../src/display_demo.c:420:13: error: 'Gpio' undeclared (first use in this function); did you mean 'GpioCfg'?
+     (void *)Gpio);
+             ^~~~
+             GpioCfg
+../src/display_demo.c:429:49: error: 'IntrHandler' undeclared (first use in this function); did you mean 'GpioHandler'?
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^~~~~~~~~~~
+                                                 GpioHandler
+../src/display_demo.c:433:44: error: 'Input_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, GPIO_BANK, (1 << Input_Pin));
+                                            ^~~~~~~~~
+make: *** [src/subdir.mk:38: src/display_demo.o] Error 1
+16:26:41 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/display_demo.c: In function 'GpioSetup':
+../src/display_demo.c:394:18: error: incompatible types when assigning to type 'XScuGic {aka struct <anonymous>}' from type 'XScuGic_Config * {aka struct <anonymous> *}'
+  XScuGicInstance = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                  ^
+../src/display_demo.c:395:11: error: invalid operands to binary == (have 'void *' and 'XScuGic {aka struct <anonymous>}')
+  if (NULL == XScuGicInstance) {
+           ^~
+../src/display_demo.c:399:19: error: invalid type argument of '->' (have 'XScuGic {aka struct <anonymous>}')
+    XScuGicInstance->CpuBaseAddress);
+                   ^~
+../src/display_demo.c:398:51: error: incompatible type for argument 2 of 'XScuGic_CfgInitialize'
+  Status = XScuGic_CfgInitialize(&XScuGicInstance, GpioInstance,
+                                                   ^~~~~~~~~~~~
+In file included from ../src/display_demo.c:26:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xscugic.h:334:6: note: expected 'XScuGic_Config * {aka struct <anonymous> *}' but argument is of type 'XGpioPs {aka struct <anonymous>}'
+ s32  XScuGic_CfgInitialize(XScuGic *InstancePtr, XScuGic_Config *ConfigPtr,
+      ^~~~~~~~~~~~~~~~~~~~~
+../src/display_demo.c:411:5: error: 'GicInstancePtr' undeclared (first use in this function); did you mean 'GpioInstancePtr'?
+     GicInstancePtr);
+     ^~~~~~~~~~~~~~
+     GpioInstancePtr
+../src/display_demo.c:411:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/display_demo.c:418:43: error: 'GpioIntrId' undeclared (first use in this function); did you mean 'IntrID'?
+  Status = XScuGic_Connect(GicInstancePtr, GpioIntrId,
+                                           ^~~~~~~~~~
+                                           IntrID
+../src/display_demo.c:420:13: error: 'Gpio' undeclared (first use in this function); did you mean 'GpioCfg'?
+     (void *)Gpio);
+             ^~~~
+             GpioCfg
+../src/display_demo.c:429:49: error: 'IntrHandler' undeclared (first use in this function); did you mean 'GpioHandler'?
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^~~~~~~~~~~
+                                                 GpioHandler
+../src/display_demo.c:433:44: error: 'Input_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, GPIO_BANK, (1 << Input_Pin));
+                                            ^~~~~~~~~
+make: *** [src/subdir.mk:38: src/display_demo.o] Error 1
+16:27:30 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: ov5640_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ov5640_sd_bsp/ps7_cortexa9_0/lib -o "ov5640_sd.elf"  ./src/PS_i2c.o ./src/bmp.o ./src/display_demo.o ./src/ov5640.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ov5640_sd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ov5640_sd.elf  |tee "ov5640_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146316	   4888	37367520	37518724	23c7d84	ov5640_sd.elf
+'Finished building: ov5640_sd.elf.size'
+' '
+16:27:36 **** Incremental Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:28:20 **** Auto Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ov5640_sd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+In file included from ../src/display_demo.c:32:0:
+../../ov5640_sd_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/display_demo.c'
+' '
+'Building target: ov5640_sd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ov5640_sd_bsp/ps7_cortexa9_0/lib -o "ov5640_sd.elf"  ./src/PS_i2c.o ./src/bmp.o ./src/display_demo.o ./src/ov5640.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ov5640_sd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ov5640_sd.elf  |tee "ov5640_sd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146124	   4888	37367520	37518532	23c7cc4	ov5640_sd.elf
+'Finished building: ov5640_sd.elf.size'
+' '
+16:28:24 **** Incremental Build of configuration Debug for project ov5640_sd ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '

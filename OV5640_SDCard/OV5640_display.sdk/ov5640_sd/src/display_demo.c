@@ -7,9 +7,10 @@
 /* ------------------------------------------------------------ */
 /*				Include File Definitions						*/
 /* ------------------------------------------------------------ */
+//#include "display_ctrl/display_ctrl.h"
+//#include "xgpio.h"
 
 #include "display_demo.h"
-//#include "display_ctrl/display_ctrl.h"
 #include <stdio.h>
 #include "math.h"
 #include <ctype.h>
@@ -20,7 +21,6 @@
 #include "xiicps.h"
 #include "vdma.h"
 #include "PS_i2c.h"
-//#include "xgpio.h"
 #include "sleep.h"
 #include "ov5640.h"
 #include "xscugic.h"
@@ -30,27 +30,40 @@
 #include "bmp.h"
 #include "xil_cache.h"
 #include "xtime_l.h"
+#include "xil_exception.h"
+
 /*
  * XPAR redefines
  */
+
 //#define DYNCLK_BASEADDR XPAR_AXI_DYNCLK_0_BASEADDR
-#define DISPLAY_VDMA_ID XPAR_AXIVDMA_0_DEVICE_ID
 //#define DISP_VTC_ID XPAR_VTC_0_DEVICE_ID
 //#define VID_VTC_IRPT_ID XPS_FPGA3_INT_ID
 //#define VID_GPIO_IRPT_ID XPS_FPGA4_INT_ID
-#define SCU_TIMER_ID XPAR_SCUTIMER_DEVICE_ID
-#define UART_BASEADDR XPAR_PS7_UART_1_BASEADDR
-#define CAME_VDMA_ID  XPAR_AXIVDMA_1_DEVICE_ID
 
-#define S2MM_INTID XPAR_FABRIC_AXI_VDMA_1_S2MM_INTROUT_INTR
-#define MM2S_INTID XPAR_FABRIC_AXI_VDMA_0_MM2S_INTROUT_INTR
+#define DISPLAY_VDMA_ID XPAR_AXIVDMA_0_DEVICE_ID
+#define SCU_TIMER_ID 	XPAR_SCUTIMER_DEVICE_ID
+#define UART_BASEADDR 	XPAR_PS7_UART_1_BASEADDR
+#define CAME_VDMA_ID  	XPAR_AXIVDMA_1_DEVICE_ID
+#define S2MM_INTID 		XPAR_FABRIC_AXI_VDMA_1_S2MM_INTROUT_INTR
+#define MM2S_INTID 		XPAR_FABRIC_AXI_VDMA_0_MM2S_INTROUT_INTR
 
-#define KEY_INTR_ID        XPAR_XGPIOPS_0_INTR
-#define MIO_0_ID           XPAR_PS7_GPIO_0_DEVICE_ID
-#define GPIO_INPUT         0
-#define GPIO_OUTPUT		   1
+#define KEY_INTR_ID			XPAR_XGPIOPS_0_INTR
+#define MIO_0_ID			XPAR_PS7_GPIO_0_DEVICE_ID
+#define GPIO_INPUT			0
+#define GPIO_OUTPUT			1
 
-#define DISPLAY_NUM_FRAMES 4
+/* The following constants define the GPIO banks that are used. */
+#define GPIO_BANK	 		XGPIOPS_BANK0  /* Bank 0 of the GPIO Device */  //20201116 add
+
+//20201116 add
+#define INT_CFG0_OFFSET 		0x00000C00
+#define SW1_INT_ID              61
+#define INTC_DEVICE_ID          XPAR_PS7_SCUGIC_0_DEVICE_ID
+#define GPIO_DEVICE_ID			XPAR_XGPIOPS_0_DEVICE_ID
+#define INT_TYPE_RISING_EDGE    0x03
+#define INT_TYPE_HIGHLEVEL      0x01
+#define INT_TYPE_MASK           0x03
 
 /* ------------------------------------------------------------ */
 /*				Global Variables								*/
@@ -60,22 +73,19 @@
  * Display Driver structs
  */
 //DisplayCtrl dispCtrl;
-XAxiVdma display_vdma;
-XAxiVdma camera_vdma;
-XIicPs ps_i2c0;
 //XGpio cmos_rstn;
 
-XScuGic XScuGicInstance;
+XAxiVdma 	display_vdma;
+XAxiVdma 	camera_vdma;
+XIicPs 		ps_i2c0;
+XScuGic 	XScuGicInstance;
 
-
-static FIL fil;		/* File object */
+/* File object */
+static FIL fil;
 static FATFS fatfs;
-
 static int WriteError;
-
 int wr_index = 0;
 int rd_index = 0;
-
 
 XGpioPs GpioInstance;
 volatile int key_flag = 0;
@@ -84,9 +94,8 @@ int KeyFlagHold = 1 ;
 /*
  * Framebuffers for video data
  */
-
+#define DISPLAY_NUM_FRAMES 	4
 u8 photobuf[DEMO_MAX_FRAME] ;
-
 u8 frameBuf[DISPLAY_NUM_FRAMES][DEMO_MAX_FRAME] __attribute__ ((aligned(64)));
 u8 *pFrames[DISPLAY_NUM_FRAMES]; //array of pointers to the frame buffers
 unsigned char PhotoBuf[DEMO_MAX_FRAME] ;
@@ -94,27 +103,24 @@ unsigned char PhotoBuf[DEMO_MAX_FRAME] ;
 /* ------------------------------------------------------------ */
 /*				Procedure Definitions							*/
 /* ------------------------------------------------------------ */
-
 static void WriteCallBack(void *CallbackRef, u32 Mask);
 static void WriteErrorCallBack(void *CallbackRef, u32 Mask);
 static void ReadCallBack(void *CallbackRef, u32 Mask);
-
 int GpioSetup(XScuGic *InstancePtr, u16 DeviceId, u16 IntrID, XGpioPs *GpioInstancePtr) ;
 void GpioHandler(void *CallbackRef);
-
+void IntcTypeSetup(XScuGic *InstancePtr, int intId, int intType);
 
 
 int main(void)
 {
+//	XAxiVdma_Config *vdmaConfig;
 
 	int Status;
-//	XAxiVdma_Config *vdmaConfig;
 	int i;
 	FRESULT rc;
 	XTime TimerStart, TimerEnd;
 	float elapsed_time ;
 	unsigned int PhotoCount = 0 ;
-
 	char PhotoName[9] ;
 
 	/*
@@ -148,7 +154,6 @@ int main(void)
 		xil_printf("Initial I2C...ok\r\n");
 	}
 
-
 //	XGpio_Initialize(&cmos_rstn, XPAR_CMOS_RST_DEVICE_ID);
 //	XGpio_SetDataDirection(&cmos_rstn, 1, 0x0);
 //	XGpio_DiscreteWrite(&cmos_rstn, 1, 0x1);
@@ -163,6 +168,7 @@ int main(void)
 	 */
 	sensor_init(&ps_i2c0);
 	xil_printf("Sensor Init...ok\r\n");
+
 	/*
 	 * Setup PS KEY and PS LED
 	 */
@@ -194,10 +200,9 @@ int main(void)
 
 //	vdmaConfig = XAxiVdma_LookupConfig(DISPLAY_VDMA_ID);
 //	Status = XAxiVdma_CfgInitialize(&display_vdma, vdmaConfig, vdmaConfig->BaseAddress);
-
-	/*
-	 * Initialize the Display controller and start it
-	 */
+//	/*
+//	 * Initialize the Display controller and start it
+//	 */
 //	Status = DisplayInitialize(&dispCtrl, &display_vdma, DISP_VTC_ID, DYNCLK_BASEADDR,pFrames, DEMO_STRIDE);
 //	if (Status != XST_SUCCESS)
 //	{
@@ -210,8 +215,6 @@ int main(void)
 //		xil_printf("Couldn't start display during demo initialization%d\r\n", Status);
 //
 //	}
-
-
 
 	/* Set PS LED off */
 	XGpioPs_WritePin(&GpioInstance, 7, 0) ;
@@ -231,9 +234,8 @@ int main(void)
 		if (key_flag == 2)
 		{
 			KeyFlagHold = 0;
-			/*
-			 * increment of photo name
-			 */
+
+			//increment of photo name
 			PhotoCount++ ;
 			sprintf(PhotoName, "%04u.bmp", PhotoCount) ;
 
@@ -241,42 +243,36 @@ int main(void)
 			XGpioPs_WritePin(&GpioInstance, 7, 1) ;
 			printf("Successfully Take Photo, Photo Name is %s\r\n", PhotoName) ;
 			printf("Write to SD Card...\r\n") ;
-			/*
-			 * Set timer
-			 */
+
+
+			//Set timer
 			XTime_SetTime(0) ;
 			XTime_GetTime(&TimerStart) ;
-
 			Xil_DCacheInvalidateRange((unsigned int) pFrames[(wr_index+1)%3], DEMO_MAX_FRAME) ;
-			/*
-			 * Copy frame data to photo buffer
-			 */
+
+			//Copy frame data to photo buffer
 			memcpy(&photobuf, pFrames[(wr_index+1)%3],  DEMO_MAX_FRAME) ;
 
-			/*
-			 * Clear key flag
-			 */
+			//Clear key flag
 			key_flag = 0 ;
-			/*
-			 * Write to SD Card
-			 */
+
+			//Write to SD Card
 			bmp_write(PhotoName, (char *)&BMODE_1280x720, (char *)&photobuf, DEMO_STRIDE, &fil) ;
-			/*
-			 * Print Elapsed time
-			 */
+
+			//Print Elapsed time
 			XTime_GetTime(&TimerEnd) ;
 			elapsed_time = ((float)(TimerEnd-TimerStart))/((float)COUNTS_PER_SECOND) ;
 			printf("INFO:Elapsed time = %.2f sec\r\n", elapsed_time) ;
 		}
-		/* Set PS LED off */
+
+		/*Flash LED*/
 		XGpioPs_WritePin(&GpioInstance, 7, 0) ;
 		usleep(30000);
 		XGpioPs_WritePin(&GpioInstance, 7, 1) ;
 		usleep(30000);
+
 		KeyFlagHold = 1;
 	}
-
-
 	return 0;
 }
 
@@ -360,21 +356,39 @@ int GpioSetup(XScuGic *InstancePtr, u16 DeviceId, u16 IntrID, XGpioPs *GpioInsta
 	XGpioPs_Config *GpioCfg ;
 	int Status ;
 
+	/* Initialize the Gpio driver. */
 	GpioCfg = XGpioPs_LookupConfig(DeviceId) ;
 	Status = XGpioPs_CfgInitialize(GpioInstancePtr, GpioCfg, GpioCfg->BaseAddr) ;
 	if (Status != XST_SUCCESS)
 	{
 		return XST_FAILURE ;
 	}
+	else{
+		xil_printf("Initialize the Gpio driver...ok\r\n");
+	}
+
+	/* Run a self-test on the GPIO device. */
+	Status = XGpioPs_SelfTest(&GpioInstance);
+	if (Status != XST_SUCCESS) {
+		xil_printf("GPIO SelfTest...fail\r\n");
+		return XST_FAILURE;
+	}
+	else{
+		xil_printf("GPIO SelfTest...pass\r\n");
+	}
+
 	/* set MIO 52 as input */
 	XGpioPs_SetDirectionPin(GpioInstancePtr, 52, GPIO_INPUT) ;
-	/* set interrupt type */
-	XGpioPs_SetIntrTypePin(GpioInstancePtr, 52, XGPIOPS_IRQ_TYPE_EDGE_RISING) ;
-
 	/* set MIO 7 as output */
 	XGpioPs_SetDirectionPin(&GpioInstance, 7, GPIO_OUTPUT) ;
 	/* enable MIO 7 output */
 	XGpioPs_SetOutputEnablePin(&GpioInstance, 7, GPIO_OUTPUT) ;
+	XGpioPs_WritePin(&GpioInstance, 7, 0) ;
+
+	/* set interrupt type */
+	XGpioPs_SetIntrTypePin(GpioInstancePtr, 52, XGPIOPS_IRQ_TYPE_EDGE_RISING) ;
+
+
 	/* set priority and trigger type */
 	XScuGic_SetPriorityTriggerType(InstancePtr, IntrID,
 			0xA0, 0x3);
@@ -384,6 +398,33 @@ int GpioSetup(XScuGic *InstancePtr, u16 DeviceId, u16 IntrID, XGpioPs *GpioInsta
 	XScuGic_Enable(InstancePtr, IntrID) ;
 	XGpioPs_IntrEnablePin(GpioInstancePtr, 52) ;
 	xil_printf("GPIO Setup...ok\r\n");
+
+	//20201116 add PL sw1(M14 port) Interrupt
+//	XScuGic_Config *IntcConfig;
+//
+//    // Interrupt controller initialisation
+//    IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+//    Status = XScuGic_CfgInitialize(&XScuGicInstance, IntcConfig, IntcConfig->CpuBaseAddress);
+//    if(Status != XST_SUCCESS)
+//    	return XST_FAILURE;
+//
+//    // Call to interrupt setup
+//    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+//                                 (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+//                                 &XScuGicInstance);
+//    Xil_ExceptionEnable();
+//    Status = XScuGic_Connect(&XScuGicInstance,
+//                             SW1_INT_ID,
+//                             (Xil_ExceptionHandler)GpioHandler,
+//                             (void *)1);
+//    if(Status != XST_SUCCESS)
+//    	return XST_FAILURE;
+//
+//    // Set interrupt type of SW1 to rising edge
+//    IntcTypeSetup(&XScuGicInstance, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+//    // Enable SW1 interrupts in the controller
+//    XScuGic_Enable(&XScuGicInstance, SW1_INT_ID);
+
 	return XST_SUCCESS ;
 }
 
@@ -392,16 +433,27 @@ int GpioSetup(XScuGic *InstancePtr, u16 DeviceId, u16 IntrID, XGpioPs *GpioInsta
  */
 void GpioHandler(void *CallbackRef)
 {
-	XGpioPs *GpioInstancePtr = (XGpioPs *)CallbackRef ;
-	int IntVal ;
+	XGpioPs *GpioInstancePtr = (XGpioPs *)CallbackRef;
+	int IntVal;
 
-	IntVal = XGpioPs_IntrGetStatusPin(GpioInstancePtr, 52) ;
+	IntVal = XGpioPs_IntrGetStatusPin(GpioInstancePtr, 52);
 	/* clear key interrupt */
-	XGpioPs_IntrClearPin(GpioInstancePtr, 52) ;
+	XGpioPs_IntrClearPin(GpioInstancePtr, 52);
 	xil_printf("GPIO interrupt handler...\r\n");
 	if (IntVal & KeyFlagHold){
-		key_flag = 1 ;
+		key_flag = 1;
 		xil_printf("Key flag turn to 1...\r\n");
 	}
-		
+}
+
+//20201116 add it
+void IntcTypeSetup(XScuGic *InstancePtr, int intId, int intType)
+{
+    int mask;
+
+    intType &= INT_TYPE_MASK;
+    mask = XScuGic_DistReadReg(InstancePtr, INT_CFG0_OFFSET + (intId/16)*4);
+    mask &= ~(INT_TYPE_MASK << (intId%16)*2);
+    mask |= intType << ((intId%16)*2);
+    XScuGic_DistWriteReg(InstancePtr, INT_CFG0_OFFSET + (intId/16)*4, mask);
 }

@@ -10,10 +10,10 @@ module bd_d548_wrapper
    (clk,
     probe0);
   input clk;
-  input [1:0]probe0;
+  input [2:0]probe0;
 
   wire clk;
-  wire [1:0]probe0;
+  wire [2:0]probe0;
 
   bd_d548 bd_d548_i
        (.clk(clk),

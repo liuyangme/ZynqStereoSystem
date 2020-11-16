@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Sun Nov 15 14:46:15 2020
+//Date        : Mon Nov 16 10:04:31 2020
 //Host        : LiuYang-Laptop running 64-bit major release  (build 9200)
 //Command     : generate_target system_wrapper.bd
 //Design      : system_wrapper
@@ -31,6 +31,7 @@ module system_wrapper
     FIXED_IO_0_ps_clk,
     FIXED_IO_0_ps_porb,
     FIXED_IO_0_ps_srstb,
+    GPIO_0_0_tri_io,
     HDMI_CLK_N_0,
     HDMI_CLK_P_0,
     HDMI_D0_N_0,
@@ -45,7 +46,8 @@ module system_wrapper
     cmos_href_i_0,
     cmos_pclk_i_0,
     cmos_vsync_i_0,
-    cmos_xclk_o_0);
+    cmos_xclk_o_0,
+    sw1);
   inout [14:0]DDR_0_addr;
   inout [2:0]DDR_0_ba;
   inout DDR_0_cas_n;
@@ -67,6 +69,7 @@ module system_wrapper
   inout FIXED_IO_0_ps_clk;
   inout FIXED_IO_0_ps_porb;
   inout FIXED_IO_0_ps_srstb;
+  inout [0:0]GPIO_0_0_tri_io;
   output HDMI_CLK_N_0;
   output HDMI_CLK_P_0;
   output HDMI_D0_N_0;
@@ -82,6 +85,7 @@ module system_wrapper
   input cmos_pclk_i_0;
   input cmos_vsync_i_0;
   output cmos_xclk_o_0;
+  input [0:0]sw1;
 
   wire [14:0]DDR_0_addr;
   wire [2:0]DDR_0_ba;
@@ -104,6 +108,10 @@ module system_wrapper
   wire FIXED_IO_0_ps_clk;
   wire FIXED_IO_0_ps_porb;
   wire FIXED_IO_0_ps_srstb;
+  wire [0:0]GPIO_0_0_tri_i_0;
+  wire [0:0]GPIO_0_0_tri_io_0;
+  wire [0:0]GPIO_0_0_tri_o_0;
+  wire [0:0]GPIO_0_0_tri_t_0;
   wire HDMI_CLK_N_0;
   wire HDMI_CLK_P_0;
   wire HDMI_D0_N_0;
@@ -125,7 +133,13 @@ module system_wrapper
   wire cmos_pclk_i_0;
   wire cmos_vsync_i_0;
   wire cmos_xclk_o_0;
+  wire [0:0]sw1;
 
+  IOBUF GPIO_0_0_tri_iobuf_0
+       (.I(GPIO_0_0_tri_o_0),
+        .IO(GPIO_0_0_tri_io[0]),
+        .O(GPIO_0_0_tri_i_0),
+        .T(GPIO_0_0_tri_t_0));
   IOBUF IIC_0_0_scl_iobuf
        (.I(IIC_0_0_scl_o),
         .IO(IIC_0_0_scl_io),
@@ -158,6 +172,9 @@ module system_wrapper
         .FIXED_IO_0_ps_clk(FIXED_IO_0_ps_clk),
         .FIXED_IO_0_ps_porb(FIXED_IO_0_ps_porb),
         .FIXED_IO_0_ps_srstb(FIXED_IO_0_ps_srstb),
+        .GPIO_0_0_tri_i(GPIO_0_0_tri_i_0),
+        .GPIO_0_0_tri_o(GPIO_0_0_tri_o_0),
+        .GPIO_0_0_tri_t(GPIO_0_0_tri_t_0),
         .HDMI_CLK_N_0(HDMI_CLK_N_0),
         .HDMI_CLK_P_0(HDMI_CLK_P_0),
         .HDMI_D0_N_0(HDMI_D0_N_0),
@@ -176,5 +193,6 @@ module system_wrapper
         .cmos_href_i_0(cmos_href_i_0),
         .cmos_pclk_i_0(cmos_pclk_i_0),
         .cmos_vsync_i_0(cmos_vsync_i_0),
-        .cmos_xclk_o_0(cmos_xclk_o_0));
+        .cmos_xclk_o_0(cmos_xclk_o_0),
+        .sw1(sw1));
 endmodule
