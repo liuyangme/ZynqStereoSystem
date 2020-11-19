@@ -1996,3 +1996,4 @@ con
 ----------------End of Script----------------
 
 16:28:38 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+19:51:56 INFO  : Disconnected from the channel tcfchan#7.

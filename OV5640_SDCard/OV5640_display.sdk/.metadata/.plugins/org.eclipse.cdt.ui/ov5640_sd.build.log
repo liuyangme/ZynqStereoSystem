@@ -1,8 +1,8 @@
-16:28:24 **** Incremental Build of configuration Debug for project ov5640_sd ****
+19:00:02 **** Incremental Build of configuration Debug for project ov5640_sd ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
 
-16:28:25 Build Finished (took 563ms)
+19:00:03 Build Finished (took 920ms)
 
