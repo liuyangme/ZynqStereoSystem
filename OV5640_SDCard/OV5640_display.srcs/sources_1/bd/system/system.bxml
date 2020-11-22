@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="system" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1605492354"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1605492354"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1605492354"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1605492354"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1606034465"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1606034465"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1606034465"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1606034465"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\system_HDMI_TX_0_0\system_HDMI_TX_0_0.xci" Type="IP">
         <Instance HierarchyPath="HDMI_TX_0"/>
@@ -185,6 +185,14 @@
       </File>
       <File Name="ip\system_system_ila_3_0\system_system_ila_3_0.xci" Type="IP">
         <Instance HierarchyPath="system_ila_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\system_util_vector_logic_2_0\system_util_vector_logic_2_0.xci" Type="IP">
+        <Instance HierarchyPath="util_vector_logic_2"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

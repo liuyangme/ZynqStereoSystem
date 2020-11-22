@@ -1,3 +1,6 @@
+#####################################################################
+# Camera
+#####################################################################
 # "CMOS_SCL"
 set_property PACKAGE_PIN L14 [get_ports IIC_0_0_scl_io]
 set_property IOSTANDARD LVCMOS33 [get_ports IIC_0_0_scl_io]
@@ -46,6 +49,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {cmos_data_i_0[7]}]
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets cmos_pclk_i_0_IBUF]
 
 create_clock -period 10.000 -name cmos_xclk_o_0 [get_ports cmos_xclk_o_0]
+set_property SLEW FAST [get_ports cmos_xclk_o_0]
 
 #####################################################################
 # HDMI
@@ -60,18 +64,15 @@ set_property PACKAGE_PIN L19 [get_ports HDMI_D0_P_0]
 set_property PACKAGE_PIN M17 [get_ports HDMI_D1_P_0]
 set_property PACKAGE_PIN L16 [get_ports HDMI_D2_P_0]
 
-
-
-
-#set_property SEVERITY {Warning} [get_drc_checks NSTD-1]
-#set_property SEVERITY {Warning} [get_drc_checks UCIO-1]
-
-set_property SLEW FAST [get_ports cmos_xclk_o_0]
-
-set_property PACKAGE_PIN M14 [get_ports {sw1[0]}]
+#####################################################################
+# PL Interrupt
+#####################################################################
+set_property PACKAGE_PIN M15 [get_ports {sw1[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {sw1[0]}]
-set_property PACKAGE_PIN N15 [get_ports {GPIO_0_0_tri_io[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_0_0_tri_io[0]}]
+
+#####################################################################
+# Constraints
+#####################################################################
 set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
 set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
 set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]

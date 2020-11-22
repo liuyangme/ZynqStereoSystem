@@ -177,6 +177,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_d548 || ORIG
 # IP: bd/system/ip/system_system_ila_3_0/bd_0/ip/ip_0/bd_d548_ila_lib_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_d548_ila_lib_0 || ORIG_REF_NAME==bd_d548_ila_lib_0} -quiet] -quiet
 
+# IP: bd/system/ip/system_util_vector_logic_2_0/system_util_vector_logic_2_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_util_vector_logic_2_0 || ORIG_REF_NAME==system_util_vector_logic_2_0} -quiet] -quiet
+
 # IP: bd/system/ip/system_auto_pc_2/system_auto_pc_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_2 || ORIG_REF_NAME==system_auto_pc_2} -quiet] -quiet
 

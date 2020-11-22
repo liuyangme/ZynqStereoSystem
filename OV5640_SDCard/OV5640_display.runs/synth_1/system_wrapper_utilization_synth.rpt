@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Nov 16 10:38:20 2020
+| Date         : Sun Nov 22 17:06:31 2020
 | Host         : LiuYang-Laptop running 64-bit major release  (build 9200)
 | Command      : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
 | Design       : system_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 15974 |     0 |     53200 | 30.03 |
-|   LUT as Logic             | 13218 |     0 |     53200 | 24.85 |
+| Slice LUTs*                | 16038 |     0 |     53200 | 30.15 |
+|   LUT as Logic             | 13282 |     0 |     53200 | 24.97 |
 |   LUT as Memory            |  2756 |     0 |     17400 | 15.84 |
 |     LUT as Distributed RAM |    22 |     0 |           |       |
 |     LUT as Shift Register  |  2734 |     0 |           |       |
@@ -94,7 +94,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+--------+
 |          Site Type          | Used | Fixed | Available |  Util% |
 +-----------------------------+------+-------+-----------+--------+
-| Bonded IOB                  |   24 |     0 |       125 |  19.20 |
+| Bonded IOB                  |   23 |     0 |       125 |  18.40 |
 | Bonded IPADs                |    0 |     0 |         2 |   0.00 |
 | Bonded IOPADs               |  130 |     0 |       130 | 100.00 |
 | PHY_CONTROL                 |    0 |     0 |         4 |   0.00 |
@@ -159,7 +159,7 @@ Table of Contents
 | LUT3       |  2196 |                  LUT |
 | LUT5       |  1671 |                  LUT |
 | SRLC32E    |  1267 |   Distributed Memory |
-| LUT1       |  1016 |                  LUT |
+| LUT1       |  1080 |                  LUT |
 | CARRY4     |   735 |           CarryLogic |
 | MUXF7      |   411 |                MuxFx |
 | FDSE       |   322 |         Flop & Latch |
@@ -169,7 +169,7 @@ Table of Contents
 | RAMB36E1   |    41 |         Block Memory |
 | FDPE       |    34 |         Flop & Latch |
 | RAMD32     |    32 |   Distributed Memory |
-| IBUF       |    15 |                   IO |
+| IBUF       |    14 |                   IO |
 | RAMS32     |    10 |   Distributed Memory |
 | SRLC16E    |     8 |   Distributed Memory |
 | OSERDESE2  |     8 |                   IO |
@@ -177,7 +177,7 @@ Table of Contents
 | RAMB18E1   |     7 |         Block Memory |
 | BUFG       |     6 |                Clock |
 | INV        |     4 |                  LUT |
-| OBUFT      |     3 |                   IO |
+| OBUFT      |     2 |                   IO |
 | PS7        |     1 | Specialized Resource |
 | OBUF       |     1 |                   IO |
 | MMCME2_ADV |     1 |                Clock |

@@ -56,9 +56,9 @@
       bit  ENET1_MDIO_I;
       bit  ENET1_EXT_INTIN;
       bit  [7 : 0] ENET1_GMII_RXD;
-      bit  [0 : 0] GPIO_I;
-      bit  [0 : 0] GPIO_O;
-      bit  [0 : 0] GPIO_T;
+      bit  [63 : 0] GPIO_I;
+      bit  [63 : 0] GPIO_O;
+      bit  [63 : 0] GPIO_T;
       bit  I2C0_SDA_I;
       bit  I2C0_SDA_O;
       bit  I2C0_SDA_T;
@@ -677,9 +677,6 @@
 
 //MODULE DECLARATION
  module system_processing_system7_0_0 (
-  GPIO_I,
-  GPIO_O,
-  GPIO_T,
   I2C0_SDA_I,
   I2C0_SDA_O,
   I2C0_SDA_T,
@@ -770,6 +767,7 @@
   S_AXI_HP0_WID,
   S_AXI_HP0_WDATA,
   S_AXI_HP0_WSTRB,
+  IRQ_P2F_GPIO,
   IRQ_F2P,
   FCLK_CLK0,
   FCLK_CLK1,
@@ -808,7 +806,7 @@
       parameter USE_TRACE_DATA_EDGE_DETECTOR = 0;
       parameter C_TRACE_PIPELINE_WIDTH = 8;
       parameter C_TRACE_BUFFER_CLOCK_DELAY = 12;
-      parameter C_EMIO_GPIO_WIDTH = 1;
+      parameter C_EMIO_GPIO_WIDTH = 64;
       parameter C_INCLUDE_ACP_TRANS_CHECK = 0;
       parameter C_USE_DEFAULT_ACP_USER_VAL = 0;
       parameter C_S_AXI_ACP_ARUSER_VAL = 31;
@@ -858,9 +856,6 @@
 
 //INPUT AND OUTPUT PORTS
 
-      input  [0 : 0] GPIO_I;
-      output  [0 : 0] GPIO_O;
-      output  [0 : 0] GPIO_T;
       input  I2C0_SDA_I;
       output  I2C0_SDA_O;
       output  I2C0_SDA_T;
@@ -951,6 +946,7 @@
       input  [5 : 0] S_AXI_HP0_WID;
       input  [63 : 0] S_AXI_HP0_WDATA;
       input  [7 : 0] S_AXI_HP0_WSTRB;
+      output  IRQ_P2F_GPIO;
       input  [2 : 0] IRQ_F2P;
       output  FCLK_CLK0;
       output  FCLK_CLK1;
@@ -979,8 +975,6 @@
 
 //REG DECLARATIONS
 
-      reg [0 : 0] GPIO_O;
-      reg [0 : 0] GPIO_T;
       reg I2C0_SDA_O;
       reg I2C0_SDA_T;
       reg I2C0_SCL_O;
@@ -1027,6 +1021,7 @@
       reg [7 : 0] S_AXI_HP0_WCOUNT;
       reg [2 : 0] S_AXI_HP0_RACOUNT;
       reg [5 : 0] S_AXI_HP0_WACOUNT;
+      reg IRQ_P2F_GPIO;
       reg FCLK_CLK0;
       reg FCLK_CLK1;
       reg FCLK_RESET0_N;

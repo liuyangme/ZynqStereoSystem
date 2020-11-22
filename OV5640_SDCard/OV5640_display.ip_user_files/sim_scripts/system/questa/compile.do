@@ -284,6 +284,7 @@ vlog -work xil_defaultlib -64 "+incdir+../../../../OV5640_display.srcs/sources_1
 "../../../bd/system/ip/system_system_ila_3_0/bd_0/ip/ip_0/sim/bd_d548_ila_lib_0.v" \
 "../../../bd/system/ip/system_system_ila_3_0/bd_0/sim/bd_d548.v" \
 "../../../bd/system/ip/system_system_ila_3_0/sim/system_system_ila_3_0.v" \
+"../../../bd/system/ip/system_util_vector_logic_2_0/sim/system_util_vector_logic_2_0.v" \
 
 vlog -work axi_protocol_converter_v2_1_18 -64 "+incdir+../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/70cf/hdl" "+incdir+../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/85a3" "+incdir+../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/58e2/hdl" "+incdir+../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/8713/hdl" "+incdir+../../../../OV5640_display.srcs/sources_1/bd/system/ip/system_processing_system7_0_0" "+incdir+../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/1b7e/hdl/verilog" "+incdir+../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/122e/hdl/verilog" "+incdir+../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/7d3c/hdl/verilog" "+incdir+../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/c45e/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
 "../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

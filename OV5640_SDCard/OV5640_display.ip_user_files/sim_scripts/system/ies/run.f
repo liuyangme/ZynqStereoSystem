@@ -215,6 +215,7 @@
   "../../../bd/system/ip/system_system_ila_3_0/bd_0/ip/ip_0/sim/bd_d548_ila_lib_0.v" \
   "../../../bd/system/ip/system_system_ila_3_0/bd_0/sim/bd_d548.v" \
   "../../../bd/system/ip/system_system_ila_3_0/sim/system_system_ila_3_0.v" \
+  "../../../bd/system/ip/system_util_vector_logic_2_0/sim/system_util_vector_logic_2_0.v" \
 -endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_18 \
   "../../../../OV5640_display.srcs/sources_1/bd/system/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Nov 16 10:10:43 2020
-# Process ID: 17944
+# Start of session at: Sun Nov 22 16:42:54 2020
+# Process ID: 15516
 # Current directory: E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1
 # Command line: vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
 # Log file: E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/system_wrapper.vds
@@ -14,18 +14,18 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Repository/MyIPcoreLib/FPGA-IPcore-Library'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
 CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'Arm.com:user:DAPLink_to_Arty_shield:1.0'. The one found in IP location 'e:/Repository/MyIPcoreLib/FPGA-IPcore-Library/CortexM1/AT472-BU-98000-r0p1-00rel0/vivado/Arm_ipi_repository/DAPLink_to_Arty_shield' will take precedence over the same IP in location e:/Repository/MyIPcoreLib/FPGA-IPcore-Library/CortexM3/AT426-BU-98000-r0p1-00rel0/vivado/Arm_ipi_repository/DAPLink_to_Arty_shield
-update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 351.383 ; gain = 32.340
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 350.586 ; gain = 31.809
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.cache/ip 
-add_files: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 484.508 ; gain = 133.125
+add_files: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 484.734 ; gain = 134.148
 Command: synth_design -top system_wrapper -part xc7z020clg400-2
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14832 
+INFO: Helper process launched with PID 11336 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 638.633 ; gain = 152.402
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 638.395 ; gain = 151.926
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'system_wrapper' [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/hdl/system_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
@@ -134,7 +134,7 @@ INFO: [Synth 8-6157] synthesizing module 'counter_reset' [e:/Project/Personal/Po
 INFO: [Synth 8-6155] done synthesizing module 'counter_reset' (8#1) [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ipshared/8b55/src/counter_reset.v:10]
 INFO: [Synth 8-6155] done synthesizing module 'OV5640_Sensor' (9#1) [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ipshared/8b55/src/OV5640_Sensor.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'system_OV5640_Sensor_0_0' (10#1) [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_OV5640_Sensor_0_0/synth/system_OV5640_Sensor_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'system_axi_interconnect_0_0' [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2961]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_interconnect_0_0' [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2950]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_LCIC31' [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:417]
 INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_0' [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_auto_pc_0/synth/system_auto_pc_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_18_axi_protocol_converter' [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
@@ -1686,9 +1686,9 @@ WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[3].gen_mi_wri
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_crossbar' (49#1) [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2239]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_axi_crossbar' (50#1) [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 INFO: [Synth 8-6155] done synthesizing module 'system_xbar_1' (51#1) [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_xbar_1/synth/system_xbar_1.v:59]
-INFO: [Synth 8-6155] done synthesizing module 'system_axi_interconnect_0_0' (52#1) [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2961]
-WARNING: [Synth 8-350] instance 'axi_interconnect_0' of module 'system_axi_interconnect_0_0' requires 121 connections, but only 93 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2353]
-INFO: [Synth 8-6157] synthesizing module 'system_axi_interconnect_1_0' [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:3968]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_interconnect_0_0' (52#1) [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2950]
+WARNING: [Synth 8-350] instance 'axi_interconnect_0' of module 'system_axi_interconnect_0_0' requires 121 connections, but only 93 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2342]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_interconnect_1_0' [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:3957]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_BJFRAJ' [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:12]
 INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_3' [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_auto_pc_3/synth/system_auto_pc_3.v:58]
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_18_axi_protocol_converter__parameterized1' [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ipshared/7a04/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
@@ -2542,8 +2542,8 @@ INFO: [Synth 8-155] case statement is not full and has no default [e:/Project/Pe
 	Parameter C_DATA_WIDTH bound to: 2 - type: integer 
 WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[0].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
 WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[1].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
-WARNING: [Synth 8-689] width (2) of port connection 's_axi_rresp' does not match port width (4) of module 'system_xbar_0' [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:4609]
-WARNING: [Synth 8-350] instance 'xbar' of module 'system_xbar_0' requires 78 connections, but only 76 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:4539]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_rresp' does not match port width (4) of module 'system_xbar_0' [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:4598]
+WARNING: [Synth 8-350] instance 'xbar' of module 'system_xbar_0' requires 78 connections, but only 76 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:4528]
 INFO: [Synth 8-638] synthesizing module 'system_axi_vdma_0_0' [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/synth/system_axi_vdma_0_0.vhd:105]
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
@@ -4297,7 +4297,7 @@ INFO: [Synth 8-256] done synthesizing module 'axi_vdma' (145#1) [e:/Project/Pers
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-256] done synthesizing module 'system_axi_vdma_0_0' (146#1) [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/synth/system_axi_vdma_0_0.vhd:105]
-WARNING: [Synth 8-350] instance 'axi_vdma_0' of module 'system_axi_vdma_0_0' requires 41 connections, but only 40 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2530]
+WARNING: [Synth 8-350] instance 'axi_vdma_0' of module 'system_axi_vdma_0_0' requires 41 connections, but only 40 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2519]
 INFO: [Synth 8-638] synthesizing module 'system_axi_vdma_1_0' [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_axi_vdma_1_0/synth/system_axi_vdma_1_0.vhd:108]
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
@@ -5854,7 +5854,7 @@ INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM g
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-256] done synthesizing module 'system_axi_vdma_1_0' (165#1) [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_axi_vdma_1_0/synth/system_axi_vdma_1_0.vhd:108]
-WARNING: [Synth 8-350] instance 'axi_vdma_1' of module 'system_axi_vdma_1_0' requires 44 connections, but only 43 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2571]
+WARNING: [Synth 8-350] instance 'axi_vdma_1' of module 'system_axi_vdma_1_0' requires 44 connections, but only 43 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2560]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
@@ -6087,7 +6087,7 @@ INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (183#1) [e:/Project/Perso
 INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (184#1) [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (185#1) [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 INFO: [Synth 8-256] done synthesizing module 'system_proc_sys_reset_0_0' (186#1) [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0_0/synth/system_proc_sys_reset_0_0.vhd:74]
-WARNING: [Synth 8-350] instance 'proc_sys_reset_0' of module 'system_proc_sys_reset_0_0' requires 10 connections, but only 7 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2634]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_0' of module 'system_proc_sys_reset_0_0' requires 10 connections, but only 7 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2623]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
 	Parameter C_S_AXI_ACP_ARUSER_VAL bound to: 31 - type: integer 
 	Parameter C_S_AXI_ACP_AWUSER_VAL bound to: 31 - type: integer 
@@ -6114,7 +6114,7 @@ WARNING: [Synth 8-350] instance 'proc_sys_reset_0' of module 'system_proc_sys_re
 	Parameter C_FCLK_CLK1_BUF bound to: TRUE - type: string 
 	Parameter C_FCLK_CLK2_BUF bound to: FALSE - type: string 
 	Parameter C_FCLK_CLK3_BUF bound to: FALSE - type: string 
-	Parameter C_EMIO_GPIO_WIDTH bound to: 1 - type: integer 
+	Parameter C_EMIO_GPIO_WIDTH bound to: 64 - type: integer 
 	Parameter C_INCLUDE_TRACE_BUFFER bound to: 0 - type: integer 
 	Parameter C_TRACE_BUFFER_FIFO_SIZE bound to: 128 - type: integer 
 	Parameter C_TRACE_BUFFER_CLOCK_DELAY bound to: 12 - type: integer 
@@ -6144,11 +6144,11 @@ WARNING: [Synth 8-350] instance 'proc_sys_reset_0' of module 'system_proc_sys_re
 	Parameter C_USE_S_AXI_ACP bound to: 0 - type: integer 
 	Parameter C_GP0_EN_MODIFIABLE_TXN bound to: 1 - type: integer 
 	Parameter C_GP1_EN_MODIFIABLE_TXN bound to: 1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1347]
 INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1348]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1349]
-WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:487]
-WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'system_processing_system7_0_0' requires 118 connections, but only 114 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2642]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2757]
+WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:482]
+WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'system_processing_system7_0_0' requires 116 connections, but only 111 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2631]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2743]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_0_0/synth/system_system_ila_0_0.v:617]
 	Parameter C_NUM_MONITOR_SLOTS bound to: 8 - type: integer 
 	Parameter C_MUX_LEVEL bound to: 1 - type: integer 
@@ -7688,17 +7688,17 @@ INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance '
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'slot_7_b'. This will prevent further optimization [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_0_0/bd_0/synth/bd_d5b8.v:1158]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'slot_7_ar'. This will prevent further optimization [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_0_0/bd_0/synth/bd_d5b8.v:1150]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'slot_7_r'. This will prevent further optimization [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_0_0/bd_0/synth/bd_d5b8.v:1162]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2883]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2869]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_1_0/synth/system_system_ila_1_0.v:226]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_1_0/bd_0/synth/bd_15e9.v:21]
 WARNING: [Synth 8-350] instance 'inst' of module 'ila_v6_2_8_ila' requires 1033 connections, but only 1027 given [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_1_0/bd_0/ip/ip_0/synth/bd_15e9_ila_lib_0.v:3209]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_lib'. This will prevent further optimization [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_1_0/bd_0/synth/bd_15e9.v:21]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2886]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2872]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_2_0/synth/system_system_ila_2_0.v:226]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_2_0/bd_0/synth/bd_1519.v:21]
 WARNING: [Synth 8-350] instance 'inst' of module 'ila_v6_2_8_ila' requires 1033 connections, but only 1027 given [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_2_0/bd_0/ip/ip_0/synth/bd_1519_ila_lib_0.v:3209]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_lib'. This will prevent further optimization [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_2_0/bd_0/synth/bd_1519.v:21]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2889]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2875]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_3_0/synth/system_system_ila_3_0.v:226]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_3_0/bd_0/synth/bd_d548.v:21]
 WARNING: [Synth 8-350] instance 'inst' of module 'ila_v6_2_8_ila' requires 1033 connections, but only 1027 given [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_3_0/bd_0/ip/ip_0/synth/bd_d548_ila_lib_0.v:3209]
@@ -7955,7 +7955,7 @@ INFO: [Synth 8-155] case statement is not full and has no default [e:/Project/Pe
 	Parameter C_NATIVE_DATA_WIDTH bound to: 24 - type: integer 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-WARNING: [Synth 8-350] instance 'v_axi4s_vid_out_0' of module 'system_v_axi4s_vid_out_0_0' requires 31 connections, but only 23 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2898]
+WARNING: [Synth 8-350] instance 'v_axi4s_vid_out_0' of module 'system_v_axi4s_vid_out_0_0' requires 31 connections, but only 23 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2887]
 INFO: [Synth 8-638] synthesizing module 'system_v_tc_0_0' [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_v_tc_0_0/synth/system_v_tc_0_0.vhd:74]
 	Parameter C_HAS_AXI4_LITE bound to: 0 - type: integer 
 	Parameter C_HAS_INTC_IF bound to: 0 - type: integer 
@@ -8043,8 +8043,8 @@ INFO: [Synth 8-638] synthesizing module 'system_v_tc_0_0' [e:/Project/Personal/P
 	Parameter C_GEN_FIELDID_EN bound to: 0 - type: integer 
 	Parameter C_DET_FIELDID_EN bound to: 0 - type: integer 
 INFO: [Synth 8-3491] module 'v_tc' declared at 'e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ipshared/a92c/hdl/v_tc_v6_1_vh_rfs.vhd:7218' bound to instance 'U0' of component 'v_tc' [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_v_tc_0_0/synth/system_v_tc_0_0.vhd:234]
-INFO: [Synth 8-256] done synthesizing module 'system_v_tc_0_0' (295#1) [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_v_tc_0_0/synth/system_v_tc_0_0.vhd:74]
-WARNING: [Synth 8-350] instance 'v_tc_0' of module 'system_v_tc_0_0' requires 10 connections, but only 9 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2922]
+INFO: [Synth 8-256] done synthesizing module 'system_v_tc_0_0' (296#1) [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_v_tc_0_0/synth/system_v_tc_0_0.vhd:74]
+WARNING: [Synth 8-350] instance 'v_tc_0' of module 'system_v_tc_0_0' requires 10 connections, but only 9 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2911]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_PIXELS_PER_CLOCK bound to: 1 - type: integer 
 	Parameter C_COMPONENTS_PER_PIXEL bound to: 3 - type: integer 
@@ -8081,24 +8081,24 @@ INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM g
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-WARNING: [Synth 8-350] instance 'v_vid_in_axi4s_0' of module 'system_v_vid_in_axi4s_0_0' requires 28 connections, but only 19 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2932]
+WARNING: [Synth 8-350] instance 'v_vid_in_axi4s_0' of module 'system_v_vid_in_axi4s_0_0' requires 28 connections, but only 19 given [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2921]
 	Parameter CONST_VAL bound to: 1 - type: integer 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'OV5640_Sensor_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2342]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'v_vid_in_axi4s_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2932]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'system_ila_1'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2883]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_interconnect_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2353]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'system_ila_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2757]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_vdma_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2530]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_vdma_1'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2571]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_interconnect_1'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2447]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'processing_system7_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2642]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'v_axi4s_vid_out_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2898]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axis_subset_converter_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2615]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'system_ila_2'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2886]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'HDMI_TX_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2325]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlconcat_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2952]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'system_ila_3'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2889]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'OV5640_Sensor_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2331]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'v_vid_in_axi4s_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2921]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'system_ila_1'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2869]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_interconnect_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2342]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'system_ila_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2743]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_vdma_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2519]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_vdma_1'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2560]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_interconnect_1'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2436]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'processing_system7_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2631]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'v_axi4s_vid_out_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2887]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axis_subset_converter_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2604]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'system_ila_2'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2872]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'HDMI_TX_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2314]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlconcat_0'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2941]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'system_ila_3'. This will prevent further optimization [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/synth/system.v:2875]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
@@ -8215,7 +8215,7 @@ WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1fp_start[
 WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v1fp_start[3]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:17:51 ; elapsed = 00:19:25 . Memory (MB): peak = 1553.168 ; gain = 1066.938
+Finished RTL Elaboration : Time (s): cpu = 00:16:25 ; elapsed = 00:16:53 . Memory (MB): peak = 1548.363 ; gain = 1061.895
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -8329,12 +8329,12 @@ INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instan
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:17:57 ; elapsed = 00:19:33 . Memory (MB): peak = 1553.168 ; gain = 1066.938
+Finished Handling Custom Attributes : Time (s): cpu = 00:16:32 ; elapsed = 00:17:00 . Memory (MB): peak = 1548.363 ; gain = 1061.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:17:57 ; elapsed = 00:19:33 . Memory (MB): peak = 1553.168 ; gain = 1066.938
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:16:32 ; elapsed = 00:17:00 . Memory (MB): peak = 1548.363 ; gain = 1061.895
 ---------------------------------------------------------------------------------
-INFO: [Netlist 29-17] Analyzing 1785 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1784 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Device 21-403] Loading part xc7z020clg400-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -8368,10 +8368,10 @@ Finished Parsing XDC File [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-
 Parsing XDC File [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_3_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'system_i/system_ila_3/inst/ila_lib/inst'
 Finished Parsing XDC File [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_system_ila_3_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'system_i/system_ila_3/inst/ila_lib/inst'
 INFO: [Timing 38-2] Deriving generated clocks
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1698.098 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1698.461 ; gain = 0.000
 Parsing XDC File [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/constrs_1/new/system_pin.xdc]
-WARNING: [Vivado 12-507] No nets matched 'cmos_pclk_i_0_IBUF'. [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/constrs_1/new/system_pin.xdc:46]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/constrs_1/new/system_pin.xdc:46]
+WARNING: [Vivado 12-507] No nets matched 'cmos_pclk_i_0_IBUF'. [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/constrs_1/new/system_pin.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/constrs_1/new/system_pin.xdc:49]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/constrs_1/new/system_pin.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/constrs_1/new/system_pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
@@ -8380,7 +8380,7 @@ Parsing XDC File [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-Sy
 Finished Parsing XDC File [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1698.805 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1699.172 ; gain = 0.000
 Parsing XDC File [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'system_i/v_vid_in_axi4s_0/inst'
 Finished Parsing XDC File [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'system_i/v_vid_in_axi4s_0/inst'
 Parsing XDC File [e:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'system_i/v_axi4s_vid_out_0/inst'
@@ -8453,23 +8453,23 @@ Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst
 Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_i/axi_vdma_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1698.805 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1699.172 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1698.848 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1699.230 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1377 instances were transformed.
+  A total of 1376 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 968 instances
   CFGLUT5 => SRLC32E: 131 instances
   FDR => FDRE: 270 instances
-  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
   OBUFDS => OBUFDS: 4 instances
   SRL16 => SRL16E: 1 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 1698.848 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1698.848 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1699.230 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1699.359 ; gain = 0.129
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:19:21 ; elapsed = 00:21:01 . Memory (MB): peak = 1698.848 ; gain = 1212.617
+Finished Constraint Validation : Time (s): cpu = 00:17:46 ; elapsed = 00:18:17 . Memory (MB): peak = 1699.359 ; gain = 1212.891
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
@@ -8477,23 +8477,23 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:19:21 ; elapsed = 00:21:01 . Memory (MB): peak = 1698.848 ; gain = 1212.617
+Finished Loading Part and Timing Information : Time (s): cpu = 00:17:46 ; elapsed = 00:18:17 . Memory (MB): peak = 1699.359 ; gain = 1212.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for system_i/processing_system7_0/inst. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 193).
-Applied set_property DONT_TOUCH = true for system_i/v_vid_in_axi4s_0/inst. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 196).
-Applied set_property DONT_TOUCH = true for system_i/v_axi4s_vid_out_0/inst. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 199).
-Applied set_property DONT_TOUCH = true for system_i/clk_wiz_0/inst. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 202).
-Applied set_property DONT_TOUCH = true for system_i/axi_vdma_0/U0. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 210).
-Applied set_property DONT_TOUCH = true for system_i/proc_sys_reset_0/U0. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 218).
-Applied set_property DONT_TOUCH = true for system_i/v_tc_0/U0. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 224).
-Applied set_property DONT_TOUCH = true for system_i/axi_vdma_1/U0. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 231).
-Applied set_property DONT_TOUCH = true for system_i/system_ila_0/inst/ila_lib/inst. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 239).
-Applied set_property DONT_TOUCH = true for system_i/system_ila_1/inst/ila_lib/inst. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 251).
-Applied set_property DONT_TOUCH = true for system_i/system_ila_2/inst/ila_lib/inst. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 263).
-Applied set_property DONT_TOUCH = true for system_i/system_ila_3/inst/ila_lib/inst. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 275).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0/inst. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 196).
+Applied set_property DONT_TOUCH = true for system_i/v_vid_in_axi4s_0/inst. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 199).
+Applied set_property DONT_TOUCH = true for system_i/v_axi4s_vid_out_0/inst. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 202).
+Applied set_property DONT_TOUCH = true for system_i/clk_wiz_0/inst. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 205).
+Applied set_property DONT_TOUCH = true for system_i/axi_vdma_0/U0. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 213).
+Applied set_property DONT_TOUCH = true for system_i/proc_sys_reset_0/U0. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 221).
+Applied set_property DONT_TOUCH = true for system_i/v_tc_0/U0. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 227).
+Applied set_property DONT_TOUCH = true for system_i/axi_vdma_1/U0. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 234).
+Applied set_property DONT_TOUCH = true for system_i/system_ila_0/inst/ila_lib/inst. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 242).
+Applied set_property DONT_TOUCH = true for system_i/system_ila_1/inst/ila_lib/inst. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 254).
+Applied set_property DONT_TOUCH = true for system_i/system_ila_2/inst/ila_lib/inst. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 266).
+Applied set_property DONT_TOUCH = true for system_i/system_ila_3/inst/ila_lib/inst. (constraint file  E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/dont_touch.xdc, line 278).
 Applied set_property DONT_TOUCH = true for system_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/HDMI_TX_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/OV5640_Sensor_0. (constraint file  auto generated constraint, line ).
@@ -8552,6 +8552,7 @@ Applied set_property DONT_TOUCH = true for system_i/system_ila_2/inst/ila_lib. (
 Applied set_property DONT_TOUCH = true for system_i/system_ila_3. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/system_ila_3/inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/system_ila_3/inst/ila_lib. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/util_vector_logic_2. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/axi_interconnect_0/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/axi_interconnect_0/m01_couplers/auto_pc. (constraint file  auto generated constraint, line ).
@@ -8583,7 +8584,7 @@ Applied set_property DONT_TOUCH = true for system_i/axi_vdma_1/U0/\GEN_SPRT_FOR_
 Applied set_property DONT_TOUCH = true for system_i/axi_vdma_1/U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /I_DATA_FIFO/\BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/axi_vdma_1/U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /I_XD_FIFO/\NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:19:25 ; elapsed = 00:21:05 . Memory (MB): peak = 1698.848 ; gain = 1212.617
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:17:49 ; elapsed = 00:18:20 . Memory (MB): peak = 1699.359 ; gain = 1212.891
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "control_token" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_18_b2s_rd_cmd_fsm'
@@ -10295,7 +10296,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized4'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:20:12 ; elapsed = 00:22:06 . Memory (MB): peak = 1698.848 ; gain = 1212.617
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:18:28 ; elapsed = 00:19:03 . Memory (MB): peak = 1699.359 ; gain = 1212.891
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -10311,10 +10312,10 @@ Report RTL Partitions:
 |5     |ila_v6_2_8_ila_core__GB1        |           1|     15304|
 |6     |ila_v6_2_8_ila__GC0             |           1|         6|
 |7     |bd_d5b8__GC0                    |           1|      1106|
-|8     |system__GCB0                    |           1|     30040|
+|8     |system__GCB0                    |           1|     30103|
 |9     |system__GCB1                    |           1|     10371|
 |10    |system__GCB2                    |           1|     13455|
-|11    |system__GCB3                    |           1|     14491|
+|11    |system__GCB3                    |           1|     14492|
 +------+--------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -20602,7 +20603,7 @@ INFO: [Synth 8-5546] ROM "ila_core_inst/xsdb_memory_read_inst/curr_read_block" w
 INFO: [Synth 8-5546] ROM "ila_core_inst/xsdb_memory_read_inst/read_en" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ila_core_inst/xsdb_memory_read_inst/read_addr" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:21:28 ; elapsed = 00:24:01 . Memory (MB): peak = 1698.848 ; gain = 1212.617
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:19:32 ; elapsed = 00:20:36 . Memory (MB): peak = 1699.359 ; gain = 1212.891
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -20650,10 +20651,10 @@ Report RTL Partitions:
 |5     |ila_v6_2_8_ila_core__GB1        |           1|     15226|
 |6     |ila_v6_2_8_ila__GC0             |           1|         6|
 |7     |bd_d5b8__GC0                    |           1|       222|
-|8     |system__GCB0                    |           1|     20549|
+|8     |system__GCB0                    |           1|     20612|
 |9     |system__GCB1                    |           1|      6558|
 |10    |system__GCB2                    |           1|      7595|
-|11    |system__GCB3                    |           1|      7178|
+|11    |system__GCB3                    |           1|      7179|
 |12    |SerializerN_1__GC0__1           |           1|         3|
 +------+--------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -20662,7 +20663,7 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/clk_wiz_0/inst/clk_in1' to pin 'processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:22:13 ; elapsed = 00:24:49 . Memory (MB): peak = 1698.848 ; gain = 1212.617
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:20:06 ; elapsed = 00:21:12 . Memory (MB): peak = 1699.359 ; gain = 1212.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -20670,7 +20671,7 @@ Start Timing Optimization
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:22:25 ; elapsed = 00:25:02 . Memory (MB): peak = 1698.848 ; gain = 1212.617
+Finished Timing Optimization : Time (s): cpu = 00:20:16 ; elapsed = 00:21:23 . Memory (MB): peak = 1699.359 ; gain = 1212.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -20714,17 +20715,17 @@ Report RTL Partitions:
 |5     |ila_v6_2_8_ila_core__GB1        |           1|     15226|
 |6     |ila_v6_2_8_ila__GC0             |           1|         6|
 |7     |bd_d5b8__GC0                    |           1|       222|
-|8     |system__GCB0                    |           1|     20549|
+|8     |system__GCB0                    |           1|     20612|
 |9     |system__GCB1                    |           1|      6558|
 |10    |SerializerN_1__GC0__1           |           1|         3|
-|11    |system_GT0                      |           1|     14773|
+|11    |system_GT0                      |           1|     14774|
 +------+--------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:22:59 ; elapsed = 00:25:37 . Memory (MB): peak = 1698.848 ; gain = 1212.617
+Finished Technology Mapping : Time (s): cpu = 00:20:45 ; elapsed = 00:21:53 . Memory (MB): peak = 1699.359 ; gain = 1212.891
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -20752,7 +20753,7 @@ INFO: [Synth 8-5365] Flop GEN_SPRT_FOR_MM2S.ADDR32.I_MM2S_DMA_MNGR/VIDEO_GENLOCK
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:23:04 ; elapsed = 00:25:42 . Memory (MB): peak = 1698.848 ; gain = 1212.617
+Finished IO Insertion : Time (s): cpu = 00:20:49 ; elapsed = 00:21:57 . Memory (MB): peak = 1699.359 ; gain = 1212.891
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -20765,7 +20766,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:23:04 ; elapsed = 00:25:43 . Memory (MB): peak = 1698.848 ; gain = 1212.617
+Finished Renaming Generated Instances : Time (s): cpu = 00:20:50 ; elapsed = 00:21:57 . Memory (MB): peak = 1699.359 ; gain = 1212.891
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -20777,25 +20778,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:23:12 ; elapsed = 00:25:51 . Memory (MB): peak = 1698.848 ; gain = 1212.617
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:20:56 ; elapsed = 00:22:04 . Memory (MB): peak = 1699.359 ; gain = 1212.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:23:12 ; elapsed = 00:25:51 . Memory (MB): peak = 1698.848 ; gain = 1212.617
+Finished Renaming Generated Ports : Time (s): cpu = 00:20:56 ; elapsed = 00:22:04 . Memory (MB): peak = 1699.359 ; gain = 1212.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:23:14 ; elapsed = 00:25:53 . Memory (MB): peak = 1698.848 ; gain = 1212.617
+Finished Handling Custom Attributes : Time (s): cpu = 00:20:58 ; elapsed = 00:22:06 . Memory (MB): peak = 1699.359 ; gain = 1212.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:23:14 ; elapsed = 00:25:53 . Memory (MB): peak = 1698.848 ; gain = 1212.617
+Finished Renaming Generated Nets : Time (s): cpu = 00:20:58 ; elapsed = 00:22:06 . Memory (MB): peak = 1699.359 ; gain = 1212.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -20861,7 +20862,7 @@ Report Cell Usage:
 |2     |BUFG        |     6|
 |3     |CARRY4      |   735|
 |4     |CFGLUT5     |  1099|
-|5     |LUT1        |  1016|
+|5     |LUT1        |  1080|
 |6     |LUT2        |  2401|
 |7     |LUT3        |  2196|
 |8     |LUT4        |  2404|
@@ -20893,7 +20894,7 @@ Report Cell Usage:
 |34    |FDRE        | 22335|
 |35    |FDSE        |   322|
 |36    |IBUF        |    13|
-|37    |IOBUF       |     3|
+|37    |IOBUF       |     2|
 |38    |OBUF        |     1|
 |39    |OBUFDS      |     4|
 +------+------------+------+
@@ -20902,8 +20903,8 @@ Report Instance Areas:
 +------+--------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------+
 |      |Instance                                                                                                |Module                                                                           |Cells |
 +------+--------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------+
-|1     |top                                                                                                     |                                                                                 | 42921|
-|2     |  system_i                                                                                              |system                                                                           | 42904|
+|1     |top                                                                                                     |                                                                                 | 42984|
+|2     |  system_i                                                                                              |system                                                                           | 42968|
 |3     |    HDMI_TX_0                                                                                           |system_HDMI_TX_0_0                                                               |   346|
 |4     |      U0                                                                                                |HDMI_TX                                                                          |   346|
 |5     |        Inst_DVITransmitter                                                                             |DVITransmitter                                                                   |   346|
@@ -22080,8 +22081,8 @@ Report Instance Areas:
 |1176  |          \ACTIVE_LOW_EXT.ACT_LO_EXT                                                                    |cdc_sync__parameterized3_265                                                     |     6|
 |1177  |        SEQ                                                                                             |sequence_psr                                                                     |    38|
 |1178  |          SEQ_COUNTER                                                                                   |upcnt_n                                                                          |    13|
-|1179  |    processing_system7_0                                                                                |system_processing_system7_0_0                                                    |   182|
-|1180  |      inst                                                                                              |processing_system7_v5_5_processing_system7                                       |   182|
+|1179  |    processing_system7_0                                                                                |system_processing_system7_0_0                                                    |   245|
+|1180  |      inst                                                                                              |processing_system7_v5_5_processing_system7                                       |   245|
 |1181  |    xlconcat_0                                                                                          |system_xlconcat_0_0                                                              |     0|
 |1182  |    axi_vdma_0                                                                                          |system_axi_vdma_0_0                                                              |  3963|
 |1183  |      U0                                                                                                |axi_vdma                                                                         |  3963|
@@ -22471,122 +22472,123 @@ Report Instance Areas:
 |1567  |      inst                                                                                              |OV5640_Sensor                                                                    |   131|
 |1568  |        cmos_decoder_u0                                                                                 |cmos_decoder                                                                     |    88|
 |1569  |        nolabel_line72                                                                                  |counter_reset                                                                    |    33|
-|1570  |    util_vector_logic_1                                                                                 |system_util_vector_logic_1_0                                                     |     1|
-|1571  |    system_ila_3                                                                                        |system_system_ila_3_0                                                            |  1732|
-|1572  |      inst                                                                                              |bd_d548                                                                          |  1732|
-|1573  |        ila_lib                                                                                         |bd_d548_ila_lib_0                                                                |  1732|
-|1574  |          inst                                                                                          |ila_v6_2_8_ila__parameterized1                                                   |  1732|
-|1575  |            ila_core_inst                                                                               |ila_v6_2_8_ila_core__parameterized1                                              |  1725|
-|1576  |              ila_trace_memory_inst                                                                     |ila_v6_2_8_ila_trace_memory__parameterized1                                      |     1|
-|1577  |                \SUBCORE_RAM_BLK_MEM_1.trace_block_memory                                               |blk_mem_gen_v8_3_6__parameterized2                                               |     1|
-|1578  |                  inst_blk_mem_gen                                                                      |blk_mem_gen_v8_3_6_synth__parameterized2                                         |     1|
-|1579  |                    \gnbram.gnativebmg.native_blk_mem_gen                                               |blk_mem_gen_v8_3_6_blk_mem_gen_top__parameterized2                               |     1|
-|1580  |                      \valid.cstr                                                                       |blk_mem_gen_v8_3_6_blk_mem_gen_generic_cstr__parameterized2                      |     1|
-|1581  |                        \ramloop[0].ram.r                                                               |blk_mem_gen_v8_3_6_blk_mem_gen_prim_width__parameterized16                       |     1|
-|1582  |                          \prim_noinit.ram                                                              |blk_mem_gen_v8_3_6_blk_mem_gen_prim_wrapper__parameterized16                     |     1|
-|1583  |              u_ila_cap_ctrl                                                                            |ila_v6_2_8_ila_cap_ctrl_legacy                                                   |   277|
-|1584  |                U_CDONE                                                                                 |ltlib_v1_0_0_cfglut6__parameterized0                                             |     5|
-|1585  |                U_NS0                                                                                   |ltlib_v1_0_0_cfglut7                                                             |     6|
-|1586  |                U_NS1                                                                                   |ltlib_v1_0_0_cfglut7_23                                                          |     6|
-|1587  |                u_cap_addrgen                                                                           |ila_v6_2_8_ila_cap_addrgen                                                       |   255|
-|1588  |                  U_CMPRESET                                                                            |ltlib_v1_0_0_cfglut6                                                             |     3|
-|1589  |                  u_cap_sample_counter                                                                  |ila_v6_2_8_ila_cap_sample_counter                                                |    61|
-|1590  |                    U_SCE                                                                               |ltlib_v1_0_0_cfglut4_30                                                          |     1|
-|1591  |                    U_SCMPCE                                                                            |ltlib_v1_0_0_cfglut5_31                                                          |     1|
-|1592  |                    U_SCRST                                                                             |ltlib_v1_0_0_cfglut6_32                                                          |     5|
-|1593  |                    u_scnt_cmp                                                                          |ltlib_v1_0_0_match_nodelay_33                                                    |    22|
-|1594  |                      \allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst                          |ltlib_v1_0_0_allx_typeA_nodelay_34                                               |    22|
-|1595  |                        DUT                                                                             |ltlib_v1_0_0_all_typeA__parameterized5_35                                        |    12|
-|1596  |                          \I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                                 |ltlib_v1_0_0_all_typeA_slice__parameterized1_36                                  |     5|
-|1597  |                          \I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE                                 |ltlib_v1_0_0_all_typeA_slice__parameterized2_37                                  |     5|
-|1598  |                  u_cap_window_counter                                                                  |ila_v6_2_8_ila_cap_window_counter                                                |    60|
-|1599  |                    U_WCE                                                                               |ltlib_v1_0_0_cfglut4                                                             |     1|
-|1600  |                    U_WHCMPCE                                                                           |ltlib_v1_0_0_cfglut5                                                             |     1|
-|1601  |                    U_WLCMPCE                                                                           |ltlib_v1_0_0_cfglut5_24                                                          |     1|
-|1602  |                    u_wcnt_hcmp                                                                         |ltlib_v1_0_0_match_nodelay                                                       |    12|
-|1603  |                      \allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst                          |ltlib_v1_0_0_allx_typeA_nodelay_26                                               |    12|
-|1604  |                        DUT                                                                             |ltlib_v1_0_0_all_typeA__parameterized5_27                                        |    12|
-|1605  |                          \I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                                 |ltlib_v1_0_0_all_typeA_slice__parameterized1_28                                  |     5|
-|1606  |                          \I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE                                 |ltlib_v1_0_0_all_typeA_slice__parameterized2_29                                  |     5|
-|1607  |                    u_wcnt_lcmp                                                                         |ltlib_v1_0_0_match_nodelay_25                                                    |    22|
-|1608  |                      \allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst                          |ltlib_v1_0_0_allx_typeA_nodelay                                                  |    22|
-|1609  |                        DUT                                                                             |ltlib_v1_0_0_all_typeA__parameterized5                                           |    12|
-|1610  |                          \I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                                 |ltlib_v1_0_0_all_typeA_slice__parameterized1                                     |     5|
-|1611  |                          \I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE                                 |ltlib_v1_0_0_all_typeA_slice__parameterized2                                     |     5|
-|1612  |              u_ila_regs                                                                                |ila_v6_2_8_ila_register__parameterized1                                          |  1267|
-|1613  |                U_XSDB_SLAVE                                                                            |xsdbs_v1_0_2_xsdbs                                                               |   302|
-|1614  |                reg_890                                                                                 |xsdbs_v1_0_2_reg__parameterized266                                               |    16|
-|1615  |                  \I_EN_STAT_EQ1.U_STAT                                                                 |xsdbs_v1_0_2_reg_stat_22                                                         |    16|
-|1616  |                \MU_SRL[0].mu_srl_reg                                                                   |xsdbs_v1_0_2_reg_p2s                                                             |    75|
-|1617  |                \TC_SRL[0].tc_srl_reg                                                                   |xsdbs_v1_0_2_reg_p2s__parameterized111                                           |    77|
-|1618  |                reg_15                                                                                  |xsdbs_v1_0_2_reg__parameterized248                                               |    17|
-|1619  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_21                                                          |    17|
-|1620  |                reg_16                                                                                  |xsdbs_v1_0_2_reg__parameterized249                                               |    18|
-|1621  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_20                                                          |    18|
-|1622  |                reg_17                                                                                  |xsdbs_v1_0_2_reg__parameterized250                                               |    32|
-|1623  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_19                                                          |    32|
-|1624  |                reg_18                                                                                  |xsdbs_v1_0_2_reg__parameterized251                                               |    18|
-|1625  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_18                                                          |    18|
-|1626  |                reg_19                                                                                  |xsdbs_v1_0_2_reg__parameterized252                                               |    37|
-|1627  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_17                                                          |    37|
-|1628  |                reg_1a                                                                                  |xsdbs_v1_0_2_reg__parameterized253                                               |    17|
-|1629  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl__parameterized1_16                                          |    17|
-|1630  |                reg_6                                                                                   |xsdbs_v1_0_2_reg__parameterized233                                               |    27|
-|1631  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_15                                                          |    27|
-|1632  |                reg_7                                                                                   |xsdbs_v1_0_2_reg__parameterized234                                               |    30|
-|1633  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl__parameterized0                                             |    30|
-|1634  |                reg_8                                                                                   |xsdbs_v1_0_2_reg__parameterized235                                               |     5|
-|1635  |                  \I_EN_STAT_EQ1.U_STAT                                                                 |xsdbs_v1_0_2_reg_stat_14                                                         |     5|
-|1636  |                reg_80                                                                                  |xsdbs_v1_0_2_reg__parameterized254                                               |    20|
-|1637  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl__parameterized1_13                                          |    20|
-|1638  |                reg_81                                                                                  |xsdbs_v1_0_2_reg__parameterized255                                               |    63|
-|1639  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_12                                                          |    63|
-|1640  |                reg_82                                                                                  |xsdbs_v1_0_2_reg__parameterized256                                               |    17|
-|1641  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl__parameterized1                                             |    17|
-|1642  |                reg_83                                                                                  |xsdbs_v1_0_2_reg__parameterized257                                               |    17|
-|1643  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_11                                                          |    17|
-|1644  |                reg_84                                                                                  |xsdbs_v1_0_2_reg__parameterized258                                               |    17|
-|1645  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_10                                                          |    17|
-|1646  |                reg_85                                                                                  |xsdbs_v1_0_2_reg__parameterized259                                               |    17|
-|1647  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_9                                                           |    17|
-|1648  |                reg_887                                                                                 |xsdbs_v1_0_2_reg__parameterized261                                               |     3|
-|1649  |                  \I_EN_STAT_EQ1.U_STAT                                                                 |xsdbs_v1_0_2_reg_stat_8                                                          |     3|
-|1650  |                reg_88d                                                                                 |xsdbs_v1_0_2_reg__parameterized263                                               |     6|
-|1651  |                  \I_EN_STAT_EQ1.U_STAT                                                                 |xsdbs_v1_0_2_reg_stat_7                                                          |     6|
-|1652  |                reg_9                                                                                   |xsdbs_v1_0_2_reg__parameterized236                                               |    19|
-|1653  |                  \I_EN_STAT_EQ1.U_STAT                                                                 |xsdbs_v1_0_2_reg_stat_6                                                          |    19|
-|1654  |                reg_srl_fff                                                                             |xsdbs_v1_0_2_reg_p2s__parameterized112                                           |    91|
-|1655  |                reg_stream_ffd                                                                          |xsdbs_v1_0_2_reg_stream                                                          |    24|
-|1656  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl                                                             |    24|
-|1657  |                reg_stream_ffe                                                                          |xsdbs_v1_0_2_reg_stream__parameterized0                                          |     5|
-|1658  |                  \I_EN_STAT_EQ1.U_STAT                                                                 |xsdbs_v1_0_2_reg_stat                                                            |     5|
-|1659  |              u_ila_reset_ctrl                                                                          |ila_v6_2_8_ila_reset_ctrl                                                        |    46|
-|1660  |                arm_detection_inst                                                                      |ltlib_v1_0_0_rising_edge_detection                                               |     5|
-|1661  |                \asyncrounous_transfer.arm_in_transfer_inst                                             |ltlib_v1_0_0_async_edge_xfer                                                     |     7|
-|1662  |                \asyncrounous_transfer.arm_out_transfer_inst                                            |ltlib_v1_0_0_async_edge_xfer_2                                                   |     6|
-|1663  |                \asyncrounous_transfer.halt_in_transfer_inst                                            |ltlib_v1_0_0_async_edge_xfer_3                                                   |     7|
-|1664  |                \asyncrounous_transfer.halt_out_transfer_inst                                           |ltlib_v1_0_0_async_edge_xfer_4                                                   |     6|
-|1665  |                halt_detection_inst                                                                     |ltlib_v1_0_0_rising_edge_detection_5                                             |     6|
-|1666  |              u_trig                                                                                    |ila_v6_2_8_ila_trigger__parameterized1                                           |    27|
-|1667  |                \N_DDR_TC.N_DDR_TC_INST[0].U_TC                                                         |ltlib_v1_0_0_match__parameterized9                                               |    11|
-|1668  |                  \allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst                              |ltlib_v1_0_0_allx_typeA__parameterized9                                          |     9|
-|1669  |                    DUT                                                                                 |ltlib_v1_0_0_all_typeA__parameterized1_0                                         |     8|
-|1670  |                      \I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                                     |ltlib_v1_0_0_all_typeA_slice__parameterized0_1                                   |     6|
-|1671  |                U_TM                                                                                    |ila_v6_2_8_ila_trig_match__parameterized1                                        |    15|
-|1672  |                  \N_DDR_MODE.G_NMU[0].U_M                                                              |ltlib_v1_0_0_match__parameterized1                                               |    15|
-|1673  |                    \allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst                            |ltlib_v1_0_0_allx_typeA__parameterized1                                          |    14|
-|1674  |                      DUT                                                                               |ltlib_v1_0_0_all_typeA__parameterized1                                           |     8|
-|1675  |                        \I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                                   |ltlib_v1_0_0_all_typeA_slice__parameterized0                                     |     6|
-|1676  |              xsdb_memory_read_inst                                                                     |ltlib_v1_0_0_generic_memrd__parameterized1                                       |    55|
+|1570  |    util_vector_logic_2                                                                                 |system_util_vector_logic_2_0                                                     |     1|
+|1571  |    util_vector_logic_1                                                                                 |system_util_vector_logic_1_0                                                     |     1|
+|1572  |    system_ila_3                                                                                        |system_system_ila_3_0                                                            |  1732|
+|1573  |      inst                                                                                              |bd_d548                                                                          |  1732|
+|1574  |        ila_lib                                                                                         |bd_d548_ila_lib_0                                                                |  1732|
+|1575  |          inst                                                                                          |ila_v6_2_8_ila__parameterized1                                                   |  1732|
+|1576  |            ila_core_inst                                                                               |ila_v6_2_8_ila_core__parameterized1                                              |  1725|
+|1577  |              ila_trace_memory_inst                                                                     |ila_v6_2_8_ila_trace_memory__parameterized1                                      |     1|
+|1578  |                \SUBCORE_RAM_BLK_MEM_1.trace_block_memory                                               |blk_mem_gen_v8_3_6__parameterized2                                               |     1|
+|1579  |                  inst_blk_mem_gen                                                                      |blk_mem_gen_v8_3_6_synth__parameterized2                                         |     1|
+|1580  |                    \gnbram.gnativebmg.native_blk_mem_gen                                               |blk_mem_gen_v8_3_6_blk_mem_gen_top__parameterized2                               |     1|
+|1581  |                      \valid.cstr                                                                       |blk_mem_gen_v8_3_6_blk_mem_gen_generic_cstr__parameterized2                      |     1|
+|1582  |                        \ramloop[0].ram.r                                                               |blk_mem_gen_v8_3_6_blk_mem_gen_prim_width__parameterized16                       |     1|
+|1583  |                          \prim_noinit.ram                                                              |blk_mem_gen_v8_3_6_blk_mem_gen_prim_wrapper__parameterized16                     |     1|
+|1584  |              u_ila_cap_ctrl                                                                            |ila_v6_2_8_ila_cap_ctrl_legacy                                                   |   277|
+|1585  |                U_CDONE                                                                                 |ltlib_v1_0_0_cfglut6__parameterized0                                             |     5|
+|1586  |                U_NS0                                                                                   |ltlib_v1_0_0_cfglut7                                                             |     6|
+|1587  |                U_NS1                                                                                   |ltlib_v1_0_0_cfglut7_23                                                          |     6|
+|1588  |                u_cap_addrgen                                                                           |ila_v6_2_8_ila_cap_addrgen                                                       |   255|
+|1589  |                  U_CMPRESET                                                                            |ltlib_v1_0_0_cfglut6                                                             |     3|
+|1590  |                  u_cap_sample_counter                                                                  |ila_v6_2_8_ila_cap_sample_counter                                                |    61|
+|1591  |                    U_SCE                                                                               |ltlib_v1_0_0_cfglut4_30                                                          |     1|
+|1592  |                    U_SCMPCE                                                                            |ltlib_v1_0_0_cfglut5_31                                                          |     1|
+|1593  |                    U_SCRST                                                                             |ltlib_v1_0_0_cfglut6_32                                                          |     5|
+|1594  |                    u_scnt_cmp                                                                          |ltlib_v1_0_0_match_nodelay_33                                                    |    22|
+|1595  |                      \allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst                          |ltlib_v1_0_0_allx_typeA_nodelay_34                                               |    22|
+|1596  |                        DUT                                                                             |ltlib_v1_0_0_all_typeA__parameterized5_35                                        |    12|
+|1597  |                          \I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                                 |ltlib_v1_0_0_all_typeA_slice__parameterized1_36                                  |     5|
+|1598  |                          \I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE                                 |ltlib_v1_0_0_all_typeA_slice__parameterized2_37                                  |     5|
+|1599  |                  u_cap_window_counter                                                                  |ila_v6_2_8_ila_cap_window_counter                                                |    60|
+|1600  |                    U_WCE                                                                               |ltlib_v1_0_0_cfglut4                                                             |     1|
+|1601  |                    U_WHCMPCE                                                                           |ltlib_v1_0_0_cfglut5                                                             |     1|
+|1602  |                    U_WLCMPCE                                                                           |ltlib_v1_0_0_cfglut5_24                                                          |     1|
+|1603  |                    u_wcnt_hcmp                                                                         |ltlib_v1_0_0_match_nodelay                                                       |    12|
+|1604  |                      \allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst                          |ltlib_v1_0_0_allx_typeA_nodelay_26                                               |    12|
+|1605  |                        DUT                                                                             |ltlib_v1_0_0_all_typeA__parameterized5_27                                        |    12|
+|1606  |                          \I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                                 |ltlib_v1_0_0_all_typeA_slice__parameterized1_28                                  |     5|
+|1607  |                          \I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE                                 |ltlib_v1_0_0_all_typeA_slice__parameterized2_29                                  |     5|
+|1608  |                    u_wcnt_lcmp                                                                         |ltlib_v1_0_0_match_nodelay_25                                                    |    22|
+|1609  |                      \allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst                          |ltlib_v1_0_0_allx_typeA_nodelay                                                  |    22|
+|1610  |                        DUT                                                                             |ltlib_v1_0_0_all_typeA__parameterized5                                           |    12|
+|1611  |                          \I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                                 |ltlib_v1_0_0_all_typeA_slice__parameterized1                                     |     5|
+|1612  |                          \I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE                                 |ltlib_v1_0_0_all_typeA_slice__parameterized2                                     |     5|
+|1613  |              u_ila_regs                                                                                |ila_v6_2_8_ila_register__parameterized1                                          |  1267|
+|1614  |                U_XSDB_SLAVE                                                                            |xsdbs_v1_0_2_xsdbs                                                               |   302|
+|1615  |                reg_890                                                                                 |xsdbs_v1_0_2_reg__parameterized266                                               |    16|
+|1616  |                  \I_EN_STAT_EQ1.U_STAT                                                                 |xsdbs_v1_0_2_reg_stat_22                                                         |    16|
+|1617  |                \MU_SRL[0].mu_srl_reg                                                                   |xsdbs_v1_0_2_reg_p2s                                                             |    75|
+|1618  |                \TC_SRL[0].tc_srl_reg                                                                   |xsdbs_v1_0_2_reg_p2s__parameterized111                                           |    77|
+|1619  |                reg_15                                                                                  |xsdbs_v1_0_2_reg__parameterized248                                               |    17|
+|1620  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_21                                                          |    17|
+|1621  |                reg_16                                                                                  |xsdbs_v1_0_2_reg__parameterized249                                               |    18|
+|1622  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_20                                                          |    18|
+|1623  |                reg_17                                                                                  |xsdbs_v1_0_2_reg__parameterized250                                               |    32|
+|1624  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_19                                                          |    32|
+|1625  |                reg_18                                                                                  |xsdbs_v1_0_2_reg__parameterized251                                               |    18|
+|1626  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_18                                                          |    18|
+|1627  |                reg_19                                                                                  |xsdbs_v1_0_2_reg__parameterized252                                               |    37|
+|1628  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_17                                                          |    37|
+|1629  |                reg_1a                                                                                  |xsdbs_v1_0_2_reg__parameterized253                                               |    17|
+|1630  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl__parameterized1_16                                          |    17|
+|1631  |                reg_6                                                                                   |xsdbs_v1_0_2_reg__parameterized233                                               |    27|
+|1632  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_15                                                          |    27|
+|1633  |                reg_7                                                                                   |xsdbs_v1_0_2_reg__parameterized234                                               |    30|
+|1634  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl__parameterized0                                             |    30|
+|1635  |                reg_8                                                                                   |xsdbs_v1_0_2_reg__parameterized235                                               |     5|
+|1636  |                  \I_EN_STAT_EQ1.U_STAT                                                                 |xsdbs_v1_0_2_reg_stat_14                                                         |     5|
+|1637  |                reg_80                                                                                  |xsdbs_v1_0_2_reg__parameterized254                                               |    20|
+|1638  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl__parameterized1_13                                          |    20|
+|1639  |                reg_81                                                                                  |xsdbs_v1_0_2_reg__parameterized255                                               |    63|
+|1640  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_12                                                          |    63|
+|1641  |                reg_82                                                                                  |xsdbs_v1_0_2_reg__parameterized256                                               |    17|
+|1642  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl__parameterized1                                             |    17|
+|1643  |                reg_83                                                                                  |xsdbs_v1_0_2_reg__parameterized257                                               |    17|
+|1644  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_11                                                          |    17|
+|1645  |                reg_84                                                                                  |xsdbs_v1_0_2_reg__parameterized258                                               |    17|
+|1646  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_10                                                          |    17|
+|1647  |                reg_85                                                                                  |xsdbs_v1_0_2_reg__parameterized259                                               |    17|
+|1648  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl_9                                                           |    17|
+|1649  |                reg_887                                                                                 |xsdbs_v1_0_2_reg__parameterized261                                               |     3|
+|1650  |                  \I_EN_STAT_EQ1.U_STAT                                                                 |xsdbs_v1_0_2_reg_stat_8                                                          |     3|
+|1651  |                reg_88d                                                                                 |xsdbs_v1_0_2_reg__parameterized263                                               |     6|
+|1652  |                  \I_EN_STAT_EQ1.U_STAT                                                                 |xsdbs_v1_0_2_reg_stat_7                                                          |     6|
+|1653  |                reg_9                                                                                   |xsdbs_v1_0_2_reg__parameterized236                                               |    19|
+|1654  |                  \I_EN_STAT_EQ1.U_STAT                                                                 |xsdbs_v1_0_2_reg_stat_6                                                          |    19|
+|1655  |                reg_srl_fff                                                                             |xsdbs_v1_0_2_reg_p2s__parameterized112                                           |    91|
+|1656  |                reg_stream_ffd                                                                          |xsdbs_v1_0_2_reg_stream                                                          |    24|
+|1657  |                  \I_EN_CTL_EQ1.U_CTL                                                                   |xsdbs_v1_0_2_reg_ctl                                                             |    24|
+|1658  |                reg_stream_ffe                                                                          |xsdbs_v1_0_2_reg_stream__parameterized0                                          |     5|
+|1659  |                  \I_EN_STAT_EQ1.U_STAT                                                                 |xsdbs_v1_0_2_reg_stat                                                            |     5|
+|1660  |              u_ila_reset_ctrl                                                                          |ila_v6_2_8_ila_reset_ctrl                                                        |    46|
+|1661  |                arm_detection_inst                                                                      |ltlib_v1_0_0_rising_edge_detection                                               |     5|
+|1662  |                \asyncrounous_transfer.arm_in_transfer_inst                                             |ltlib_v1_0_0_async_edge_xfer                                                     |     7|
+|1663  |                \asyncrounous_transfer.arm_out_transfer_inst                                            |ltlib_v1_0_0_async_edge_xfer_2                                                   |     6|
+|1664  |                \asyncrounous_transfer.halt_in_transfer_inst                                            |ltlib_v1_0_0_async_edge_xfer_3                                                   |     7|
+|1665  |                \asyncrounous_transfer.halt_out_transfer_inst                                           |ltlib_v1_0_0_async_edge_xfer_4                                                   |     6|
+|1666  |                halt_detection_inst                                                                     |ltlib_v1_0_0_rising_edge_detection_5                                             |     6|
+|1667  |              u_trig                                                                                    |ila_v6_2_8_ila_trigger__parameterized1                                           |    27|
+|1668  |                \N_DDR_TC.N_DDR_TC_INST[0].U_TC                                                         |ltlib_v1_0_0_match__parameterized9                                               |    11|
+|1669  |                  \allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst                              |ltlib_v1_0_0_allx_typeA__parameterized9                                          |     9|
+|1670  |                    DUT                                                                                 |ltlib_v1_0_0_all_typeA__parameterized1_0                                         |     8|
+|1671  |                      \I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                                     |ltlib_v1_0_0_all_typeA_slice__parameterized0_1                                   |     6|
+|1672  |                U_TM                                                                                    |ila_v6_2_8_ila_trig_match__parameterized1                                        |    15|
+|1673  |                  \N_DDR_MODE.G_NMU[0].U_M                                                              |ltlib_v1_0_0_match__parameterized1                                               |    15|
+|1674  |                    \allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst                            |ltlib_v1_0_0_allx_typeA__parameterized1                                          |    14|
+|1675  |                      DUT                                                                               |ltlib_v1_0_0_all_typeA__parameterized1                                           |     8|
+|1676  |                        \I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                                   |ltlib_v1_0_0_all_typeA_slice__parameterized0                                     |     6|
+|1677  |              xsdb_memory_read_inst                                                                     |ltlib_v1_0_0_generic_memrd__parameterized1                                       |    55|
 +------+--------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:23:15 ; elapsed = 00:25:54 . Memory (MB): peak = 1698.848 ; gain = 1212.617
+Finished Writing Synthesis Report : Time (s): cpu = 00:20:58 ; elapsed = 00:22:06 . Memory (MB): peak = 1699.359 ; gain = 1212.891
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1279 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:04:01 ; elapsed = 00:24:35 . Memory (MB): peak = 1698.848 ; gain = 1066.938
-Synthesis Optimization Complete : Time (s): cpu = 00:23:15 ; elapsed = 00:25:55 . Memory (MB): peak = 1698.848 ; gain = 1212.617
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:19 ; elapsed = 00:20:58 . Memory (MB): peak = 1699.359 ; gain = 1061.895
+Synthesis Optimization Complete : Time (s): cpu = 00:20:59 ; elapsed = 00:22:07 . Memory (MB): peak = 1699.359 ; gain = 1212.891
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 2669 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 2668 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. system_i/clk_wiz_0/inst/clkin1_ibufg 
@@ -22596,13 +22598,13 @@ INFO: [Chipscope 16-324] Core: system_i/system_ila_1/inst/ila_lib UUID: d373f702
 INFO: [Chipscope 16-324] Core: system_i/system_ila_2/inst/ila_lib UUID: e08f34f1-e193-5dce-9d96-c07602dc080b 
 INFO: [Chipscope 16-324] Core: system_i/system_ila_3/inst/ila_lib UUID: 0d4bc8ac-e08d-5f1c-a898-af29d3fc8ed3 
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1710.602 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1710.645 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1309 instances were transformed.
+  A total of 1308 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 968 instances
   CFGLUT5 => SRLC32E: 131 instances
   FDR => FDRE: 196 instances
-  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 4 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 5 instances
   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
@@ -22611,11 +22613,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 1848 Infos, 447 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:24:14 ; elapsed = 00:26:56 . Memory (MB): peak = 1710.602 ; gain = 1226.094
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1710.602 ; gain = 0.000
+synth_design: Time (s): cpu = 00:21:49 ; elapsed = 00:22:58 . Memory (MB): peak = 1710.645 ; gain = 1225.910
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1710.645 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.runs/synth_1/system_wrapper.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1710.602 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1710.645 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 16 10:38:20 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 22 17:06:31 2020...

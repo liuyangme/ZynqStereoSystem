@@ -157,7 +157,6 @@ proc create_root_design { parentCell } {
   # Create interface ports
   set DDR_0 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddrx_rtl:1.0 DDR_0 ]
   set FIXED_IO_0 [ create_bd_intf_port -mode Master -vlnv xilinx.com:display_processing_system7:fixedio_rtl:1.0 FIXED_IO_0 ]
-  set GPIO_0_0 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 GPIO_0_0 ]
   set IIC_0_0 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:iic_rtl:1.0 IIC_0_0 ]
 
   # Create ports
@@ -305,7 +304,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_EN_EMIO_CD_SDIO0 {0} \
    CONFIG.PCW_EN_EMIO_CD_SDIO1 {0} \
    CONFIG.PCW_EN_EMIO_ENET0 {0} \
-   CONFIG.PCW_EN_EMIO_GPIO {1} \
+   CONFIG.PCW_EN_EMIO_GPIO {0} \
    CONFIG.PCW_EN_EMIO_I2C0 {1} \
    CONFIG.PCW_EN_EMIO_SDIO1 {0} \
    CONFIG.PCW_EN_EMIO_WP_SDIO1 {0} \
@@ -332,9 +331,9 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_FPGA_FCLK1_ENABLE {1} \
    CONFIG.PCW_FPGA_FCLK2_ENABLE {0} \
    CONFIG.PCW_FPGA_FCLK3_ENABLE {0} \
-   CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE {1} \
-   CONFIG.PCW_GPIO_EMIO_GPIO_IO {1} \
-   CONFIG.PCW_GPIO_EMIO_GPIO_WIDTH {1} \
+   CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE {0} \
+   CONFIG.PCW_GPIO_EMIO_GPIO_IO {<Select>} \
+   CONFIG.PCW_GPIO_EMIO_GPIO_WIDTH {64} \
    CONFIG.PCW_GPIO_MIO_GPIO_ENABLE {1} \
    CONFIG.PCW_GPIO_MIO_GPIO_IO {MIO} \
    CONFIG.PCW_I2C0_GRP_INT_ENABLE {1} \
@@ -577,7 +576,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_NOR_GRP_SRAM_CS1_ENABLE {0} \
    CONFIG.PCW_NOR_GRP_SRAM_INT_ENABLE {0} \
    CONFIG.PCW_NOR_PERIPHERAL_ENABLE {0} \
-   CONFIG.PCW_P2F_GPIO_INTR {0} \
+   CONFIG.PCW_P2F_GPIO_INTR {1} \
    CONFIG.PCW_PCAP_PERIPHERAL_DIVISOR0 {9} \
    CONFIG.PCW_PRESET_BANK1_VOLTAGE {LVCMOS 1.8V} \
    CONFIG.PCW_QSPI_GRP_FBCLK_ENABLE {1} \
@@ -762,6 +761,14 @@ proc create_root_design { parentCell } {
    CONFIG.LOGO_FILE {data/sym_notgate.png} \
  ] $util_vector_logic_1
 
+  # Create instance: util_vector_logic_2, and set properties
+  set util_vector_logic_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_2 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_2
+
   # Create instance: v_axi4s_vid_out_0, and set properties
   set v_axi4s_vid_out_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:v_axi4s_vid_out:4.0 v_axi4s_vid_out_0 ]
   set_property -dict [ list \
@@ -819,7 +826,6 @@ connect_bd_intf_net -intf_net [get_bd_intf_nets axis_subset_converter_0_M_AXIS] 
 set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_intf_nets axis_subset_converter_0_M_AXIS]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR_0] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO_0] [get_bd_intf_pins processing_system7_0/FIXED_IO]
-  connect_bd_intf_net -intf_net processing_system7_0_GPIO_0 [get_bd_intf_ports GPIO_0_0] [get_bd_intf_pins processing_system7_0/GPIO_0]
   connect_bd_intf_net -intf_net processing_system7_0_IIC_0 [get_bd_intf_ports IIC_0_0] [get_bd_intf_pins processing_system7_0/IIC_0]
   connect_bd_intf_net -intf_net v_tc_0_vtiming_out [get_bd_intf_pins v_axi4s_vid_out_0/vtiming_in] [get_bd_intf_pins v_tc_0/vtiming_out]
   connect_bd_intf_net -intf_net v_vid_in_axi4s_0_video_out [get_bd_intf_pins axis_subset_converter_0/S_AXIS] [get_bd_intf_pins v_vid_in_axi4s_0/video_out]
@@ -837,7 +843,6 @@ set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_intf_nets v_vid_in_axi4s_0_video
   connect_bd_net -net HDMI_TX_0_HDMI_D1_P [get_bd_ports HDMI_D1_P_0] [get_bd_pins HDMI_TX_0/HDMI_D1_P]
   connect_bd_net -net HDMI_TX_0_HDMI_D2_N [get_bd_ports HDMI_D2_N_0] [get_bd_pins HDMI_TX_0/HDMI_D2_N]
   connect_bd_net -net HDMI_TX_0_HDMI_D2_P [get_bd_ports HDMI_D2_P_0] [get_bd_pins HDMI_TX_0/HDMI_D2_P]
-  connect_bd_net -net In2_0_1 [get_bd_ports sw1] [get_bd_pins xlconcat_0/In2]
   connect_bd_net -net OV5640_Sensor_0_cmos_xclk_o [get_bd_ports cmos_xclk_o_0] [get_bd_pins OV5640_Sensor_0/cmos_xclk_o]
   connect_bd_net -net OV5640_Sensor_0_hs_o [get_bd_pins OV5640_Sensor_0/hs_o] [get_bd_pins v_vid_in_axi4s_0/vid_active_video] [get_bd_pins v_vid_in_axi4s_0/vid_hsync]
   connect_bd_net -net OV5640_Sensor_0_rgb_o [get_bd_pins OV5640_Sensor_0/rgb_o] [get_bd_pins system_ila_1/probe0] [get_bd_pins v_vid_in_axi4s_0/vid_data]
@@ -856,8 +861,10 @@ set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets OV5640_Sensor_0_rgb_o]
   connect_bd_net -net cmos_vsync_i_0_1 [get_bd_ports cmos_vsync_i_0] [get_bd_pins OV5640_Sensor_0/cmos_vsync_i]
   connect_bd_net -net processing_system7_0_FCLK_CLK1 [get_bd_pins OV5640_Sensor_0/clk_i] [get_bd_pins processing_system7_0/FCLK_CLK1]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins proc_sys_reset_0/ext_reset_in] [get_bd_pins processing_system7_0/FCLK_RESET0_N]
+  connect_bd_net -net sw1_1 [get_bd_ports sw1] [get_bd_pins util_vector_logic_2/Op1]
   connect_bd_net -net util_vector_logic_0_Res [get_bd_pins util_vector_logic_0/Res] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_reset] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_reset]
   connect_bd_net -net util_vector_logic_1_Res [get_bd_pins clk_wiz_0/reset] [get_bd_pins util_vector_logic_1/Res]
+  connect_bd_net -net util_vector_logic_2_Res [get_bd_pins util_vector_logic_2/Res] [get_bd_pins xlconcat_0/In2]
   connect_bd_net -net v_axi4s_vid_out_0_vid_active_video [get_bd_pins HDMI_TX_0/VGA_DE] [get_bd_pins v_axi4s_vid_out_0/vid_active_video]
   connect_bd_net -net v_axi4s_vid_out_0_vid_data [get_bd_pins HDMI_TX_0/VGA_RGB] [get_bd_pins system_ila_2/probe0] [get_bd_pins v_axi4s_vid_out_0/vid_data]
 set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets v_axi4s_vid_out_0_vid_data]

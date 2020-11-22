@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Mon Nov 16 10:04:30 2020
+//Date        : Sun Nov 22 16:39:42 2020
 //Host        : LiuYang-Laptop running 64-bit major release  (build 9200)
 //Command     : generate_target system.bd
 //Design      : system
@@ -1973,7 +1973,7 @@ module s01_couplers_imp_1CYGJQJ
   assign s01_couplers_to_s01_couplers_WVALID = S_AXI_wvalid;
 endmodule
 
-(* CORE_GENERATION_INFO = "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=34,numReposBlks=25,numNonXlnxBlks=0,numHierBlks=9,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_clkrst_cnt=4,synth_mode=Global}" *) (* HW_HANDOFF = "system.hwdef" *) 
+(* CORE_GENERATION_INFO = "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=35,numReposBlks=26,numNonXlnxBlks=0,numHierBlks=9,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_clkrst_cnt=4,synth_mode=Global}" *) (* HW_HANDOFF = "system.hwdef" *) 
 module system
    (DDR_0_addr,
     DDR_0_ba,
@@ -1996,9 +1996,6 @@ module system
     FIXED_IO_0_ps_clk,
     FIXED_IO_0_ps_porb,
     FIXED_IO_0_ps_srstb,
-    GPIO_0_0_tri_i,
-    GPIO_0_0_tri_o,
-    GPIO_0_0_tri_t,
     HDMI_CLK_N_0,
     HDMI_CLK_P_0,
     HDMI_D0_N_0,
@@ -2040,9 +2037,6 @@ module system
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO_0 PS_CLK" *) inout FIXED_IO_0_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO_0 PS_PORB" *) inout FIXED_IO_0_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO_0 PS_SRSTB" *) inout FIXED_IO_0_ps_srstb;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_I" *) input [0:0]GPIO_0_0_tri_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_O" *) output [0:0]GPIO_0_0_tri_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0_0 TRI_T" *) output [0:0]GPIO_0_0_tri_t;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.HDMI_CLK_N_0 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.HDMI_CLK_N_0, CLK_DOMAIN system_HDMI_TX_0_0_HDMI_CLK_N, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) output HDMI_CLK_N_0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.HDMI_CLK_P_0 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.HDMI_CLK_P_0, CLK_DOMAIN system_HDMI_TX_0_0_HDMI_CLK_P, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) output HDMI_CLK_P_0;
   output HDMI_D0_N_0;
@@ -2074,7 +2068,6 @@ module system
   wire HDMI_TX_0_HDMI_D1_P;
   wire HDMI_TX_0_HDMI_D2_N;
   wire HDMI_TX_0_HDMI_D2_P;
-  wire [0:0]In2_0_1;
   wire OV5640_Sensor_0_cmos_xclk_o;
   wire OV5640_Sensor_0_hs_o;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [23:0]OV5640_Sensor_0_rgb_o;
@@ -2270,17 +2263,16 @@ module system
   wire processing_system7_0_FIXED_IO_PS_CLK;
   wire processing_system7_0_FIXED_IO_PS_PORB;
   wire processing_system7_0_FIXED_IO_PS_SRSTB;
-  wire [0:0]processing_system7_0_GPIO_0_TRI_I;
-  wire [0:0]processing_system7_0_GPIO_0_TRI_O;
-  wire [0:0]processing_system7_0_GPIO_0_TRI_T;
   wire processing_system7_0_IIC_0_SCL_I;
   wire processing_system7_0_IIC_0_SCL_O;
   wire processing_system7_0_IIC_0_SCL_T;
   wire processing_system7_0_IIC_0_SDA_I;
   wire processing_system7_0_IIC_0_SDA_O;
   wire processing_system7_0_IIC_0_SDA_T;
+  wire [0:0]sw1_1;
   wire [0:0]util_vector_logic_0_Res;
   wire [0:0]util_vector_logic_1_Res;
+  wire [0:0]util_vector_logic_2_Res;
   wire v_axi4s_vid_out_0_vid_active_video;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [23:0]v_axi4s_vid_out_0_vid_data;
   wire v_axi4s_vid_out_0_vid_hsync;
@@ -2299,8 +2291,6 @@ module system
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [2:0]xlconcat_0_dout;
   wire [0:0]xlconstant_0_dout;
 
-  assign GPIO_0_0_tri_o[0] = processing_system7_0_GPIO_0_TRI_O;
-  assign GPIO_0_0_tri_t[0] = processing_system7_0_GPIO_0_TRI_T;
   assign HDMI_CLK_N_0 = HDMI_TX_0_HDMI_CLK_N;
   assign HDMI_CLK_P_0 = HDMI_TX_0_HDMI_CLK_P;
   assign HDMI_D0_N_0 = HDMI_TX_0_HDMI_D0_N;
@@ -2313,15 +2303,14 @@ module system
   assign IIC_0_0_scl_t = processing_system7_0_IIC_0_SCL_T;
   assign IIC_0_0_sda_o = processing_system7_0_IIC_0_SDA_O;
   assign IIC_0_0_sda_t = processing_system7_0_IIC_0_SDA_T;
-  assign In2_0_1 = sw1[0];
   assign cmos_data_i_0_1 = cmos_data_i_0[7:0];
   assign cmos_href_i_0_1 = cmos_href_i_0;
   assign cmos_pclk_i_0_1 = cmos_pclk_i_0;
   assign cmos_vsync_i_0_1 = cmos_vsync_i_0;
   assign cmos_xclk_o_0 = OV5640_Sensor_0_cmos_xclk_o;
-  assign processing_system7_0_GPIO_0_TRI_I = GPIO_0_0_tri_i[0];
   assign processing_system7_0_IIC_0_SCL_I = IIC_0_0_scl_i;
   assign processing_system7_0_IIC_0_SDA_I = IIC_0_0_sda_i;
+  assign sw1_1 = sw1[0];
   system_HDMI_TX_0_0 HDMI_TX_0
        (.HDMI_CLK_N(HDMI_TX_0_HDMI_CLK_N),
         .HDMI_CLK_P(HDMI_TX_0_HDMI_CLK_P),
@@ -2660,9 +2649,6 @@ module system
         .FCLK_CLK0(ACLK_1),
         .FCLK_CLK1(processing_system7_0_FCLK_CLK1),
         .FCLK_RESET0_N(processing_system7_0_FCLK_RESET0_N),
-        .GPIO_I(processing_system7_0_GPIO_0_TRI_I),
-        .GPIO_O(processing_system7_0_GPIO_0_TRI_O),
-        .GPIO_T(processing_system7_0_GPIO_0_TRI_T),
         .I2C0_SCL_I(processing_system7_0_IIC_0_SCL_I),
         .I2C0_SCL_O(processing_system7_0_IIC_0_SCL_O),
         .I2C0_SCL_T(processing_system7_0_IIC_0_SCL_T),
@@ -2895,6 +2881,9 @@ module system
   system_util_vector_logic_1_0 util_vector_logic_1
        (.Op1(S00_ARESETN_1),
         .Res(util_vector_logic_1_Res));
+  system_util_vector_logic_2_0 util_vector_logic_2
+       (.Op1(sw1_1),
+        .Res(util_vector_logic_2_Res));
   system_v_axi4s_vid_out_0_0 v_axi4s_vid_out_0
        (.aclk(ACLK_1),
         .aclken(clk_wiz_0_locked),
@@ -2952,7 +2941,7 @@ module system
   system_xlconcat_0_0 xlconcat_0
        (.In0(axi_vdma_0_mm2s_introut),
         .In1(axi_vdma_1_s2mm_introut),
-        .In2(In2_0_1),
+        .In2(util_vector_logic_2_Res),
         .dout(xlconcat_0_dout));
   system_xlconstant_0_0 xlconstant_0
        (.dout(xlconstant_0_dout));

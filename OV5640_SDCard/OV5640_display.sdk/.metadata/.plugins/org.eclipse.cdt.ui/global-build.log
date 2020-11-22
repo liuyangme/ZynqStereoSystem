@@ -1,4 +1,9 @@
-19:00:02 **** Incremental Build of configuration Debug for project ov5640_sd ****
+20:50:01 **** Incremental Build of configuration Debug for project ov5640_sd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:50:22 **** Incremental Build of configuration Debug for project ov5640_sd ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
