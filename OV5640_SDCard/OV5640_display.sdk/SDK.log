@@ -52,3 +52,812 @@ con
 
 20:50:36 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
 20:55:18 INFO  : Disconnected from the channel tcfchan#1.
+14:17:13 INFO  : Registering command handlers for SDK TCF services
+14:17:15 INFO  : Launching XSCT server: xsct.bat -interactive E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\temp_xsdb_launch_script.tcl
+14:17:24 INFO  : XSCT server has started successfully.
+14:17:26 INFO  : Processing command line option -hwspec E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper.hdf.
+14:17:26 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+14:17:26 INFO  : Successfully done setting XSCT server connection channel  
+14:17:37 INFO  : Successfully done setting SDK workspace  
+14:18:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:18:30 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
+14:18:30 INFO  : 'jtag frequency' command is executed.
+14:18:30 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:18:30 INFO  : Context for 'APU' is selected.
+14:18:30 INFO  : System reset is completed.
+14:18:33 INFO  : 'after 3000' command is executed.
+14:18:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
+14:18:37 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:18:37 INFO  : Context for 'APU' is selected.
+14:18:37 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:18:37 INFO  : 'configparams force-mem-access 1' command is executed.
+14:18:37 INFO  : Context for 'APU' is selected.
+14:18:37 INFO  : 'ps7_init' command is executed.
+14:18:37 INFO  : 'ps7_post_config' command is executed.
+14:18:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:18:38 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:18:38 INFO  : 'configparams force-mem-access 0' command is executed.
+14:18:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
+fpga -file E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+dow E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:18:38 INFO  : Memory regions updated for context APU
+14:18:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:18:38 INFO  : 'con' command is executed.
+14:18:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
+----------------End of Script----------------
+
+14:18:38 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+14:20:11 INFO  : Disconnected from the channel tcfchan#1.
+14:20:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:20:13 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
+14:20:13 INFO  : 'jtag frequency' command is executed.
+14:20:13 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:20:13 INFO  : Context for 'APU' is selected.
+14:20:13 INFO  : System reset is completed.
+14:20:16 INFO  : 'after 3000' command is executed.
+14:20:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
+14:20:20 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:20:20 INFO  : Context for 'APU' is selected.
+14:20:27 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:20:27 INFO  : 'configparams force-mem-access 1' command is executed.
+14:20:27 INFO  : Context for 'APU' is selected.
+14:20:27 INFO  : 'ps7_init' command is executed.
+14:20:27 INFO  : 'ps7_post_config' command is executed.
+14:20:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:20:28 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:20:28 INFO  : 'configparams force-mem-access 0' command is executed.
+14:20:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
+fpga -file E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+dow E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:20:28 INFO  : Memory regions updated for context APU
+14:20:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:20:28 INFO  : 'con' command is executed.
+14:20:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
+----------------End of Script----------------
+
+14:20:28 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+14:29:13 INFO  : Disconnected from the channel tcfchan#2.
+14:29:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:29:15 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
+14:29:15 INFO  : 'jtag frequency' command is executed.
+14:29:15 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:29:15 INFO  : Context for 'APU' is selected.
+14:29:15 INFO  : System reset is completed.
+14:29:18 INFO  : 'after 3000' command is executed.
+14:29:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
+14:29:21 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:29:22 INFO  : Context for 'APU' is selected.
+14:29:28 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:29:28 INFO  : 'configparams force-mem-access 1' command is executed.
+14:29:28 INFO  : Context for 'APU' is selected.
+14:29:29 INFO  : 'ps7_init' command is executed.
+14:29:29 INFO  : 'ps7_post_config' command is executed.
+14:29:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:29:29 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:29:29 INFO  : 'configparams force-mem-access 0' command is executed.
+14:29:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
+fpga -file E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+dow E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:29:29 INFO  : Memory regions updated for context APU
+14:29:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:29:29 INFO  : 'con' command is executed.
+14:29:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
+----------------End of Script----------------
+
+14:29:29 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+14:30:49 INFO  : Disconnected from the channel tcfchan#3.
+14:30:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:30:50 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
+14:30:50 INFO  : 'jtag frequency' command is executed.
+14:30:50 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:30:50 INFO  : Context for 'APU' is selected.
+14:30:50 INFO  : System reset is completed.
+14:30:53 INFO  : 'after 3000' command is executed.
+14:30:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
+14:30:57 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:30:57 INFO  : Context for 'APU' is selected.
+14:31:03 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:31:03 INFO  : 'configparams force-mem-access 1' command is executed.
+14:31:03 INFO  : Context for 'APU' is selected.
+14:31:03 INFO  : 'ps7_init' command is executed.
+14:31:03 INFO  : 'ps7_post_config' command is executed.
+14:31:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:31:04 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:31:04 INFO  : 'configparams force-mem-access 0' command is executed.
+14:31:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
+fpga -file E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+dow E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:31:04 INFO  : Memory regions updated for context APU
+14:31:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:31:04 INFO  : 'con' command is executed.
+14:31:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
+----------------End of Script----------------
+
+14:31:04 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+14:35:01 INFO  : Disconnected from the channel tcfchan#4.
+14:35:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:35:02 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
+14:35:02 INFO  : 'jtag frequency' command is executed.
+14:35:02 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:35:03 INFO  : Context for 'APU' is selected.
+14:35:03 INFO  : System reset is completed.
+14:35:06 INFO  : 'after 3000' command is executed.
+14:35:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
+14:35:09 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:35:09 INFO  : Context for 'APU' is selected.
+14:35:16 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:35:16 INFO  : 'configparams force-mem-access 1' command is executed.
+14:35:16 INFO  : Context for 'APU' is selected.
+14:35:17 INFO  : 'ps7_init' command is executed.
+14:35:17 INFO  : 'ps7_post_config' command is executed.
+14:35:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:35:17 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:35:17 INFO  : 'configparams force-mem-access 0' command is executed.
+14:35:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
+fpga -file E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+dow E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:35:17 INFO  : Memory regions updated for context APU
+14:35:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:35:17 INFO  : 'con' command is executed.
+14:35:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
+----------------End of Script----------------
+
+14:35:17 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+14:41:12 INFO  : Disconnected from the channel tcfchan#5.
+14:41:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:41:13 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
+14:41:13 INFO  : 'jtag frequency' command is executed.
+14:41:13 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:41:13 INFO  : Context for 'APU' is selected.
+14:41:13 INFO  : System reset is completed.
+14:41:16 INFO  : 'after 3000' command is executed.
+14:41:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
+14:41:20 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:41:20 INFO  : Context for 'APU' is selected.
+14:41:26 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:41:26 INFO  : 'configparams force-mem-access 1' command is executed.
+14:41:26 INFO  : Context for 'APU' is selected.
+14:41:27 INFO  : 'ps7_init' command is executed.
+14:41:27 INFO  : 'ps7_post_config' command is executed.
+14:41:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:41:27 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:41:27 INFO  : 'configparams force-mem-access 0' command is executed.
+14:41:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
+fpga -file E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+dow E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:41:27 INFO  : Memory regions updated for context APU
+14:41:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:41:28 INFO  : 'con' command is executed.
+14:41:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
+----------------End of Script----------------
+
+14:41:28 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+14:51:25 INFO  : Disconnected from the channel tcfchan#6.
+14:51:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:51:26 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
+14:51:26 INFO  : 'jtag frequency' command is executed.
+14:51:26 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:51:26 INFO  : Context for 'APU' is selected.
+14:51:26 INFO  : System reset is completed.
+14:51:29 INFO  : 'after 3000' command is executed.
+14:51:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
+14:51:33 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:51:33 INFO  : Context for 'APU' is selected.
+14:51:39 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:51:39 INFO  : 'configparams force-mem-access 1' command is executed.
+14:51:39 INFO  : Context for 'APU' is selected.
+14:51:40 INFO  : 'ps7_init' command is executed.
+14:51:40 INFO  : 'ps7_post_config' command is executed.
+14:51:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:51:40 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:51:40 INFO  : 'configparams force-mem-access 0' command is executed.
+14:51:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
+fpga -file E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+dow E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:51:41 INFO  : Memory regions updated for context APU
+14:51:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:51:41 INFO  : 'con' command is executed.
+14:51:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
+----------------End of Script----------------
+
+14:51:41 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+14:54:41 INFO  : Disconnected from the channel tcfchan#7.
+14:54:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:54:42 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
+14:54:42 INFO  : 'jtag frequency' command is executed.
+14:54:42 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:54:42 INFO  : Context for 'APU' is selected.
+14:54:42 INFO  : System reset is completed.
+14:54:45 INFO  : 'after 3000' command is executed.
+14:54:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
+14:54:49 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:54:49 INFO  : Context for 'APU' is selected.
+14:54:55 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:54:55 INFO  : 'configparams force-mem-access 1' command is executed.
+14:54:55 INFO  : Context for 'APU' is selected.
+14:54:56 INFO  : 'ps7_init' command is executed.
+14:54:56 INFO  : 'ps7_post_config' command is executed.
+14:54:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:54:56 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:54:56 INFO  : 'configparams force-mem-access 0' command is executed.
+14:54:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
+fpga -file E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+dow E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:54:56 INFO  : Memory regions updated for context APU
+14:54:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:54:57 INFO  : 'con' command is executed.
+14:54:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
+----------------End of Script----------------
+
+14:54:57 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+15:04:23 INFO  : Disconnected from the channel tcfchan#8.
+15:04:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:04:25 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
+15:04:25 INFO  : 'jtag frequency' command is executed.
+15:04:25 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:04:25 INFO  : Context for 'APU' is selected.
+15:04:25 INFO  : System reset is completed.
+15:04:28 INFO  : 'after 3000' command is executed.
+15:04:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
+15:04:32 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:04:32 INFO  : Context for 'APU' is selected.
+15:04:38 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
+15:04:38 INFO  : 'configparams force-mem-access 1' command is executed.
+15:04:38 INFO  : Context for 'APU' is selected.
+15:04:38 INFO  : 'ps7_init' command is executed.
+15:04:38 INFO  : 'ps7_post_config' command is executed.
+15:04:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:04:39 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:04:39 INFO  : 'configparams force-mem-access 0' command is executed.
+15:04:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
+fpga -file E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+dow E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:04:39 INFO  : Memory regions updated for context APU
+15:04:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:04:39 INFO  : 'con' command is executed.
+15:04:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
+----------------End of Script----------------
+
+15:04:39 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+15:09:48 INFO  : Disconnected from the channel tcfchan#9.
+15:09:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:09:49 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
+15:09:49 INFO  : 'jtag frequency' command is executed.
+15:09:49 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:09:49 INFO  : Context for 'APU' is selected.
+15:09:49 INFO  : System reset is completed.
+15:09:52 INFO  : 'after 3000' command is executed.
+15:09:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
+15:09:56 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:09:56 INFO  : Context for 'APU' is selected.
+15:10:02 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
+15:10:02 INFO  : 'configparams force-mem-access 1' command is executed.
+15:10:02 INFO  : Context for 'APU' is selected.
+15:10:03 INFO  : 'ps7_init' command is executed.
+15:10:03 INFO  : 'ps7_post_config' command is executed.
+15:10:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:10:03 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:10:03 INFO  : 'configparams force-mem-access 0' command is executed.
+15:10:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
+fpga -file E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+dow E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:10:04 INFO  : Memory regions updated for context APU
+15:10:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:10:04 INFO  : 'con' command is executed.
+15:10:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
+----------------End of Script----------------
+
+15:10:04 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+15:13:01 INFO  : Disconnected from the channel tcfchan#10.
+15:13:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:13:02 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
+15:13:02 INFO  : 'jtag frequency' command is executed.
+15:13:02 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:13:02 INFO  : Context for 'APU' is selected.
+15:13:03 INFO  : System reset is completed.
+15:13:06 INFO  : 'after 3000' command is executed.
+15:13:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
+15:13:09 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:13:09 INFO  : Context for 'APU' is selected.
+15:13:16 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
+15:13:16 INFO  : 'configparams force-mem-access 1' command is executed.
+15:13:16 INFO  : Context for 'APU' is selected.
+15:13:16 INFO  : 'ps7_init' command is executed.
+15:13:16 INFO  : 'ps7_post_config' command is executed.
+15:13:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:13:17 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:13:17 INFO  : 'configparams force-mem-access 0' command is executed.
+15:13:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
+fpga -file E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+dow E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:13:17 INFO  : Memory regions updated for context APU
+15:13:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:13:17 INFO  : 'con' command is executed.
+15:13:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
+----------------End of Script----------------
+
+15:13:17 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+15:15:11 INFO  : Disconnected from the channel tcfchan#11.
+15:15:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:15:12 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
+15:15:12 INFO  : 'jtag frequency' command is executed.
+15:15:12 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:15:12 INFO  : Context for 'APU' is selected.
+15:15:12 INFO  : System reset is completed.
+15:15:15 INFO  : 'after 3000' command is executed.
+15:15:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
+15:15:19 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:15:19 INFO  : Context for 'APU' is selected.
+15:15:26 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
+15:15:26 INFO  : 'configparams force-mem-access 1' command is executed.
+15:15:26 INFO  : Context for 'APU' is selected.
+15:15:26 INFO  : 'ps7_init' command is executed.
+15:15:26 INFO  : 'ps7_post_config' command is executed.
+15:15:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:15:27 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:15:27 INFO  : 'configparams force-mem-access 0' command is executed.
+15:15:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
+fpga -file E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+dow E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:15:27 INFO  : Memory regions updated for context APU
+15:15:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:15:27 INFO  : 'con' command is executed.
+15:15:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
+----------------End of Script----------------
+
+15:15:27 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+15:16:24 INFO  : Disconnected from the channel tcfchan#12.
+15:16:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:16:25 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
+15:16:25 INFO  : 'jtag frequency' command is executed.
+15:16:25 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:16:25 INFO  : Context for 'APU' is selected.
+15:16:25 INFO  : System reset is completed.
+15:16:28 INFO  : 'after 3000' command is executed.
+15:16:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
+15:16:32 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:16:32 INFO  : Context for 'APU' is selected.
+15:16:38 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
+15:16:38 INFO  : 'configparams force-mem-access 1' command is executed.
+15:16:38 INFO  : Context for 'APU' is selected.
+15:16:39 INFO  : 'ps7_init' command is executed.
+15:16:39 INFO  : 'ps7_post_config' command is executed.
+15:16:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:16:39 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:16:39 INFO  : 'configparams force-mem-access 0' command is executed.
+15:16:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
+fpga -file E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+dow E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:16:39 INFO  : Memory regions updated for context APU
+15:16:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:16:40 INFO  : 'con' command is executed.
+15:16:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
+----------------End of Script----------------
+
+15:16:40 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+15:17:32 INFO  : Disconnected from the channel tcfchan#13.
+15:17:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:17:34 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
+15:17:34 INFO  : 'jtag frequency' command is executed.
+15:17:34 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:17:34 INFO  : Context for 'APU' is selected.
+15:17:34 INFO  : System reset is completed.
+15:17:37 INFO  : 'after 3000' command is executed.
+15:17:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
+15:17:40 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:17:40 INFO  : Context for 'APU' is selected.
+15:17:47 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
+15:17:47 INFO  : 'configparams force-mem-access 1' command is executed.
+15:17:47 INFO  : Context for 'APU' is selected.
+15:17:48 INFO  : 'ps7_init' command is executed.
+15:17:48 INFO  : 'ps7_post_config' command is executed.
+15:17:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:17:48 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:17:48 INFO  : 'configparams force-mem-access 0' command is executed.
+15:17:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
+fpga -file E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+dow E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:17:48 INFO  : Memory regions updated for context APU
+15:17:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:17:48 INFO  : 'con' command is executed.
+15:17:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
+----------------End of Script----------------
+
+15:17:48 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+15:27:04 INFO  : Disconnected from the channel tcfchan#14.
+15:27:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:27:05 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
+15:27:05 INFO  : 'jtag frequency' command is executed.
+15:27:05 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:27:05 INFO  : Context for 'APU' is selected.
+15:27:06 INFO  : System reset is completed.
+15:27:09 INFO  : 'after 3000' command is executed.
+15:27:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
+15:27:12 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:27:12 INFO  : Context for 'APU' is selected.
+15:27:18 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
+15:27:18 INFO  : 'configparams force-mem-access 1' command is executed.
+15:27:18 INFO  : Context for 'APU' is selected.
+15:27:19 INFO  : 'ps7_init' command is executed.
+15:27:19 INFO  : 'ps7_post_config' command is executed.
+15:27:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:27:19 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:27:19 INFO  : 'configparams force-mem-access 0' command is executed.
+15:27:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
+fpga -file E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+dow E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:27:20 INFO  : Memory regions updated for context APU
+15:27:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:27:20 INFO  : 'con' command is executed.
+15:27:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
+----------------End of Script----------------
+
+15:27:20 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+15:29:25 INFO  : Disconnected from the channel tcfchan#15.
+15:29:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:29:27 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
+15:29:27 INFO  : 'jtag frequency' command is executed.
+15:29:27 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:29:27 INFO  : Context for 'APU' is selected.
+15:29:27 INFO  : System reset is completed.
+15:29:30 INFO  : 'after 3000' command is executed.
+15:29:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
+15:29:33 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:29:33 INFO  : Context for 'APU' is selected.
+15:29:40 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
+15:29:40 INFO  : 'configparams force-mem-access 1' command is executed.
+15:29:40 INFO  : Context for 'APU' is selected.
+15:29:40 INFO  : 'ps7_init' command is executed.
+15:29:40 INFO  : 'ps7_post_config' command is executed.
+15:29:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:29:41 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:29:41 INFO  : 'configparams force-mem-access 0' command is executed.
+15:29:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
+fpga -file E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+dow E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:29:41 INFO  : Memory regions updated for context APU
+15:29:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:29:41 INFO  : 'con' command is executed.
+15:29:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
+----------------End of Script----------------
+
+15:29:41 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+15:31:17 INFO  : Disconnected from the channel tcfchan#16.
+15:31:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:31:19 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855850' is selected.
+15:31:19 INFO  : 'jtag frequency' command is executed.
+15:31:19 INFO  : Sourcing of 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:31:19 INFO  : Context for 'APU' is selected.
+15:31:19 INFO  : System reset is completed.
+15:31:22 INFO  : 'after 3000' command is executed.
+15:31:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1' command is executed.
+15:31:26 INFO  : FPGA configured successfully with bitstream "E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:31:26 INFO  : Context for 'APU' is selected.
+15:31:32 INFO  : Hardware design information is loaded from 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf'.
+15:31:32 INFO  : 'configparams force-mem-access 1' command is executed.
+15:31:32 INFO  : Context for 'APU' is selected.
+15:31:32 INFO  : 'ps7_init' command is executed.
+15:31:32 INFO  : 'ps7_post_config' command is executed.
+15:31:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:31:33 INFO  : The application 'E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:31:33 INFO  : 'configparams force-mem-access 0' command is executed.
+15:31:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855850" && level==0} -index 1
+fpga -file E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+loadhw -hw E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+dow E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.sdk/ov5640_sd/Debug/ov5640_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:31:33 INFO  : Memory regions updated for context APU
+15:31:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:31:33 INFO  : 'con' command is executed.
+15:31:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855850"} -index 0
+con
+----------------End of Script----------------
+
+15:31:33 INFO  : Launch script is exported to file 'E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_ov5640_sd.elf_on_local.tcl'
+15:43:42 INFO  : Invoking Bootgen: bootgen -image ov5640_sd.bif -arch zynq -o E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\ov5640_sd\bootimage\BOOT.bin
+15:43:42 INFO  : Creating new bif file E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\ov5640_sd\bootimage\ov5640_sd.bif
+15:43:45 INFO  : Bootgen command execution is done.
+16:29:16 INFO  : Disconnected from the channel tcfchan#17.

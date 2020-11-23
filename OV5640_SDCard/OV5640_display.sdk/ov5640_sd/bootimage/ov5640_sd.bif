@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\fsbl\Debug\fsbl.elf
+	E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\system_wrapper_hw_platform_0\system_wrapper.bit
+	E:\Project\Personal\PoseEstimation\ZYNQPlatform\ZYNQ-Stereo-System\OV5640_SDCard\OV5640_display.sdk\ov5640_sd\Debug\ov5640_sd.elf
+}
