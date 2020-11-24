@@ -1,0 +1,12 @@
+vhdl xil_defaultlib  \
+"../../../bd/system/ipshared/037e/src/DVITransmitter.vhd" \
+"../../../bd/system/ipshared/037e/src/SerializerN_1.vhd" \
+"../../../bd/system/ipshared/037e/src/TMDSEncoder.vhd" \
+"../../../bd/system/ipshared/037e/src/hdmi_tx.vhd" \
+"../../../bd/system/ip/system_HDMI_TX_0_0/sim/system_HDMI_TX_0_0.vhd" \
+"../../../bd/system/ip/system_axi_vdma_0_0/sim/system_axi_vdma_0_0.vhd" \
+"../../../bd/system/ip/system_proc_sys_reset_0_0/sim/system_proc_sys_reset_0_0.vhd" \
+"../../../bd/system/ip/system_v_tc_0_0/sim/system_v_tc_0_0.vhd" \
+"../../../bd/system/ip/system_axi_vdma_1_0/sim/system_axi_vdma_1_0.vhd" \
+
+nosort
