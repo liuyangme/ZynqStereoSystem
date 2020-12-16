@@ -148,7 +148,7 @@ int main(void)
 //	sensor_init(&ps_i2c0);
 	Miz702_EMIO_init();
 	ov5640_init_rgb();
-	xil_printf("Sensor Init...ok\r\n");
+	xil_printf("PL Sensor Init...ok\r\n");
 
 	/*
 	 * Setup PS KEY and PS LED

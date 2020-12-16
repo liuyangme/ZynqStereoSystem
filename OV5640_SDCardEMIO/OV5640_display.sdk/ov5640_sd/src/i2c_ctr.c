@@ -7,7 +7,7 @@
 
 #include "sleep.h"
 #include "emio_initial.h"
-#define CAM_OV5640    0x78
+#define CAM_OV5640 0x87
 void sccb_start(void)
 {
 		CLOCK_HIGH();
