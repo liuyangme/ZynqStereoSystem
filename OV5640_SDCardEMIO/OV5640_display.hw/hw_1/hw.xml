@@ -21,7 +21,7 @@
     <Object name="xc7z020_1" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/system_wrapper.ltx"/>
       <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/system_wrapper.ltx"/>
-      <Properties Property="PROGRAM.HW_BITSTREAM" value=""/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/system_wrapper.bit"/>
       <Properties Property="PROGRAM.HW_CFGMEM_PART" value="s25fl256s-3.3v-qspi-x4-single"/>
       <Properties Property="SLR.COUNT" value="1"/>
     </Object>

@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCard/OV5640_display.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+      <db_ref path="E:/Project/Personal/PoseEstimation/ZYNQPlatform/ZYNQ-Stereo-System/OV5640_SDCardEMIO/OV5640_display.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
          <top_modules>
          </top_modules>
       </db_ref>
@@ -15,7 +15,7 @@
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="208"></NameColumnWidth>
-      <ValueColumnWidth column_width="212"></ValueColumnWidth>
+      <ValueColumnWidth column_width="208"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="1" />
    <wave_markers>
@@ -28,6 +28,5 @@
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-      <obj_property name="isExpanded"></obj_property>
    </wvobject>
 </wave_config>

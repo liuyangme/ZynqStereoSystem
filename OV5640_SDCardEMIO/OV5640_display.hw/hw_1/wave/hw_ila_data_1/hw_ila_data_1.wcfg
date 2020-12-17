@@ -10,20 +10,44 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="837411fs"></ZoomEndTime>
+      <ZoomEndTime time="1024001fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="313"></NameColumnWidth>
-      <ValueColumnWidth column_width="168"></ValueColumnWidth>
+      <ValueColumnWidth column_width="164"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="8" />
+   <wave_markers>
+   </wave_markers>
    <wvobject fp_name="group214" type="group">
       <obj_property name="label">slot_3 : axi_vdma_0_M_AXI_MM2S : Interface</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Detail_Data">Interface_(i1:s3)_(axi_vdma_0_M_AXI_MM2S)_tooltip</obj_property>
+      <obj_property name="Render_Data">Interface_(i1:s3)_(axi_vdma_0_M_AXI_MM2S)</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">OliveDrab</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <wvobject fp_name="group211" type="group">
+         <obj_property name="label">slot_3 : axi_vdma_0_M_AXI_MM2S : Read Transactions 0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">slot_3___axi_vdma_0_M_AXI_MM2S___Read_Transactions_0_tooltip</obj_property>
+         <obj_property name="Render_Data">slot_3___axi_vdma_0_M_AXI_MM2S___Read_Transactions_0</obj_property>
+         <obj_property name="EnumTransactionColorTable">0000=blank</obj_property>
+         <obj_property name="CustomSignalColor">Orange</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
       <wvobject fp_name="group215" type="group">
          <obj_property name="label">slot_3 : axi_vdma_0_M_AXI_MM2S : AR Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">AR_Channel_(i1:s3)_(axi_vdma_0_M_AXI_MM2S)_tooltip</obj_property>
+         <obj_property name="Render_Data">AR_Channel_(i1:s3)_(axi_vdma_0_M_AXI_MM2S)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Yellow</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_3_axi_arvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_3_axi_arvalid</obj_property>
@@ -80,6 +104,12 @@
       <wvobject fp_name="group222" type="group">
          <obj_property name="label">slot_3 : axi_vdma_0_M_AXI_MM2S : R Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">R_Channel_(i1:s3)_(axi_vdma_0_M_AXI_MM2S)_tooltip</obj_property>
+         <obj_property name="Render_Data">R_Channel_(i1:s3)_(axi_vdma_0_M_AXI_MM2S)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Gold</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_3_axi_rvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_3_axi_rvalid</obj_property>
@@ -135,6 +165,12 @@
       <wvobject fp_name="group229" type="group">
          <obj_property name="label">slot_3 : axi_vdma_0_M_AXI_MM2S : AW Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">AW_Channel_(i1:s3)_(axi_vdma_0_M_AXI_MM2S)_tooltip</obj_property>
+         <obj_property name="Render_Data">AW_Channel_(i1:s3)_(axi_vdma_0_M_AXI_MM2S)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">MediumTurquoise</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_3_axi_awvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_3_axi_awvalid</obj_property>
@@ -191,6 +227,12 @@
       <wvobject fp_name="group236" type="group">
          <obj_property name="label">slot_3 : axi_vdma_0_M_AXI_MM2S : W Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">W_Channel_(i1:s3)_(axi_vdma_0_M_AXI_MM2S)_tooltip</obj_property>
+         <obj_property name="Render_Data">W_Channel_(i1:s3)_(axi_vdma_0_M_AXI_MM2S)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Teal</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_3_axi_wvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_3_axi_wvalid</obj_property>
@@ -228,6 +270,12 @@
       <wvobject fp_name="group241" type="group">
          <obj_property name="label">slot_3 : axi_vdma_0_M_AXI_MM2S : B Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">B_Channel_(i1:s3)_(axi_vdma_0_M_AXI_MM2S)_tooltip</obj_property>
+         <obj_property name="Render_Data">B_Channel_(i1:s3)_(axi_vdma_0_M_AXI_MM2S)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">SteelBlue</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_3_axi_bvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_3_axi_bvalid</obj_property>
@@ -258,9 +306,21 @@
    <wvobject fp_name="group245" type="group">
       <obj_property name="label">slot_4 : axi_vdma_1_M_AXI_S2MM : Interface</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Detail_Data">Interface_(i1:s4)_(axi_vdma_1_M_AXI_S2MM)_tooltip</obj_property>
+      <obj_property name="Render_Data">Interface_(i1:s4)_(axi_vdma_1_M_AXI_S2MM)</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">Cornsilk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
       <wvobject fp_name="group246" type="group">
          <obj_property name="label">slot_4 : axi_vdma_1_M_AXI_S2MM : AR Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">AR_Channel_(i1:s4)_(axi_vdma_1_M_AXI_S2MM)_tooltip</obj_property>
+         <obj_property name="Render_Data">AR_Channel_(i1:s4)_(axi_vdma_1_M_AXI_S2MM)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Yellow</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_4_axi_arvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_4_axi_arvalid</obj_property>
@@ -317,6 +377,12 @@
       <wvobject fp_name="group253" type="group">
          <obj_property name="label">slot_4 : axi_vdma_1_M_AXI_S2MM : R Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">R_Channel_(i1:s4)_(axi_vdma_1_M_AXI_S2MM)_tooltip</obj_property>
+         <obj_property name="Render_Data">R_Channel_(i1:s4)_(axi_vdma_1_M_AXI_S2MM)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Gold</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_4_axi_rvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_4_axi_rvalid</obj_property>
@@ -363,6 +429,12 @@
       <wvobject fp_name="group259" type="group">
          <obj_property name="label">slot_4 : axi_vdma_1_M_AXI_S2MM : AW Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">AW_Channel_(i1:s4)_(axi_vdma_1_M_AXI_S2MM)_tooltip</obj_property>
+         <obj_property name="Render_Data">AW_Channel_(i1:s4)_(axi_vdma_1_M_AXI_S2MM)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">MediumTurquoise</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_4_axi_awvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_4_axi_awvalid</obj_property>
@@ -419,6 +491,12 @@
       <wvobject fp_name="group266" type="group">
          <obj_property name="label">slot_4 : axi_vdma_1_M_AXI_S2MM : W Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">W_Channel_(i1:s4)_(axi_vdma_1_M_AXI_S2MM)_tooltip</obj_property>
+         <obj_property name="Render_Data">W_Channel_(i1:s4)_(axi_vdma_1_M_AXI_S2MM)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Teal</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_4_axi_wvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_4_axi_wvalid</obj_property>
@@ -465,6 +543,12 @@
       <wvobject fp_name="group272" type="group">
          <obj_property name="label">slot_4 : axi_vdma_1_M_AXI_S2MM : B Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">B_Channel_(i1:s4)_(axi_vdma_1_M_AXI_S2MM)_tooltip</obj_property>
+         <obj_property name="Render_Data">B_Channel_(i1:s4)_(axi_vdma_1_M_AXI_S2MM)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">SteelBlue</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_4_axi_bvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_4_axi_bvalid</obj_property>
@@ -504,9 +588,51 @@
    <wvobject fp_name="group277" type="group">
       <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : Interface</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Detail_Data">Interface_(i1:s1)_(axi_interconnect_1_M00_AXI)_tooltip</obj_property>
+      <obj_property name="Render_Data">Interface_(i1:s1)_(axi_interconnect_1_M00_AXI)</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">OliveDrab</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <wvobject fp_name="group214" type="group">
+         <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : Read Transactions 2</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">slot_1___axi_interconnect_1_M00_AXI___Read_Transactions_2_tooltip</obj_property>
+         <obj_property name="Render_Data">slot_1___axi_interconnect_1_M00_AXI___Read_Transactions_2</obj_property>
+         <obj_property name="EnumTransactionColorTable">0000=blank</obj_property>
+         <obj_property name="CustomSignalColor">Red</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
+      <wvobject fp_name="group213" type="group">
+         <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : Read Transactions 1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">slot_1___axi_interconnect_1_M00_AXI___Read_Transactions_1_tooltip</obj_property>
+         <obj_property name="Render_Data">slot_1___axi_interconnect_1_M00_AXI___Read_Transactions_1</obj_property>
+         <obj_property name="EnumTransactionColorTable">0000=blank</obj_property>
+         <obj_property name="CustomSignalColor">Orange</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
+      <wvobject fp_name="group212" type="group">
+         <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : Read Transactions 0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">slot_1___axi_interconnect_1_M00_AXI___Read_Transactions_0_tooltip</obj_property>
+         <obj_property name="Render_Data">slot_1___axi_interconnect_1_M00_AXI___Read_Transactions_0</obj_property>
+         <obj_property name="EnumTransactionColorTable">0000=blank</obj_property>
+         <obj_property name="CustomSignalColor">Orange</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
       <wvobject fp_name="group278" type="group">
          <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : AR Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">AR_Channel_(i1:s1)_(axi_interconnect_1_M00_AXI)_tooltip</obj_property>
+         <obj_property name="Render_Data">AR_Channel_(i1:s1)_(axi_interconnect_1_M00_AXI)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Yellow</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_arvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_arvalid</obj_property>
@@ -580,6 +706,12 @@
       <wvobject fp_name="group287" type="group">
          <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : R Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">R_Channel_(i1:s1)_(axi_interconnect_1_M00_AXI)_tooltip</obj_property>
+         <obj_property name="Render_Data">R_Channel_(i1:s1)_(axi_interconnect_1_M00_AXI)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Gold</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_rvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_rvalid</obj_property>
@@ -643,6 +775,12 @@
       <wvobject fp_name="group295" type="group">
          <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : AW Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">AW_Channel_(i1:s1)_(axi_interconnect_1_M00_AXI)_tooltip</obj_property>
+         <obj_property name="Render_Data">AW_Channel_(i1:s1)_(axi_interconnect_1_M00_AXI)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">MediumTurquoise</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_awvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_awvalid</obj_property>
@@ -716,6 +854,12 @@
       <wvobject fp_name="group304" type="group">
          <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : W Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">W_Channel_(i1:s1)_(axi_interconnect_1_M00_AXI)_tooltip</obj_property>
+         <obj_property name="Render_Data">W_Channel_(i1:s1)_(axi_interconnect_1_M00_AXI)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Teal</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_wvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_wvalid</obj_property>
@@ -762,6 +906,12 @@
       <wvobject fp_name="group310" type="group">
          <obj_property name="label">slot_1 : axi_interconnect_1_M00_AXI : B Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">B_Channel_(i1:s1)_(axi_interconnect_1_M00_AXI)_tooltip</obj_property>
+         <obj_property name="Render_Data">B_Channel_(i1:s1)_(axi_interconnect_1_M00_AXI)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">SteelBlue</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_1_axi_bvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_1_axi_bvalid</obj_property>
@@ -809,9 +959,21 @@
    <wvobject fp_name="group316" type="group">
       <obj_property name="label">slot_2 : axi_interconnect_0_M00_AXI : Interface</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Detail_Data">Interface_(i1:s2)_(axi_interconnect_0_M00_AXI)_tooltip</obj_property>
+      <obj_property name="Render_Data">Interface_(i1:s2)_(axi_interconnect_0_M00_AXI)</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">Cornsilk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
       <wvobject fp_name="group317" type="group">
          <obj_property name="label">slot_2 : axi_interconnect_0_M00_AXI : AR Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">AR_Channel_(i1:s2)_(axi_interconnect_0_M00_AXI)_tooltip</obj_property>
+         <obj_property name="Render_Data">AR_Channel_(i1:s2)_(axi_interconnect_0_M00_AXI)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Yellow</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_2_axi_arvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_2_axi_arvalid</obj_property>
@@ -850,6 +1012,12 @@
       <wvobject fp_name="group322" type="group">
          <obj_property name="label">slot_2 : axi_interconnect_0_M00_AXI : R Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">R_Channel_(i1:s2)_(axi_interconnect_0_M00_AXI)_tooltip</obj_property>
+         <obj_property name="Render_Data">R_Channel_(i1:s2)_(axi_interconnect_0_M00_AXI)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Gold</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_2_axi_rvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_2_axi_rvalid</obj_property>
@@ -897,6 +1065,12 @@
       <wvobject fp_name="group328" type="group">
          <obj_property name="label">slot_2 : axi_interconnect_0_M00_AXI : AW Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">AW_Channel_(i1:s2)_(axi_interconnect_0_M00_AXI)_tooltip</obj_property>
+         <obj_property name="Render_Data">AW_Channel_(i1:s2)_(axi_interconnect_0_M00_AXI)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">MediumTurquoise</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_2_axi_awvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_2_axi_awvalid</obj_property>
@@ -935,6 +1109,12 @@
       <wvobject fp_name="group333" type="group">
          <obj_property name="label">slot_2 : axi_interconnect_0_M00_AXI : W Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">W_Channel_(i1:s2)_(axi_interconnect_0_M00_AXI)_tooltip</obj_property>
+         <obj_property name="Render_Data">W_Channel_(i1:s2)_(axi_interconnect_0_M00_AXI)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Teal</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_2_axi_wvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_2_axi_wvalid</obj_property>
@@ -973,6 +1153,12 @@
       <wvobject fp_name="group338" type="group">
          <obj_property name="label">slot_2 : axi_interconnect_0_M00_AXI : B Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">B_Channel_(i1:s2)_(axi_interconnect_0_M00_AXI)_tooltip</obj_property>
+         <obj_property name="Render_Data">B_Channel_(i1:s2)_(axi_interconnect_0_M00_AXI)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">SteelBlue</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_2_axi_bvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_2_axi_bvalid</obj_property>
@@ -1012,9 +1198,21 @@
    <wvobject fp_name="group343" type="group">
       <obj_property name="label">slot_7 : axi_interconnect_0_M01_AXI : Interface</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Detail_Data">Interface_(i1:s7)_(axi_interconnect_0_M01_AXI)_tooltip</obj_property>
+      <obj_property name="Render_Data">Interface_(i1:s7)_(axi_interconnect_0_M01_AXI)</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">Cornsilk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
       <wvobject fp_name="group344" type="group">
          <obj_property name="label">slot_7 : axi_interconnect_0_M01_AXI : AR Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">AR_Channel_(i1:s7)_(axi_interconnect_0_M01_AXI)_tooltip</obj_property>
+         <obj_property name="Render_Data">AR_Channel_(i1:s7)_(axi_interconnect_0_M01_AXI)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Yellow</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_7_axi_arvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_7_axi_arvalid</obj_property>
@@ -1053,6 +1251,12 @@
       <wvobject fp_name="group349" type="group">
          <obj_property name="label">slot_7 : axi_interconnect_0_M01_AXI : R Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">R_Channel_(i1:s7)_(axi_interconnect_0_M01_AXI)_tooltip</obj_property>
+         <obj_property name="Render_Data">R_Channel_(i1:s7)_(axi_interconnect_0_M01_AXI)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Gold</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_7_axi_rvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_7_axi_rvalid</obj_property>
@@ -1100,6 +1304,12 @@
       <wvobject fp_name="group355" type="group">
          <obj_property name="label">slot_7 : axi_interconnect_0_M01_AXI : AW Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">AW_Channel_(i1:s7)_(axi_interconnect_0_M01_AXI)_tooltip</obj_property>
+         <obj_property name="Render_Data">AW_Channel_(i1:s7)_(axi_interconnect_0_M01_AXI)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">MediumTurquoise</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_7_axi_awvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_7_axi_awvalid</obj_property>
@@ -1138,6 +1348,12 @@
       <wvobject fp_name="group360" type="group">
          <obj_property name="label">slot_7 : axi_interconnect_0_M01_AXI : W Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">W_Channel_(i1:s7)_(axi_interconnect_0_M01_AXI)_tooltip</obj_property>
+         <obj_property name="Render_Data">W_Channel_(i1:s7)_(axi_interconnect_0_M01_AXI)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Teal</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_7_axi_wvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_7_axi_wvalid</obj_property>
@@ -1176,6 +1392,12 @@
       <wvobject fp_name="group365" type="group">
          <obj_property name="label">slot_7 : axi_interconnect_0_M01_AXI : B Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">B_Channel_(i1:s7)_(axi_interconnect_0_M01_AXI)_tooltip</obj_property>
+         <obj_property name="Render_Data">B_Channel_(i1:s7)_(axi_interconnect_0_M01_AXI)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">SteelBlue</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_7_axi_bvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_7_axi_bvalid</obj_property>
@@ -1215,9 +1437,21 @@
    <wvobject fp_name="group370" type="group">
       <obj_property name="label">slot_0 : axi_vdma_0_M_AXIS_MM2S : Interface</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Detail_Data">Interface_(i1:s0)_(axi_vdma_0_M_AXIS_MM2S)_tooltip</obj_property>
+      <obj_property name="Render_Data">Interface_(i1:s0)_(axi_vdma_0_M_AXIS_MM2S)</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">OliveDrab</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
       <wvobject fp_name="group371" type="group">
          <obj_property name="label">slot_0 : axi_vdma_0_M_AXIS_MM2S : T Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">T_Channel_(i1:s0)_(axi_vdma_0_M_AXIS_MM2S)_tooltip</obj_property>
+         <obj_property name="Render_Data">T_Channel_(i1:s0)_(axi_vdma_0_M_AXIS_MM2S)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Purple</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_0_axis_tvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_0_axis_tvalid</obj_property>
@@ -1273,9 +1507,21 @@
    <wvobject fp_name="group378" type="group">
       <obj_property name="label">slot_5 : v_vid_in_axi4s_0_video_out : Interface</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Detail_Data">Interface_(i1:s5)_(v_vid_in_axi4s_0_video_out)_tooltip</obj_property>
+      <obj_property name="Render_Data">Interface_(i1:s5)_(v_vid_in_axi4s_0_video_out)</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">Cornsilk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
       <wvobject fp_name="group379" type="group">
          <obj_property name="label">slot_5 : v_vid_in_axi4s_0_video_out : T Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">T_Channel_(i1:s5)_(v_vid_in_axi4s_0_video_out)_tooltip</obj_property>
+         <obj_property name="Render_Data">T_Channel_(i1:s5)_(v_vid_in_axi4s_0_video_out)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Purple</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_5_axis_tvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_5_axis_tvalid</obj_property>
@@ -1322,9 +1568,21 @@
    <wvobject fp_name="group385" type="group">
       <obj_property name="label">slot_6 : axis_subset_converter_0_M_AXIS : Interface</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Detail_Data">Interface_(i1:s6)_(axis_subset_converter_0_M_AXIS)_tooltip</obj_property>
+      <obj_property name="Render_Data">Interface_(i1:s6)_(axis_subset_converter_0_M_AXIS)</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">Cornsilk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
       <wvobject fp_name="group386" type="group">
          <obj_property name="label">slot_6 : axis_subset_converter_0_M_AXIS : T Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">T_Channel_(i1:s6)_(axis_subset_converter_0_M_AXIS)_tooltip</obj_property>
+         <obj_property name="Render_Data">T_Channel_(i1:s6)_(axis_subset_converter_0_M_AXIS)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Purple</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
          <wvobject fp_name="system_i/system_ila_0/inst/net_slot_6_axis_tvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">system_i/system_ila_0/inst/net_slot_6_axis_tvalid</obj_property>
