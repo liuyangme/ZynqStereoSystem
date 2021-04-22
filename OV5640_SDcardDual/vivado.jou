@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr 12 11:16:16 2021
+# Process ID: 13104
+# Current directory: E:/Project/Doing/StereoMatching/ZYNQ-Stereo-Matching/StereoCameraCapture
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32312 E:\Project\Doing\StereoMatching\ZYNQ-Stereo-Matching\StereoCameraCapture\OV5640_display.xpr
+# Log file: E:/Project/Doing/StereoMatching/ZYNQ-Stereo-Matching/StereoCameraCapture/vivado.log
+# Journal file: E:/Project/Doing/StereoMatching/ZYNQ-Stereo-Matching/StereoCameraCapture\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Project/Doing/StereoMatching/ZYNQ-Stereo-Matching/StereoCameraCapture/OV5640_display.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace E:/Project/Doing/StereoMatching/ZYNQ-Stereo-Matching/StereoCameraCapture/OV5640_display.sdk -hwspec E:/Project/Doing/StereoMatching/ZYNQ-Stereo-Matching/StereoCameraCapture/OV5640_display.sdk/system_wrapper.hdf
